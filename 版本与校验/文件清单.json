@@ -1,0 +1,1565 @@
+{
+  "schema": "source_release_v2",
+  "files": [
+    {
+      "path": ".clang-format",
+      "bytes": 304,
+      "sha256": "3260cec3362058f3cf6cdd16d16e4ea74f86e3badaad87fccea63c8f15317fd4"
+    },
+    {
+      "path": ".editorconfig",
+      "bytes": 141,
+      "sha256": "f73232b8c30181451dee4772a144c46bc6b3754feade723bddd95179c417e53a"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 288,
+      "sha256": "577d1aa50424613dd4b6a4c60438cb4c3f18449d882b3b6e5fea78b87f972fe7"
+    },
+    {
+      "path": ".prettierrc.json",
+      "bytes": 88,
+      "sha256": "2d8bca45ac41f5829c544ffe022a563a64de5617dee31634e0a491eb4e4bac1f"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 6440,
+      "sha256": "0b8692ecbb43152840210238f64453197894c7f37576d3a391d6789e38a5001d"
+    },
+    {
+      "path": "CODE_STYLE.md",
+      "bytes": 687,
+      "sha256": "b62cdc1de8cc259fb3b22b6168020d479f4d4474c287c493d71d90d74608d5f7"
+    },
+    {
+      "path": "FPGA/工程/constraints/case_ep.adc",
+      "bytes": 2096,
+      "sha256": "b2d22e2bb2a7107e6edfd2401530e26e5373e6e260de7ba7008bad269bdfaef4"
+    },
+    {
+      "path": "FPGA/工程/constraints/case_ep.sdc",
+      "bytes": 2314,
+      "sha256": "b97a1cf79567b547d3c6ecf4d89672559eccfcaf85ad676c7bc89951ed356af0"
+    },
+    {
+      "path": "FPGA/工程/constraints/ddr_cdc.sdc",
+      "bytes": 2533,
+      "sha256": "80b82888b1e339aa816df7e01eeddd0b6c4bb19a5030536769a435b617662bdf"
+    },
+    {
+      "path": "FPGA/工程/constraints/ddr_pins.adc",
+      "bytes": 4142,
+      "sha256": "6132717c21936d38a7f4b5b6397bf9289b5fae46b4791cbba3dcc25d629bfd46"
+    },
+    {
+      "path": "FPGA/工程/constraints/jpeg_cdc.sdc",
+      "bytes": 1465,
+      "sha256": "5f7a5777778fcc6ae845660990487764560d52bf605a9bf789ae2598aae340bb"
+    },
+    {
+      "path": "FPGA/工程/constraints/status_cdc.sdc",
+      "bytes": 987,
+      "sha256": "dccc28f125a67818ce06fbce8e0e111f8e751c78139455790510e545ef223201"
+    },
+    {
+      "path": "FPGA/工程/phy_1/bitgen_candidate.tcl",
+      "bytes": 198,
+      "sha256": "fae9cda9799da60a3a19cf3f0e037bb600ad712a41be3c91d45f27ec21a21055"
+    },
+    {
+      "path": "FPGA/工程/phy_1/constraint_refresh.tcl",
+      "bytes": 793,
+      "sha256": "3758ea7d7afefdb805bccaf627e1974923d5fb21f120159170424a05cc296076"
+    },
+    {
+      "path": "FPGA/工程/phy_1/diagnose_routed_checkpoint.tcl",
+      "bytes": 300,
+      "sha256": "84d658a083f309a5f93a38307864cbb159d7c23821a70f262f21438efa2208da"
+    },
+    {
+      "path": "FPGA/工程/phy_1/finalize.tcl",
+      "bytes": 727,
+      "sha256": "7448d4d9d3779e39213223493a9558294f95036a2f0c92254fd59a5828606ec8"
+    },
+    {
+      "path": "FPGA/工程/phy_1/pcie_camera.prj",
+      "bytes": 20199,
+      "sha256": "c20ac3e74f70c90565c9b38252516fabfa8b311956cdd0bffebe35b1abb22199"
+    },
+    {
+      "path": "FPGA/工程/phy_1/place_qor_suggestion.tcl",
+      "bytes": 282,
+      "sha256": "e981d65f16766716959c2a4f83ca2ded282b4698b5819a518ec0fff74bd30a78"
+    },
+    {
+      "path": "FPGA/工程/phy_1/postroute_opt.tcl",
+      "bytes": 564,
+      "sha256": "af804d8dcce72e6d16af86282a97770ec52b952731a881fac93dfd9d75089e41"
+    },
+    {
+      "path": "FPGA/工程/phy_1/postroute_reroute.tcl",
+      "bytes": 566,
+      "sha256": "79ede4a1604fb26bf6fb1aeced6c69cce5f99cdef9768ff3022512f19bdb93d0"
+    },
+    {
+      "path": "FPGA/工程/phy_1/review_isp.tcl",
+      "bytes": 211,
+      "sha256": "cdde186efe103a5de8f52ac77007e1090c7a356e02e192000c52ba6925173566"
+    },
+    {
+      "path": "FPGA/工程/phy_1/review_reset.tcl",
+      "bytes": 240,
+      "sha256": "0a9b19b452fa6a7aaa869693193e2773f9e6bda84ab5f427e387a3664fc5e140"
+    },
+    {
+      "path": "FPGA/工程/phy_1/route_resume.tcl",
+      "bytes": 8485,
+      "sha256": "b60c4dc1f6d7599777985a3ca28d0506b42e94e57db888558ce36e5e9eb4395b"
+    },
+    {
+      "path": "FPGA/工程/phy_1/settings.cfg",
+      "bytes": 850,
+      "sha256": "abd288723d33f25398d8510a422ce19cedf7972097689737a413fcbf72cd34a5"
+    },
+    {
+      "path": "FPGA/工程/phy_1/signoff.tcl",
+      "bytes": 623,
+      "sha256": "430dd58d7e02927c0998d4e6b297672f4a22803a11e35e27daea8c66786398c7"
+    },
+    {
+      "path": "FPGA/工程/phy_1/sync_isp_signoff.tcl",
+      "bytes": 664,
+      "sha256": "1ce355dcae3320a8f0d5be892c3de9c8fafaf8e85faeab24e20fa00313577515"
+    },
+    {
+      "path": "FPGA/工程/rtl/case_ep/camera_hist_fifo.v",
+      "bytes": 1595,
+      "sha256": "e463bd2672dd66696da6a496c4e4f8b3f6dfc480f3529c1620d8488e9e50a375"
+    },
+    {
+      "path": "FPGA/工程/rtl/case_ep/camera_jpeg_frontend.v",
+      "bytes": 34122,
+      "sha256": "69c5cb2237dcd960c039f97a6b406ff10d002ab70a2056e055a7d8a787bdaafc"
+    },
+    {
+      "path": "FPGA/工程/rtl/case_ep/dma_tlp_arbiter.v",
+      "bytes": 1248,
+      "sha256": "8e940461721f9f12aa21ac2e0c045c22d4e980d7dc0df3ba1988afd838b6cb70"
+    },
+    {
+      "path": "FPGA/工程/rtl/case_ep/elbi_dma.v",
+      "bytes": 50296,
+      "sha256": "99d5447a7b58f18e03d2f792cd7785f0dc0ee80be268b8bd9b71c77185516914"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/camera_quality4.v",
+      "bytes": 7355,
+      "sha256": "37b2f682040e68839da7187765b53a4a9fe8cf152c4f37eb0d56e7ab1068bd76"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/imx415_hot_control.v",
+      "bytes": 12602,
+      "sha256": "5a1fd8d82059f068e4f959ada05c42ab37cdb9a3f0e6ce45772790077425a384"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/isp4.v",
+      "bytes": 17193,
+      "sha256": "903dad71271b9630e811d1b9832a07cff038359738558e58877bebd2d0040420"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/isp_rgb_enhance.v",
+      "bytes": 3050,
+      "sha256": "d8b9218d068f7dbc5285a4e2462ef18f732197ebb53d4d2359deb1ae6d875736"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/isp_tone.v",
+      "bytes": 55167,
+      "sha256": "1eac98723b44b0ab8cd869faeca4a2e2a913d2ef5c1fcb07e9f7179abd323814"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/native_ddr_spool.v",
+      "bytes": 10085,
+      "sha256": "76fce552539e41c95382413970a0d1dc23488fe0ebc78180320b753daff763c2"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/rect_ddr_fifo.v",
+      "bytes": 7718,
+      "sha256": "afdf47ce5933140d19cb7e354019a11f872d403d8bef96a64fde9780509fe852"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/rgb_pack.v",
+      "bytes": 3021,
+      "sha256": "5905d1c18fcf8971226774d76f4f8cddb44f4bf6bbb57cc20d131b777e653b73"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/rgb_roi_chain.v",
+      "bytes": 14499,
+      "sha256": "db178d5d5f2be96808a2c267be0fff56caa170c4a1d50b13c28e63659499dfed"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/rgb_roi_source.v",
+      "bytes": 9290,
+      "sha256": "0f39a3028187a3ecb20b80d73bdf2d6b2611ddeb2d2d0692e1737655de17f8b7"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/rgb_stream_dma.v",
+      "bytes": 16932,
+      "sha256": "b6dd29b4964e0b91f115503499057cdf7bd9e66118cbe2584221ebc9119b57f6"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/shared_image_process4.v",
+      "bytes": 35761,
+      "sha256": "1bb04da669958d716a5f61142b80432d3188c6fa41b02b4d777a047efc892af1"
+    },
+    {
+      "path": "FPGA/工程/rtl/jpeg/window4.v",
+      "bytes": 3774,
+      "sha256": "892766f02bef7f202621617fea038bea3c3eb0b7001df13704552809acad6f9e"
+    },
+    {
+      "path": "FPGA/工程/syn_1/gate_qor_suggestion.tcl",
+      "bytes": 190,
+      "sha256": "7a184651343b914bc8c4323b4c177d007354c487ef648248b383dcb2360c8e1c"
+    },
+    {
+      "path": "FPGA/工程/syn_1/gate_resume.tcl",
+      "bytes": 8273,
+      "sha256": "2de40728f17e57f62105421aa0d617a49a6566eddc3c266be12f086bff2148af"
+    },
+    {
+      "path": "FPGA/工程/syn_1/pcie_camera.prj",
+      "bytes": 20199,
+      "sha256": "c20ac3e74f70c90565c9b38252516fabfa8b311956cdd0bffebe35b1abb22199"
+    },
+    {
+      "path": "FPGA/工程/syn_1/settings.cfg",
+      "bytes": 831,
+      "sha256": "de2b87089b7bbb89b604c1fce43e40ef87ecce88d7555c25ad388bd45adcea87"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1066,
+      "sha256": "e58d75208ceec3aae44cbb503e65b9c65a5602febeb96e464dce9148c1a3c63b"
+    },
+    {
+      "path": "LICENSES/GPL-2.0.txt",
+      "bytes": 17981,
+      "sha256": "81d2e2140695d3a3c76c1fa48b8fc34abfee067f6197812c3e842612be5c3ff6"
+    },
+    {
+      "path": "LICENSES/README.md",
+      "bytes": 252,
+      "sha256": "ced59ac4b444efc1d7ef4c0b69e92e297ae63ebfe4aa8c761a4f6568a8f5f909"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 30,
+      "sha256": "f5444123402df779d3ba683b575b2b7b25f2b148ec950231f393b4e902964169"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3288,
+      "sha256": "632e3f4f3f64c82bee5d4bc63c49fa1b368d3f0c3da8865ec91e914c378b2fc2"
+    },
+    {
+      "path": "RK/rootfs/etc/systemd/system/fpga-vision-v3.service",
+      "bytes": 1198,
+      "sha256": "0ebf0d081567813d3ba491ec3d45de4fe95d30e0e0dd4835f2d05ca10b518931"
+    },
+    {
+      "path": "RK/rootfs/etc/systemd/system/fpga-vision-v3.service.d/40-camera-controls.conf",
+      "bytes": 344,
+      "sha256": "03cfec34840b8ef0ab3a72fde50425155c84bc97b8e9bf9dfec32443fb7a2caa"
+    },
+    {
+      "path": "RK/rootfs/etc/systemd/system/fpga-vision-v3.service.d/90-continuous-preview.conf",
+      "bytes": 422,
+      "sha256": "e228a5099c83fe66bf5b67f4d927e12a68b1b761ee0e0b687ffac1e2cc09e1c1"
+    },
+    {
+      "path": "RK/rootfs/etc/systemd/system/fpga-vision-v3.service.d/99-environment-test.conf",
+      "bytes": 326,
+      "sha256": "29ab8acf1afc903fbd981696bab9add2dc595d6c6e3a24f00c32fc89ef8a4651"
+    },
+    {
+      "path": "RK/rootfs/etc/systemd/system/fpga-vision-v3.service.d/zzzzz-newparts.conf",
+      "bytes": 224,
+      "sha256": "091cb5931619620008ce108468ebc200d80c69186cca86f6a5a1a64df928d582"
+    },
+    {
+      "path": "RK/rootfs/etc/systemd/system/fpga-vision-v3.service.d/zzzzzz-chart-ui.conf",
+      "bytes": 21,
+      "sha256": "9b6943ff77b31e063152214a3aa57a6f73782b14434700170a0f30ca70ef2524"
+    },
+    {
+      "path": "RK/rootfs/etc/systemd/system/fpga-vision-v3.service.d/zzzzzzz-0-preview-base.conf",
+      "bytes": 350,
+      "sha256": "0049bb5d4245ac3768db4dd8409a8533b558781420236728c0e4ce322cbeb6f1"
+    },
+    {
+      "path": "RK/rootfs/etc/systemd/system/fpga-vision-v3.service.d/zzzzzzzzzzzzzzz-xorg-affinity.conf",
+      "bytes": 208,
+      "sha256": "5ceb460ca2b2f2af61777c0268c85d201e01f8335175b30627e0e7d5e77714c8"
+    },
+    {
+      "path": "RK/rootfs/etc/systemd/system/fpga-vision-v3.service.d/zzzzzzzzzzzzzzzzzzzz-zz-fixed-flash-release.conf",
+      "bytes": 680,
+      "sha256": "333c694e77120eafdd5e77659dcfcb6cc249571e4bc4fe0327331d82dabd617a"
+    },
+    {
+      "path": "RK/rootfs/etc/systemd/system/vision-pose-action.service",
+      "bytes": 671,
+      "sha256": "88e14fdc657917b325eb2da271435d313bcc2ab3f717c8f7a84dd68ec53ea523"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/action_daemon.py",
+      "bytes": 7022,
+      "sha256": "92dd730733366bc8d0cd1587073a7c59bd3c2b1f5ab8f750d2ebf51eaae536b0"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/action_gpio.py",
+      "bytes": 8577,
+      "sha256": "a02e00598697b7ff4011cfe786a351adf7956f649ee8720fab630dc41782ab36"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/action_output.py",
+      "bytes": 23989,
+      "sha256": "e42d13622f0bd17b37fe54a3e742b2fd1aa89834eddeede5eb81a6fb0e3d92eb"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/adaptive_isp.py",
+      "bytes": 9205,
+      "sha256": "f16d484deff56c3373c20e060d17d68c0f4c0a935ab3b6fe31e03b2b8358d090"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/apple_glass.py",
+      "bytes": 4826,
+      "sha256": "0685cde982891edce5cc28faf145fe0aac638ceaf5ad5fd6b3c421d960dd2ad4"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/async_status_storage.py",
+      "bytes": 5490,
+      "sha256": "8e9d229fbee6f7479ea69df32d8e362251c3f7447d1ffb7ce4f2dae609a7d286"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/auto_isp.py",
+      "bytes": 23230,
+      "sha256": "d1038cbcca5898ab37570ba0b7a7331de688314ff4163c41f876c08974b91820"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/camera_console/saved_auto.json",
+      "bytes": 189,
+      "sha256": "cccdf6762d4271c22bc5741d31a1f9b847a30243b770abed1d4e7cb4a51626f5"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/camera_console/saved_isp.json",
+      "bytes": 106,
+      "sha256": "b02ec48f1c569455074bfe742d93feeb497ce1a9a56deb0982cd614212575fd3"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/camera_console_bridge.py",
+      "bytes": 20635,
+      "sha256": "4bea492b6dc7dbbe5f1330f73b61dcdb760164b6ef8c73daa9374bd13a668092"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/capture_realtime.py",
+      "bytes": 4271,
+      "sha256": "669326352f7193695399ee48d5ed5f5d73ff8e1505f6799a50906e989ad1d993"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/capture_scheduling.py",
+      "bytes": 3132,
+      "sha256": "56f5cfc62739caa78578beb953e6fd50b573b83056434489dd567fbd0414be10"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/chart_state.py",
+      "bytes": 11150,
+      "sha256": "730a97a767f7219415947170c0495c420ff305ee54e223dba092525f403075a3"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/console_display.py",
+      "bytes": 17103,
+      "sha256": "205cdb3a36cad071122b8d1d9cb6f48ab1a28e6eac1fd000afcd1e8bdb0b8863"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/console_entry.py",
+      "bytes": 1862,
+      "sha256": "e6d45887ca224237a3266a44265874c27b93cec64a3f295fb39416716e4cd9be"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/console_native.py",
+      "bytes": 11155,
+      "sha256": "78501dcee2b0d70e177d013304ace67b8f2bced2d1bed2248dbcbc6daca61593"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/continuous_transport.py",
+      "bytes": 39140,
+      "sha256": "65f5b2f5b68e96fee6b12a9ce4e99643a653cc5bbcb00042c236e92ae157c6bd"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/conveyor_features.py",
+      "bytes": 3255,
+      "sha256": "0e493797115f183769614a1ef9b7f0efc52ffedd960777e884151d46e853328c"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/conveyor_layout.py",
+      "bytes": 2268,
+      "sha256": "8018d57d612b5b42e0f66ec1fd0034aaf63ac198550814e7d7b345b960ebaa37"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/coordinator_environment.py",
+      "bytes": 11315,
+      "sha256": "b01aad91b39e75821a7644da10ff5499aaa645c60b2ab54e06323245c66b58bd"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/decoder.py",
+      "bytes": 1990,
+      "sha256": "dc370cd2642d55a814c682e15ea80d5f7d7f9e3f7e7027fdb1ca3c7d17103800"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/demo_config.json",
+      "bytes": 78,
+      "sha256": "1915a1b994a6a88049d9681c6e774e85a181c71980550db369cb05d46788dd1b"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/deployment_guard.py",
+      "bytes": 2928,
+      "sha256": "c7ecc38cdaa18c2b7e85ab31e7908f338d9b9b53c7c05335eab4b60519d92d4c"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/display_alignment.py",
+      "bytes": 12263,
+      "sha256": "3d23f90950004434bb1ed591137956b95ca9d4de9663ab5a1946f0afc2169e4a"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/display_inhibit.py",
+      "bytes": 2167,
+      "sha256": "658c2f8530a47cda370ae8e7f42f8ea61a98e27fe77482d9d91ad569aaf3b166"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/display_policy/xorg_affinity.py",
+      "bytes": 1262,
+      "sha256": "5c1e17787bb1d36ec9507bf4dadea15fc3697f68e7e0470b435e5a6def4a6e84"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/display_trace.py",
+      "bytes": 6235,
+      "sha256": "c2d713d8a151d4935b304f3e4d2bf982dd68e2072e46619279d557fb40b8394c"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/display_trace_async.py",
+      "bytes": 9458,
+      "sha256": "27e5d08348d1e9eb03f02df30fb0e77d063912bc2eb111f5998c906e6d4bd63c"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/dynamic_audit.py",
+      "bytes": 11503,
+      "sha256": "713103ff890e8305b3a192cd6424712d15b104393405dac42f8da168df87f09a"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/environment_bridge.py",
+      "bytes": 12749,
+      "sha256": "36723e9f8bbb3d9aaee14920af77ea9684e87261b078203d6853f6641b5c7bc6"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/evidence_process_bridge.py",
+      "bytes": 2982,
+      "sha256": "2d8e558f23ef4e0e4b307042ed11d5bdd50408c44d273eed561fe2b5e6c51cd9"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/failure_event_cache.py",
+      "bytes": 9491,
+      "sha256": "b58dfe2324edcfdb4f4beb280bc6c14d8d7212e2f1799ff7448a52aff4cad509"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/failure_event_sd.py",
+      "bytes": 1665,
+      "sha256": "a2dd4f43b1a1440bd7a65a366337eaa23c174a60d15e0ce616cc817aa474ff66"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/failure_event_writer.py",
+      "bytes": 22440,
+      "sha256": "3e5c3b0df61557d089003200e1e564b445877cb7817d5ce27ac409b3b941a3f7"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/flash_boot/flash_boot.py",
+      "bytes": 10561,
+      "sha256": "39bef06650766ffca334d85e809780c261284ecbb673866c126a7a0c04f8288e"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/flash_boot/wait_display_ready.py",
+      "bytes": 446,
+      "sha256": "ec913ac9603a1ed2a314358fb3c7632188b497bffe28a830b8e346dae04a6145"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/focus_metadata.py",
+      "bytes": 1330,
+      "sha256": "f14d5a5f4b684a164fda541817cbd8b79a2d282c0a952215ef5e3a8593d86e92"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/full_roi_runtime.py",
+      "bytes": 6339,
+      "sha256": "0c29399cca22b45f5fd8557215d5ffb3b35ebf92e18db722c37deb2d2ca418a9"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/global_motion.py",
+      "bytes": 15603,
+      "sha256": "c3645b639fb29a252f0baa30c5da4ce43123120cea82f5aa5857e5d4f47700ac"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/image_capture_process.py",
+      "bytes": 1505,
+      "sha256": "5f3a8b2a1052ee14f5bd9617eedf800f70b89b8516f2bce1b985dfd8440b4e5e"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/image_panel.py",
+      "bytes": 6717,
+      "sha256": "d9e15b2d7afa37a1ec8f9c64b4d03a8dbd2bf209811708a991a0f1351f4c32ce"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/latest_results.py",
+      "bytes": 3568,
+      "sha256": "9e9c920cbf2689ba207721950c27bbebcd036a7c783468f053300cf5219a244d"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/local_tracking.py",
+      "bytes": 9277,
+      "sha256": "b16560beb9f68127c15c31c69ede2170b8f68268b0c79c3fc7b479bf876a402d"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/metadata_image_panel.py",
+      "bytes": 649,
+      "sha256": "2d19d153b973913a6902176cb3c4c4708da531a4494ca01c54759e0ddacc771b"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/metric_columns.py",
+      "bytes": 2136,
+      "sha256": "362ca28c928d59f6d303769dc959ba5c657f6c2bb9e1d869bbba1578448b9a54"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/metrics_compute_process.py",
+      "bytes": 6004,
+      "sha256": "3716a5a3aac5b259dcb1eee62ae89e3ae1538704e6ab17f2b1ca4f988c905e69"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/metrics_process_bridge.py",
+      "bytes": 6638,
+      "sha256": "a0167ba9d93beec0536b4d754164b3deb6fd1582bdb23cbfa035c26414786a70"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/minimal_metrics.py",
+      "bytes": 16211,
+      "sha256": "d224bec77e9150d8c21b4a943f5f15e521f1e57c3a6f9f4186af8e40f1658f3f"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/model_input_adapter.py",
+      "bytes": 8140,
+      "sha256": "e457aacac3615571dfe8cacff41e3481f208dd04a13326ca8f7ac23abf6c267f"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/motion_display_alignment.py",
+      "bytes": 25659,
+      "sha256": "03e3bee4c0af783f37790edd70c8bdc5ad8071bd66ab80c0940a2a646ad8d795"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/motion_wire.py",
+      "bytes": 2321,
+      "sha256": "71df8edbef71098cdd0aff8b20b84935a73bb43ea36120d65f9d22ca0467efaa"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_conveyor_match.py",
+      "bytes": 2137,
+      "sha256": "f77835040697da19517795287c862f3df1887502a5d58684d36ae55647e2afc4"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_count_store.py",
+      "bytes": 3155,
+      "sha256": "709d84e2a4be72d49ca2d92abb335b163ccd221f50f110528423f6e54fee91fc"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_decode.py",
+      "bytes": 7152,
+      "sha256": "370819fd7eeec17cb839805129d46128b4e8e23770319c64679e5a0b6ce56778"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_engine.py",
+      "bytes": 9988,
+      "sha256": "22d4a162b800fac685538b4ef41c0e4f30bff010ee22c60355ecbecabe60ce38"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_feedback.py",
+      "bytes": 2102,
+      "sha256": "49c0724796a2019e8e9811ea70a3d9e32e9bf89735c88afa7b0f9a9c75341564"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_inference_process.py",
+      "bytes": 23512,
+      "sha256": "148e699200f3ee3273c93af9dac5e16ef027ebeac92516952c676d390c9be38e"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_metrics.py",
+      "bytes": 7633,
+      "sha256": "f53426aeca4549a698403e1283fdc64faa8416b7a27a6733844bf7dd032f81d9"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_outputs.py",
+      "bytes": 2548,
+      "sha256": "d62c09e2fd83c9964ee27bf5dec131c20c4db5ab5cfea8133581a73bb5566e94"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_postprocess.py",
+      "bytes": 5869,
+      "sha256": "ebd1d6b7005c24d28a5f95db553e72c6ac2e9059ab4e729ba20434ca96fb92fc"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_scheduler.py",
+      "bytes": 6413,
+      "sha256": "983ae9e5a995e31fe30baada168a5b252ede35daf66bf707118a737362841dfc"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_tracking.py",
+      "bytes": 49781,
+      "sha256": "1682cb8fb297a8de4c328a6cf9a0b7f0cac1b712192902ba9ff2b9bbfe20be58"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_view.py",
+      "bytes": 20345,
+      "sha256": "4693b8bc8b6797c19d7968cd577ad406824c571952066c0f87ec5e56c9c61ef6"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/native_windows.py",
+      "bytes": 1057,
+      "sha256": "ec93c585097d7e5f5b3485eb5c5877433930bd02fce80cabf342d684611302b4"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/object_outcomes.py",
+      "bytes": 12094,
+      "sha256": "e4f09593b4218c1c269edfa35ec8827abe50006a25b3f154ef83b2e633944ec7"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/ordered_inference.py",
+      "bytes": 4622,
+      "sha256": "603d9d3fba30aafc0dfd45d5918d8ca5a8a4bfd0b79050cb64c1717ee93f0844"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/ordered_whole_frames.py",
+      "bytes": 20214,
+      "sha256": "1fa8a5f4c90a5b7b04fe094527ecc0c6380c1932af3a5407f034656786cf0967"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/outcome_disk_store.py",
+      "bytes": 13723,
+      "sha256": "98400dd2b54f0f097907862a6f215328ebfdabdcefe60a7b474bbf5d32174699"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/outcome_process_store.py",
+      "bytes": 6245,
+      "sha256": "9b71f8eb435536d6c84eceaf9f9229cf9e9c18130fe1d8536ad08566c2ec020b"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/outcome_writer_process.py",
+      "bytes": 2770,
+      "sha256": "d6189b84051625e36ed62bbf4f711baf2a41ab6e884db390aed948a0927ae302"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/passage_flow.py",
+      "bytes": 9661,
+      "sha256": "b97a974f7266d4ebd429b0fd8181351403892948835f7f465d7d52e413731a7a"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/passage_ledger.py",
+      "bytes": 5536,
+      "sha256": "f7bd65854232a7c384851e1be9a7ffb6d7008d65e8034db7acbecccb7f738f72"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/passage_pixels.py",
+      "bytes": 19389,
+      "sha256": "c6802a58927f95e86ba568a6d574476970305d8c114c73ee1eec1326135a3b5c"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/passage_stats.py",
+      "bytes": 6305,
+      "sha256": "22617b6b47e5ae8ed82b8bf540280f73197a8cf202400c766bed073deb1f792c"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/pipeline_control_io.py",
+      "bytes": 4860,
+      "sha256": "dc5b24cf5125b81f789ae2ab3c67b93b497cfbdfbb5afbb174cb45a74780edb5"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/pixel_display_alignment.py",
+      "bytes": 29231,
+      "sha256": "43c2365c087bd77323bcc31b77bac86eec50d11aca466f515c2e708c26aa2bfc"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/pose_chart.py",
+      "bytes": 29159,
+      "sha256": "030626a75db2c44a99ee6021fe0d63589073b95eb32b03f602f521694f6e2aea"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/pose_consensus.py",
+      "bytes": 4009,
+      "sha256": "2f542ba9d747ff6e419def774ae0a67a0c61ac0e9cf0885cfa0d12c32114497a"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/process_controls.py",
+      "bytes": 4658,
+      "sha256": "3a45084e2be9558afb1b032244d2d4f0ede5c94bba7b3d4a7d30f65913a6fbe7"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/rect_pipeline.py",
+      "bytes": 60162,
+      "sha256": "9486d62040d2ba85f4d034a9c60640b17f8b952e8117253c15b973c7c6636c6b"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/rectangles.py",
+      "bytes": 1659,
+      "sha256": "f1496e7ded647ccd20dc642b54c8e96efcf00997350bc909304e1194a52a39b2"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/resistor_image_panel.py",
+      "bytes": 913,
+      "sha256": "017f29f1445cd92147ccdfffff6730153bb60aee2a08c025e0605abe6ee2ea60"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/resistor_view.py",
+      "bytes": 19878,
+      "sha256": "17bdb4961bf99e1e011312702d9b535d38b95b80d5b6a3627e22337da002ebea"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/run_live.py",
+      "bytes": 15969,
+      "sha256": "24a0c8b25f70d9f63d5dcd4c0802ce3aa422f57abdab7892d7737b3c5da9d888"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/runtime_timing.py",
+      "bytes": 1334,
+      "sha256": "8e9c8f5bd33533970779386977bd0142137876e5ff7c36c9a62869491d9342ac"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/screen_view.py",
+      "bytes": 20356,
+      "sha256": "cb7e2ba5d1e7289469c9ccf8cf14a75f8edf8882ddd889f8ff17ba973fb38df2"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/selected_model_gate.py",
+      "bytes": 1852,
+      "sha256": "f377d9e04459623a94ad61081b310e284d0eef6435d487e1afd486baec7be84d"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/sensor_device.py",
+      "bytes": 6374,
+      "sha256": "37e741475c911aa6f284365fbbc45cdba6d54463736aac1452f39041ec67f9e7"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/sequence_capture.py",
+      "bytes": 10620,
+      "sha256": "604070357f02b1bf8f59f986df655c727f5994fbd1c0677db2414ffdfa6c41e0"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/shared_preview.py",
+      "bytes": 17735,
+      "sha256": "801d98432622794bd8707f9f339d25e699cde4bc7bf9bdc10d4598505b9ec496"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/tracking_compute_process.py",
+      "bytes": 5804,
+      "sha256": "fb230b13cb00fb44ce4e269f8732f70db69fc6bababa4955e10f73b1a26e2b73"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/tracking_rpc.py",
+      "bytes": 9260,
+      "sha256": "e50a1ba4f7f453fa6270a71cb9e9c377a5220a6e1781075b68fc62f29b9f4a6d"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/tracking_shared.py",
+      "bytes": 10837,
+      "sha256": "cc2966ff546707767df0f29728f9e049f0c8c861a3b3177dffb76e1fe07ddbca"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/tracking_shared_process.py",
+      "bytes": 9494,
+      "sha256": "5084bfbab5e122e62e4fe34fa1fe2070c8bc79a6e0042b39bb7712d22a743964"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/tracking_state.py",
+      "bytes": 699,
+      "sha256": "c2b8c257fdd4dd68639be52ce36ec174edc54af1ec8b09c2fd2b6046149043a3"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/training_capture_bridge.py",
+      "bytes": 3641,
+      "sha256": "473d05e3ef81c25c5cbe957ec932759321100ea0c1f7be61fe98757d9c5518e1"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/transport.py",
+      "bytes": 7375,
+      "sha256": "996050ec90a97b6fa0dfa6f2435b206866c4feb7ee81616babf42e37ea6f3688"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/two_stage.py",
+      "bytes": 10577,
+      "sha256": "514e558c546627572be3bc4613c299b3249e2c65502ed1dc5fb12e9e17a23b76"
+    },
+    {
+      "path": "RK/rootfs/root/free_rect_20261025/runtime/unrecognized_capture.py",
+      "bytes": 11735,
+      "sha256": "849257a271a26c5d4df26795dd0592c47ee0c4ee1771441e46e149be2cd237d4"
+    },
+    {
+      "path": "RK/rootfs/root/gpio_action_20261030/action_config.json",
+      "bytes": 184,
+      "sha256": "47942d30c0c2f833434e93d09087d432ad768ee7b65f64aba8b9c1dc8ad42493"
+    },
+    {
+      "path": "RK/配套源码/conveyor_features/conveyor_features.cpp",
+      "bytes": 2388,
+      "sha256": "313aa07118416e59e20bbc308a9b0f6c7af9181c88de0f35409d0685acb6b85b"
+    },
+    {
+      "path": "RK/配套源码/conveyor_features/patch_stats.cpp",
+      "bytes": 1666,
+      "sha256": "6d2f3cd72e26574009cb106179a3efddd873d15237ff797cee6e7cc4deb5ac8c"
+    },
+    {
+      "path": "RK/配套源码/conveyor_layout/conveyor_layout.cpp",
+      "bytes": 4807,
+      "sha256": "d5da681057642710e74e9ab87022457302393ef9d5bd96cd8d6acabf11c7b940"
+    },
+    {
+      "path": "RK/配套源码/conveyor_match/conveyor_match.cpp",
+      "bytes": 3872,
+      "sha256": "b27486b37a8619f60cabe836c6e3253b918ad67a6c76da5967bb649a275d449c"
+    },
+    {
+      "path": "RK/配套源码/driver/camera_dma_uapi.h",
+      "bytes": 4964,
+      "sha256": "81c21e51aaa9cbf6f9b46c113c7eff6c11823dd1beeba324d95d92d47a469faa"
+    },
+    {
+      "path": "RK/配套源码/driver/Makefile",
+      "bytes": 49,
+      "sha256": "76360e63d97275d8c8676d175c96aa2e2c57beed2865b7ee2b40fd560d30826d"
+    },
+    {
+      "path": "RK/配套源码/driver/pcie_camera_vision.c",
+      "bytes": 30644,
+      "sha256": "38321abe6f650bb8c065ceba45a7c04a3e759acd4ab0bd46a79e55e99f52e5a4"
+    },
+    {
+      "path": "RK/配套源码/host/preview_decode.c",
+      "bytes": 693,
+      "sha256": "7ee8276bb0d010c711f1b00df6263cee0b1784057a5633299aabd3dd74c20600"
+    },
+    {
+      "path": "RK/配套源码/host/preview_decode.h",
+      "bytes": 158,
+      "sha256": "6bed752bde53dab97ba69299aa00176768de006ad5c4d3efb5fd9309b2e9763e"
+    },
+    {
+      "path": "RK/配套源码/host/preview_geometry.h",
+      "bytes": 225,
+      "sha256": "0a4020caffd7a2da941ff5fe7106fc50a504becfdea876631aa206da8536a94f"
+    },
+    {
+      "path": "RK/配套源码/host/preview_sink.c",
+      "bytes": 3859,
+      "sha256": "60a7be7a8ac0b98399c7c016640882f190cd538316945dc70307bddfd3602032"
+    },
+    {
+      "path": "RK/配套源码/host/preview_sink.h",
+      "bytes": 1230,
+      "sha256": "17bbc5eb581f1a4f2fb6d3b4457726de07fcd0817002bded77cf905d705427e6"
+    },
+    {
+      "path": "RK/配套源码/host/rgb/jpeg_device.c",
+      "bytes": 9252,
+      "sha256": "836ea5b57e18ee39248ae75593bd2d4d5a647d71b6aa5072153bbb2224b21ecd"
+    },
+    {
+      "path": "RK/配套源码/host/rgb/jpeg_device.h",
+      "bytes": 1615,
+      "sha256": "efe37fb6580fef827c2da628688b704a70adf5017d5d195a82543766980f855f"
+    },
+    {
+      "path": "RK/配套源码/host/rgb/jpeg_pool.c",
+      "bytes": 4099,
+      "sha256": "ce5ad344d53bd6e77b0055c93779e06225abc60a6ab96c43f3ce1cb2ddbc2d96"
+    },
+    {
+      "path": "RK/配套源码/host/rgb/jpeg_pool.h",
+      "bytes": 903,
+      "sha256": "59242c9fafb3b960862e9f414f97fe217de642310c3d71e5579301c928bb9520"
+    },
+    {
+      "path": "RK/配套源码/host/rgb_queue.c",
+      "bytes": 16875,
+      "sha256": "9a6318618340dd328710fa9cd591ccb8c48e779fed8f083c01bb931a2afbe6bc"
+    },
+    {
+      "path": "RK/配套源码/host/rgb_queue.h",
+      "bytes": 958,
+      "sha256": "1b8f393b3c2a6fc2b4f9444ca14af6d80475b81f677ec097f3e869eec7fea7e3"
+    },
+    {
+      "path": "RK/配套源码/native512_geometry/native512_geometry.c",
+      "bytes": 5081,
+      "sha256": "227b51a39b079fd2d999547f4ba8c5fbe0437e321efd5a4f62879d2d22d40120"
+    },
+    {
+      "path": "RK/配套源码/native_engine/native_engine.c",
+      "bytes": 11777,
+      "sha256": "e1c2d649960295f402a70e860a37a045e991c9ba32258932a2074839f875a9f5"
+    },
+    {
+      "path": "RK/配套源码/native_postprocess/native_postprocess.c",
+      "bytes": 7258,
+      "sha256": "cadf294f9358cb6d672ab4d772612ec7734238f6a452084590e5df35951b3ee7"
+    },
+    {
+      "path": "RK/配套源码/passage_flow/flow_groups.cpp",
+      "bytes": 2715,
+      "sha256": "b845b6add6798311baec5184655ece82ca22ee4a0ad6f9e2aedec48c61378bed"
+    },
+    {
+      "path": "RK/配套源码/passage_flow/native_parallel.inc",
+      "bytes": 10115,
+      "sha256": "bd7f2fb4344f864240edbabd59139e8d098a2caae4f938b7ec11503511c05f0c"
+    },
+    {
+      "path": "RK/配套源码/passage_flow/passage_flow.cpp",
+      "bytes": 2713,
+      "sha256": "7c278509b971c1c0aa5725da6e46a5bf2c7e816c3629c546e49f4732267f6ec1"
+    },
+    {
+      "path": "RK/配套源码/passage_flow/patch_stats.cpp",
+      "bytes": 1666,
+      "sha256": "6d2f3cd72e26574009cb106179a3efddd873d15237ff797cee6e7cc4deb5ac8c"
+    },
+    {
+      "path": "RK/配套源码/rga_x11/rga_x11.cpp",
+      "bytes": 13937,
+      "sha256": "07603ea4608636aff76a49e2e32e9ebb90eac91e261673d148dde6bfc098f3df"
+    },
+    {
+      "path": "RK/配套源码/tracking_exchange/tracking_exchange.c",
+      "bytes": 3234,
+      "sha256": "c57db4b124f574111f27edf59bd85ec0fd423a3a3ff0f693a83d1d040c817790"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "bytes": 7094,
+      "sha256": "800d1c86fe367040e4556a37e3bf368537f7b6bb81916cab7385a6f08174fb74"
+    },
+    {
+      "path": "VisionTrainer/apple_glass.py",
+      "bytes": 4718,
+      "sha256": "1be46b1b82435939a39da0a238057cca1d0f1293e5363db03ca7d79b7ae20d2b"
+    },
+    {
+      "path": "VisionTrainer/board/dynamic_audit.py",
+      "bytes": 11503,
+      "sha256": "713103ff890e8305b3a192cd6424712d15b104393405dac42f8da168df87f09a"
+    },
+    {
+      "path": "VisionTrainer/board/focused_inference.py",
+      "bytes": 12161,
+      "sha256": "20677e0da009f9eeed912fbdcc37172cc94d0cd5093cf051909c2cd0ac5957af"
+    },
+    {
+      "path": "VisionTrainer/board/install_bridge.py",
+      "bytes": 2985,
+      "sha256": "018c83da0f5a6cc2ca30ea35998ed8567c6c8a23fbcee5d14f010a7233e232e3"
+    },
+    {
+      "path": "VisionTrainer/board/leased_audit15.py",
+      "bytes": 2060,
+      "sha256": "4ea67d594b6e684e60fb7a01fba7a24176e79fc62b0eb16c78c591d057fc4e33"
+    },
+    {
+      "path": "VisionTrainer/board/training_capture_bridge.py",
+      "bytes": 3641,
+      "sha256": "473d05e3ef81c25c5cbe957ec932759321100ea0c1f7be61fe98757d9c5518e1"
+    },
+    {
+      "path": "VisionTrainer/box_worker.py",
+      "bytes": 17195,
+      "sha256": "c482648d51fa7dd86edbd7d01cc7cee9c1bf551bf7c2ed1657d1efd8ae246ef6"
+    },
+    {
+      "path": "VisionTrainer/capture_realtime.py",
+      "bytes": 4271,
+      "sha256": "669326352f7193695399ee48d5ed5f5d73ff8e1505f6799a50906e989ad1d993"
+    },
+    {
+      "path": "VisionTrainer/compact_event_archive.py",
+      "bytes": 4318,
+      "sha256": "1eecab7843911b86c2a83faf1dc89591971481522f51b26fa4090a0893244651"
+    },
+    {
+      "path": "VisionTrainer/console_action.py",
+      "bytes": 5689,
+      "sha256": "f42ce64c49bdb3f37e7948499069851a5917e63031d55dd42b0048d861807b6b"
+    },
+    {
+      "path": "VisionTrainer/console_app.py",
+      "bytes": 8162,
+      "sha256": "39df36b1de0d7c6541dfd4d9d5eb1cd0051e274a56d9494d13cdb54fd4964551"
+    },
+    {
+      "path": "VisionTrainer/console_board.py",
+      "bytes": 41655,
+      "sha256": "2f7c5355a2d2a757b1acc30aeae5617d6629bf796a58bf34c32c9936b08c341a"
+    },
+    {
+      "path": "VisionTrainer/console_display.py",
+      "bytes": 17103,
+      "sha256": "205cdb3a36cad071122b8d1d9cb6f48ab1a28e6eac1fd000afcd1e8bdb0b8863"
+    },
+    {
+      "path": "VisionTrainer/console_event_collector.py",
+      "bytes": 22472,
+      "sha256": "7f4fc6a20cf94f19fec9f07319a52860b137af533c8c14f844141b9dad030ad3"
+    },
+    {
+      "path": "VisionTrainer/console_event_png.py",
+      "bytes": 11946,
+      "sha256": "58f55356c52241fe01a7ce84985925a3e6fab72ee928a1e3a496b913c634cf0e"
+    },
+    {
+      "path": "VisionTrainer/console_event_retention.py",
+      "bytes": 3968,
+      "sha256": "a27238a50db994db766efa17be6e602727d399239778d1d37dca392952cca3be"
+    },
+    {
+      "path": "VisionTrainer/console_int8_test.py",
+      "bytes": 9625,
+      "sha256": "9f343ed12fc7f45ee0504c913165ff0e5e4e64a72aff659a1b0ab97de93dd9eb"
+    },
+    {
+      "path": "VisionTrainer/console_jobs.py",
+      "bytes": 7109,
+      "sha256": "b32555c3210599c773c5b73a57492b903e26755d468dc18758c3782e6f1a9d97"
+    },
+    {
+      "path": "VisionTrainer/console_model_deploy.py",
+      "bytes": 24448,
+      "sha256": "f3c8dbaae0ddba0af9b29b969505f552cf28b2d46d49b998807c26c3a16231c1"
+    },
+    {
+      "path": "VisionTrainer/console_native.py",
+      "bytes": 11760,
+      "sha256": "744846bee5b8e711f8b2324d4bf913a6899192f3a43d0e532a01c27f9f829fb3"
+    },
+    {
+      "path": "VisionTrainer/console_runtime.py",
+      "bytes": 12801,
+      "sha256": "c419d249a2a1cf288c849ed92142cfb4b44cb630660df9c2cb9d73c1568ee01d"
+    },
+    {
+      "path": "VisionTrainer/console_runtime_probe.py",
+      "bytes": 13411,
+      "sha256": "8822be6f731b892872000db5811a07a92fbc6921efcada6dad56fa73e8839c9d"
+    },
+    {
+      "path": "VisionTrainer/console_settings.example.json",
+      "bytes": 232,
+      "sha256": "78ccab19183516f25368a41cadef85663366341ce4593bbfc236e647f1c0b009"
+    },
+    {
+      "path": "VisionTrainer/console_store.py",
+      "bytes": 5368,
+      "sha256": "b5fa7c05b2997472c2f22b60cf7a975ad753ad0656ba9f9e2b06e6815ea362fe"
+    },
+    {
+      "path": "VisionTrainer/console_web/app.js",
+      "bytes": 92261,
+      "sha256": "bd0a037d99d17b9b8f699d0b7ef2c4b00e00eb24c612da9e024b5fb71a3e4522"
+    },
+    {
+      "path": "VisionTrainer/console_web/index.html",
+      "bytes": 24254,
+      "sha256": "f9f8537b940806e6c77135090e2994c161198b9013e3b9826150328b3ae5fdda"
+    },
+    {
+      "path": "VisionTrainer/console_web/style.css",
+      "bytes": 18769,
+      "sha256": "27396e75136c382bb46b3b8fbae6831c526a26cc5fa237a8c234450e51e2d75a"
+    },
+    {
+      "path": "VisionTrainer/console_worker.py",
+      "bytes": 9911,
+      "sha256": "db293604ea431d075189acc2d49b6576c98c5ba8ac91b3c22e3a078da8a0db9d"
+    },
+    {
+      "path": "VisionTrainer/console_workflow.py",
+      "bytes": 49776,
+      "sha256": "4cb5458faecd4efa99a667398b13625b1f94e18a11e58d7c04957e3b16f6a53c"
+    },
+    {
+      "path": "VisionTrainer/convert_rknn.py",
+      "bytes": 6990,
+      "sha256": "7d3b20f5c529b67c643b728ad6919d819eef5fa747f97c4ae02cf0f788abf976"
+    },
+    {
+      "path": "VisionTrainer/core/batch15.py",
+      "bytes": 8125,
+      "sha256": "4c852c748a327c54301eaccbdbb86546638002d0fa4c53e4ee42bfb19f7e3d92"
+    },
+    {
+      "path": "VisionTrainer/core/board_demo.py",
+      "bytes": 14844,
+      "sha256": "ce1d2bd09f0f66be4f7df30519be52f43db1f278237722d3471c7437d6bd15e1"
+    },
+    {
+      "path": "VisionTrainer/core/box_assistant.py",
+      "bytes": 3281,
+      "sha256": "3c59dc951253cfe5c0f0840d776de72cbcec99c5d4deb94f67974bb8bb925087"
+    },
+    {
+      "path": "VisionTrainer/core/box_comparison.py",
+      "bytes": 4232,
+      "sha256": "db22555dcce5b2bff4469b083c3749bdce6ab5dc8bb7d3bc29325b4d03e27894"
+    },
+    {
+      "path": "VisionTrainer/core/box_geometry.py",
+      "bytes": 1688,
+      "sha256": "9428903600f422b6efdd7761a48e2552c2cc55e0b1ad7e5c9e727c10daac8d69"
+    },
+    {
+      "path": "VisionTrainer/core/box_model.py",
+      "bytes": 5822,
+      "sha256": "7970eb877f064c78caf46d69f7628edf969b4040c1e6c00907eab9c8fbfce442"
+    },
+    {
+      "path": "VisionTrainer/core/box_v2.py",
+      "bytes": 7089,
+      "sha256": "fc893d2c9b9c9eb91e7be92a9f133b52b0730601d90a837cafcf8b881c33ed30"
+    },
+    {
+      "path": "VisionTrainer/core/capture.py",
+      "bytes": 7673,
+      "sha256": "94dade77f54556f530af5ecfefd6daa908a7eb04db2dc27ec272fc77bd7dc1ac"
+    },
+    {
+      "path": "VisionTrainer/core/changes.py",
+      "bytes": 484,
+      "sha256": "2be8289a684b3a516a0f966c6b9a12623dfcae1919e470872f1a83de83ff41b1"
+    },
+    {
+      "path": "VisionTrainer/core/data.py",
+      "bytes": 3873,
+      "sha256": "1c99362c492246ecbb4708963ff57fc2f70ce93d4739703596be544f66dd0916"
+    },
+    {
+      "path": "VisionTrainer/core/decoder.py",
+      "bytes": 1990,
+      "sha256": "dc370cd2642d55a814c682e15ea80d5f7d7f9e3f7e7027fdb1ca3c7d17103800"
+    },
+    {
+      "path": "VisionTrainer/core/environment15.py",
+      "bytes": 4899,
+      "sha256": "7ee80b1b5e840451efb87dfb465826169833a3c134ab7fd991d0cc163e52825d"
+    },
+    {
+      "path": "VisionTrainer/core/feedback.py",
+      "bytes": 12324,
+      "sha256": "5b418af9e845f75181ea04efa4d467fb186998ab9fce2749fed9aa2bd2a3a541"
+    },
+    {
+      "path": "VisionTrainer/core/gpu.py",
+      "bytes": 1398,
+      "sha256": "136e5d2de4c6f9bbe1a886e765cd43eb54177c240df7e606823b9c8604e43d1a"
+    },
+    {
+      "path": "VisionTrainer/core/model.py",
+      "bytes": 1464,
+      "sha256": "ecbe0a06a337f8e7705fc392471f5ac666da5a5b70acd23867c9ec17f9514e56"
+    },
+    {
+      "path": "VisionTrainer/core/native_frames.py",
+      "bytes": 4251,
+      "sha256": "8dbf86a33634a9f74f47e9702cefd7a2c041e802fa284e75859e72becdd1a5ac"
+    },
+    {
+      "path": "VisionTrainer/core/pair_export.py",
+      "bytes": 3218,
+      "sha256": "80a9063acaca6bc0b51390e1ec881aaa7e151fdcdf6be221ffa3e8e197dcd160"
+    },
+    {
+      "path": "VisionTrainer/core/pc_testing.py",
+      "bytes": 5977,
+      "sha256": "b5445a9ce06b9069164e68220030897748ef1269aea67796df74e72887cc113c"
+    },
+    {
+      "path": "VisionTrainer/core/point_box.py",
+      "bytes": 3486,
+      "sha256": "790786c3b42a396fd766887327855f4fdacdc24126532408233a5c5cd29b6e7f"
+    },
+    {
+      "path": "VisionTrainer/core/proposals.py",
+      "bytes": 2260,
+      "sha256": "ac0ee8f1cf9854db60418e1cf2544495557971f2af8364e18a7fc6ec6a6c569d"
+    },
+    {
+      "path": "VisionTrainer/core/rect_capture.py",
+      "bytes": 10548,
+      "sha256": "bd77585a3afc20ec1e97c5f76cc9c10251f4c5429d0e537251efd393095d3d15"
+    },
+    {
+      "path": "VisionTrainer/core/rectangles.py",
+      "bytes": 1567,
+      "sha256": "126c1e8ea4b3cbbf676da5e69835af78ca164cc2eb0c15366f0f7e5cdde5e353"
+    },
+    {
+      "path": "VisionTrainer/core/robustness.py",
+      "bytes": 6405,
+      "sha256": "d919507163e4608826d8b3c8024b35cf1797eadaff674994f8dbcf0350fe29f3"
+    },
+    {
+      "path": "VisionTrainer/core/scene_boxes.py",
+      "bytes": 4760,
+      "sha256": "1507b672203d84bdedb1ab6d67c3d64b99b2797013a54f36f5883c5637be0803"
+    },
+    {
+      "path": "VisionTrainer/core/scene_template.py",
+      "bytes": 4601,
+      "sha256": "16f704f8f76e34934b5fb7d81a747b26637dedd79d1a339dd5f8d329ebf8e648"
+    },
+    {
+      "path": "VisionTrainer/core/store.py",
+      "bytes": 6889,
+      "sha256": "79d2a275fada95626c72641600d463745d56d43c441c5cef5478fdf314388bd5"
+    },
+    {
+      "path": "VisionTrainer/core/training.py",
+      "bytes": 24787,
+      "sha256": "78bc26aa1f9bc4da45426c051327a0d64cae23d174ddb5105cec2d4da12c08fb"
+    },
+    {
+      "path": "VisionTrainer/display_trace_async.py",
+      "bytes": 9154,
+      "sha256": "5cda98caa8cd31e079ef63dc70e1c242895a117db163bde61c5a540bd92d5195"
+    },
+    {
+      "path": "VisionTrainer/foundation_worker.py",
+      "bytes": 5337,
+      "sha256": "48b200026d8ca55e0b32178b312e168287b5fdd5532fbe9f1df18bdf9d9b0158"
+    },
+    {
+      "path": "VisionTrainer/full_roi_runtime.py",
+      "bytes": 10796,
+      "sha256": "d6626ffc3ae64d2677af5283ad2c519e15ed27616f062bb4ce788697bedd42d9"
+    },
+    {
+      "path": "VisionTrainer/launch_console.ps1",
+      "bytes": 566,
+      "sha256": "cadb3e89386e277b43ac1758d60cd9d05b234d25842f5f2a587e1155500c511f"
+    },
+    {
+      "path": "VisionTrainer/launch_console.py",
+      "bytes": 6623,
+      "sha256": "da7a047474455a660ffcf3650e2b1bc0b21ceeac33f3ba474cb8da61a3086790"
+    },
+    {
+      "path": "VisionTrainer/model_input_adapter.py",
+      "bytes": 8140,
+      "sha256": "e457aacac3615571dfe8cacff41e3481f208dd04a13326ca8f7ac23abf6c267f"
+    },
+    {
+      "path": "VisionTrainer/native_count_store.py",
+      "bytes": 3033,
+      "sha256": "2f4ffe52e70c2acbaef60876cc161e7f923142271c27801b9631f490e25aab6c"
+    },
+    {
+      "path": "VisionTrainer/native_decode.py",
+      "bytes": 2847,
+      "sha256": "52e636859c3422dba6d2d0283b981eb7f59ed1c634e751d7f301b5e8c75c15b6"
+    },
+    {
+      "path": "VisionTrainer/native_feedback.py",
+      "bytes": 2102,
+      "sha256": "49c0724796a2019e8e9811ea70a3d9e32e9bf89735c88afa7b0f9a9c75341564"
+    },
+    {
+      "path": "VisionTrainer/native_metrics.py",
+      "bytes": 3861,
+      "sha256": "eae8ce2e544e05b24665dddefa14b618c8a9c6c04d59d1549fe4eed4ae86d735"
+    },
+    {
+      "path": "VisionTrainer/native_outputs.py",
+      "bytes": 1055,
+      "sha256": "bcc3fa774ee3f71e3a4a59a68c235888cde5b481ee7d974fb095e57c30a24e9f"
+    },
+    {
+      "path": "VisionTrainer/native_scheduler.py",
+      "bytes": 6413,
+      "sha256": "983ae9e5a995e31fe30baada168a5b252ede35daf66bf707118a737362841dfc"
+    },
+    {
+      "path": "VisionTrainer/native_tracking.py",
+      "bytes": 31127,
+      "sha256": "e3b51226cc4c2982f95f9c42930088e2b67d2b421bc172f1f6954ee6f4e38d19"
+    },
+    {
+      "path": "VisionTrainer/native_windows.py",
+      "bytes": 1057,
+      "sha256": "ec93c585097d7e5f5b3485eb5c5877433930bd02fce80cabf342d684611302b4"
+    },
+    {
+      "path": "VisionTrainer/object_outcomes.py",
+      "bytes": 16063,
+      "sha256": "0e2192a4d1bc2f5a9b915ad21b94cce0a1cc89f3b36047aa45479e486a0c207c"
+    },
+    {
+      "path": "VisionTrainer/passage_ledger.py",
+      "bytes": 5536,
+      "sha256": "f7bd65854232a7c384851e1be9a7ffb6d7008d65e8034db7acbecccb7f738f72"
+    },
+    {
+      "path": "VisionTrainer/passage_pixels.py",
+      "bytes": 11870,
+      "sha256": "1782d32ed94d571d298abb96b13875710499deebb32d34bba214a88c32f4b18e"
+    },
+    {
+      "path": "VisionTrainer/passage_stats.py",
+      "bytes": 6305,
+      "sha256": "22617b6b47e5ae8ed82b8bf540280f73197a8cf202400c766bed073deb1f792c"
+    },
+    {
+      "path": "VisionTrainer/pc_test_worker.py",
+      "bytes": 5199,
+      "sha256": "f997752f72be6dd382776296ab291a30e6db4d933576fcc5aebd43affc9bed31"
+    },
+    {
+      "path": "VisionTrainer/pixel_display_alignment.py",
+      "bytes": 29231,
+      "sha256": "43c2365c087bd77323bcc31b77bac86eec50d11aca466f515c2e708c26aa2bfc"
+    },
+    {
+      "path": "VisionTrainer/pose_chart.py",
+      "bytes": 29347,
+      "sha256": "a0531441a9f3d1fd3495ef9d993ec9b8075deeef565c1736e5f0c14e191d55a4"
+    },
+    {
+      "path": "VisionTrainer/pose_consensus.py",
+      "bytes": 4009,
+      "sha256": "2f542ba9d747ff6e419def774ae0a67a0c61ac0e9cf0885cfa0d12c32114497a"
+    },
+    {
+      "path": "VisionTrainer/process_controls.py",
+      "bytes": 4658,
+      "sha256": "3a45084e2be9558afb1b032244d2d4f0ede5c94bba7b3d4a7d30f65913a6fbe7"
+    },
+    {
+      "path": "VisionTrainer/README.md",
+      "bytes": 11527,
+      "sha256": "94902595f9eb633c5d1e8132522465aa651842e1a8892d345a11131c20f63d45"
+    },
+    {
+      "path": "VisionTrainer/reproduce_training.py",
+      "bytes": 1299,
+      "sha256": "04e87443d4fe64facf1c0d80790c0bc96efd6c2344e49cbd5297b7061c6f6ddb"
+    },
+    {
+      "path": "VisionTrainer/requirements.lock.txt",
+      "bytes": 144,
+      "sha256": "f0daea9e8adb5f7199256806118da475dbc62f1314ad077218f8f47a9301d2de"
+    },
+    {
+      "path": "VisionTrainer/requirements.txt",
+      "bytes": 71,
+      "sha256": "598e28fa4cf238d97c2af9106aaa4aea1222f9d555f476c84fb6811dd4f6d90e"
+    },
+    {
+      "path": "VisionTrainer/scene_template_worker.py",
+      "bytes": 4382,
+      "sha256": "afd309a74384fac089ca2ec3a0d33a477a7070d71945798d160ab43e95bab864"
+    },
+    {
+      "path": "VisionTrainer/service.py",
+      "bytes": 53673,
+      "sha256": "143d0741ee68becb156b9e6575526ff95fdfa3e4329258bd857a2c8c3a473caf"
+    },
+    {
+      "path": "VisionTrainer/settings.example.json",
+      "bytes": 232,
+      "sha256": "e7f4cf0902d33650cff1254e1f0499956b2d4d2ec5c9567742182774228b9c9e"
+    },
+    {
+      "path": "VisionTrainer/setup_gpu.ps1",
+      "bytes": 914,
+      "sha256": "0c6eecdaabf65dd554e62eb6a85942ab926576aaa4bf7a79df594bd22a71a26b"
+    },
+    {
+      "path": "VisionTrainer/tests/capture_simulator.py",
+      "bytes": 10067,
+      "sha256": "38c6dd71ef4b6b7c0cb744cee1a0a5dd659223cb598b23cf2632250299987008"
+    },
+    {
+      "path": "VisionTrainer/tests/compare_box_models.py",
+      "bytes": 4906,
+      "sha256": "2c56735c548fd5681e978e70eb85bfef3e4217808268f78e6634ab4252ff499b"
+    },
+    {
+      "path": "VisionTrainer/tests/gpu_smoke.py",
+      "bytes": 6355,
+      "sha256": "e96744d86ae3cf3800c84f93454498579abd15b1987e894d7571ce6384bc424b"
+    },
+    {
+      "path": "VisionTrainer/tests/live_capture_acceptance.py",
+      "bytes": 984,
+      "sha256": "df79855b89387215ef1970a268de8a15220a6a3d4526368455d5b11456c774f2"
+    },
+    {
+      "path": "VisionTrainer/tests/pose_feedback_export.py",
+      "bytes": 2266,
+      "sha256": "fb8c082d30d269c0e20c21e204907348dc7ef47c4ff9ba04f83c3b9300cfb354"
+    },
+    {
+      "path": "VisionTrainer/tests/refine_box_verifier.py",
+      "bytes": 5173,
+      "sha256": "21d6aab5a31cb20151534cfb9f58cea13f6d913e1ba9b0a7613e89887deec89c"
+    },
+    {
+      "path": "VisionTrainer/tests/revalidate_capture.py",
+      "bytes": 4764,
+      "sha256": "ef401a9ea4b2e8c76145b93645539b643bdcc46bed369d9ec7a60022da169b44"
+    },
+    {
+      "path": "VisionTrainer/tests/test_box_assistant.py",
+      "bytes": 9595,
+      "sha256": "6b75a2bd0a915b52f631382ab7884c91f0f8459f8f8472c0345dab782b02f0b5"
+    },
+    {
+      "path": "VisionTrainer/tests/test_capture_contract.py",
+      "bytes": 17681,
+      "sha256": "1dba97aeb053437e617414bbfc2ed3888b396a992476251c49827ff4c5bd441e"
+    },
+    {
+      "path": "VisionTrainer/tests/test_capture_isp_preservation.py",
+      "bytes": 3089,
+      "sha256": "b7f74b6411ca1ceb6ec5847625575d3c88e2355ee5c3455684b9870723cd67b9"
+    },
+    {
+      "path": "VisionTrainer/tests/test_console_capture_limit.py",
+      "bytes": 4396,
+      "sha256": "6448de4a646f5758f91a7b32daad134de030d7d1d45eeb312be7a632308e6a46"
+    },
+    {
+      "path": "VisionTrainer/tests/test_console_deployment.py",
+      "bytes": 5431,
+      "sha256": "535b11582051b7a08329e73a66ab119d27be873e4bef6d4433cc5fa9f5f48606"
+    },
+    {
+      "path": "VisionTrainer/tests/test_console_environment_policy.py",
+      "bytes": 9967,
+      "sha256": "bab299f09021e20d05475b27cffc6d942d13abbfdfd82a71a75757969c6cc4ae"
+    },
+    {
+      "path": "VisionTrainer/tests/test_console_fixed_roi.py",
+      "bytes": 2428,
+      "sha256": "63ac5dceb760153f15c97ae8f00cf126a15cba1ca1e2bbfdc0684e7f04a22db1"
+    },
+    {
+      "path": "VisionTrainer/tests/test_console_legal_controls.js",
+      "bytes": 12843,
+      "sha256": "a7677486e05c1f055b7734a116aae30226662dc0feb54a0765ab4a0889b2ed99"
+    },
+    {
+      "path": "VisionTrainer/tests/test_console_model_deploy.py",
+      "bytes": 18938,
+      "sha256": "2b0a5b7ea97acb3797b55a46c51b02877ae0c8601e8dc79a0ad99e86be1148b6"
+    },
+    {
+      "path": "VisionTrainer/tests/test_console_runtime_compat.py",
+      "bytes": 5519,
+      "sha256": "b8c95f0857aed5aa0edfe74a3d3f71c3f13c392040164269b35b2ee461a58cf4"
+    },
+    {
+      "path": "VisionTrainer/tests/test_console_runtime_probe.py",
+      "bytes": 4364,
+      "sha256": "f0baec0805e57cccb411f8149c8c168cecdf188ffa55ba59a6c899617258a314"
+    },
+    {
+      "path": "VisionTrainer/tests/test_gpu_policy.py",
+      "bytes": 1602,
+      "sha256": "fe31f033e4a375b9909ad776c7ea8302650e6e0afcfa8789c63c99341bdb4b59"
+    },
+    {
+      "path": "VisionTrainer/tests/test_model_input_adapter.py",
+      "bytes": 14311,
+      "sha256": "c03e84b60f0d0e2c863e53647da0a0aedff133d375589156dbb74f6a3bc9ed17"
+    },
+    {
+      "path": "VisionTrainer/tests/test_native_frames.py",
+      "bytes": 4311,
+      "sha256": "56aa2ba62e207ee0eced3dd4acecd054a7d5e5893bfac434db03193985a386e8"
+    },
+    {
+      "path": "VisionTrainer/tests/test_pose_feedback.py",
+      "bytes": 10631,
+      "sha256": "0cfcc8142ff125eed25a4ec9c5c32c79e04134d7abaa4173f841cf544ff9f64a"
+    },
+    {
+      "path": "VisionTrainer/tests/test_proposals.py",
+      "bytes": 2253,
+      "sha256": "f8c4a59871a156257a147ed078dbc7a51f2f6267db1ab71856beed4ace369568"
+    },
+    {
+      "path": "VisionTrainer/tests/test_region.py",
+      "bytes": 5786,
+      "sha256": "6b6c38faeff12cf95920ffe1fbfcaba31a59dc4dcb51cd794650f65716247f5c"
+    },
+    {
+      "path": "VisionTrainer/tests/test_scene_box_entry.py",
+      "bytes": 2966,
+      "sha256": "7d383007a321a6fd00d3b2f2fa82e4790e8dfd0df69fb48f414cb5d73f48f08c"
+    },
+    {
+      "path": "VisionTrainer/tests/test_step03_boxes.py",
+      "bytes": 7930,
+      "sha256": "c7863ac7e30cf120572f01fb419539e2fb397f97beb226251727533e9ec156c2"
+    },
+    {
+      "path": "VisionTrainer/tests/test_training_backend.py",
+      "bytes": 3481,
+      "sha256": "55f5a2e82e842f1dd57236f304f39856cde50afffeb64622e8cdbb7d0fb87482"
+    },
+    {
+      "path": "VisionTrainer/tests/test_workflow.py",
+      "bytes": 6720,
+      "sha256": "d746215597b07a69e58a862b8f0b31684d1ce6856c933576e73e4fe37814cf49"
+    },
+    {
+      "path": "VisionTrainer/unrecognized_capture.py",
+      "bytes": 9999,
+      "sha256": "1de0de8c380880824d31f892c71dcb6388aa2c405ef2c8349082952bcc5229b6"
+    },
+    {
+      "path": "VisionTrainer/worker.py",
+      "bytes": 8128,
+      "sha256": "3df5addeb9939a619773ca69743479817fb35a33e5e54b2e66ad6dfa91e07217"
+    },
+    {
+      "path": "启动姿态控制台.cmd",
+      "bytes": 106,
+      "sha256": "eb4354ea6d1ba99d55c74383e4472d3cd42c52e02c545b7aa9a792e9f37614a0"
+    },
+    {
+      "path": "版本与校验/verify_release.py",
+      "bytes": 588,
+      "sha256": "ed6fa68e4b86ae4687059f50cb803445cf72a9c59dd4a4f81be19cd114e015c0"
+    },
+    {
+      "path": "重启姿态控制台.cmd",
+      "bytes": 115,
+      "sha256": "a612f0e0347d3ed9ec5a29c168921df343f106fb37e31ccf12fc85509b2597ca"
+    }
+  ]
+}

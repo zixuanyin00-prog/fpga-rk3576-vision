@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="zh-CN"
+    ><head
+        ><meta charset="utf-8" /><meta
+            name="viewport"
+            content="width=device-width,initial-scale=1" /><title>原点 · 器件姿态工作台</title
+        ><link rel="stylesheet" href="/style.css" /><script defer src="/app.js"></script
+    ></head>
+    <body>
+        <aside class="rail"
+            ><a class="brand" href="/" aria-label="工作台首页"
+                ><span class="mark">◈</span><span>原点<small>VISION WORKSPACE</small></span></a
+            >
+            <div class="rail-caption">当前工作流程</div
+            ><nav id="steps">
+                <button data-step="1" class="step active"
+                    ><span>01</span><div>画面与范围<small>调整成像 · 固定场景</small></div></button
+                >
+                <button data-step="2" class="step"
+                    ><span>02</span><div>采集与打标<small>原生图像 · 姿态定义</small></div></button
+                >
+                <button data-step="3" class="step"
+                    ><span>03</span><div>训练与测试<small>GPU训练 · 新图复核</small></div></button
+                >
+                <button data-step="4" class="step"
+                    ><span>04</span><div>上板与控制<small>NPU推理 · 合法区</small></div></button
+                ></nav
+            >
+            <div class="rail-bottom"
+                ><div class="dotline"
+                    ><i id="connectionDot"></i><span id="connection">尚未读取板端</span></div
+                ><p>原生像素保留<br />PC GPU / RK NPU</p
+                ><button class="plain" id="settingsOpen">连接与训练设置 ↗</button></div
+            ></aside
+        >
+        <div class="workspace"
+            ><header
+                ><div
+                    ><span class="eyebrow">INDUSTRIAL VISION</span
+                    ><div class="flowline"
+                        ><strong id="flowName">准备一个新场景</strong
+                        ><span class="pill" id="flowTag">独立流程</span></div
+                    ></div
+                ><div class="actions"
+                    ><button id="historyOpen">打开流程</button
+                    ><button id="newFlow" class="dark">＋ 新建流程</button></div
+                ></header
+            >
+            <main>
+                <div class="page-heading"
+                    ><div
+                        ><span id="pageIndex" class="eyebrow">STEP 01 / 04</span
+                        ><h1 id="pageTitle">先把画面调好。</h1
+                        ><p id="pageSubtitle">在现场画面中确定采集范围，然后固定成像参数。</p></div
+                    ><button id="refreshBoard" class="subtle">↻ 读取板端</button></div
+                >
+                <div id="notice" class="notice" role="status" hidden></div>
+                <div id="jobbar" class="jobbar" hidden
+                    ><div
+                        ><strong id="jobKind"></strong><span id="jobMessage"></span
+                        ><progress id="jobProgress" max="100" value="0"></progress></div
+                    ><button id="stopJob">停止当前任务</button></div
+                >
+                <section id="page1" class="page">
+                    <div class="live-grid"
+                        ><article class="card viewer-card"
+                            ><div class="card-head"
+                                ><h2>HDMI现场画面</h2
+                                ><div class="actions"
+                                    ><span class="pill">手动快照</span
+                                    ><button id="getPreview1" type="button">获取图像</button></div
+                                ></div
+                            ><div class="image-stage live-stage" id="liveMount1"
+                                ><div class="empty live-empty">点击“获取图像”读取一张画面</div></div
+                            ><div class="viewer-footer"
+                                ><span id="liveMeta1">尚未获取图像</span
+                                ><span>手动更新 · 拖动选区 · 原图坐标</span></div
+                            ></article
+                        >
+                        <article class="card range-card"
+                            ><span class="eyebrow">CAPTURE REGION</span><h2>训练集采集范围</h2
+                            ><p
+                                >从1080p原图直接裁剪，每张原生RGB图最多518,400像素。较大范围使用多个原生窗口，元件不会被缩小。</p
+                            ><div id="trainRect" class="rect-fields"></div
+                            ><p id="trainPixels" class="muted" role="status"
+                                >147,456 / 518,400 像素</p
+                            ><button id="centerRect" class="full">恢复中央512 × 288</button
+                            ><div class="metric"
+                                ><strong id="tileCount">1</strong
+                                ><span>个原生模型窗口 / 图</span></div
+                            ><p class="muted"
+                                >采集范围至少512×288，宽×高不得超过518,400。框贴近边缘的元件需要人工检查。</p
+                            ></article
+                        ></div
+                    >
+                    <article class="card controls"
+                        ><div class="card-head"
+                            ><div
+                                ><h2>成像操作台</h2
+                                ><p
+                                    >自动调整直接更新下方参数；你也可以修改数值，实时保存并生效。</p
+                                ></div
+                            ><div class="actions"
+                                ><button id="autoOn">自动调整</button
+                                ><button id="autoOff">暂停自动调节</button></div
+                            ></div
+                        >
+                        <div id="cameraFields" class="camera-fields"></div
+                        ><div class="card-foot"
+                            ><span id="cameraActual" class="muted">点击“读取板端”获取实际值</span
+                            ><span
+                                id="cameraSaveStatus"
+                                class="camera-save-status"
+                                role="status"
+                                aria-live="polite"
+                                >修改后自动保存</span
+                            ></div
+                        ></article
+                    >
+                    <article class="card controls"
+                        ><div class="card-head"
+                            ><div
+                                ><h2>公共处理独立开关</h2
+                                ><p
+                                    >原图旁路保留固定ISP后的真实彩色底图。关闭处理会保留参数。先稳定底图，再逐级调节；统计不改变RGB。</p
+                                ></div
+                            ><button id="applyProcess" type="button">应用本次处理修改</button></div
+                        ><label
+                            >显示图像<select id="processView"
+                                ><option value="1">原图旁路（固定ISP后，全部可选处理关闭）</option
+                                ><option value="0">处理后的彩色图</option
+                                ><option value="2">分割原始掩码</option
+                                ><option value="3">形态学后掩码</option
+                                ><option value="4">最终Sobel边缘</option
+                                ><option value="5">灰度形态学结果</option
+                                ><option value="6">前景内边界</option></select
+                            ></label
+                        ><div id="processFlags" class="camera-fields"></div
+                        ><details
+                            ><summary>各级保留参数</summary
+                            ><div id="processParameters" class="camera-fields"></div></details
+                        ><p id="processActual" class="muted" role="status"
+                            >读取实际请求值和帧边界生效值后可调节。</p
+                        ></article
+                    >
+                    <div class="stage-footer"
+                        ><span
+                            >参数自动保存，完成后检查画面，再固定进入采集。固定时保持已生效参数。</span
+                        ><button id="freeze" class="primary">固定参数，进入采集 →</button></div
+                    >
+                </section>
+                <section id="page2" class="page" hidden>
+                    <article class="card toolbar"
+                        ><div
+                            ><strong id="captureSummary">0 / 15 张原图</strong
+                            ><small id="annotationSummary">逐张确认元件框与姿态</small></div
+                        ><div class="actions"
+                            ><button id="capture15" class="primary">现拍15张</button
+                            ><button id="captureMore">补齐当前批次</button
+                            ><button id="assist">自动画框</button></div
+                        ></article
+                    >
+                    <details class="card helper"
+                        ><summary
+                            >画框助手
+                            <span id="helperSummary">尚未选择 · 可以先手工标注</span></summary
+                        ><div class="helper-body"
+                            ><p
+                                >请选择这次使用的独立画框模型；候选框必须人工确认。原生模式只运行定位分支，不运行需要缩放图片的复核器。</p
+                            ><select id="helperSelect"
+                                ><option value="">选择训练时间与场景…</option></select
+                            ><pre id="helperDetails" class="model-details"></pre
+                            ><div class="actions"
+                                ><button id="selectHelper">明确选择此助手</button
+                                ><button id="trainHelper">用已确认图训练新助手</button></div
+                            ><small
+                                >没有合适助手时，先完整手工标注至少3张图，再从零训练。</small
+                            ></div
+                        ></details
+                    >
+                    <div class="annotation-grid"
+                        ><article class="card"
+                            ><div class="card-head"
+                                ><h2 id="frameTitle">原生图像标注</h2
+                                ><div class="actions"
+                                    ><button id="undoBox">撤销</button
+                                    ><button id="deleteBox">删除选中框</button></div
+                                ></div
+                            ><div class="image-stage annotation-stage" id="annotationMount"
+                                ><div class="empty">采集完成后，选择下方图像开始标注</div></div
+                            ><div class="viewer-footer"
+                                ><span id="frameMeta">原图像素坐标</span
+                                ><span>空白处拖动画框 · 拖动框移动 · 拖动角点调整</span></div
+                            ><div id="filmstrip" class="filmstrip"></div
+                        ></article>
+                        <article class="card label-card"
+                            ><div class="card-head"
+                                ><h2>元件姿态</h2
+                                ><button id="addPose" class="small">＋ 新姿态</button></div
+                            ><div id="poses" class="poses"></div
+                            ><label
+                                >新画框默认姿态<select id="drawingPose"
+                                    ><option value="">待指定</option></select
+                                ></label
+                            ><div id="objectList" class="object-list"></div
+                            ><div id="boxCoords" class="box-coords"></div
+                            ><div class="label-bottom"
+                                ><button id="saveDraft" class="full">保存草稿</button
+                                ><button id="confirmFrame" class="primary full"
+                                    >确认本图全部目标</button
+                                ><button id="excludeFrame" class="plain full"
+                                    >图像不可用，排除并保留</button
+                                ></div
+                            ></article
+                        ></div
+                    >
+                    <div class="stage-footer"
+                        ><span
+                            >自动画框只生成候选。请补齐漏框、删除误框，并为每个元件指定姿态。</span
+                        ><button id="toTrain" class="primary">进入训练与测试 →</button></div
+                    >
+                </section>
+                <section id="page3" class="page" hidden>
+                    <div class="training-grid"
+                        ><article class="card train-card"
+                            ><span class="eyebrow">TRAIN ON GPU</span><h2>训练当前场景</h2
+                            ><p
+                                >用已确认原图与纠错样本，从随机权重训练新版本。所有输入只裁剪，不缩放。</p
+                            ><div id="trainCounts" class="stat-row"></div
+                            ><button id="trainModel" class="primary full"
+                                >开始GPU训练并转换RKNN</button
+                            ><small>原图、标注和历史版本全部保留。</small></article
+                        >
+                        <article class="card"
+                            ><div class="card-head"
+                                ><h2>模型版本</h2
+                                ><span class="pill">按实际训练北京时间选择</span></div
+                            ><select id="runSelect"
+                                ><option value="">选择本次使用的模型…</option></select
+                            ><pre id="runDetails" class="model-details">
+训练完成后在这里查看记录。</pre
+                            ><div class="actions"
+                                ><button id="convertModel">重新转换RKNN</button
+                                ><button id="downloadModel">下载RKNN</button
+                                ><button id="testModel" class="primary"
+                                    >明确选择，现拍10张INT8测试</button
+                                ></div
+                            ></article
+                        ></div
+                    >
+                    <article class="card test-card"
+                        ><div class="card-head"
+                            ><div
+                                ><h2>现场新图测试 · INT8 NPU</h2
+                                ><p
+                                    >固定使用所选版本的INT8
+                                    RKNN，在RK板NPU独立低频运行，电脑展示结果，不回退PT。额外NPU任务可能影响实时推理时延，结果不包含ID跟踪或HDMI显示对齐。按当前现场参数采图，不恢复训练参数；加入训练集仍需符合该批次固定参数。</p
+                                ></div
+                            ><select id="testSelect"
+                                ><option value="">尚无测试组</option></select
+                            ></div
+                        ><div id="testGrid" class="test-grid"
+                            ><div class="empty"
+                                >选择已转换INT8的模型并采集10张新图后，结果会显示在这里。</div
+                            ></div
+                        ><div class="card-foot"
+                            ><span id="testNote" class="muted">未标注测试图不提供自动准确率。</span
+                            ><div class="actions"
+                                ><button id="feedback">选中图像加入纠错</button
+                                ><button id="reviewTest">我已检查本组结果</button></div
+                            ></div
+                        ></article
+                    >
+                    <div class="stage-footer"
+                        ><span>用于纠错的测试组退出独立验收；训练新版本后重新采集10张新图。</span
+                        ><button id="toDeploy" class="primary">进入上板与控制 →</button></div
+                    >
+                </section>
+                <section id="page4" class="page" hidden>
+                    <article class="card deployment"
+                        ><div
+                            ><span class="eyebrow">DEPLOY TO RK</span><h2>明确选择，再加载到板卡</h2
+                            ><p id="deploySummary">请在第三步选择模型，并完成人工新图复核。</p></div
+                        ><button id="prepareDeploy" class="primary"
+                            >查看并确认部署模型</button
+                        ></article
+                    >
+                    <div class="live-grid"
+                        ><article class="card viewer-card"
+                            ><div class="card-head"
+                                ><h2>HDMI运行画面</h2
+                                ><div class="actions"
+                                    ><span class="pill">手动快照</span
+                                    ><button id="getPreview4" type="button">获取图像</button></div
+                                ></div
+                            ><div class="image-stage live-stage" id="liveMount4"
+                                ><div class="empty live-empty">点击“获取图像”读取一张画面</div></div
+                            ><div class="viewer-footer"
+                                ><span id="liveMeta4">尚未获取图像</span
+                                ><span>手动更新 · 保留板端原有检测框</span></div
+                            ></article
+                        >
+                        <article class="card range-card"
+                            ><span class="eyebrow">INFERENCE REGION</span><h2>推理合法区</h2
+                            ><p
+                                >宽高按已加载模型的输入尺寸锁定，当前512×288模型使用同尺寸原生ROI。可修改X/Y或拖动平移；置信度和姿态确认次数在此独立热更新。模型切换保留这些现场设置。</p
+                            ><div id="legalRect" class="rect-fields"></div
+                            ><label
+                                >姿态置信度阈值 %<input
+                                    id="confidence"
+                                    type="number"
+                                    min="1"
+                                    max="100"
+                                    placeholder="读取板端后显示" /></label
+                            ><label
+                                >姿态确认次数<input
+                                    id="trackHits"
+                                    type="number"
+                                    min="1"
+                                    max="30"
+                                    placeholder="读取板端后显示" /></label
+                            ><button id="applyLegal" class="primary full">热更新合法区</button
+                            ><p id="legalStatus" class="muted"
+                                >读取板端后显示实际值；提交后等待实际生效。</p
+                            ></article
+                        ></div
+                    >
+                    <article class="card action-output"
+                        ><div class="card-head"
+                            ><div
+                                ><h2>电磁阀姿态控制</h2
+                                ><p
+                                    >每个工件ID只触发一次；所有姿态从同一条实际生效线开始计算延迟。</p
+                                ></div
+                            ><span class="pill">GPIO0_C1 (TX) · 空闲3.3 V / 动作0 V</span></div
+                        ><p id="actionLine" class="muted">读取板端后显示触发线位置。</p
+                        ><div class="action-output-fields"
+                            ><div
+                                ><span class="muted">选择触发姿态（可多选）</span
+                                ><div id="actionPoses" class="action-poses"></div></div
+                            ><label
+                                >过线后延迟 / ms<input
+                                    id="actionDelay"
+                                    type="number"
+                                    min="0"
+                                    max="5000"
+                                    step="1"
+                                    value="200" /></label
+                            ><label
+                                >低电平脉宽 / ms<input
+                                    id="actionPulse"
+                                    type="number"
+                                    min="1"
+                                    max="1000"
+                                    step="1"
+                                    value="50" /></label></div
+                        ><div class="card-foot"
+                            ><label class="action-enable"
+                                ><input id="actionEnabled" type="checkbox" />启用过线低脉冲</label
+                            ><button id="applyActionOutput" class="primary"
+                                >保存并应用输出设置</button
+                            ></div
+                        ><p id="actionOutputStatus" class="muted" role="status"
+                            >尚未读取板端GPIO状态。</p
+                        ><div id="actionOutputMetrics" class="stat-row"></div
+                        ><p class="muted"
+                            >延迟从真实检测框中心过线的采集时刻算起，HDMI显示延迟不参与；设得短于识别处理耗时会跳过并记录，不会改为收到结果后起算。</p
+                        ></article
+                    >
+                    <article class="card"
+                        ><div class="card-head"
+                            ><h2>板端状态</h2><span class="pill">显示率与推理率分开记录</span></div
+                        ><div id="boardMetrics" class="stat-row"></div
+                        ><div id="boardResults" class="result-list"></div
+                        ><p class="muted"
+                            >页面显示遥测，不代表已完成60 FPS或识别准确率验收。</p
+                        ></article
+                    >
+                </section> </main
+            ><footer>原点工作台 <span>现场采集 → 人工确认 → GPU训练 → RK部署</span></footer></div
+        >
+        <dialog id="modal"
+            ><form method="dialog"
+                ><div class="dialog-head"
+                    ><h2 id="modalTitle"></h2
+                    ><button value="cancel" class="plain" aria-label="关闭">✕</button></div
+                ><div id="modalBody"></div
+                ><div class="dialog-actions"
+                    ><button value="cancel">取消</button
+                    ><button id="modalConfirm" type="button" class="primary">确认</button></div
+                ></form
+            ></dialog
+        >
+        <div id="toast" role="status" hidden></div> </body
+></html>

@@ -1,0 +1,24 @@
+[Unit]
+Description=Pose-selected TX GPIO0_C1 idle-high active-low output
+After=local-fs.target
+Before=fpga-vision-v3.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/free_rect_20261025/runtime
+ExecStart=/usr/bin/python3 -u /root/free_rect_20261025/runtime/action_daemon.py --config /root/gpio_action_20261030/action_config.json
+Environment=PYTHONDONTWRITEBYTECODE=1
+Restart=on-failure
+RestartSec=1
+TimeoutStopSec=3
+RuntimeDirectory=vision-action
+RuntimeDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/run/vision-action /sys/bus/platform/drivers/dw-apb-uart
+
+[Install]
+WantedBy=multi-user.target

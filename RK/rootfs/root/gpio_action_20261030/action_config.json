@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "enabled": false,
+  "active_high": false,
+  "target_labels": [],
+  "model_sha256": "",
+  "delay_ms": 120,
+  "pulse_ms": 8,
+  "trigger_mode": "center_line"
+}

@@ -1,0 +1,12 @@
+{
+  "host": "192.0.2.1",
+  "username": "root",
+  "key": "~/.ssh/vision_ed25519",
+  "remote": "/root/free_rect_20261025/runtime",
+  "frames": 15,
+  "hz": 2.0,
+  "stride": 1,
+  "steps": 600,
+  "auto_capture": false,
+  "numbers": []
+}

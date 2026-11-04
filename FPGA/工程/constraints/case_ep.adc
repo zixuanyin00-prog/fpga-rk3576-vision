@@ -1,0 +1,24 @@
+
+set_pin_assignment	  { app_auxclk_i       }	{ LOCATION = T16; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }	
+set_pin_assignment	  { app_power_up_rst_n }	{ LOCATION = U11; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }	
+
+set_inst_assignment {u_pcie_ep_support/u_sys_ctrl/u_core_clk_pll/pll_inst} {location = x0y159z0}
+
+set_pin_assignment	{ S_clk_25m }		{ LOCATION = T18; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ O_cam_scl }		{ LOCATION = M18; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ IO_cam_sda }		{ LOCATION = P18; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ O_clk_rst }		{ LOCATION = K18; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ I_clk_hs_p }		{ LOCATION = E16; IOSTANDARD = LVDS18; PULLTYPE = NONE; }
+set_pin_assignment	{ I_data_hs_p[0] }	{ LOCATION = H14; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment	{ I_data_hs_p[1] }	{ LOCATION = G14; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment	{ I_data_hs_p[2] }	{ LOCATION = H16; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment	{ I_data_hs_p[3] }	{ LOCATION = F18; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment	{ I_data_lp_p[0] }	{ LOCATION = J15; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_n[0] }	{ LOCATION = K15; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_p[1] }	{ LOCATION = K16; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_n[1] }	{ LOCATION = K17; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_p[2] }	{ LOCATION = J13; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_n[2] }	{ LOCATION = K13; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_p[3] }	{ LOCATION = J17; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_n[3] }	{ LOCATION = J18; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+ 

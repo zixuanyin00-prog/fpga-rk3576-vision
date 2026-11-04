@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Version="3" Minor="2" RunTime="2026-10-06T06:00:00">
+    <Project_Created_Time>2026-10-05 21:30:00</Project_Created_Time>
+    <TD_Encoding>UTF-8</TD_Encoding>
+    <TD_Version>6.2.200067</TD_Version>
+    <Name>pcie_camera</Name>
+    <HardWare>
+        <Family>PH1</Family>
+        <Device>PH1A90SEG324</Device>
+        <Speed>-2</Speed>
+    </HardWare>
+    <Source_Files>
+        <Verilog>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/camera_mclk27.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="1"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/dma_tlp_arbiter.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="2"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/elbi_dma.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="3"/></FileInfo>
+            </File>
+            
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/dbi_access.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="5"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/debounce_int.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="6"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/dram_8x256.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="7"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/elbi_bar.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="8"/></FileInfo>
+            </File>
+            
+            
+            
+            
+            
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/ep_dbi_int_mux.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="14"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/int_request.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="15"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/pcie_camera_case.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="16"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/pcie_ep_support.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="17"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/pcie_ep_wrapper.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="18"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/tlp_access_ep.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="19"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/commom/debounce_power_up_rst.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="20"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/sys_ctrl.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="21"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/reset_sync_user.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="22"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/ui_pll/ui_pll.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="23"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/ui_ae_set/ui_key.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="24"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/ui_ae_set/ui_ae_set.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="25"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/ui_imx415_cfg/ui_i2c.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="26"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/ui_imx415_cfg/ui_imx415_reg.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="27"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/ui_imx415_cfg/ui_cfg_imx415.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="28"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/mipi_rx/mipi_dphy_rx_over_lvds_wrapper.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="29"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/mipi_rx/rx_clk_gen.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="30"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/mipi_rx/data_lane_rx_wrapper.enc.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="31"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/ui_csi_raw/ui_csi_unpacket_4lane.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="32"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/ui_csi_raw/ui_raw10_unpacket_4lane.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="33"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/ui_csi_raw/ui_image_correction.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="34"/></FileInfo>
+            </File>
+        
+            
+            
+            <File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/camera_hist_fifo.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="38"/></FileInfo>
+            </File>
+            
+            
+            
+            
+            
+            
+            
+<File Path="C:/td_build/vision_switches_20261029/rtl/case_ep/camera_jpeg_frontend.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="46"/></FileInfo></File>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/window4.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="65"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/isp4.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="66"/></FileInfo>
+            </File>
+            
+            <File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/isp_tone.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="69"/></FileInfo>
+            </File>
+
+
+
+
+<File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/rgb_pack.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="74"/></FileInfo></File>
+<File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/rgb_roi_chain.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="75"/></FileInfo></File>
+<File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/rgb_roi_source.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="76"/></FileInfo></File>
+<File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/rgb_stream_dma.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="77"/></FileInfo></File>
+
+
+
+<File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/imx415_hot_control.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="90"/></FileInfo></File>
+<File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/camera_quality4.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="91"/></FileInfo></File>
+<File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/isp_rgb_enhance.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="92"/></FileInfo></File>
+<File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/rect_ddr_fifo.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="100"/></FileInfo></File>
+<File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/native_ddr_spool.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="101"/></FileInfo></File>
+<File Path="C:/td_build/vision_switches_20261029/vendor/ddr/ddr_clk.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="102"/></FileInfo></File>
+<File Path="C:/td_build/vision_switches_20261029/rtl/jpeg/shared_image_process4.v"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="120"/></FileInfo></File>
+</Verilog>
+        <System_Verilog>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/mipi_rx/hs_rx_wrapper.sv">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="83"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/vendor/camera/mipi_rx/channel_aligner_wrapper.enc.sv">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="84"/></FileInfo>
+            </File>
+        <File Path="C:/td_build/vision_switches_20261029/vendor/ddr/ui_ddr.sv"><FileInfo><Attr Name="UsedInSyn" Val="true"/><Attr Name="UsedInP&R" Val="true"/><Attr Name="BelongTo" Val="design_1"/><Attr Name="CompileOrder" Val="100"/></FileInfo></File>
+</System_Verilog>
+        <ADC_FILE>
+            <File Path="C:/td_build/vision_switches_20261029/constraints/case_ep.adc">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="constraint_1"/>
+                    
+                <Attr Name="CompileOrder" Val="85"/></FileInfo>
+            </File>
+        </ADC_FILE>
+        <SDC_FILE>
+            <File Path="C:/td_build/vision_switches_20261029/constraints/case_ep.sdc">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="constraint_1"/>
+                    
+                <Attr Name="CompileOrder" Val="86"/></FileInfo>
+            </File>
+        </SDC_FILE>
+        <IP_FILE>
+            <File Path="C:/td_build/vision_switches_20261029/al_ip/core_clk_pll.ipc">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="87"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/al_ip/ep_cfg_rom.ipc">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="88"/></FileInfo>
+            </File>
+            <File Path="C:/td_build/vision_switches_20261029/al_ip/pcie_ep.ipc">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    
+                <Attr Name="CompileOrder" Val="89"/></FileInfo>
+            </File>
+        </IP_FILE>
+    </Source_Files>
+    <FileSets>
+        <FileSet Name="design_1" Type="DesignFiles">
+        </FileSet>
+        <FileSet Name="constraint_1" Type="ConstrainFiles">
+        </FileSet>
+    </FileSets>
+    <TOP_MODULE>
+        <LABEL>pcie_camera_case</LABEL>
+        <MODULE>pcie_camera_case</MODULE>
+        <CREATEINDEX>user</CREATEINDEX>
+    </TOP_MODULE>
+    <Property>
+        <GateProperty>
+            <opt_timing>high</opt_timing>
+        </GateProperty>
+    </Property>
+    <Device_Settings>
+    </Device_Settings>
+    <Configurations>
+    </Configurations>
+</Project>
+

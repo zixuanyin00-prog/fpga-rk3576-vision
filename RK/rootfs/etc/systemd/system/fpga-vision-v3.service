@@ -1,0 +1,23 @@
+[Unit]
+Description=VIS3 FPGA RGB inference and compressed evidence
+Wants=lightdm.service
+After=local-fs.target systemd-modules-load.service lightdm.service
+Conflicts=fpga-rgb-two-stage.service ghost-face.service cap-color-hdmi.service
+StartLimitIntervalSec=0
+
+[Service]
+Environment=DISPLAY=:0 XAUTHORITY=/var/run/lightdm/root/:0 SDL_VIDEO_X11_FORCE_EGL=1
+Type=simple
+WorkingDirectory=/root/integrated_vision_v3_20261021
+Environment=OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+ExecStartPre=/bin/sh /root/integrated_vision_v3_20261021/host/prepare_boot.sh
+ExecStart=/root/integrated_vision_v3_20261021/.venv/bin/python -u /root/integrated_vision_v3_20261021/host/run_two_stage.py --library /root/integrated_vision_v3_20261021/host/librgb_device.so --model-runtime /root/integrated_vision_v3_20261021/model --archive-library /root/integrated_vision_v3_20261021/host/libarchive_device.so --archive-every 60 --archive-directory /root/integrated_vision_v3_20261021/evidence --screen --frames 0 --output /root/integrated_vision_v3_20261021/live_results.jsonl
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=60
+TimeoutStopSec=20
+StandardOutput=null
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

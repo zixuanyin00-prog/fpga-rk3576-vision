@@ -1,0 +1,10 @@
+{
+  "contrast": false,
+  "histogram": false,
+  "brightness": false,
+  "digital_gain": false,
+  "analog_gain": false,
+  "frozen": true,
+  "analog_ceiling_db": 18,
+  "digital_ceiling": 1.5
+}
