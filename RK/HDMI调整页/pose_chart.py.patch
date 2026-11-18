@@ -1,0 +1,297 @@
+--- pose_chart.py
++++ pose_chart.py
+@@ -263,8 +263,35 @@
+     return str(int(value)) if value==int(value) else f'{value:.1f}'
+ 
+ 
++def _draw_line_series(draw, chart, left, right, low, height, rate_max):
++    start, end = chart['window_start'], chart['window_end']
++    enabled = set(chart['enabled'])
++    plotted = False
++    for field in chart['fields']:
++        if field['key'] not in enabled:
++            continue
++        scale = rate_max if field['key'] == 'rate:throughput' else 100.
++        segment = []
++        for when, row in chart['history']:
++            value = row.get(field['key'])
++            if value is None or not start <= when <= end:
++                if len(segment) > 1:
++                    draw.line(segment, fill=field['color'], width=2)
++                segment = []
++                continue
++            segment.append((left + (when - start) / WINDOW_SECONDS * (right - left), low - value / scale * height))
++        if len(segment) > 1:
++            draw.line(segment, fill=field['color'], width=2)
++            plotted = True
++        if segment:
++            px, py = segment[-1]
++            draw.ellipse((px - 3, py - 3, px + 3, py + 3), fill=field['color'])
++            plotted = True
++    return plotted
++
+ def draw_chart(view,regions,chart,px,py,pw,bottom):
+     from PIL import ImageDraw
++    compact=bottom-py<530
+     muted=(145,168,188,255)
+     view.fill(None,(px,py,pw,max(200,bottom-py)),(22,34,49))
+     pie=chart['mode']=='pie'
+@@ -272,8 +299,8 @@
+     view.text(None,'姿态饼图' if pie else '姿态折线 · 近5秒',px+16,py+12,pw-156,size=22)
+     view.button(None,regions,'chart:mode','切换折线' if pie else '切换饼图',px+pw-132,py+8,116,pie)
+     rate=short_number(chart['rate'])
+-    view.text(None,f'近5秒平均通过：{rate} 件/秒',px+16,py+51,pw-32,size=18,color=(255,172,72,255))
+-    cy=py+82
++    view.text(None,f'近5秒平均通过：{rate} 件/秒',px+16,py+(46 if compact else 51),pw-32,size=18,color=(255,172,72,255))
++    cy=py+(70 if compact else 82)
+     view.button(None,regions,'chart:minus','-',px+16,cy,42)
+     editing_interval=chart['editing'] and chart['edit_target']=='interval'
+     value=(chart['edit_text'] or '输入秒数') if editing_interval else f"更新 {chart['interval']:g} 秒/次"
+@@ -281,7 +308,7 @@
+     view.button(None,regions,'chart:plus','+',px+pw-122,cy,42)
+     view.button(None,regions,'chart:apply','确定',px+pw-74,cy,64,chart['editing'])
+     if pie:
+-        cy+=48
++        cy+=42 if compact else 48
+         view.button(None,regions,'chart:window_minus','-',px+16,cy,42)
+         editing_window=chart['editing'] and chart['edit_target']=='window'
+         value=(chart['edit_text'] or '输入区间秒数') if editing_window else f"区间 {chart['pie_seconds']:g} 秒"
+@@ -290,12 +317,13 @@
+     hint=chart['error'] or ('计数清零中…' if chart['awaiting_count_reset'] else
+         '输入后回车确认，Esc 取消' if chart['editing'] else
+         '分母：区间内通过总数' if pie else '占比左轴 · 件/秒右轴 · 累计观测为分母')
+-    view.text(None,hint,px+16,cy+43,pw-32,size=18,color=(248,162,104,255) if chart['error'] else muted)
+-    top=py+(210 if pie else 164)
++    view.text(None,hint,px+16,cy+(40 if compact else 43),pw-32,size=18,color=(248,162,104,255) if chart['error'] else muted)
++    top=py+((184 if pie else 142) if compact else (210 if pie else 164))
+     pages=max(1,(len(chart['fields'])+PAGE_SIZE-1)//PAGE_SIZE)
+     rows=min(5,(len(chart['fields'][chart['page']*PAGE_SIZE:(chart['page']+1)*PAGE_SIZE])+1)//2)
+-    reserve=86+rows*32+(42 if pages>1 else 0)
+-    height=max(90,min(250,bottom-top-reserve))
++    legend_gap,legend_header,row_height=(29,26,26) if compact else (42,30,32)
++    reserve=legend_gap+legend_header+(8 if compact else 14)+rows*row_height+(42 if pages>1 else 0)
++    height=max(60 if compact else 90,min(250,bottom-top-reserve))
+     left,right,low=px+56,px+pw-58,top+height
+     draw=ImageDraw.Draw(view.canvas)
+     enabled=set(chart['enabled'])
+@@ -330,29 +358,15 @@
+         rate_max=max(1.,math.ceil(max(rates,default=0)*1.2))
+         for value in (0.,rate_max/2,rate_max):
+             view.text(None,short_number(value),right+7,low-height*value/rate_max-10,48,size=18,color=(255,172,72,255))
+-        start,end=chart['window_start'],chart['window_end'];enabled=set(chart['enabled']);plotted=False
+-        for field in chart['fields']:
+-            if field['key'] not in enabled:continue
+-            scale=rate_max if field['key']=='rate:throughput' else 100.
+-            segment=[]
+-            for when,row in chart['history']:
+-                val=row.get(field['key'])
+-                if val is None or not start<=when<=end:
+-                    if len(segment)>1:draw.line(segment,fill=field['color'],width=2)
+-                    segment=[];continue
+-                segment.append((left+(when-start)/WINDOW_SECONDS*(right-left),low-val/scale*height))
+-            if len(segment)>1:draw.line(segment,fill=field['color'],width=2);plotted=True
+-            if segment:
+-                x,y=segment[-1];draw.ellipse((x-3,y-3,x+3,y+3),fill=field['color']);plotted=True
+-        if not plotted:view.text(None,chart['data_note'] or '正在积累区间数据…',left+8,top+height//2-12,right-left-16,size=18,color=muted)
++        if not _draw_line_series(draw, chart, left, right, low, height, rate_max):view.text(None,chart['data_note'] or '正在积累区间数据…',left+8,top+height//2-12,right-left-16,size=18,color=muted)
+         view.text(None,'-5 s',left,low+7,70,size=18,color=muted)
+         view.text(None,'-2.5 s',(left+right)//2-28,low+7,80,size=18,color=muted)
+         view.text(None,'现在',right-42,low+7,48,size=18,color=muted)
+-    cy=low+42
++    cy=low+legend_gap
+     view.text(None,'累计计数 / 区间占比' if pie else '累计计数（勾选显示折线）',px+16,cy,pw-32,size=18)
+     pie_percent={s['key']:s['percentage'] for s in chart['pie'].get('sectors',[])}
+     for index,field in enumerate(chart['fields'][chart['page']*PAGE_SIZE:(chart['page']+1)*PAGE_SIZE]):
+-        x=px+16+(index%2)*(pw-32)//2;y=cy+30+(index//2)*32;cell=(pw-32)//2
++        x=px+16+(index%2)*(pw-32)//2;y=cy+legend_header+(index//2)*row_height;cell=(pw-32)//2
+         on=field['key'] in enabled
+         if pie:
+             on=field['key'] in pie_percent
+@@ -376,9 +390,185 @@
+             draw.text((x+cell-5,y+16),percent,font=font,fill=(245,249,253,255),anchor='rm')
+         else:
+             view.text(None,label,x+25,y,cell-27,size=18,color=(*field['color'],255) if on else muted)
+-        if not pie:regions.append(dict(key='chart:field:'+field['key'],box=(x,y,cell,30)))
++        if not pie:regions.append(dict(key='chart:field:'+field['key'],box=(x,y,cell,row_height-2)))
+     if pages>1:
+-        y=cy+30+rows*32
++        y=cy+legend_header+rows*row_height
+         view.button(None,regions,'chart:previous','上一页',px+16,y,96)
+         view.text(None,f"{chart['page']+1} / {pages}",px+128,y+5,100,size=18)
+         view.button(None,regions,'chart:next','下一页',px+pw-112,y,96)
++
++
++def draw_display_chart(view, regions, chart, x=736, y=80, w=272, bottom=584, *, show_settings=False):
++    """Render the 1024×600 display page's chart and touch controls."""
++    from PIL import ImageDraw
++
++    surface = (19, 31, 43, 255)
++    border = (49, 69, 87, 255)
++    text = (231, 243, 248, 255)
++    muted = (167, 188, 199, 255)
++    accent = (120, 236, 208, 255)
++    throughput_color = (255, 172, 72, 255)
++    if 16 not in view.fonts:
++        view.fonts[16] = view.fonts[18].font_variant(size=16)
++    draw = ImageDraw.Draw(view.canvas)
++    draw.rounded_rectangle((x, y, x + w - 1, bottom - 1), 12, fill=surface, outline=border)
++
++    def label(value, left, top, width, size=18, color=text):
++        view.text(None, value, left, top, width, size=size, color=color)
++
++    def button(key, value, left, top, width, *, active=False):
++        hover = getattr(view, 'hover_key', None) == key
++        fill = (28, 66, 66, 255) if active else (39, 61, 75, 255) if hover else (30, 47, 61, 255)
++        draw.rounded_rectangle((left, top, left + width - 1, top + 39), 7, fill=fill,
++                               outline=accent if active else border)
++        draw.text((left + width / 2, top + 20), value, font=view.fonts[16],
++                  fill=accent if active else text, anchor='mm')
++        regions.append(dict(key=key, box=(left, top, width, 40)))
++
++    inset = x + 12
++    usable = w - 24
++    is_pie = chart['mode'] == 'pie'
++    if show_settings:
++        label('统计设置', inset, y + 17, 86, size=20)
++        button('chart:mode', '折线' if is_pie else '饼图', x + w - 172, y + 11, 74, active=is_pie)
++        button('chart_settings', '收起', x + w - 92, y + 11, 80, active=True)
++    else:
++        label('姿态分布' if is_pie else '统计趋势', inset, y + 17, usable - 80, size=22)
++        button('chart:mode', '切换折线' if is_pie else '切换饼图', x + w - 86, y + 11, 74, active=is_pie)
++
++    row_y = y + 59
++    footer_y = bottom - 51
++    if show_settings:
++        edit_interval = chart['editing'] and chart['edit_target'] == 'interval'
++        interval = (chart['edit_text'] or '输入秒数') if edit_interval else f"采样 {chart['interval']:g} 秒"
++        button('chart:minus', '−', inset, row_y, 40)
++        button('chart:interval', interval, inset + 46, row_y, usable - 138, active=edit_interval)
++        button('chart:plus', '+', x + w - 98, row_y, 40)
++        button('chart:apply', '确认', x + w - 52, row_y, 40, active=chart['editing'])
++
++        if is_pie:
++            row_y += 46
++            edit_window = chart['editing'] and chart['edit_target'] == 'window'
++            window = (chart['edit_text'] or '输入秒数') if edit_window else f"区间 {chart['pie_seconds']:g} 秒"
++            button('chart:window_minus', '−', inset, row_y, 40)
++            button('chart:window', window, inset + 46, row_y, usable - 92, active=edit_window)
++            button('chart:window_plus', '+', x + w - 52, row_y, 40)
++
++        hint = chart['error'] or ('计数清零中' if chart['awaiting_count_reset'] else
++            '输入秒数后点确认' if chart['editing'] else
++            '区间内通过总数' if is_pie else '占比 %  ·  通过速度 件/秒')
++        label(hint, inset, row_y + 44, usable, size=16,
++              color=(248, 162, 104, 255) if chart['error'] else muted)
++
++    legend_y = footer_y - (168 if show_settings else 100)
++    plot_bottom = legend_y - 14
++    enabled = set(chart['enabled'])
++    pie_percent = {}
++    palette = {}
++
++    if is_pie:
++        summary = chart['pie']
++        palette = pie_colors(tuple(sector['key'] for sector in summary.get('sectors', [])))
++        pie_percent = {sector['key']: sector['percentage'] for sector in summary.get('sectors', [])}
++        if show_settings:
++            diameter = min(116, plot_bottom - row_y - 67)
++            cx = inset + diameter / 2 + 4
++            cy = row_y + 64 + diameter / 2
++        else:
++            diameter = min(192, w - 44, plot_bottom - y - 80)
++            cx = x + w / 2
++            cy = (y + 61 + plot_bottom) / 2
++        box = (cx - diameter / 2, cy - diameter / 2, cx + diameter / 2, cy + diameter / 2)
++        if summary.get('total') and summary.get('complete'):
++            angle = -90.
++            for sector in summary['sectors']:
++                if sector['count'] <= 0:
++                    continue
++                end = angle + sector['percentage'] * 3.6
++                draw.pieslice(box, angle, end, fill=(*palette[sector['key']], 255), outline=surface, width=2)
++                angle = end
++            hole = diameter * .26
++            draw.ellipse((cx - hole, cy - hole, cx + hole, cy + hole), fill=surface)
++            if show_settings:
++                draw.text((cx, cy), short_number(summary['total']), font=view.fonts[20], fill=text, anchor='mm')
++                label('区间通过', inset + diameter + 12, int(cy) - 10, usable - diameter - 12, size=16, color=muted)
++            else:
++                draw.text((cx, cy - 15), '区间通过', font=view.fonts[16], fill=muted, anchor='mm')
++                draw.text((cx, cy + 15), short_number(summary['total']), font=view.fonts[28], fill=text, anchor='mm')
++        else:
++            draw.ellipse(box, outline=border, width=2)
++            note = ('计数清零中' if chart['awaiting_count_reset'] else '等待工件数据'
++                    if not summary.get('available') else '区间内暂无工件'
++                    if summary.get('complete') else '等待完整统计区间')
++            if show_settings:
++                label(note, inset + diameter + 12, int(cy) - 10, usable - diameter - 12, size=16, color=muted)
++            else:
++                draw.text((cx, cy), note, font=view.fonts[16], fill=muted, anchor='mm')
++    else:
++        left, right = x + 50, x + w - 43
++        top, low = (row_y + 78 if show_settings else y + 96), plot_bottom - 19
++        if not show_settings:
++            label('占比 %', inset, y + 62, 90, size=16, color=muted)
++            draw.text((x + w - 12, y + 65), '件/秒', font=view.fonts[16], fill=throughput_color, anchor='rt')
++        height = low - top
++        rates = [value for _, value in chart['rate_history'] if value is not None]
++        rate_max = max(1., math.ceil(max(rates, default=0) * 1.2))
++        for tick in (0, 50, 100):
++            tick_y = low - height * tick / 100
++            draw.line((left, tick_y, right, tick_y), fill=border, width=1)
++            draw.text((left - 4, tick_y), f'{tick}%', font=view.fonts[16], fill=muted, anchor='rm')
++            draw.text((right + 4, tick_y), short_number(rate_max * tick / 100),
++                      font=view.fonts[16], fill=throughput_color, anchor='lm')
++        if not _draw_line_series(draw, chart, left, right, low, height, rate_max):
++            label(chart['data_note'] or '正在积累区间数据', left + 8, top + height // 2 - 11,
++                  right - left - 16, size=16, color=muted)
++        label('−5秒', left, low + 3, 50, size=16, color=muted)
++        draw.text((right, low + 5), '现在', font=view.fonts[16], fill=muted, anchor='rt')
++
++    if not show_settings:
++        draw.line((inset, legend_y, x + w - 12, legend_y), fill=border)
++        counters = (('stat:total', '累计计数'), ('stat:current_present', '当前在场'))
++        for index, (key, title) in enumerate(counters):
++            counter_x = inset + index * (usable // 2)
++            label(title, counter_x, legend_y + 14, usable // 2 - 8, size=16, color=muted)
++            label(short_number(chart['latest'].get(key)), counter_x, legend_y + 39,
++                  usable // 2 - 8, size=28)
++        button('chart_settings', '统计设置', x + w - 124, footer_y, 112)
++        return
++
++    draw.line((inset, legend_y, x + w - 12, legend_y), fill=border)
++    label('累计 / 区间占比' if is_pie else '累计计数 · 点选曲线', inset, legend_y + 4, usable, size=16, color=muted)
++    pages = max(1, (len(chart['fields']) + PAGE_SIZE - 1) // PAGE_SIZE)
++    page = chart['page']
++    visible_fields = chart['fields'][page * PAGE_SIZE:(page + 1) * PAGE_SIZE]
++    cell = (usable - 6) // 2
++    for index, field in enumerate(visible_fields):
++        field_x = inset + (index % 2) * (cell + 6)
++        field_y = legend_y + 24 + (index // 2) * 27
++        key = field['key']
++        on = key in pie_percent if is_pie else key in enabled
++        shade = palette.get(key, (149, 173, 186)) if is_pie else field['color']
++        if is_pie:
++            draw.ellipse((field_x + 2, field_y + 7, field_x + 12, field_y + 17),
++                         fill=shade if on else None, outline=shade, width=1)
++        else:
++            if getattr(view, 'hover_key', None) == 'chart:field:' + key:
++                draw.rounded_rectangle((field_x, field_y, field_x + cell - 1, field_y + 25), 4, fill=(30, 47, 61, 255))
++            draw.rounded_rectangle((field_x + 1, field_y + 6, field_x + 14, field_y + 19), 3, outline=shade, width=1)
++            if on:
++                draw.line((field_x + 4, field_y + 12, field_x + 7, field_y + 16, field_x + 12, field_y + 8),
++                          fill=shade, width=2)
++            regions.append(dict(key='chart:field:' + key, box=(field_x, field_y, cell, 26)))
++        total = short_number(chart['latest'].get(key))
++        value = f'{pie_percent[key]:.1f}%' if is_pie and key in pie_percent else total
++        value_width = math.ceil(view.fonts[16].getlength(value))
++        item_text = field['title'] if not is_pie or key not in pie_percent else f"{field['title']} {total}"
++        label(item_text, field_x + 17, field_y + 2, cell - value_width - 22, size=16,
++              color=text if on else muted)
++        draw.text((field_x + cell - 2, field_y + 13), value, font=view.fonts[16], fill=text, anchor='rm')
++
++    if pages > 1:
++        button('chart:previous', '‹', inset, footer_y, 40)
++        draw.text((inset + 69, footer_y + 20), f'{page + 1}/{pages}', font=view.fonts[16], fill=muted, anchor='mm')
++        button('chart:next', '›', inset + 98, footer_y, 40)
++    button('count_reset', '计数清零', x + w - 104, footer_y, 92)

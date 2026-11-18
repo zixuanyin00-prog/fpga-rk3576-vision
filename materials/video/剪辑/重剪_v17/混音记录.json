@@ -1,0 +1,19 @@
+{
+  "voice_target_lufs": -18,
+  "music_target_lufs": -36,
+  "music_level": "constant",
+  "speech_clips": 26,
+  "voice_measurement": {
+    "input_i": "-25.45",
+    "input_tp": "-1.62",
+    "input_lra": "7.00",
+    "input_thresh": "-35.88",
+    "output_i": "-19.65",
+    "output_tp": "-2.00",
+    "output_lra": "6.60",
+    "output_thresh": "-30.02",
+    "normalization_type": "dynamic",
+    "target_offset": "1.65"
+  },
+  "mix_sample_peak_dbfs": -1.8
+}

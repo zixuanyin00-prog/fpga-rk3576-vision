@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f2f5f6">
+  <title>原点 · 工业视觉控制台</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+<aside class="rail" aria-label="主导航">
+  <div class="brand"><span class="brand-mark" aria-hidden="true"></span><div><strong>原点</strong><small>工业视觉控制台</small></div></div>
+  <nav id="steps" aria-label="工作流程">
+    <button class="step active" data-step="1" title="画面调校"><span class="nav-full">画面调校</span><span class="nav-short">画面</span><span class="nav-index">01</span></button>
+    <button class="step" data-step="2" title="样本标注"><span class="nav-full">样本标注</span><span class="nav-short">标注</span><span class="nav-index">02</span></button>
+    <button class="step" data-step="3" title="训练与测试"><span class="nav-full">训练与测试</span><span class="nav-short">训练</span><span class="nav-index">03</span></button>
+    <button class="step" data-step="4" title="部署与运行"><span class="nav-full">部署与运行</span><span class="nav-short">运行</span><span class="nav-index">04</span></button>
+  </nav>
+  <div class="rail-bottom">
+    <div class="device"><span class="dotline"><i id="connectionDot"></i><span id="connection">尚未读取</span></span></div>
+    <button id="settingsOpen" class="settings-toggle"><span class="icon icon-sliders" aria-hidden="true"></span>设置</button>
+  </div>
+</aside>
+<div class="workspace">
+  <header class="topbar">
+    <div class="flowline"><span class="icon icon-folder" aria-hidden="true"></span><div><span class="field-caption">当前场景</span><strong id="flowName">尚未打开场景</strong></div><span id="flowTag" class="scene-id" hidden></span></div>
+    <div class="actions"><button id="historyOpen">打开场景</button><button id="newFlow" class="dark"><span class="icon icon-plus" aria-hidden="true"></span>新建场景</button></div>
+  </header>
+  <main>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <article id="welcome" class="card welcome" hidden><h1>选择工作场景</h1><p>打开已有场景继续工作，或新建场景开始采集。</p><div class="actions"><button id="welcomeHistory">打开场景</button><button id="welcomeNew" class="primary">新建场景</button></div></article>
+    <div id="flowPages" hidden>
+    <div class="page-heading"><div><span id="pageIndex" hidden></span><h1 id="pageTitle">画面调校</h1><p id="pageSubtitle">在快照上拖选范围，或输入原图坐标。</p></div><button id="refreshBoard"><span class="icon icon-sync" aria-hidden="true"></span>读取板端</button></div>
+    <article id="flowRuntime" class="runtime-strip" hidden><span id="flowRuntimeStatus" role="status"></span><button id="retryPreview" type="button" hidden>重试进入纯预览</button></article>
+    <div id="jobbar" class="jobbar" hidden><div><strong id="jobKind"></strong><span id="jobMessage"></span><progress id="jobProgress" max="100" value="0" aria-label="任务进度"></progress></div><button id="stopJob">停止任务</button></div>
+
+    <section id="page1" class="page" aria-label="画面调校">
+      <div class="live-grid">
+        <article class="card viewer-card">
+          <div class="card-head"><div class="view-tabs" role="group" aria-label="画面来源"><button id="liveTab1" type="button" aria-pressed="true">现场快照</button><button id="refTab1" type="button" aria-pressed="false" disabled>批次原图</button></div><button id="getPreview1" class="snapshot" type="button">获取图像</button></div>
+          <div class="image-stage live-stage" id="liveMount1"></div>
+          <div class="image-stage reference-stage" id="refMount1" hidden></div>
+          <div class="viewer-footer"><span id="liveMeta1">HDMI · 手动快照</span><span id="refMeta1" hidden></span></div>
+        </article>
+        <article class="card range-card">
+          <div class="card-head"><h2>采集范围</h2><span class="unit">1920 × 1080</span></div>
+          <div class="roi-map" id="trainMap" role="img" aria-label="采集范围在原图中的位置"><span></span></div><div id="trainRect" class="rect-fields"></div>
+          <button id="centerRect" class="full">居中 512 × 288</button>
+          <div class="roi-usage"><div><span>采集像素</span><span id="trainPixels" role="status">147,456 / 518,400 像素</span></div><meter id="pixelMeter" min="0" max="518400" value="147456" aria-label="采集像素占用"></meter></div>
+          <div class="metric"><span>每张图的训练窗口</span><strong id="tileCount">1</strong></div>
+        </article>
+      </div>
+      <article class="card controls"><div class="card-head"><h2>相机成像</h2><div class="actions"><button id="autoOn">自动调整</button><button id="autoOff">暂停</button></div></div>
+        <div id="cameraFields" class="camera-fields"></div><div class="card-foot"><span id="cameraActual" class="muted">读取板端后显示实际值。</span><span id="cameraSaveStatus" class="camera-save-status" role="status">修改后自动保存</span></div>
+      </article>
+      <article class="card controls"><div class="card-head"><h2>图像处理</h2><button id="applyProcess" type="button">应用处理设置</button></div>
+        <label class="view-select">显示图像<select id="processView"><option value="1">原图旁路</option><option value="0">彩色图</option><option value="2">分割原始掩码</option><option value="3">形态学后掩码</option><option value="4">最终 Sobel 边缘</option><option value="5">灰度形态学结果</option><option value="6">前景内边界</option></select></label>
+        <div id="processFlags" class="camera-fields"></div><details class="parameters"><summary>详细处理参数</summary><div id="processParameters" class="camera-fields"></div></details><p id="processActual" class="muted" role="status">读取板端后可查看处理参数。</p>
+      </article>
+      <div class="stage-footer"><button id="freeze" class="primary">固定参数并进入采集 →</button></div>
+    </section>
+
+    <section id="page2" class="page" aria-label="样本标注" hidden>
+      <div class="batch-tools"><article class="card toolbar"><div><strong id="captureSummary">0 / 15 张原图</strong><small id="annotationSummary">逐图核对边框和姿态。</small></div><div class="actions"><button id="capture15" class="primary">现拍 15 张</button><button id="captureMore">补齐当前批次</button><button id="assist">自动画框</button></div></article>
+      <details class="card helper"><summary>画框助手 <span id="helperSummary">尚未选择助手</span></summary><div class="helper-body"><label>训练版本<select id="helperSelect"><option value="">选择训练时间和场景</option></select></label><pre id="helperDetails" class="model-details"></pre><div class="actions"><button id="selectHelper">确认助手</button><button id="trainHelper">训练助手</button></div></div></details></div>
+      <div class="annotation-grid"><article class="card"><div class="card-head"><h2 id="frameTitle">图像标注</h2><div class="actions"><button id="undoBox">撤销</button><button id="deleteBox">删框</button></div></div>
+        <div class="image-stage annotation-stage" id="annotationMount"><div class="empty live-empty">采集原图后即可开始标注</div></div><div class="viewer-footer"><span id="frameMeta">原图像素坐标</span></div><div id="filmstrip" class="filmstrip" aria-label="样本图像"></div></article>
+        <article class="card label-card"><div class="card-head"><h2>元件姿态</h2><button id="addPose">新增姿态</button></div><div id="poses" class="poses"></div><label>默认姿态<select id="drawingPose"><option value="">待指定</option></select></label><div id="objectList" class="object-list"></div><div id="boxCoords" class="box-coords"></div><div class="label-bottom"><button id="saveDraft" class="full">保存草稿</button><button id="confirmFrame" class="primary full">确认本图</button><button id="excludeFrame" class="plain full">排除本图</button></div></article>
+      </div><div class="stage-footer"><button id="toTrain" class="primary">进入训练与测试 →</button></div>
+    </section>
+
+    <section id="page3" class="page" aria-label="训练与测试" hidden>
+      <div class="training-grid"><article class="card train-card"><h2>训练样本</h2><div id="trainCounts" class="stat-row"></div><button id="trainModel" class="primary full">训练并转换</button></article>
+        <article class="card"><div class="card-head"><h2>模型版本</h2><span class="pill">北京时间</span></div><select id="runSelect" aria-label="选择模型训练版本"><option value="">选择本次使用的训练版本</option></select><pre id="runDetails" class="model-details">尚未选择训练版本。</pre><div class="actions"><button id="convertModel">重新转换 RKNN</button><button id="downloadModel">下载 RKNN</button><button id="testModel" class="primary">确认模型并测试 10 张</button></div></article></div>
+      <article class="card test-card"><div class="card-head"><h2>现场测试 <small>INT8</small></h2><select id="testSelect" aria-label="测试批次"><option value="">尚无测试批次</option></select></div><div id="testGrid" class="test-grid"><div class="empty">测试图像将在这里显示</div></div><div class="card-foot"><span id="testNote" class="muted">准确率需依据人工标注计算。</span><div class="actions"><button id="feedback">加入纠错</button><button id="reviewTest">确认结果</button></div></div></article>
+      <div class="stage-footer"><button id="toDeploy" class="primary">进入部署与运行 →</button></div>
+    </section>
+
+    <section id="page4" class="page" aria-label="部署与运行" hidden>
+      <div class="live-grid">
+        <article class="card viewer-card">
+          <div class="card-head"><div class="view-tabs" role="group" aria-label="画面来源"><button id="liveTab4" type="button" aria-pressed="true">现场快照</button><button id="refTab4" type="button" aria-pressed="false" disabled>批次原图</button></div><button id="getPreview4" class="snapshot" type="button">获取图像</button></div>
+          <div class="image-stage live-stage" id="liveMount4"></div>
+          <div class="image-stage reference-stage" id="refMount4" hidden></div>
+          <div class="viewer-footer"><span id="liveMeta4">HDMI · 手动快照</span><span id="refMeta4" hidden></span></div>
+        </article>
+        <article class="card range-card"><div class="card-head"><h2>推理合法区</h2><span class="unit">1920 × 1080</span></div><div class="roi-map" id="legalMap" role="img" aria-label="推理合法区在原图中的位置"><span></span></div><div id="legalRect" class="rect-fields"></div><div class="rect-fields"><label>置信度（%）<input id="confidence" type="number" min="1" max="100" placeholder="待读取"></label><label>确认次数<input id="trackHits" type="number" min="1" max="30" placeholder="待读取"></label></div><button id="applyLegal" class="primary full">应用合法区设置</button><p id="legalStatus" class="muted">读取板端后显示实际参数。</p></article>
+      </div>
+      <article class="card deployment"><div><h2>模型部署</h2><p id="deploySummary">请在第三步选择训练版本，并复核现场测试。</p></div><div class="actions"><button id="chooseRun">选择模型版本</button><button id="prepareDeploy" class="primary">确认部署</button></div></article>
+      <article class="card action-output"><div class="card-head"><h2>电磁阀输出</h2><span class="pill">GPIO0_C1 · TX</span></div><p id="actionLine" class="muted">读取板端后显示触发线位置。</p><div class="action-output-fields"><div><span class="muted">触发姿态</span><div id="actionPoses" class="action-poses"></div></div><label>过线延迟（ms）<input id="actionDelay" type="number" min="0" max="5000" step="1" value="200"></label><label>脉宽（ms）<input id="actionPulse" type="number" min="1" max="1000" step="1" value="50"></label></div><div class="card-foot"><label class="action-enable"><input id="actionEnabled" type="checkbox">启用输出</label><button id="applyActionOutput" class="primary">应用输出设置</button></div><p id="actionOutputStatus" class="muted" role="status">尚未读取 GPIO 状态。</p><div id="actionOutputMetrics" class="stat-row"></div></article>
+      <article class="card board-card"><div class="card-head"><h2>板端状态</h2></div><div id="boardMetrics" class="stat-row"></div><div id="boardResults" class="result-list"></div></article>
+    </section>
+    </div>
+  </main>
+</div>
+<dialog id="modal" aria-labelledby="modalTitle"><form method="dialog" id="dialogForm"><div class="dialog-head"><h2 id="modalTitle"></h2><button type="button" id="modalClose" class="plain" aria-label="关闭">×</button></div><div id="modalBody"></div><p id="modalError" class="notice error" role="alert" hidden></p><div class="dialog-actions"><button id="modalCancel" type="button">取消</button><button id="modalConfirm" type="submit" class="primary">确认</button></div></form></dialog>
+<template id="runtimeOptionsTemplate"><section class="controls" aria-labelledby="runtimeOptionsHeading"><h3 id="runtimeOptionsHeading">板端全局选项</h3><label class="action-enable"><input id="runtimeInferenceEnabled" type="checkbox" disabled>开启推理</label><label class="action-enable"><input id="runtimeShowRoi" type="checkbox" disabled>显示 ROI 框</label><p class="muted">应用后由板端回读，并保存为断电启动状态。ROI 框开关不隐藏元件检测框或标注框。</p><p id="runtimeOptionsStatus" class="muted" role="status" aria-live="polite">请先读取板端实际状态。</p><div class="actions"><button id="applyRuntimeOptions" type="button" disabled>应用全局选项</button><button id="retryRuntimeOptions" type="button" hidden>重试</button></div><div id="runtimeModelChoice" hidden><h3>本次使用这个训练版本？</h3><pre id="runtimeModelDetails" class="model-details"></pre><p class="muted">确认后开启推理，并将此版本保存为断电自启动模型。</p><div class="actions"><button id="confirmRuntimeModel" type="button" class="primary">本次使用此模型并开启推理</button><button id="cancelRuntimeModel" type="button">取消本次开启</button></div></div></section></template>
+<template id="snapshotStandby"><div class="standby">
+  <strong>尚无快照</strong><span>点击右上角「获取图像」读取 HDMI 画面。</span>
+</div></template>
+<div id="toast" role="status" hidden></div>
+</body>
+</html>

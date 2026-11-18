@@ -1,0 +1,393 @@
+{
+  "confirmed": {
+    "screws": "M3",
+    "lower_brass_standoff_height_mm": 10,
+    "floor_to_mount_mm": 10,
+    "mount_to_screen_front_mm": 10
+  },
+  "check_envelopes": {
+    "screen_xy_mm": [
+      233,
+      160
+    ],
+    "brass_diameter_mm": 8,
+    "head_diameter_height_above_mount_mm": [
+      8,
+      6
+    ]
+  },
+  "physical_fit_verified": false,
+  "checks": [
+    {
+      "check": "233x160 envelope lowers straight into shell, bezel removed",
+      "samples": [
+        {
+          "z_offset_mm": 30,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 15,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 10,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 5,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 1,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 0.2,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm brass fits, pitch 223, axis -111.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 15,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 5,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "M3 shaft passes floor slot at -111.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm rear head/washer clearance at -111.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm brass fits, pitch 223, axis -111.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 15,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 5,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "M3 shaft passes floor slot at -111.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm rear head/washer clearance at -111.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm brass fits, pitch 223, axis 111.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 15,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 5,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "M3 shaft passes floor slot at 111.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm rear head/washer clearance at 111.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm brass fits, pitch 223, axis 111.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 15,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 5,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "M3 shaft passes floor slot at 111.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm rear head/washer clearance at 111.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm brass fits, pitch 227, axis -113.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 15,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 5,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "M3 shaft passes floor slot at -113.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm rear head/washer clearance at -113.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm brass fits, pitch 227, axis -113.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 15,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 5,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "M3 shaft passes floor slot at -113.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm rear head/washer clearance at -113.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm brass fits, pitch 227, axis 113.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 15,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 5,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "M3 shaft passes floor slot at 113.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm rear head/washer clearance at 113.5,-75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm brass fits, pitch 227, axis 113.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 15,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 5,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "M3 shaft passes floor slot at 113.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "8mm rear head/washer clearance at 113.5,75.5",
+      "samples": [
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "check": "bezel lowers over original M3 heads without clamping ears",
+      "samples": [
+        {
+          "z_offset_mm": -20,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": -10,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": -5,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": -1,
+          "overlap_mm3": 0
+        },
+        {
+          "z_offset_mm": 0,
+          "overlap_mm3": 0
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "nominal_clearances_mm": {
+    "side_x": 1.6,
+    "side_y": 1.1,
+    "bezel_to_screen_front": 0.8,
+    "independent_boss_to_160mm_envelope": 1.0,
+    "M3_diametral_clearance_before_printing": 0.6
+  }
+}

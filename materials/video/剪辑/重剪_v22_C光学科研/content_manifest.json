@@ -1,0 +1,356 @@
+{
+  "style": "C optical scientific publication",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "full_film_duration": 179.8,
+  "replaced_scene_duration": 48,
+  "palette": {
+    "black": "#100f0c",
+    "white": "#f2e6c9",
+    "red": "#e54828",
+    "yellow": "#edb731",
+    "ink": "#242119",
+    "muted": "#b5aa91",
+    "rule": "#5d5748"
+  },
+  "sources": [
+    {
+      "file": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "sha256": "d16f04f478ce813ee79b6b3b1dbaa3d53fe9515fddb300c9b3bf39f8c30004ab"
+    },
+    {
+      "file": "剪辑/重剪_v21/geometry_b.cjs",
+      "sha256": "1ea7e5e75c6a4066529c76267e73a4f248100f7dc823acac2c865f82f121561c"
+    },
+    {
+      "file": "剪辑/重剪_v21/scenes_b.cjs",
+      "sha256": "65e4851fd516eee83acb274339fb828e308ac08cdb2a59f36bfc1dda665d8ca2"
+    },
+    {
+      "file": "剪辑/重剪_v21/content_audit.json",
+      "sha256": "2cccf4f9911fa107dfa709935fa974fb3e0203dc2ffbac63cf0f6d7ddfb5b9d2"
+    },
+    {
+      "file": "剪辑/视觉风格小样_v20/style_c.cjs",
+      "sha256": "fe9b94a5c8a8ac9b868111a936f7115db3a87ce5720016a6de0cd6a13aa3703b"
+    },
+    {
+      "file": "剪辑/视觉风格小样_v20/style_c_notes.md",
+      "sha256": "e5c8aa1f983f356ece44057225c8a8e7543e97facb3bda39387a7e04216d52a4"
+    }
+  ],
+  "geometry": "Only frozen ../重剪_v21/geometry_b.cjs objects; no added mesh. No hero sculpture or B palette. C warm monochrome mapping is applied to transparent model renders; all projected landmarks come from that same render.",
+  "timing": {
+    "sample_mode": "Direct frame/60 evaluation. No 15Hz or 20Hz time quantization.",
+    "chapter_text_settled": 0.2,
+    "chapter_aperture_settled": 0.32,
+    "chapter_reading_hold": "From .32s to end, intentional stable graphic",
+    "tracking_observations": [
+      0.18,
+      0.94,
+      1.7
+    ],
+    "tracking_snapshot_progress": [
+      0.103006703125,
+      0.3425140252700617,
+      0.7782148196373456
+    ],
+    "tracking_confirmed": 2.45,
+    "trigger_cross": 1.15,
+    "trigger_delay": 1.38,
+    "trigger_pulse": 1.84,
+    "trigger_record": 2.35
+  },
+  "intentional_holds": {
+    "opening_title": [
+      0.32,
+      2
+    ],
+    "chapter_board": [
+      0.32,
+      1.5
+    ],
+    "chapter_console": [
+      0.32,
+      1.2
+    ],
+    "chapter_logic": [
+      0.32,
+      1.2
+    ],
+    "application": [
+      0.32,
+      2.7
+    ],
+    "tracking_short": [
+      2.45,
+      3.2
+    ],
+    "trigger_short": [
+      2.53,
+      3.2
+    ],
+    "dimensions": [
+      0.62,
+      5
+    ],
+    "end": [
+      0.465,
+      5
+    ]
+  },
+  "continuous_action_scenes": {
+    "isp_methods": "Four parallel signal markers after mechanical entry.",
+    "fewshot_value": "Training and class signal paths; the 15 genuine sample photographs remain still.",
+    "compression_pcie": "Bidirectional signal paths and parallel optional compression routes.",
+    "tracking_short": "One live object moves at continuous progress; historical exposures stay fixed once acquired.",
+    "trigger_short": "The object moves across the exact projected virtual line before delay / pulse / record.",
+    "alerts": "Event and evidence-routing markers; optional SD is shown with a dashed route."
+  },
+  "subtitle_safe_area": {
+    "x": 0,
+    "y": 920,
+    "width": 1920,
+    "height": 160,
+    "background": "#100f0c"
+  },
+  "scenes": [
+    {
+      "name": "opening_title",
+      "start": 0,
+      "duration": 2,
+      "frames": 120,
+      "visible_text": [
+        "FPGA 实时视觉识别",
+        "与工件自动分拣",
+        "现场成像  ·  小样本学习  ·  识别联动"
+      ]
+    },
+    {
+      "name": "chapter_board",
+      "start": 6,
+      "duration": 1.5,
+      "frames": 90,
+      "visible_text": [
+        "01",
+        "板卡介绍",
+        "RK · FPGA · 控制板"
+      ]
+    },
+    {
+      "name": "chapter_console",
+      "start": 30.5,
+      "duration": 1.2,
+      "frames": 72,
+      "visible_text": [
+        "02",
+        "控制台操作",
+        "画面 · 标注 · 训练 · 运行"
+      ]
+    },
+    {
+      "name": "isp_methods",
+      "start": 39.5,
+      "duration": 6,
+      "frames": 360,
+      "visible_text": [
+        "FPGA ISP 图像预处理",
+        "四像素并行流水线",
+        "去马赛克",
+        "白平衡",
+        "高斯平滑",
+        "直方图映射",
+        "前景分割",
+        "灰度 / 二值形态学",
+        "Sobel 边缘提取",
+        "彩色轮廓叠加",
+        "数字增益 · 亮度 · 对比度"
+      ]
+    },
+    {
+      "name": "fewshot_value",
+      "start": 62.2,
+      "duration": 5.5,
+      "frames": 330,
+      "visible_text": [
+        "小样本学习，快速适配",
+        "15张现场原图",
+        "训练",
+        "同一模型 · 3类姿态",
+        "A",
+        "B",
+        "C",
+        "现场采样 → 小样本训练 → 快速部署"
+      ]
+    },
+    {
+      "name": "chapter_logic",
+      "start": 67.7,
+      "duration": 1.2,
+      "frames": 72,
+      "visible_text": [
+        "03",
+        "识别与工业检测",
+        "识别 · 测量 · 告警"
+      ]
+    },
+    {
+      "name": "compression_pcie",
+      "start": 68.9,
+      "duration": 5.4,
+      "frames": 324,
+      "visible_text": [
+        "PCIe 高速互通与双模式压缩",
+        "原生 RGB 推理支路",
+        "FPGA",
+        "采集与处理",
+        "PCIe",
+        "图像 DMA 上行",
+        "参数下发",
+        "状态回读",
+        "RK",
+        "识别与显示",
+        "可选压缩链路 · 预览与归档",
+        "预览 / 归档",
+        "JPEG 有损",
+        "LZ77 无损",
+        "PCIe → RK",
+        "接收与解码"
+      ]
+    },
+    {
+      "name": "tracking_short",
+      "start": 74.3,
+      "duration": 3.2,
+      "frames": 192,
+      "visible_text": [
+        "同一工件，连续确认",
+        "真实观测 1",
+        "真实观测 2",
+        "真实观测 3",
+        "ID 07",
+        "连续观测积累",
+        "类别已确认",
+        "同一身份 · 连续真实观测",
+        "同一摄像头",
+        "连续帧"
+      ]
+    },
+    {
+      "name": "trigger_short",
+      "start": 77.5,
+      "duration": 3.2,
+      "frames": 192,
+      "visible_text": [
+        "确认类别，真实过线后触发",
+        "真实位置越过触发线",
+        "触发线",
+        "过线前",
+        "已真实过线",
+        "触发条件",
+        "所选类别已确认",
+        "控制输出已启用",
+        "真实位置已过线",
+        "设定延时",
+        "控制脉冲",
+        "脉宽",
+        "过线已记录",
+        "ID 07"
+      ]
+    },
+    {
+      "name": "dimensions",
+      "start": 80.7,
+      "duration": 5,
+      "frames": 300,
+      "visible_text": [
+        "多目标像素尺寸量化",
+        "逐目标检测框",
+        "x1, y1",
+        "x2, y2",
+        "w",
+        "h",
+        "原生坐标",
+        "w = x2 − x1",
+        "h = y2 − y1",
+        "单位：px",
+        "逐目标输出位置与像素宽高"
+      ]
+    },
+    {
+      "name": "alerts",
+      "start": 85.7,
+      "duration": 6.1,
+      "frames": 366,
+      "visible_text": [
+        "边缘异常提示与留证",
+        "识别终态事件",
+        "终态未确认",
+        "身份丢失",
+        "RK 边缘端",
+        "异常状态提示",
+        "真实原图缓存",
+        "网口回传",
+        "SFTP → 电脑",
+        "可选SD卡留存",
+        "需启用并挂载"
+      ]
+    },
+    {
+      "name": "application",
+      "start": 91.8,
+      "duration": 2.7,
+      "frames": 162,
+      "visible_text": [
+        "04",
+        "实战与应用",
+        "姿态分拣 · 类别分拣"
+      ]
+    },
+    {
+      "name": "end",
+      "start": 174.8,
+      "duration": 5,
+      "frames": 300,
+      "visible_text": [
+        "从现场适配，到自动分拣",
+        "图像处理与高速互通",
+        "ISP · 双模式压缩 · PCIe",
+        "现场快速适配",
+        "15张原图 · 三类姿态",
+        "小样本学习 · 快速部署",
+        "多目标工业分析",
+        "像素尺寸 · 边缘异常提示",
+        "网口回传 · 可选SD留存",
+        "多目标高速分拣",
+        "实测1200工件/min",
+        "各组召回率99.997%"
+      ]
+    }
+  ],
+  "authenticity": "Single overhead camera / one live resistor / three historical image-plane frames. Native RGB separate from parallel optional JPEG or LZ77. Virtual trigger line aligned with progress=.5. SD remains optional after enabling and mounting.",
+  "native_samples": "The unchanged 15 real 512x288 PNGs from ../重剪_v13/sample_assets; pixel-equality proof retained in ../重剪_v21/sample_provenance_verified.json.",
+  "retained_photographic_scenes": [
+    "intro",
+    "rk_board",
+    "fpga_board",
+    "control_board",
+    "station",
+    "console_image",
+    "console_annotate",
+    "console_train",
+    "console_run",
+    "pose_proof",
+    "pose_burst_a",
+    "pose_burst_b",
+    "pose_display",
+    "pose_slow",
+    "pose_inference",
+    "category_material",
+    "category_monitor",
+    "category_track",
+    "category_action",
+    "category_collect"
+  ]
+}

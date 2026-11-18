@@ -1,0 +1,72 @@
+{
+  "source": "剪辑/视觉风格小样_v20/style_b.cjs",
+  "sha256": "7c4b7a27f398749a8d1384784746f82f67f930f8f2b1574a53358c0b2419b91e",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "frames": 960,
+  "duration": 16,
+  "reference_assets_in_render": false,
+  "title": "B｜曲面装置",
+  "palette": [
+    "#cbdde9",
+    "#39b83f",
+    "#346e9f",
+    "#dce8e9",
+    "#183747"
+  ],
+  "motion": "三块实体曲面经 quintic minimum-jerk 连续下折为单一观测轨道；单个 ID 07 工件在真实观测时刻依次停靠，之后保持最后观测位置；轻微连续正交相机移动。",
+  "sound_events": [
+    {
+      "time": 0.18,
+      "type": "warm_solid_touch",
+      "note": "轻木质/陶瓷触碰，短尾，低音量"
+    },
+    {
+      "time": 3.12,
+      "type": "soft_material_fold",
+      "duration": 0.85,
+      "note": "柔和材质擦动，随弧板下折"
+    },
+    {
+      "time": 5.2,
+      "type": "glass_resonance",
+      "pitch": 660,
+      "note": "第一次真实观测，温润短玻璃谐振"
+    },
+    {
+      "time": 7.4,
+      "type": "glass_resonance",
+      "pitch": 740,
+      "note": "第二次真实观测，与前次同类音色"
+    },
+    {
+      "time": 9.6,
+      "type": "glass_resonance",
+      "pitch": 830,
+      "note": "第三次真实观测，同类音色"
+    },
+    {
+      "time": 11.7,
+      "type": "soft_settle",
+      "note": "低频温润落定与短谐波，类别确认"
+    }
+  ],
+  "visible_text": [
+    "03",
+    "识别与工业检测",
+    "识别 · 测量 · 告警",
+    "同一工件，连续确认",
+    "真实观测 1",
+    "真实观测 2",
+    "真实观测 3",
+    "ID 07",
+    "连续观测积累",
+    "类别已确认",
+    "同一身份 · 连续真实观测"
+  ],
+  "reference_urls": [
+    "https://www.ordinaryfolk.co/project/equilibrium"
+  ],
+  "rendering": "1920x1080 / 16 seconds / 60fps; Canvas projected mesh + painter sorting + diffuse/specular material shading; all geometry procedural; no image-generation assets, photographs, or path prediction."
+}

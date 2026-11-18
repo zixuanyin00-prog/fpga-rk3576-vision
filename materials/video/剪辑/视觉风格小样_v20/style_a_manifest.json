@@ -1,0 +1,73 @@
+{
+  "source": "剪辑/视觉风格小样_v20/style_a.cjs",
+  "sha256": "f8d81c5329f671c808bccdc2f860ce2539b517651600da096b4627580a94c8c9",
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "frames": 960,
+  "duration": 16,
+  "reference_assets_in_render": false,
+  "title": "动势字场",
+  "palette": [
+    "#f3f0e7",
+    "#111210",
+    "#e34a2c"
+  ],
+  "motion": "大字压缩展开；横向字形切片入场；六条画幅切片从章节擦入轨道；同一电阻连续运动，ID 随体保持；确认文字分层置换后稳定停留。",
+  "sound_events": [
+    {
+      "time": 0.12,
+      "type": "low_typographic_hit",
+      "gain": 0.26
+    },
+    {
+      "time": 0.66,
+      "type": "short_dry_lock",
+      "gain": 0.2
+    },
+    {
+      "time": 3.08,
+      "type": "paper_slice_whoosh",
+      "duration": 0.72,
+      "gain": 0.22
+    },
+    {
+      "time": 5.2,
+      "type": "dry_observation_tick",
+      "gain": 0.2
+    },
+    {
+      "time": 7.4,
+      "type": "dry_observation_tick",
+      "gain": 0.2
+    },
+    {
+      "time": 9.6,
+      "type": "dry_observation_tick",
+      "gain": 0.2
+    },
+    {
+      "time": 11.7,
+      "type": "soft_low_confirm",
+      "duration": 0.36,
+      "gain": 0.25
+    }
+  ],
+  "visible_text": [
+    "03",
+    "识别与工业检测",
+    "识别 · 测量 · 告警",
+    "同一工件，连续确认",
+    "真实观测 1",
+    "真实观测 2",
+    "真实观测 3",
+    "ID 07",
+    "连续观测积累",
+    "类别已确认",
+    "同一身份 · 连续真实观测"
+  ],
+  "reference_urls": [
+    "https://www.brandnewschool.com/work/johnnie-walker-keep-walking",
+    "https://studiodumbar.com/work/demo-2022"
+  ]
+}

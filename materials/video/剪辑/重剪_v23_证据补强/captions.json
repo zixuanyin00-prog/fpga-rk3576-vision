@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "scene": "intro",
+    "text": "我们将小样本学习与高速识别结合，\n构建可快速部署的工件分拣系统。",
+    "startMs": 450,
+    "endMs": 6410
+  },
+  {
+    "id": 2,
+    "scene": "rk_board",
+    "text": "RK3576，负责模型识别和显示。",
+    "startMs": 7800,
+    "endMs": 11240
+  },
+  {
+    "id": 3,
+    "scene": "fpga_board",
+    "text": "PH1A90，负责采集和预处理。",
+    "startMs": 12900,
+    "endMs": 16090
+  },
+  {
+    "id": 4,
+    "scene": "control_board",
+    "text": "自制电磁阀转接板，接收脉冲执行筛选。",
+    "startMs": 18200,
+    "endMs": 21780
+  },
+  {
+    "id": 5,
+    "scene": "station",
+    "text": "通过 PCIe 转接卡，实现双端高速互联。",
+    "startMs": 23250,
+    "endMs": 27280
+  },
+  {
+    "id": 25,
+    "scene": "console_intro",
+    "text": "配套控制台，集成采集、训练与部署。",
+    "startMs": 27350,
+    "endMs": 30870
+  },
+  {
+    "id": 6,
+    "scene": "console_image",
+    "text": "控制台经 RK 下发参数，FPGA 回传状态；\n右侧屏幕呈现对应的成像效果。",
+    "startMs": 31800,
+    "endMs": 38840
+  },
+  {
+    "id": 7,
+    "scene": "isp_methods",
+    "text": "同一张图像，对照亮度映射、前景分割与边缘提取的效果。",
+    "startMs": 39550,
+    "endMs": 44710
+  },
+  {
+    "id": 8,
+    "scene": "console_annotate",
+    "text": "标注页一键生成候选框，再检查位置、指定类别。",
+    "startMs": 46600,
+    "endMs": 51020
+  },
+  {
+    "id": 9,
+    "scene": "console_train",
+    "text": "训练页完成模型训练、转换和现场检查。",
+    "startMs": 53600,
+    "endMs": 57550
+  },
+  {
+    "id": 10,
+    "scene": "console_run",
+    "text": "运行页监控识别结果和设备状态。",
+    "startMs": 58800,
+    "endMs": 61980
+  },
+  {
+    "id": 24,
+    "scene": "fewshot_value",
+    "text": "本次用十五张原图建立三类姿态模型，可通过控制台快速部署。",
+    "startMs": 63250,
+    "endMs": 68680
+  },
+  {
+    "id": 11,
+    "scene": "compression_pcie",
+    "text": "有损压缩，体积减少92.87%；无损解码逐字节一致。",
+    "startMs": 70000,
+    "endMs": 75590
+  },
+  {
+    "id": 12,
+    "scene": "tracking_short",
+    "text": "三张真实采集帧，对应同一轨迹编号。",
+    "startMs": 76350,
+    "endMs": 79830
+  },
+  {
+    "id": 13,
+    "scene": "trigger_short",
+    "text": "真实过线后，按类别触发控制脉冲。",
+    "startMs": 80550,
+    "endMs": 83710
+  },
+  {
+    "id": 26,
+    "scene": "dimensions",
+    "text": "实际输出四个目标框，按原生坐标计算像素宽高。",
+    "startMs": 83750,
+    "endMs": 88150
+  },
+  {
+    "id": 27,
+    "scene": "alerts",
+    "text": "异常原图回传电脑归档，并支持可选 SD 卡留存。",
+    "startMs": 89400,
+    "endMs": 94030
+  },
+  {
+    "id": 14,
+    "scene": "pose_proof",
+    "text": "姿态分拣，自动剔除白色反面电阻。",
+    "startMs": 98700,
+    "endMs": 102030
+  },
+  {
+    "id": 30,
+    "scene": "pose_burst_a",
+    "text": "在连续送料中，系统按设定姿态自动筛选。",
+    "startMs": 104600,
+    "endMs": 108430
+  },
+  {
+    "id": 17,
+    "scene": "pose_burst_b",
+    "text": "多目标并行识别，各组测试召回率为99.997%。",
+    "startMs": 108500,
+    "endMs": 113680
+  },
+  {
+    "id": 31,
+    "scene": "pose_display",
+    "text": "HDMI 输出1080p、每秒60帧，采集到显示延迟小于50毫秒。",
+    "startMs": 114000,
+    "endMs": 120280
+  },
+  {
+    "id": 28,
+    "scene": "pose_slow",
+    "text": "慢放观察连续画面，识别框随工件位置更新。",
+    "startMs": 121300,
+    "endMs": 125340
+  },
+  {
+    "id": 29,
+    "scene": "pose_inference",
+    "text": "多目标并行识别，当前演示关闭分拣输出。",
+    "startMs": 129050,
+    "endMs": 132920
+  },
+  {
+    "id": 15,
+    "scene": "category_material",
+    "text": "再看类别检测，剔除473，保留1004。",
+    "startMs": 134700,
+    "endMs": 138690
+  },
+  {
+    "id": 18,
+    "scene": "category_monitor",
+    "text": "不同型号对应不同类别，按设定规则执行分拣。",
+    "startMs": 139200,
+    "endMs": 143190
+  },
+  {
+    "id": 19,
+    "scene": "category_track",
+    "text": "类别确认并实际过线后，电磁阀自动剔除473。",
+    "startMs": 144750,
+    "endMs": 148950
+  },
+  {
+    "id": 32,
+    "scene": "category_action",
+    "text": "1004电阻继续沿轨道通过，进入后续收集。",
+    "startMs": 153100,
+    "endMs": 157120
+  },
+  {
+    "id": 21,
+    "scene": "category_action",
+    "text": "实测分拣速度达到每分钟1200件。",
+    "startMs": 160900,
+    "endMs": 164320
+  },
+  {
+    "id": 22,
+    "scene": "category_collect",
+    "text": "1004继续通过，进入收集杯。",
+    "startMs": 168850,
+    "endMs": 171640
+  },
+  {
+    "id": 23,
+    "scene": "end",
+    "text": "双向调参、小样本学习、快速部署，支撑高速分拣。",
+    "startMs": 174950,
+    "endMs": 179700
+  }
+]

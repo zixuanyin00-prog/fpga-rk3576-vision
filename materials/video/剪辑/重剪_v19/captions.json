@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "scene": "intro",
+    "text": "我们将小样本学习与高速识别结合，\n构建可快速部署的工件分拣系统。",
+    "startMs": 450,
+    "endMs": 6410
+  },
+  {
+    "id": 2,
+    "scene": "rk_board",
+    "text": "RK3576，负责模型识别和显示。",
+    "startMs": 7800,
+    "endMs": 11240
+  },
+  {
+    "id": 3,
+    "scene": "fpga_board",
+    "text": "PH1A90，负责采集和预处理。",
+    "startMs": 12900,
+    "endMs": 16090
+  },
+  {
+    "id": 4,
+    "scene": "control_board",
+    "text": "自制电磁阀转接板，接收脉冲执行筛选。",
+    "startMs": 18200,
+    "endMs": 21780
+  },
+  {
+    "id": 5,
+    "scene": "station",
+    "text": "通过 PCIe 转接卡，实现双端高速互联。",
+    "startMs": 23250,
+    "endMs": 27280
+  },
+  {
+    "id": 25,
+    "scene": "console_intro",
+    "text": "配套控制台，集成采集、训练与部署。",
+    "startMs": 27350,
+    "endMs": 30870
+  },
+  {
+    "id": 6,
+    "scene": "console_image",
+    "text": "控制台经 RK 下发参数，FPGA 回传状态；\n右侧屏幕呈现对应的成像效果。",
+    "startMs": 31800,
+    "endMs": 38840
+  },
+  {
+    "id": 7,
+    "scene": "isp_methods",
+    "text": "还实现白平衡、高斯平滑、直方图映射、\n前景分割、形态学和边缘提取。",
+    "startMs": 38850,
+    "endMs": 45560
+  },
+  {
+    "id": 8,
+    "scene": "console_annotate",
+    "text": "标注页一键生成候选框，再检查位置、指定类别。",
+    "startMs": 45600,
+    "endMs": 50020
+  },
+  {
+    "id": 9,
+    "scene": "console_train",
+    "text": "训练页完成模型训练、转换和现场检查。",
+    "startMs": 52600,
+    "endMs": 56550
+  },
+  {
+    "id": 10,
+    "scene": "console_run",
+    "text": "运行页监控识别结果和设备状态。",
+    "startMs": 57800,
+    "endMs": 60980
+  },
+  {
+    "id": 24,
+    "scene": "fewshot_value",
+    "text": "本次用十五张原图建立三类姿态模型，可通过控制台快速部署。",
+    "startMs": 62250,
+    "endMs": 67680
+  },
+  {
+    "id": 11,
+    "scene": "compression_pcie",
+    "text": "另提供无损、有损双模式压缩，经 PCIe 与 RK 高速互通。",
+    "startMs": 68450,
+    "endMs": 74210
+  },
+  {
+    "id": 12,
+    "scene": "tracking_short",
+    "text": "跨帧关联，连续观测确认类别。",
+    "startMs": 74350,
+    "endMs": 77400
+  },
+  {
+    "id": 13,
+    "scene": "trigger_short",
+    "text": "真实过线后，按类别触发控制脉冲。",
+    "startMs": 77550,
+    "endMs": 80710
+  },
+  {
+    "id": 26,
+    "scene": "dimensions",
+    "text": "逐目标输出原生坐标检测框，以像素量化包围框宽高。",
+    "startMs": 80800,
+    "endMs": 85470
+  },
+  {
+    "id": 27,
+    "scene": "alerts",
+    "text": "异常状态在边缘端提示留证，支持网口回传和可选 SD 卡保存。",
+    "startMs": 85800,
+    "endMs": 91680
+  },
+  {
+    "id": 14,
+    "scene": "pose_proof",
+    "text": "姿态分拣，自动剔除白色反面电阻。",
+    "startMs": 94700,
+    "endMs": 98030
+  },
+  {
+    "id": 30,
+    "scene": "pose_burst_a",
+    "text": "在连续送料中，系统按设定姿态自动筛选。",
+    "startMs": 100200,
+    "endMs": 104030
+  },
+  {
+    "id": 17,
+    "scene": "pose_burst_b",
+    "text": "多目标并行识别，各组测试召回率为99.997%。",
+    "startMs": 106600,
+    "endMs": 111780
+  },
+  {
+    "id": 31,
+    "scene": "pose_display",
+    "text": "HDMI 输出1080p、每秒60帧，采集到显示延迟小于50毫秒。",
+    "startMs": 112200,
+    "endMs": 118480
+  },
+  {
+    "id": 28,
+    "scene": "pose_slow",
+    "text": "放慢看，检测框跟随工件，跨帧关联后确认类别。",
+    "startMs": 118600,
+    "endMs": 123160
+  },
+  {
+    "id": 29,
+    "scene": "pose_inference",
+    "text": "多目标并行识别，连续输出类别结果。",
+    "startMs": 124200,
+    "endMs": 127530
+  },
+  {
+    "id": 15,
+    "scene": "category_material",
+    "text": "再看类别检测，剔除473，保留1004。",
+    "startMs": 130700,
+    "endMs": 134690
+  },
+  {
+    "id": 18,
+    "scene": "category_monitor",
+    "text": "不同型号对应不同类别，按设定规则执行分拣。",
+    "startMs": 135200,
+    "endMs": 139190
+  },
+  {
+    "id": 19,
+    "scene": "category_track",
+    "text": "类别确认并实际过线后，电磁阀自动剔除473。",
+    "startMs": 140750,
+    "endMs": 144950
+  },
+  {
+    "id": 32,
+    "scene": "category_action",
+    "text": "1004电阻继续沿轨道通过，进入后续收集。",
+    "startMs": 149100,
+    "endMs": 153120
+  },
+  {
+    "id": 21,
+    "scene": "category_action",
+    "text": "实测分拣速度达到每分钟1200件。",
+    "startMs": 156900,
+    "endMs": 160320
+  },
+  {
+    "id": 22,
+    "scene": "category_collect",
+    "text": "1004继续通过，进入收集杯。",
+    "startMs": 168850,
+    "endMs": 171640
+  },
+  {
+    "id": 23,
+    "scene": "end",
+    "text": "双向调参、小样本学习、快速部署，支撑高速分拣。",
+    "startMs": 174950,
+    "endMs": 179700
+  }
+]

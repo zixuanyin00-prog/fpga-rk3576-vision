@@ -1,0 +1,35 @@
+{
+  "voice": "zh-CN-YunyangNeural",
+  "voice_target_lufs": -18,
+  "music_target_lufs": -36,
+  "music_level": "constant",
+  "duration": 318,
+  "speech_clips": 48,
+  "speech_seconds": 232.51,
+  "voice_measurement": {
+    "input_i": "-25.56",
+    "input_tp": "-0.88",
+    "input_lra": "6.70",
+    "input_thresh": "-36.00",
+    "output_i": "-19.77",
+    "output_tp": "-2.00",
+    "output_lra": "6.20",
+    "output_thresh": "-30.13",
+    "normalization_type": "dynamic",
+    "target_offset": "1.77"
+  },
+  "music_measurement": {
+    "input_i": "-32.71",
+    "input_tp": "-19.12",
+    "input_lra": "0.60",
+    "input_thresh": "-42.74",
+    "output_i": "-35.97",
+    "output_tp": "-22.20",
+    "output_lra": "0.60",
+    "output_thresh": "-45.99",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.03"
+  },
+  "mix_sample_peak_dbfs": -1.5,
+  "output": "剪辑/重剪_v8/FPGA视觉系统_自动画框与字幕统一_v8.mp4"
+}

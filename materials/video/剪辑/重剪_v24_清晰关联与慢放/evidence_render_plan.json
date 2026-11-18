@@ -1,0 +1,97 @@
+[
+  {
+    "name": "isp_methods",
+    "duration": 10.5,
+    "start": 39.5,
+    "file": "剪辑/重剪_v24_清晰关联与慢放/scenes/isp_methods.mp4",
+    "source": {
+      "renderer": "evidence_scenes_v24.cjs",
+      "basis": "verified source assets and records"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/isp_methods.mp4",
+      "start": 0.0,
+      "length": 6.0,
+      "playback_speed": 1.0,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "compression_pcie",
+    "duration": 6.4,
+    "start": 73.4,
+    "file": "剪辑/重剪_v24_清晰关联与慢放/scenes/compression_pcie.mp4",
+    "source": {
+      "renderer": "evidence_scenes_v24.cjs",
+      "basis": "verified source assets and records"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/compression_pcie.mp4",
+      "start": 0.0,
+      "length": 6.5,
+      "playback_speed": 1.2037037037,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "tracking_short",
+    "duration": 5.2,
+    "start": 79.8,
+    "file": "剪辑/重剪_v24_清晰关联与慢放/scenes/tracking_short.mp4",
+    "source": {
+      "renderer": "evidence_scenes_v24.cjs",
+      "basis": "verified source assets and records"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/tracking_short.mp4",
+      "start": 0.0,
+      "length": 4.0,
+      "playback_speed": 1.25,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "dimensions",
+    "duration": 5.6,
+    "start": 88.2,
+    "file": "剪辑/重剪_v24_清晰关联与慢放/scenes/dimensions.mp4",
+    "source": {
+      "renderer": "evidence_scenes_v24.cjs",
+      "basis": "verified source assets and records"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/dimensions.mp4",
+      "start": 0.0,
+      "length": 6.0,
+      "playback_speed": 1.2,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "alerts",
+    "duration": 6.5,
+    "start": 93.8,
+    "file": "剪辑/重剪_v24_清晰关联与慢放/scenes/alerts.mp4",
+    "source": {
+      "renderer": "evidence_scenes_v24.cjs",
+      "basis": "verified source assets and records"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/alerts.mp4",
+      "start": 0.0,
+      "length": 8.0,
+      "playback_speed": 1.3114754098,
+      "filters": [
+        "null"
+      ]
+    }
+  }
+]

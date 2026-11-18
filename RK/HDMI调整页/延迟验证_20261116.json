@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-16",
+  "timezone": "America/Los_Angeles",
+  "display": "HDMI-1",
+  "units": {
+    "latency": "ms",
+    "rates": "frames or calls per second"
+  },
+  "measurement": {
+    "fpga_start": "First beat of the preview DMA source clock, aligned via a read-only PCIe BAR timer sample, matched by source frame ID.",
+    "display_endpoint": "X11 submission return. HDMI panel light-out was outside the requested internal measurement.",
+    "sampling": "Independent 12-second before and after traces. Each display trace was deduplicated by camera source frame ID."
+  },
+  "before": {
+    "window_s": 12.005,
+    "display_id_count": 721,
+    "display_fps": 60.007126441338016,
+    "display_count_fps": 60.01133029743703,
+    "source_gaps": 0,
+    "x11_done_fps": 60.01133029743703,
+    "preview_fps": 59.886751242297336,
+    "redraw_fps": 59.98310557142144,
+    "roi_fps": 59.977214612753976,
+    "npu_fps": 59.977214612753976,
+    "publish_fps": 59.977214612753976,
+    "delay": 8,
+    "exact": 728,
+    "earlier": 0,
+    "no_result": 0,
+    "box_publish_to_submit_ms": {
+      "n": 19,
+      "p50": 117.798,
+      "p95": 120.222,
+      "max": 120.222
+    },
+    "late_under_short_delay": {
+      "3": 0,
+      "4": 0
+    },
+    "preview_to_submit_ms": {
+      "n": 721,
+      "p50": 142.014,
+      "p95": 143.825,
+      "max": 150.867
+    },
+    "dma_first_to_submit_ms": {
+      "n": 11,
+      "p50": 162.103,
+      "p95": 164.887,
+      "max": 164.887
+    },
+    "fpga_clock_mhz": 125.00011614717842,
+    "counter_bracket_ns": 3525,
+    "action": {
+      "pending": 0,
+      "awaiting_confirmation": 0,
+      "active": false,
+      "armed": null,
+      "enabled": null,
+      "last_source_frame_id": 1176537
+    },
+    "result_publication_ms": {
+      "samples": 120,
+      "mean": 22.133484533393737,
+      "p50": 21.822040500410367,
+      "p95": 24.507866802014178,
+      "max": 39.614717999938875
+    },
+    "trace_errors": [],
+    "trace_dropped": 0
+  },
+  "after": {
+    "window_s": 12.004,
+    "display_id_count": 720,
+    "display_fps": 60.00777709971644,
+    "display_count_fps": 60.00300501494767,
+    "source_gaps": 0,
+    "x11_done_fps": 60.00300501494767,
+    "preview_fps": 59.91624014023649,
+    "redraw_fps": 59.97095594611276,
+    "roi_fps": 59.999226622425184,
+    "npu_fps": 60.08221310461388,
+    "publish_fps": 59.999226622425184,
+    "delay": 4,
+    "exact": 726,
+    "earlier": 0,
+    "no_result": 0,
+    "box_publish_to_submit_ms": {
+      "n": 0
+    },
+    "late_under_short_delay": {
+      "3": 0,
+      "4": 0
+    },
+    "preview_to_submit_ms": {
+      "n": 720,
+      "p50": 75.198,
+      "p95": 76.901,
+      "max": 82.27
+    },
+    "dma_first_to_submit_ms": {
+      "n": 12,
+      "p50": 94.786,
+      "p95": 101.097,
+      "max": 101.097
+    },
+    "fpga_clock_mhz": 125.00009923047166,
+    "counter_bracket_ns": 3324,
+    "action": {
+      "pending": 0,
+      "awaiting_confirmation": 0,
+      "active": false,
+      "model_matches": true,
+      "source_stale": false,
+      "last_source_frame_id": 1190551
+    },
+    "result_publication_ms": {
+      "samples": 120,
+      "mean": 21.508585741745872,
+      "p50": 21.471353002198157,
+      "p95": 22.54879544962023,
+      "max": 41.95840799729922
+    },
+    "trace_errors": [],
+    "trace_dropped": 0
+  },
+  "final_live_check": {
+    "display_fresh_frames_since_restart": 2721,
+    "same_source_result_frames": 2593,
+    "earlier_source_result_frames": 0,
+    "no_result_frames_including_startup": 128,
+    "same_source_real_box_updates": 8,
+    "predicted_box_updates": 0,
+    "vision_service_active": true,
+    "action_service_active": true,
+    "action_model_matches": true,
+    "action_source_stale": false
+  }
+}

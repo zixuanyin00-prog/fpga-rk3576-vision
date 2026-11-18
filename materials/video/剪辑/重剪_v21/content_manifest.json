@@ -1,0 +1,456 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "full_film_duration": 179.8,
+  "replaced_scene_duration": 48,
+  "style": "B",
+  "palette": {
+    "bg": "#cbdde9",
+    "ink": "#183747",
+    "muted": "#536f7e",
+    "blue": "#346e9f",
+    "green": "#39b83f",
+    "darkGreen": "#287b38",
+    "silver": "#f2f7f8",
+    "line": "#8caab9",
+    "faint": "#a8c0cc"
+  },
+  "geometry_owner": "geometry_b.cjs",
+  "geometry_contract": "drawModel(ctx, kind, {x,y,w,h,t,progress,variant,view}) -> {landmarks}; viewport uses absolute pixels; all solid geometry is supplied by the modeling module.",
+  "layout_owner": "scenes_b.cjs",
+  "subtitle_safe_area": {
+    "x": 0,
+    "y": 920,
+    "width": 1920,
+    "height": 160
+  },
+  "rendering": "Evaluate draw(ctx,name,frame/60,duration) for every output frame. No baked video or duplicated still frames is used for animation. Historical observations are intentionally frozen image-plane snapshots after their acquisition time.",
+  "content_policy": "Original v19 visible content retained. Only tracking gains explicit same-camera / three-time-frame labels to repair the mistaken three-station interpretation. No 12+3 split or 70s timing is added.",
+  "visual_repairs": {
+    "tracking_short": "A single overhead camera and one live component; three fixed-camera historical image frames enter in acquisition order at their matching observed positions and retain ID 07. Added labels: 同一摄像头 / 连续帧.",
+    "trigger_short": "Virtual trigger line is explicitly drawn from the actual projected endpoints. Crossing time uses the same progress=.5 boundary as the component center.",
+    "compression_pcie": "JPEG and LZ77 are parallel optional branches that rejoin before PCIe → RK. The native RGB inference branch remains separate."
+  },
+  "sources": [
+    {
+      "file": "剪辑/重剪_v21/scenes_b.cjs",
+      "sha256": "65e4851fd516eee83acb274339fb828e308ac08cdb2a59f36bfc1dda665d8ca2"
+    },
+    {
+      "file": "剪辑/重剪_v21/geometry_b.cjs",
+      "sha256": "1ea7e5e75c6a4066529c76267e73a4f248100f7dc823acac2c865f82f121561c"
+    },
+    {
+      "file": "剪辑/重剪_v19/edit_plan.json",
+      "sha256": "7e2f9df4744e4bc794c4b4ec2fd9a717b26b370dc15a0a9d57d22d9ad606becc"
+    },
+    {
+      "file": "剪辑/重剪_v19/timeline.json",
+      "sha256": "e1238ca9d8f0ba0d967e95da1ed0200affd564e1498b963e2a9406347da6471e"
+    },
+    {
+      "file": "剪辑/重剪_v17/isp_compression_v17.cjs",
+      "sha256": "db9955d860cb9b5c3a1bba01508c11b8f267a95663d9325139e5996ef7883e04"
+    },
+    {
+      "file": "剪辑/重剪_v17/industrial_animations_v17.cjs",
+      "sha256": "d843440b3bcdcc7a46904b360811205b75ee608a67ab6a32fe4175a4f7f2fa1c"
+    },
+    {
+      "file": "剪辑/重剪_v17/render_short_assets.cjs",
+      "sha256": "cfe3ab7dcf405fca689e75710ff2ea008144e45e47481779b56ce8faccb6e9b0"
+    },
+    {
+      "file": "剪辑/重剪_v17/end_v17.cjs",
+      "sha256": "9d2e7d3cda00303397792cf26ce27ae45665b76080f2486c1bb188a14c86e8a7"
+    },
+    {
+      "file": "剪辑/重剪_v15/fewshot_v15.cjs",
+      "sha256": "2effa2f7c8a2e309d008869eb1d9968e3d3105b0f7788870718820905169e59c"
+    },
+    {
+      "file": "剪辑/重剪_v13/fewshot_v13.cjs",
+      "sha256": "a3838715c6ad29bc5edf194c4cb7c28ca78272454f8bd3c7e782a698b82a63cb"
+    },
+    {
+      "file": "剪辑/重剪_v13/build_v13.py",
+      "sha256": "e455149f84edd1cd7fba4a4597f9c9f920f7f04d681af15470482087c124f6b2"
+    },
+    {
+      "file": "剪辑/重剪_v12/chapter_cards_v12.cjs",
+      "sha256": "417fcdd0f368c44cb6bd32b5be2b56e1a1e88b5a4909e3cce5c22b042435c15d"
+    },
+    {
+      "file": "剪辑/重剪_v9/animations_v9.cjs",
+      "sha256": "e827dcb24a5bde6559cca4daf3847f51f4c28589a0a79ed9baf2fbf7ed73b7b7"
+    }
+  ],
+  "scenes": [
+    {
+      "name": "opening_title",
+      "start": 0,
+      "duration": 2,
+      "frames": 120,
+      "visible_text": [
+        "FPGA 实时视觉识别",
+        "与工件自动分拣",
+        "现场成像  ·  小样本学习  ·  识别联动"
+      ],
+      "source": "剪辑/重剪_v13/opening_title.mp4"
+    },
+    {
+      "name": "chapter_board",
+      "start": 6,
+      "duration": 1.5,
+      "frames": 90,
+      "visible_text": [
+        "01",
+        "板卡介绍",
+        "RK · FPGA · 控制板"
+      ],
+      "source": "剪辑/重剪_v12/chapter_board.mp4"
+    },
+    {
+      "name": "chapter_console",
+      "start": 30.5,
+      "duration": 1.2,
+      "frames": 72,
+      "visible_text": [
+        "02",
+        "控制台操作",
+        "画面 · 标注 · 训练 · 运行"
+      ],
+      "source": "剪辑/重剪_v12/chapter_console.mp4"
+    },
+    {
+      "name": "isp_methods",
+      "start": 39.5,
+      "duration": 6,
+      "frames": 360,
+      "visible_text": [
+        "FPGA ISP 图像预处理",
+        "四像素并行流水线",
+        "去马赛克",
+        "白平衡",
+        "高斯平滑",
+        "直方图映射",
+        "前景分割",
+        "灰度 / 二值形态学",
+        "Sobel 边缘提取",
+        "彩色轮廓叠加",
+        "数字增益 · 亮度 · 对比度"
+      ],
+      "source": "剪辑/重剪_v17/isp_methods.mp4"
+    },
+    {
+      "name": "fewshot_value",
+      "start": 62.2,
+      "duration": 5.5,
+      "frames": 330,
+      "visible_text": [
+        "小样本学习，快速适配",
+        "15张现场原图",
+        "训练",
+        "同一模型 · 3类姿态",
+        "A",
+        "B",
+        "C",
+        "现场采样 → 小样本训练 → 快速部署"
+      ],
+      "source": "剪辑/重剪_v15/fewshot_value.mp4"
+    },
+    {
+      "name": "chapter_logic",
+      "start": 67.7,
+      "duration": 1.2,
+      "frames": 72,
+      "visible_text": [
+        "03",
+        "识别与工业检测",
+        "识别 · 测量 · 告警"
+      ],
+      "source": "剪辑/重剪_v17/chapter_logic.mp4"
+    },
+    {
+      "name": "compression_pcie",
+      "start": 68.9,
+      "duration": 5.4,
+      "frames": 324,
+      "visible_text": [
+        "PCIe 高速互通与双模式压缩",
+        "原生 RGB 推理支路",
+        "FPGA",
+        "采集与处理",
+        "PCIe",
+        "图像 DMA 上行",
+        "参数下发",
+        "状态回读",
+        "RK",
+        "识别与显示",
+        "可选压缩链路 · 预览与归档",
+        "预览 / 归档",
+        "JPEG 有损",
+        "LZ77 无损",
+        "PCIe → RK",
+        "接收与解码"
+      ],
+      "source": "剪辑/重剪_v17/compression_pcie.mp4"
+    },
+    {
+      "name": "tracking_short",
+      "start": 74.3,
+      "duration": 3.2,
+      "frames": 192,
+      "visible_text": [
+        "同一工件，连续确认",
+        "真实观测 1",
+        "真实观测 2",
+        "真实观测 3",
+        "ID 07",
+        "连续观测积累",
+        "类别已确认",
+        "同一身份 · 连续真实观测",
+        "同一摄像头",
+        "连续帧"
+      ],
+      "source": "剪辑/重剪_v17/tracking_short.mp4"
+    },
+    {
+      "name": "trigger_short",
+      "start": 77.5,
+      "duration": 3.2,
+      "frames": 192,
+      "visible_text": [
+        "确认类别，真实过线后触发",
+        "真实位置越过触发线",
+        "触发线",
+        "过线前",
+        "已真实过线",
+        "触发条件",
+        "所选类别已确认",
+        "控制输出已启用",
+        "真实位置已过线",
+        "设定延时",
+        "控制脉冲",
+        "脉宽",
+        "过线已记录",
+        "ID 07"
+      ],
+      "source": "剪辑/重剪_v17/trigger_short.mp4"
+    },
+    {
+      "name": "dimensions",
+      "start": 80.7,
+      "duration": 5,
+      "frames": 300,
+      "visible_text": [
+        "多目标像素尺寸量化",
+        "逐目标检测框",
+        "x1, y1",
+        "x2, y2",
+        "w",
+        "h",
+        "原生坐标",
+        "w = x2 − x1",
+        "h = y2 − y1",
+        "单位：px",
+        "逐目标输出位置与像素宽高"
+      ],
+      "source": "剪辑/重剪_v17/dimensions.mp4"
+    },
+    {
+      "name": "alerts",
+      "start": 85.7,
+      "duration": 6.1,
+      "frames": 366,
+      "visible_text": [
+        "边缘异常提示与留证",
+        "识别终态事件",
+        "终态未确认",
+        "身份丢失",
+        "RK 边缘端",
+        "异常状态提示",
+        "真实原图缓存",
+        "网口回传",
+        "SFTP → 电脑",
+        "可选SD卡留存",
+        "需启用并挂载"
+      ],
+      "source": "剪辑/重剪_v17/alerts.mp4"
+    },
+    {
+      "name": "application",
+      "start": 91.8,
+      "duration": 2.7,
+      "frames": 162,
+      "visible_text": [
+        "04",
+        "实战与应用",
+        "姿态分拣 · 类别分拣"
+      ],
+      "source": "剪辑/重剪_v12/application.mp4"
+    },
+    {
+      "name": "end",
+      "start": 174.8,
+      "duration": 5,
+      "frames": 300,
+      "visible_text": [
+        "从现场适配，到自动分拣",
+        "图像处理与高速互通",
+        "ISP · 双模式压缩 · PCIe",
+        "现场快速适配",
+        "15张原图 · 三类姿态",
+        "小样本学习 · 快速部署",
+        "多目标工业分析",
+        "像素尺寸 · 边缘异常提示",
+        "网口回传 · 可选SD留存",
+        "多目标高速分拣",
+        "实测1200工件/min",
+        "各组召回率99.997%"
+      ],
+      "source": "剪辑/重剪_v17/end.mp4"
+    }
+  ],
+  "samples": [
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_0.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "81bc54282ff6a50e2af43d88744ed9c9b99d3a98234414c1c97b469ceb9c84d7"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_1.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "2baba361994c639441dec15b2a4b843bd1e119e55f69f74b24b780e2e18794a8"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_2.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "e89074e5b5970af4199c54d0570d8042083266a569cfb553c0fd2993297edbdc"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_3.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "68055a68f923995e6a796bb0155184ac9fd97304b6ae1f237c94d314cd854887"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_4.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "ec8b9c04e01e9dd4ddb2f0906e05b5446fe9f282264137be644cc062f004d56c"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_5.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "ec3a79347d9b5d25291103320bd19aec0fc3cefaa2c548ae9d8facfbd6fe39e6"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_6.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "8caf75c3c11550eb9c58fe5f0f8dbc456efc9c9d829931243f364005f54b9141"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_7.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "e4cd4ce6e0ba510c8684e7b0df9fb74f64c530e971a0ebd3a5ed3b111d51d227"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_8.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "2b059aa4ad9033af16c61ce3e9fd927927d3a0d11b101f1c8fb94af48df6e0ab"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_9.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "bffd02b4748ac21d139c026ad382ca805b9fd347827e7c055540049b9da93d80"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_10.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "abbedf03d13829aa8a0027da9d0bec843588e5ad94614db93ae5b31d9fd03fa0"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_11.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "17da4b1a771f43e3b198610bd5835ced3a7ecd76bd0f1477959c507f1f52f17d"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_12.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "1bf100d32cece7c4b514566a796b570abf0e64ad0f9f56c6df091a348c2588fb"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_13.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "7e669805e7225f4dd0615178dc8d8fc3b5503a850a2fed3305a7168fee65cd7a"
+    },
+    {
+      "file": "剪辑/重剪_v13/sample_assets/native_14.png",
+      "width": 512,
+      "height": 288,
+      "sha256": "6caf7d11f438eda9eff76d1e123b162610ff70138a724918b0abb8d4c5939c53"
+    }
+  ],
+  "sample_provenance": {
+    "original_rgb_directory": "VisionTrainer/console_data/111f819a9c4541abb56ed33d6fe2b280/captures/33cafd67277b40f6814c251ab3a622b4/3b396a9e25d047bd980a7c4e4e66b4ce",
+    "conversion_source": "../重剪_v13/fewshot_v13.cjs",
+    "pixel_verification": "sample_provenance_verified.json",
+    "display": "All 15 real source PNGs fitted to 154 x 86.625 px tiles; content is not synthesized."
+  },
+  "timing": {
+    "chapter_entry_seconds": 0.2,
+    "opening_entry_seconds": 0.49,
+    "tracking_observations_seconds": [
+      0.18,
+      0.94,
+      1.7
+    ],
+    "tracking_snapshot_progress": [
+      0.103006703125,
+      0.3425140252700617,
+      0.7782148196373456
+    ],
+    "tracking_confirmed_seconds": 2.45,
+    "trigger_cross_seconds": 1.15,
+    "trigger_delay_seconds": 1.38,
+    "trigger_pulse_seconds": 1.84,
+    "trigger_recorded_seconds": 2.35
+  },
+  "retained_photographic_scenes": [
+    "intro",
+    "rk_board",
+    "fpga_board",
+    "control_board",
+    "station",
+    "console_image",
+    "console_annotate",
+    "console_train",
+    "console_run",
+    "pose_proof",
+    "pose_burst_a",
+    "pose_burst_b",
+    "pose_display",
+    "pose_slow",
+    "pose_inference",
+    "category_material",
+    "category_monitor",
+    "category_track",
+    "category_action",
+    "category_collect"
+  ],
+  "verification_scope": "Rendering code and local content audit only; no model load, board operation or FPGA change."
+}

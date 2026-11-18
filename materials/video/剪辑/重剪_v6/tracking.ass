@@ -1,0 +1,18 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,44,&H00FFFFFF,&H00FFFFFF,&H00202020,&H70000000,0,0,0,0,100,100,0.5,0,1,1.7,0.7,2,100,100,44,1
+Style: Title,Microsoft YaHei,66,&H00F3F3ED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,0,0,5,90,90,0,1
+Style: Small,Microsoft YaHei,30,&H00BFDAC0,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,90,90,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.50,0:00:05.30,Default,,0,0,0,,{\fad(160,160)}同一工件会连续出现在多帧中，\N每帧识别都是一次观测。
+Dialogue: 0,0:00:05.50,0:00:10.30,Default,,0,0,0,,{\fad(160,160)}跨帧关联结合位置变化与重叠关系，\N为同一工件延续身份。
+Dialogue: 0,0:00:10.50,0:00:15.30,Default,,0,0,0,,{\fad(160,160)}同一身份积累姿态观测，\N以多帧一致性减少单帧波动的影响。
+Dialogue: 0,0:00:15.50,0:00:20.30,Default,,0,0,0,,{\fad(160,160)}满足确认条件后生成控制事件，\N并为该工件记录已处理状态。
+Dialogue: 0,0:00:20.50,0:00:25.50,Default,,0,0,0,,{\fad(160,160)}后续帧继续跟踪同一身份，\N查询已处理状态，减少重复触发。

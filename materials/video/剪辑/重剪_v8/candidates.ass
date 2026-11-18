@@ -1,0 +1,15 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,44,&H00FFFFFF,&H00FFFFFF,&H00202020,&H70000000,0,0,0,0,100,100,0.5,0,1,1.7,0.7,2,100,100,44,1
+Style: Title,Microsoft YaHei,66,&H00F3F3ED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,0,0,5,90,90,0,1
+Style: Small,Microsoft YaHei,30,&H00BFDAC0,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,90,90,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.48,0:00:05.28,Default,,0,0,0,,{\fad(120,120)}选定画框助手后，点击自动画框，批量生成目标候选框。
+Dialogue: 0,0:00:06.18,0:00:11.01,Default,,0,0,0,,{\fad(120,120)}这些候选框自动定位工件，接着再检查位置、指定类别。

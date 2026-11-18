@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>一帧图像的数据旅程 · 动态预览</title>
+<style>
+:root{color-scheme:dark;font-family:'Microsoft YaHei','Segoe UI',sans-serif;background:#080c12;color:#eff5f7}*{box-sizing:border-box}body{margin:0}main{max-width:1700px;margin:auto;padding:24px 32px}header{display:flex;gap:20px;align-items:center;justify-content:space-between;margin-bottom:20px}h1{font-size:19px;font-weight:500;letter-spacing:.03em;margin:0}header p{font-size:12px;color:#91a6b5;margin:6px 0 0}.badge{font:12px Consolas;color:#62edda;letter-spacing:.1em}.stage{position:relative;aspect-ratio:16/9;width:100%;background:#080c12;overflow:hidden}canvas{display:block;width:100%;height:100%}.controls{padding:18px 0;display:flex;align-items:center;gap:14px;flex-wrap:wrap}button,a{border:1px solid #344852;border-radius:7px;background:#101c24;color:#dce9ed;padding:10px 15px;font:13px inherit;text-decoration:none;cursor:pointer}button:hover,a:hover{border-color:#62edda;color:#62edda}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #b6a0ff;outline-offset:4px}#play{min-width:78px;background:#62edda;color:#081619;border-color:#62edda}input[type=range]{accent-color:#62edda;flex:1;min-width:140px}output{font:13px Consolas;color:#b9cbd2}.chapters{display:flex;gap:9px;flex-wrap:wrap;border-top:1px solid #21333e;padding-top:18px}.chapters button{background:transparent;font-size:12px}.chapters button[aria-current=true]{border-color:#62edda;color:#62edda}.note{font-size:12px;color:#8599a9;line-height:1.8;margin-top:18px}#stage:fullscreen{display:flex;align-items:center;justify-content:center;background:#080c12}#stage:fullscreen canvas{width:100%;height:auto;max-height:100vh;object-fit:contain}@media(max-width:650px){main{padding:14px}header{align-items:start}.badge{display:none}h1{font-size:16px}button,a{padding:10px}input[type=range]{order:10;flex-basis:100%}.note{font-size:11px}}
+</style>
+<main>
+<header><div><h1>一帧图像的数据旅程</h1><p>FPGA × RK3576 × VisionTrainer · 第一版</p></div><div class="badge">100 SEC / 7 CHAPTERS / CODE ANIMATION</div></header>
+<div class="stage" id="stage"><canvas id="film" aria-label="项目数据流动画，包含采集、图像处理、三路传输、推理与训练回路"></canvas></div>
+<div class="controls"><button id="play" aria-label="播放动画">播放</button><button id="reset">重播</button><label for="seek" hidden>时间轴</label><input id="seek" type="range" min="0" max="100" step="0.01" value="0"><output id="time">00:00 / 01:40</output><button id="sound" aria-pressed="false">声音：关</button><button id="fullscreen">全屏</button></div>
+<nav class="chapters" id="chapters" aria-label="跳转章节"></nav>
+<p class="note">支持拖动时间轴、点击章节；空格播放或暂停，左右方向键前后 5 秒。动效为程序绘制的架构示意。三路方案为离线候选，动画中的节奏、识别框和计数不代表实板测试结果。</p>
+</main>
+<audio id="audio" src="soundtrack.m4a" preload="metadata"></audio>
+<script src="renderer.js"></script>
+<script>
+const canvas=document.querySelector('#film'),g=canvas.getContext('2d');
+const seek=document.querySelector('#seek'),play=document.querySelector('#play'),audio=document.querySelector('#audio');
+let time=0,playing=false,sound=false,last=0,lastPaint=-1;
+const format=s=>`${String(Math.floor(s/60)).padStart(2,'0')}:${String(Math.floor(s%60)).padStart(2,'0')}`;
+const chapterButtons=DataflowFilm.chapters.map((ch,i)=>{let b=document.createElement('button');b.textContent=`${String(i).padStart(2,'0')} ${ch.name}`;b.onclick=()=>setTime(ch.start+.02);document.querySelector('#chapters').append(b);return b;});
+function paint(){DataflowFilm.draw(g,time,canvas.width,canvas.height);seek.value=time;document.querySelector('#time').textContent=`${format(time)} / 01:40`;chapterButtons.forEach((b,i)=>b.setAttribute('aria-current',time>=DataflowFilm.chapters[i].start&&time<DataflowFilm.chapters[i].end));lastPaint=time;}
+function size(){canvas.width=Math.round(canvas.clientWidth*Math.min(devicePixelRatio,2));canvas.height=Math.round(canvas.width*9/16);paint();}
+function setTime(v){time=Math.min(99.999,Math.max(0,v));audio.currentTime=time;paint();}
+function toggle(){playing=!playing;if(time>=99.99&&playing)setTime(0);play.textContent=playing?'暂停':'播放';play.setAttribute('aria-label',playing?'暂停动画':'播放动画');if(playing&&sound){audio.currentTime=time;audio.play();}else audio.pause();last=performance.now();}
+play.onclick=toggle;document.querySelector('#reset').onclick=()=>{setTime(0);if(!playing)toggle();};seek.oninput=()=>setTime(Number(seek.value));
+document.querySelector('#sound').onclick=()=>{sound=!sound;document.querySelector('#sound').textContent=sound?'声音：开':'声音：关';document.querySelector('#sound').setAttribute('aria-pressed',sound);if(sound&&playing){audio.currentTime=time;audio.play();}else audio.pause();};
+document.querySelector('#fullscreen').onclick=()=>document.fullscreenElement?document.exitFullscreen():document.querySelector('#stage').requestFullscreen();
+document.addEventListener('keydown',e=>{if(e.target.tagName==='INPUT'||e.target.tagName==='BUTTON')return;if(e.code==='Space'){e.preventDefault();toggle();}if(e.code==='ArrowRight')setTime(time+5);if(e.code==='ArrowLeft')setTime(time-5);});
+new ResizeObserver(size).observe(canvas.parentElement);
+function step(now){if(playing){time=Math.min(100,time+Math.min((now-last)/1000,.25));if(time>=100){time=99.999;toggle();}}last=now;if(time!==lastPaint)paint();requestAnimationFrame(step);}
+size();requestAnimationFrame(step);
+// Read-only inspection hooks used by the included browser verification script.
+window.previewControl={setTime,getState:()=>({time,playing,sound,width:canvas.width,height:canvas.height})};
+</script>
+</html>

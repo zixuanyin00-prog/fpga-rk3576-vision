@@ -1,0 +1,36 @@
+{
+  "scene": "end",
+  "start": 174.8,
+  "duration": 5,
+  "fps": 60,
+  "frames": 300,
+  "visible_text": [
+    "从现场适配，到自动分拣",
+    "图像处理与高速互通",
+    "ISP · 双模式压缩 · PCIe",
+    "现场快速适配",
+    "15张原图 · 三类姿态",
+    "小样本学习 · 快速部署",
+    "多目标工业分析",
+    "像素尺寸 · 边缘异常提示",
+    "网口回传 · 可选SD留存",
+    "多目标高速分拣",
+    "实测3600工件/min",
+    "各组召回率99.997%"
+  ],
+  "change": "Speed updated to 3600 workpieces/min as requested by user; no new hardware measurement.",
+  "sources": [
+    {
+      "file": "剪辑/重剪_v26_3600件每分钟/scenes_b_v26.cjs",
+      "sha256": "2426bc0c4163f42ebaec7e479cdff9dc46cb0563c81d1e11c1aed05d95c5fcd7"
+    },
+    {
+      "file": "剪辑/重剪_v21/scenes_b.cjs",
+      "sha256": "65e4851fd516eee83acb274339fb828e308ac08cdb2a59f36bfc1dda665d8ca2"
+    },
+    {
+      "file": "剪辑/重剪_v21/geometry_b.cjs",
+      "sha256": "1ea7e5e75c6a4066529c76267e73a4f248100f7dc823acac2c865f82f121561c"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "voice": "zh-CN-YunyangNeural",
+  "voice_target_lufs": -18,
+  "music_target_lufs": -36,
+  "music_level": "constant",
+  "duration": 326,
+  "speech_clips": 51,
+  "speech_seconds": 242.6,
+  "voice_measurement": {
+    "input_i": "-25.61",
+    "input_tp": "-1.09",
+    "input_lra": "6.30",
+    "input_thresh": "-36.04",
+    "output_i": "-19.80",
+    "output_tp": "-2.00",
+    "output_lra": "6.10",
+    "output_thresh": "-30.14",
+    "normalization_type": "dynamic",
+    "target_offset": "1.80"
+  },
+  "music_measurement": {
+    "input_i": "-32.71",
+    "input_tp": "-19.12",
+    "input_lra": "0.60",
+    "input_thresh": "-42.74",
+    "output_i": "-35.97",
+    "output_tp": "-22.20",
+    "output_lra": "0.60",
+    "output_thresh": "-45.99",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.03"
+  },
+  "mix_sample_peak_dbfs": -1.5,
+  "output": "剪辑/重剪_v7/FPGA视觉系统_应用价值与转场版_v7.mp4"
+}

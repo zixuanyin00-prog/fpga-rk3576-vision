@@ -1,0 +1,36 @@
+{
+  "voice": "zh-CN-YunyangNeural",
+  "voice_target_lufs": -18,
+  "music_target_lufs": -36,
+  "music_level": "constant",
+  "duration": 310,
+  "speech_clips": 49,
+  "speech_seconds": 228.51,
+  "voice_measurement": {
+    "input_i": "-25.64",
+    "input_tp": "-1.09",
+    "input_lra": "6.20",
+    "input_thresh": "-36.05",
+    "output_i": "-19.69",
+    "output_tp": "-2.00",
+    "output_lra": "6.00",
+    "output_thresh": "-30.03",
+    "normalization_type": "dynamic",
+    "target_offset": "1.69"
+  },
+  "music_measurement": {
+    "input_i": "-32.72",
+    "input_tp": "-19.12",
+    "input_lra": "0.60",
+    "input_thresh": "-42.75",
+    "output_i": "-35.97",
+    "output_tp": "-22.20",
+    "output_lra": "0.60",
+    "output_thresh": "-45.98",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.03"
+  },
+  "mix_sample_peak_dbfs": -1.5,
+  "master_gain_db": -0.009,
+  "output": "剪辑/重剪_v6/FPGA视觉系统_叙事配音版_v6.mp4"
+}

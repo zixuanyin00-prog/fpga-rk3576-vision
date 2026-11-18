@@ -1,0 +1,23 @@
+[
+  {
+    "name": "end",
+    "duration": 5,
+    "source": {
+      "renderer": "剪辑/重剪_v26_3600件每分钟/scenes_b_v26.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "speed_workpieces_per_minute": 3600
+    },
+    "start": 174.8,
+    "file": "剪辑/重剪_v26_3600件每分钟/scenes/end.mp4",
+    "previous_source": {
+      "file": "剪辑/重剪_v17/end.mp4",
+      "start": 0,
+      "length": 5,
+      "playback_speed": 1,
+      "filters": [
+        "null"
+      ]
+    }
+  }
+]

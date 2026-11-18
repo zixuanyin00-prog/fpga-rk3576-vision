@@ -1,0 +1,21 @@
+[
+  {
+    "name": "dimensions",
+    "duration": 5.6,
+    "start": 88.2,
+    "file": "剪辑/重剪_v28_清理剪辑标注/scenes/dimensions.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v28_清理剪辑标注/evidence_scenes_v28.cjs",
+      "basis": "same original pixel boxes; editorial figure-number note removed"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/dimensions.mp4",
+      "start": 0.0,
+      "length": 6.0,
+      "playback_speed": 1.2,
+      "filters": [
+        "null"
+      ]
+    }
+  }
+]

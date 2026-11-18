@@ -257,14 +257,64 @@
       "sha256": "ced59ac4b444efc1d7ef4c0b69e92e297ae63ebfe4aa8c761a4f6568a8f5f909"
     },
     {
-      "path": "pyproject.toml",
-      "bytes": 30,
-      "sha256": "f5444123402df779d3ba683b575b2b7b25f2b148ec950231f393b4e902964169"
+      "path": "README.md",
+      "bytes": 3610,
+      "sha256": "28932307b243595467a3feb010d047bfb963dfe3ba3bc997962aef96ed22505f"
     },
     {
-      "path": "README.md",
-      "bytes": 3288,
-      "sha256": "632e3f4f3f64c82bee5d4bc63c49fa1b368d3f0c3da8865ec91e914c378b2fc2"
+      "path": "RK/HDMI调整页/README.md",
+      "bytes": 1150,
+      "sha256": "fb5f8f6f03cec4205cc1eeae9cbdfa2e611dbcd9b0d2927d0b157a5ee5ecaaf3"
+    },
+    {
+      "path": "RK/HDMI调整页/hdmi_adjust.py",
+      "bytes": 29256,
+      "sha256": "2045062ad3a10221b8f93c65a05c77539d6d07db7efc079a1a955ccd6060c433"
+    },
+    {
+      "path": "RK/HDMI调整页/hdmi_auto.py",
+      "bytes": 4672,
+      "sha256": "acce2ccd293fde1bf33a0d4315596e47e500532f1de2b527ebd9a4a89b4ae2d9"
+    },
+    {
+      "path": "RK/HDMI调整页/hdmi_controls.py",
+      "bytes": 5840,
+      "sha256": "b1704683703d0c34cf11738f0efab7fa154ba997889dadcc87f186d9ab9a88be"
+    },
+    {
+      "path": "RK/HDMI调整页/hdmi_x11.py",
+      "bytes": 7058,
+      "sha256": "8a8db2bf57a3ea1e71b53932b4cab590709735415dcdf2d70bc6fbd10e0e6aef"
+    },
+    {
+      "path": "RK/HDMI调整页/native_view.py.patch",
+      "bytes": 23470,
+      "sha256": "b9ff1f8891e35b04fee96f2b3a1f5ba5ce798d0cf026b3b931c1d0ccc4604cfa"
+    },
+    {
+      "path": "RK/HDMI调整页/pose_chart.py.patch",
+      "bytes": 17345,
+      "sha256": "6c118880ae76a7c710292378602462da9ffc93e0daa36538273219519a74f07b"
+    },
+    {
+      "path": "RK/HDMI调整页/rga_x11.cpp.patch",
+      "bytes": 8116,
+      "sha256": "991d6eff33c51eee1a7c40b168c43ba40569aeb87e8a90f60355ea801d2fc749"
+    },
+    {
+      "path": "RK/HDMI调整页/rk-hdmi-adjust.service",
+      "bytes": 681,
+      "sha256": "6a856ee41ce3316a53654d9ad430e090135ff070e023716c54033be63457d6ae"
+    },
+    {
+      "path": "RK/HDMI调整页/shared_preview.py.patch",
+      "bytes": 703,
+      "sha256": "dbf342c1861488ed5bc486531fe7462f03adc726d6a23e8bb2c54f47c67db887"
+    },
+    {
+      "path": "RK/HDMI调整页/延迟验证_20261116.json",
+      "bytes": 3709,
+      "sha256": "4e9c554a66959c8ef469a147779611ae1ac469e80cdd4cd5967333b39f528816"
     },
     {
       "path": "RK/rootfs/etc/systemd/system/fpga-vision-v3.service",
@@ -837,14 +887,14 @@
       "sha256": "b27486b37a8619f60cabe836c6e3253b918ad67a6c76da5967bb649a275d449c"
     },
     {
-      "path": "RK/配套源码/driver/camera_dma_uapi.h",
-      "bytes": 4964,
-      "sha256": "81c21e51aaa9cbf6f9b46c113c7eff6c11823dd1beeba324d95d92d47a469faa"
-    },
-    {
       "path": "RK/配套源码/driver/Makefile",
       "bytes": 49,
       "sha256": "76360e63d97275d8c8676d175c96aa2e2c57beed2865b7ee2b40fd560d30826d"
+    },
+    {
+      "path": "RK/配套源码/driver/camera_dma_uapi.h",
+      "bytes": 4964,
+      "sha256": "81c21e51aaa9cbf6f9b46c113c7eff6c11823dd1beeba324d95d92d47a469faa"
     },
     {
       "path": "RK/配套源码/driver/pcie_camera_vision.c",
@@ -955,6 +1005,11 @@
       "path": "THIRD_PARTY.md",
       "bytes": 7094,
       "sha256": "800d1c86fe367040e4556a37e3bf368537f7b6bb81916cab7385a6f08174fb74"
+    },
+    {
+      "path": "VisionTrainer/README.md",
+      "bytes": 11527,
+      "sha256": "94902595f9eb633c5d1e8132522465aa651842e1a8892d345a11131c20f63d45"
     },
     {
       "path": "VisionTrainer/apple_glass.py",
@@ -1357,11 +1412,6 @@
       "sha256": "3a45084e2be9558afb1b032244d2d4f0ede5c94bba7b3d4a7d30f65913a6fbe7"
     },
     {
-      "path": "VisionTrainer/README.md",
-      "bytes": 11527,
-      "sha256": "94902595f9eb633c5d1e8132522465aa651842e1a8892d345a11131c20f63d45"
-    },
-    {
       "path": "VisionTrainer/reproduce_training.py",
       "bytes": 1299,
       "sha256": "04e87443d4fe64facf1c0d80790c0bc96efd6c2344e49cbd5297b7061c6f6ddb"
@@ -1547,9 +1597,3339 @@
       "sha256": "3df5addeb9939a619773ca69743479817fb35a33e5e54b2e66ad6dfa91e07217"
     },
     {
+      "path": "docs/FPGA实时视觉识别与工件自动分拣-技术文档.pdf",
+      "bytes": 1425262,
+      "sha256": "d5353164238c048e961f59e4f1d607b681f516593c9f05579ec3c102c58fe7a4"
+    },
+    {
+      "path": "materials/README.md",
+      "bytes": 2213,
+      "sha256": "81529d46b84d0fd283d7be7d4d76b23e6837a804bd2e4aa8b187dd3a7de0bbb0"
+    },
+    {
+      "path": "materials/cad/README.md",
+      "bytes": 2310,
+      "sha256": "859db213a825477eaddf31858501c92b166027871d69db1d939421efcc1e2e6e"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/01_整机装配预览.png",
+      "bytes": 1587750,
+      "sha256": "9e93b0506503971aa43d258f5e77328fb66e992885702296e40b53fa3899a72b"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/02_背面散热与支架预览.png",
+      "bytes": 1774109,
+      "sha256": "a1b5cf78ca91353d6563d702e2e58a1848ae0eff75d0a363e2b52267bb27927d"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/03_打印零件与摆放方向.png",
+      "bytes": 1526208,
+      "sha256": "0ea35852901883f961f58fe9988a0bcdc5af50390e5787146d1d0e26e9d7dc00"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/04_底壳内部结构.png",
+      "bytes": 1666175,
+      "sha256": "a7f5370baf73996055642ee76353cff6144ae5b1725b1d2e4285bf91464d4d97"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/STL_毫米/01_shell_whole_mm.stl",
+      "bytes": 838884,
+      "sha256": "d45064fa299ef71115e61b919aa559f1c37b8f7e98dd825726f389af6726b1c2"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/STL_毫米/02_shell_left_mm.stl",
+      "bytes": 420884,
+      "sha256": "0c1393e28d7309d364b2c9c257ca3f74a5357ecae3a83d493ee46b2740f9733d"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/STL_毫米/03_shell_right_mm.stl",
+      "bytes": 422284,
+      "sha256": "66f6f85a7ac745ff4224ebe807ee2183a0caf91659e6984b037d7a36a5995458"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/STL_毫米/04_shell_join_bridge_PRINT_2_mm.stl",
+      "bytes": 28484,
+      "sha256": "f403df5e348f3c6337d2a812e39900c7a574e2e8fb1eab5534da0cebcc60e81f"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/STL_毫米/05_stand_right_SIDE_DOWN_mm.stl",
+      "bytes": 52284,
+      "sha256": "df26511a94cde1bb6bf578f46b3ac8fed3ba99cf8abe4065fc550d586454e306"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/STL_毫米/06_stand_left_SIDE_DOWN_mm.stl",
+      "bytes": 52284,
+      "sha256": "60bc6911d43fedd6278685140316923b2587435fe711a4b827dbc69e8fe0e39b"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/STL_毫米/07_stand_base_mm.stl",
+      "bytes": 190584,
+      "sha256": "873d6561ab67aee80bb6b67efa0a32329245d2eb0a4c339ca899834844fb45ab"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/STL_毫米/08_front_bezel_whole_FRONT_DOWN_mm.stl",
+      "bytes": 86584,
+      "sha256": "fc327dd00deef56902116cd8de5a44c0aaf25d3aa61450bd1c01e47964ec896c"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/STL_毫米/09_front_bezel_left_FRONT_DOWN_mm.stl",
+      "bytes": 43984,
+      "sha256": "9120ee52f3822446da6591e537dfa45d752ef4ae0a339b67f29ddae315ca6257"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/STL_毫米/10_front_bezel_right_FRONT_DOWN_mm.stl",
+      "bytes": 43884,
+      "sha256": "7d453276c04e3362ee75e72a993dce8470d6daaa7a0e3c2a8ebec8c7a61be424"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/build_screen_enclosure.py",
+      "bytes": 26122,
+      "sha256": "ca414b8b30fadd8129555b8a0c3a11e278df04a6a184a6ef1728e52eec37bbfb"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/使用与打印说明.txt",
+      "bytes": 6858,
+      "sha256": "259bbfc322b4f92cc8d41030975c3e4d5b83863a8af7cc984edf1ac5ec589d1c"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/尺寸记录.json",
+      "bytes": 1145,
+      "sha256": "e09390b2f3b2f691a4f350fba9a8db6c94bbda5e51aa4d25620eda43f1b94ce6"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/屏幕底壳与可拆卸桌面支架_25mm包边版.blend",
+      "bytes": 572228,
+      "sha256": "44e7355a27d157486bfe694fe71a654ce6bbfcfb67cf9189afde7826987abfba"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_25mm_四周包边/网格与导出检查.json",
+      "bytes": 7204,
+      "sha256": "6c60d64249ecf945f785d3fe42f2583ce8aa747f56eb44c5d04795dc1012496b"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/01_整机装配预览.png",
+      "bytes": 1593142,
+      "sha256": "8bfd57a9a986ec1a9c466f3ec5fc007cc7eed7dcb9215eb6e262ff8dd81ef411"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/02_背面散热与支架预览.png",
+      "bytes": 1787620,
+      "sha256": "e64914c9584064991c428840601fbd4ee3e4609448a261ce25218762f3a360cb"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/03_打印零件与摆放方向.png",
+      "bytes": 1526687,
+      "sha256": "bed3c1710922c98ca81f299d5ac4cfc8d975351e33b9a90d37becb19f679395b"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/04_底壳内部结构.png",
+      "bytes": 1689637,
+      "sha256": "adf57e1e838dfda8b848dc785b0c00ad7e157c19ae246ff0915fb2b2e738911b"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/STL_毫米/01_shell_whole_mm.stl",
+      "bytes": 904584,
+      "sha256": "8f68615da3786d65012bdc134548234a17725ca1c7df2da11e1277dc745e262d"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/STL_毫米/02_shell_left_mm.stl",
+      "bytes": 454184,
+      "sha256": "ec0818bb34fe2bb52a96edb54e16087279056fbd153b0e5fde2643267fddded9"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/STL_毫米/03_shell_right_mm.stl",
+      "bytes": 453484,
+      "sha256": "0db22ab43721a2e74536d9efd15e1a5bda2a2dcfdc8a16860f4f15381d6a350e"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/STL_毫米/04_shell_join_bridge_PRINT_2_mm.stl",
+      "bytes": 28484,
+      "sha256": "f403df5e348f3c6337d2a812e39900c7a574e2e8fb1eab5534da0cebcc60e81f"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/STL_毫米/05_stand_right_SIDE_DOWN_mm.stl",
+      "bytes": 52284,
+      "sha256": "df26511a94cde1bb6bf578f46b3ac8fed3ba99cf8abe4065fc550d586454e306"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/STL_毫米/06_stand_left_SIDE_DOWN_mm.stl",
+      "bytes": 52284,
+      "sha256": "60bc6911d43fedd6278685140316923b2587435fe711a4b827dbc69e8fe0e39b"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/STL_毫米/07_stand_base_mm.stl",
+      "bytes": 190584,
+      "sha256": "873d6561ab67aee80bb6b67efa0a32329245d2eb0a4c339ca899834844fb45ab"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/STL_毫米/08_front_bezel_whole_FRONT_DOWN_mm.stl",
+      "bytes": 123584,
+      "sha256": "9f45ed82e732c4edccf2a984ac211d8f7ea2f1a29003d417d9b8901372887d4d"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/STL_毫米/09_front_bezel_left_FRONT_DOWN_mm.stl",
+      "bytes": 62484,
+      "sha256": "cad84ac8bdb8cc7424db0f0bc39aa4310b534a09a4255ddd3f443d3b06cde172"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/STL_毫米/10_front_bezel_right_FRONT_DOWN_mm.stl",
+      "bytes": 63184,
+      "sha256": "ac2df4241b96f3f62c9f420536619b76f709d92d0332affa87baebbe42254d6d"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/STL_毫米/11_PRINT_FIRST_M3_and_brass_coupon_mm.stl",
+      "bytes": 505984,
+      "sha256": "2764484611980b4c697758b3f7961e6b8939d8b81107bdf5ece7bb8b1ed56bcb"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/build_screen_enclosure.py",
+      "bytes": 32724,
+      "sha256": "a68d30858b1e8bf1ada2570e618c4eeee1bf1acc2f4419a30f09cd9389228b1b"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/使用与安装说明.txt",
+      "bytes": 6961,
+      "sha256": "66342c1567f2b166b7f88dcd0867d6380b4b47d9f54c0a57877aacde7aaaeb56"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/尺寸记录.json",
+      "bytes": 1881,
+      "sha256": "6bd9ff5042502da32c32bd4d527a7dab1dbe43d5a2f7c91bf6d5f9cc7236b842"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/屏幕底壳_M3铜柱安装版.blend",
+      "bytes": 784914,
+      "sha256": "6f656b9192399310fa4916631b10fe7021c63829a94264b43af1f4d3f7816eb2"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/网格与导出检查.json",
+      "bytes": 8539,
+      "sha256": "dd771d4ac5f008c22cd523a8ec1119bb57613f8384e798cc42388ecb7b04cb53"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_M3铜柱安装版/装配路径与铜柱避让检查.json",
+      "bytes": 8169,
+      "sha256": "53d6f407d26d558d5e4a22a169d9c7b8686410e501fb6df9d4d7114c31da5a04"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_仅整体版_STL/01_底壳_整件_mm.stl",
+      "bytes": 904584,
+      "sha256": "8f68615da3786d65012bdc134548234a17725ca1c7df2da11e1277dc745e262d"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_仅整体版_STL/02_前框_整件_正面朝下_mm.stl",
+      "bytes": 123584,
+      "sha256": "9f45ed82e732c4edccf2a984ac211d8f7ea2f1a29003d417d9b8901372887d4d"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_仅整体版_STL/03_支架左_侧面朝下_mm.stl",
+      "bytes": 52284,
+      "sha256": "60bc6911d43fedd6278685140316923b2587435fe711a4b827dbc69e8fe0e39b"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_仅整体版_STL/04_支架右_侧面朝下_mm.stl",
+      "bytes": 52284,
+      "sha256": "df26511a94cde1bb6bf578f46b3ac8fed3ba99cf8abe4065fc550d586454e306"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_仅整体版_STL/05_桌面底座_mm.stl",
+      "bytes": 190584,
+      "sha256": "873d6561ab67aee80bb6b67efa0a32329245d2eb0a4c339ca899834844fb45ab"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/01_整机装配预览.png",
+      "bytes": 1610320,
+      "sha256": "e6eda617a93570995686f202626f98589015c44ad00eeca63df18ac2c40e79a7"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/02_背面散热与支架预览.png",
+      "bytes": 1756022,
+      "sha256": "3472cc8fa2d6081d403813e1d3b38f3cf524e1ed4ced6a89127ce3822006db71"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/03_打印零件与摆放方向.png",
+      "bytes": 1570289,
+      "sha256": "6d2d8e9c42fc55c25a75fee102c3e01031687b0bdf8eaf4d48695a847652d077"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/04_底壳内部结构.png",
+      "bytes": 1704866,
+      "sha256": "0a435424ec007b3e09f248d81aafe3695f1daa5cf091fa53e7b15e9e645708eb"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/STL_毫米/01_shell_whole_mm.stl",
+      "bytes": 859984,
+      "sha256": "4d67a96775e289422bb52b4e4db771140b617d9383deca3d0cd5a3ac2a938222"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/STL_毫米/02_shell_left_mm.stl",
+      "bytes": 431984,
+      "sha256": "127eee827c2e08872566e7b0a01e3ad7074706468e7a711c13aeb49dd53dc77f"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/STL_毫米/03_shell_right_mm.stl",
+      "bytes": 433484,
+      "sha256": "fb5833a9c1fc32b1871c66d7a3e7b42b00937748c2ea6882f9063e5f010ae1d1"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/STL_毫米/04_shell_join_bridge_PRINT_2_mm.stl",
+      "bytes": 28284,
+      "sha256": "a38fe32f42e51a37d35ef076ac951e0df2e3bd2c9ac61092ddf633fe9bfabbbe"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/STL_毫米/05_stand_right_SIDE_DOWN_mm.stl",
+      "bytes": 52284,
+      "sha256": "700afa425fd52a6406f2bbca864205aa1a9b6cfeb3349f28851b66548bd27116"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/STL_毫米/06_stand_left_SIDE_DOWN_mm.stl",
+      "bytes": 52284,
+      "sha256": "a878a288144d6a6d5016ffb088fe8ad8ca2961e3ff31c83f4f9a8d41a1ea4a35"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/STL_毫米/07_stand_base_mm.stl",
+      "bytes": 190584,
+      "sha256": "873d6561ab67aee80bb6b67efa0a32329245d2eb0a4c339ca899834844fb45ab"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/build_screen_enclosure.py",
+      "bytes": 23700,
+      "sha256": "b25a35b20c155c0c2c94936aebba17f3f36e90a8b73aee78014a1cb56b6c2865"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/使用与打印说明.txt",
+      "bytes": 7082,
+      "sha256": "e5b63435cefbb8af8883d8a6d92e3a2d8b0dc51ff833bbf2653b60956ce2432f"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/尺寸记录.json",
+      "bytes": 961,
+      "sha256": "80d54b8f328f1cb7ee85a31293376248719039778e4af384bdef113c4976bfb0"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/屏幕底壳与可拆卸桌面支架.blend",
+      "bytes": 558423,
+      "sha256": "bed99412e820273e48f65a277c8d839fef9771dc86b8ce491e87227aa799cccc"
+    },
+    {
+      "path": "materials/cad/屏幕底壳_可拆卸桌面支架/网格与导出检查.json",
+      "bytes": 5240,
+      "sha256": "289c15de79958ec860420ec85e48c2b9fddbdbd8bc850206b46086e8e4338aea"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/FDM打印包/01_base_mm.stl",
+      "bytes": 1300284,
+      "sha256": "e047ff4faa0f0ba6448e6048d6faa080283c4ea924d7deacedd643b5bf4928fa"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/FDM打印包/02_cover_top_down_mm.stl",
+      "bytes": 9515784,
+      "sha256": "af273c29325cd49df878d7031a790fa3646975413c57a6f9be38e7d739fc7dc5"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/FDM打印包/03_SFP_arm_flat_mm.stl",
+      "bytes": 37984,
+      "sha256": "ce260913f45577cbf57e793dd79cb749264c03bd6f844e5f02f3885ae102735e"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/FDM打印包/04_power_arm_flat_mm.stl",
+      "bytes": 37984,
+      "sha256": "52f8a7addcff1ebf4085797defe6ae185388967c016d2e7b62b55e4bba8b21cb"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/FDM打印包/export_checks.json",
+      "bytes": 2696,
+      "sha256": "6141d4e8a352aeac5e2bb61bf942b0b677a4af67f8a58c5ec9380368bc29f6fd"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/FDM打印包/先看这里_打印步骤.txt",
+      "bytes": 4867,
+      "sha256": "d1745586ed746a141c2c835c11b9bd3f514e0b243ffa2d1a275bd11470f86143"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/FDM打印包/打印方向示意.png",
+      "bytes": 823776,
+      "sha256": "f040e3ec61ee2e712a0a3b2d4f9215ccf9d0caafa18b3bc5cfef86e7e610116d"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/export_fdm.py",
+      "bytes": 6188,
+      "sha256": "2cffc2a7f27d42778b1093274aafad63a49ad770a70c9f8295901fa920474635"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/外壳与支架_圆角底板版.blend",
+      "bytes": 5170221,
+      "sha256": "96aef659422d7c0f0de4343493cae60701b80c7cdb6c5070538a4ae9277c7c12"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/结构预览/arms_detail.png",
+      "bytes": 736075,
+      "sha256": "b93f24f7c68aaa498cfb1d8df2e1d9c237ec2a6e5a74f863be9512cad3f9fb4f"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/结构预览/base_detail.png",
+      "bytes": 982196,
+      "sha256": "3a80b716474aa5cb88bb916b7107f52fa171ad5a36f5927601a8f808eb8bcf8a"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/结构预览/cover_inside.png",
+      "bytes": 1565515,
+      "sha256": "6e03e1843ff6da23a7a21a83ff3a6bcdc879a724b069380e13aeaae806e363d2"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/结构预览/four_parts.png",
+      "bytes": 1074159,
+      "sha256": "0289083493a8630cb704614107ff6194a716b0124c228f165543ed183adb5ac1"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/结构预览/overview.png",
+      "bytes": 1052046,
+      "sha256": "9b0b60cb6d1b8b4eb96ab5e56c566eeb72ac6a25ae98e49e79a2c5b6e7c98c46"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/结构预览/top.png",
+      "bytes": 986624,
+      "sha256": "b6762e93089af3a6dfda2d8651fbadce5de372e2f86a75c04ea800c2b371db18"
+    },
+    {
+      "path": "materials/cad/板卡支架_圆角底板版/结构预览/underside.png",
+      "bytes": 1032008,
+      "sha256": "45fadc9b99b913fa471f95e806e2e5b580355ebb91cc46d24f265f0275e25780"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/01_base.stl",
+      "bytes": 101684,
+      "sha256": "b5fb706cb9e48b79b44c90010f4c429c182d23ba64099145c5c938a11db14fd4"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/02_fpga_power_end_brace.stl",
+      "bytes": 27584,
+      "sha256": "fd2248f7dd7605394fce21fbd21b21a09df69865a2767a6f920c4aa2eb8b9a83"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/03_fpga_sfp_end_brace.stl",
+      "bytes": 27284,
+      "sha256": "94768ec62f5588ece7d3f6142c277e6a770676474123db28930b275fa05d9b21"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/04_removable_cover.stl",
+      "bytes": 108784,
+      "sha256": "17480769d8e05909df9d707d55b47dc4807a6142460cd36293d6efab3cf6c82c"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/05_assembly.glb",
+      "bytes": 168400,
+      "sha256": "6b02a5c4229822bdc0f2521142bd30f3c8087baec87bb00a9b3f97f786093e7d"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/06_preview.png",
+      "bytes": 67625,
+      "sha256": "7a6250b7f5d8a1ac4cc3911e5394280bdae9aa42bbbd8ff3568301270714d6d7"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/FPGA固定版/01_base.stl",
+      "bytes": 101684,
+      "sha256": "b5fb706cb9e48b79b44c90010f4c429c182d23ba64099145c5c938a11db14fd4"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/FPGA固定版/02_fpga_power_end_brace.stl",
+      "bytes": 37984,
+      "sha256": "a9bc6a687d3eef1a8973c0e9e527544e3286fa2d94a817b07996ad5b4da0606f"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/FPGA固定版/03_fpga_sfp_end_brace.stl",
+      "bytes": 37984,
+      "sha256": "55c68e502c3f8ac7df8023998eb5cbc357810fa282db3f4702c0064ee595a688"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/FPGA固定版/04_removable_cover.stl",
+      "bytes": 108784,
+      "sha256": "17480769d8e05909df9d707d55b47dc4807a6142460cd36293d6efab3cf6c82c"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/FPGA固定版/05_assembly.glb",
+      "bytes": 227776,
+      "sha256": "cdb9b05ec97e61baa0d13410bb4b1167cebddcf5993ad042782559db6b73bd12"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/FPGA固定版/build.py",
+      "bytes": 14415,
+      "sha256": "b1d5f55a4c1c80e046adf4d8fb4d8d06ac9e51a2acc3f29f9b2a83672340cbbf"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/FPGA固定版/仅外壳与支架.blend",
+      "bytes": 195168,
+      "sha256": "5639cfc24acdb2c45bf4b4faec45c4bddfee00c687c346507f01d353fe682c87"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/FPGA固定版/外壳与FPGA固定查看.blend",
+      "bytes": 318509,
+      "sha256": "67f85c6b97a95430f6971f7a4d8307bfae7abae679f35e0d1d5bf5a9db7eaa7a"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/FPGA固定版/打印与固定说明.txt",
+      "bytes": 2351,
+      "sha256": "9f991fc8d4f46492485ec08f83aa218a4d7d83615a2f332ac0dc74803633ca6f"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/build.py",
+      "bytes": 12154,
+      "sha256": "327e9a4002b72305b0ed4a2077201c56871e5b0d9c5393ab0730c3b0a9908fb4"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/外壳与底座查看.blend",
+      "bytes": 220784,
+      "sha256": "9d5a17cd5660b76bd8f971654d03853477b38d09bcdc72435005cbca13e2e5d8"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/外罩查看.blend",
+      "bytes": 194749,
+      "sha256": "16dd045a25579ae02fd5acba82d549786b3cb1155bae536c519c70eb834b1cd3"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/外罩试套纸样_A4_1比1.pdf",
+      "bytes": 28428,
+      "sha256": "79cd4ddb35dc69df14ac77a21ad8223b226f955030d900d5407601382e253f9e"
+    },
+    {
+      "path": "materials/cad/板卡支架与外壳/打印与装配.txt",
+      "bytes": 3569,
+      "sha256": "242f79806b367de0e94fe7577756483135fa02345b65274ab5ecbda1a871f895"
+    },
+    {
+      "path": "materials/hardware-photos/01-prototype-closeup.jpg",
+      "bytes": 1028726,
+      "sha256": "c6453d9fd83d61b0d3fe29a762fed5b714ea0af43a659614e68d394792e3e497"
+    },
+    {
+      "path": "materials/hardware-photos/02-prototype-and-display.jpg",
+      "bytes": 1036467,
+      "sha256": "1be306c20be2af535e2607094ebfb2b8660cab2ce2e389f50ca5aa6f5dd47143"
+    },
+    {
+      "path": "materials/hardware-photos/03-fpga-pcie-adapter.jpg",
+      "bytes": 535722,
+      "sha256": "12b20f0a6a843a2f80d86f247b09b0085af59964999da64131bcdb4a688d75e0"
+    },
+    {
+      "path": "materials/hardware-photos/04-rk3576-board.jpg",
+      "bytes": 1087746,
+      "sha256": "3b2c9f270e1195af129d11bf10547ca10747661d5d6552dfa0b716f94326bb42"
+    },
+    {
+      "path": "materials/hardware-photos/05-fpga-board-back.jpg",
+      "bytes": 2630564,
+      "sha256": "f64c0a1cfe027d1deb8b00e87a9c4a9a45d4872d71976cfe028f089f98929084"
+    },
+    {
+      "path": "materials/hardware-photos/06-rk-fpga-installation.jpg",
+      "bytes": 2696834,
+      "sha256": "b5d2fe1f0cc70b945abb02199486732f02d8747560a09890d33c9a28330aad77"
+    },
+    {
+      "path": "materials/hardware-photos/07-vibratory-feeder.jpg",
+      "bytes": 2471961,
+      "sha256": "34c55ad7a2a308baf6074ca7c3fa10e9182bf1e037a9a8f5a5f9376d56e1d355"
+    },
+    {
+      "path": "materials/hardware-photos/README.md",
+      "bytes": 818,
+      "sha256": "103b552bb2edbd1151059d5986008a313cce54ddc84996a79a3d93be406dce99"
+    },
+    {
+      "path": "materials/replay-samples/README.md",
+      "bytes": 375,
+      "sha256": "9c7f59fb311bd4e8be86919163a90174f5f4027d9d9aa23ade5a2bac670dd55e"
+    },
+    {
+      "path": "materials/replay-samples/frame-01.png",
+      "bytes": 253130,
+      "sha256": "8b3f317d99321bf1379a725590bc402c59939f934a1d9df144c5511d61cad4ec"
+    },
+    {
+      "path": "materials/replay-samples/frame-02.png",
+      "bytes": 254105,
+      "sha256": "8d01a944e99ae0e2f6b8ec3c950d6a4d984109f0e7e8e2d5412b6341df6e7fcc"
+    },
+    {
+      "path": "materials/replay-samples/frame-03.png",
+      "bytes": 253108,
+      "sha256": "bea010534576682c350ec4305a9f40ddf69222b167630be1b8dcb2ba61b13bc2"
+    },
+    {
+      "path": "materials/replay-samples/frame-04.png",
+      "bytes": 254862,
+      "sha256": "7104ebe956f91dd5f8d856922c0fbc93ec940977fc37837c447b4ad9b365b8ac"
+    },
+    {
+      "path": "materials/replay-samples/frame-05.png",
+      "bytes": 252708,
+      "sha256": "43c8939cb17a68eae7807844e783454055c81a312744d4a7a065725368603fca"
+    },
+    {
+      "path": "materials/replay-samples/frame-06.png",
+      "bytes": 255852,
+      "sha256": "4459c2ec2a3c77573bea8e80356563c144e8619a243aebff887998115e485eda"
+    },
+    {
+      "path": "materials/replay-samples/frame-07.png",
+      "bytes": 256566,
+      "sha256": "61a34d1c0f258131fbba1b182bfd7eb92c36ae6b74f8c12f70e435766600eb71"
+    },
+    {
+      "path": "materials/replay-samples/frame-08.png",
+      "bytes": 255121,
+      "sha256": "b1afc2a6f7fa22feba0e705a70a7d0afaa45c0b365df03fe17873a380fc9b052"
+    },
+    {
+      "path": "materials/replay-samples/frame-09.png",
+      "bytes": 254767,
+      "sha256": "19f7e0f2f45cf54b05a5035698ca8b14a1f312d773a63149b288847d9734d614"
+    },
+    {
+      "path": "materials/replay-samples/frame-10.png",
+      "bytes": 255146,
+      "sha256": "3e563a7314dca432036fcce13acd76e134b0abea21eed2d5b60957652de91020"
+    },
+    {
+      "path": "materials/replay-samples/frame-11.png",
+      "bytes": 255457,
+      "sha256": "6124b79896c7c827bd1e6872da8398cf49a20e8576ff26a7f4e0aa47d0cf2872"
+    },
+    {
+      "path": "materials/replay-samples/frame-12.png",
+      "bytes": 254130,
+      "sha256": "cd489287c190c31f8fedf60f6224fc8efbe355f14dadf03b363f598457c8ef00"
+    },
+    {
+      "path": "materials/video/README.md",
+      "bytes": 3056,
+      "sha256": "6e777d752fefb957ae09ccc4b4e413afbfd78af5c306e84a9a0497d5162cb7e4"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/.gitignore",
+      "bytes": 45,
+      "sha256": "ff244709c1fee53cf019597135b26111d170846a1143424de3a52b30b5b10106"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/README.md",
+      "bytes": 4539,
+      "sha256": "1c164ee76182f19db46f010b9bf420a2174a86a8b6ceed6829b9096cba0a638a"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/audio.py",
+      "bytes": 2713,
+      "sha256": "8fa495d360797651435d43bbe49edc45cba19201ae603053daa338d82d7a52db"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/finish.py",
+      "bytes": 5687,
+      "sha256": "7c81660a62b9a745b2e1b60e760c215dda9b776d44492cba3f1afef68e10c78d"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/package-lock.json",
+      "bytes": 9342,
+      "sha256": "f3467d9ede1169594a6deea79652841e11a857607f5f7f6f1675723e182c18a1"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/package.json",
+      "bytes": 604,
+      "sha256": "3ef5202e24b1737fbf48a1489eb05a845edac545e8d653dfba647f7ccfd9c217"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/preview.html",
+      "bytes": 5946,
+      "sha256": "764ca12ca86714e89df34e209744bc15c07a4c3ae2c70dcdab264e4f5c281a99"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/render.cjs",
+      "bytes": 3792,
+      "sha256": "96a813f0d676f8b59f6b23594bde6faf6ead1f35182adf69117720ef681f3488"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/renderer.js",
+      "bytes": 22258,
+      "sha256": "64d4d30eece57057503180f816c6df3d3c6789964074afb541b1c1fd41f9eb0c"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/soundtrack.m4a",
+      "bytes": 2430955,
+      "sha256": "e033a575ddb48b3ab9e91d57fae6adc1e5221a1506e154c3aa839faa93218893"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/source-manifest.json",
+      "bytes": 2692,
+      "sha256": "a9a39c868b71fdded05f6ad37d59c6c33feb374aa32f7da56840093ebaaee6de"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/.gitignore",
+      "bytes": 45,
+      "sha256": "ff244709c1fee53cf019597135b26111d170846a1143424de3a52b30b5b10106"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/README.md",
+      "bytes": 3374,
+      "sha256": "40ec5ce4fb769fc26a803ad93dcb55e3cfc3bd2773cd218979d3f9346220116c"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/audio.py",
+      "bytes": 2805,
+      "sha256": "d63d35b60adf38c3b4bbc46ce1d523f14fec4dcd6d1f3b428eb8234dda3a6e71"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/finish.py",
+      "bytes": 6209,
+      "sha256": "c70ccb24fef17f301715420cdda2343fb4a913ae3dd9b6d80e59503155330cb4"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/package-lock.json",
+      "bytes": 9368,
+      "sha256": "75bb19ec2e4be8c5fc78fd8d4f61593ae7e42de146049825c18b9d1c49822fea"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/package.json",
+      "bytes": 583,
+      "sha256": "f1096771d5090ad6ec9b4aafc5bfca82414ebed6db738505308a9b115e770f1d"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/preview.html",
+      "bytes": 7219,
+      "sha256": "cfd36a0f55e94cd1ded6bb1ef155b9dea9de89476e0598a5dbc3a348713ed6b7"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/render.cjs",
+      "bytes": 3877,
+      "sha256": "05d1c551db045d7b3eeb5674b75c2b2198021110e25c36db289fb4b4e378ce2d"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/renderer.js",
+      "bytes": 20983,
+      "sha256": "b806b301b14527a728ba01fccebb16041da7d6cc198d7f88ed48d7ea53717565"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/soundtrack.m4a",
+      "bytes": 3162330,
+      "sha256": "f4b41367ee292b70e227fae81f3e69900f45ff88fc98b4d96370de98d585573d"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/source-manifest.json",
+      "bytes": 3563,
+      "sha256": "5f820779a86ac727007788266e1cf58b0f97f1bd248d1b357aa845de8521fb28"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/v2/verify-preview.cjs",
+      "bytes": 2695,
+      "sha256": "1d27c043710df3e71b6558cdd25d24156e26091fbc6c12facd1cff8626429a40"
+    },
+    {
+      "path": "materials/video/dataflow_film_20261028/verify-preview.cjs",
+      "bytes": 2532,
+      "sha256": "c153bc70baae55044dad469c40d5cb6916b917c57ca7db13b456355597ecf870"
+    },
+    {
+      "path": "materials/video/剪辑/亮点强化_v3/assemble.py",
+      "bytes": 3322,
+      "sha256": "dc5ae5fa868c26dcd944a2363062880ed25e4307c72c9a528417e7dba664e008"
+    },
+    {
+      "path": "materials/video/剪辑/亮点强化_v3/highlights.js",
+      "bytes": 7151,
+      "sha256": "1d009c9c55160ce5073532f99b7cdac4faf39de85530a780d35864d4ad2ff579"
+    },
+    {
+      "path": "materials/video/剪辑/亮点强化_v3/render.cjs",
+      "bytes": 1858,
+      "sha256": "c85d07fa5c8e0bd12579bbd7c5696943faf13e067667b4d42922ac691d475d86"
+    },
+    {
+      "path": "materials/video/剪辑/亮点强化_v3/完整字幕.srt",
+      "bytes": 4251,
+      "sha256": "0b8851f4718c5608f1efe427040381972479ad48b7b7ef505f117017cef2289e"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/00.ass",
+      "bytes": 1091,
+      "sha256": "c7a9ca0410c61f154fb5745635d500063e46b603df052f06314f53c09d7072f5"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/01.ass",
+      "bytes": 954,
+      "sha256": "d51b97eac4c2aa19febc5f0d2cb3f5508d01196a12ba3c6a6920b4575816e0d8"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/02.ass",
+      "bytes": 960,
+      "sha256": "4bcc677dd8cc512675b079978e7da94bfec04f1678333aec0550bd3c878cc499"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/03.ass",
+      "bytes": 975,
+      "sha256": "11380302cde7fd3e2bfc706155acd27051f53c88346dd6f81596a9156e664866"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/04.ass",
+      "bytes": 969,
+      "sha256": "bd8a21dd6866337b8f4ff621f9d208cd325014e22205eaf4505f39b55d03ccf7"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/05.ass",
+      "bytes": 1062,
+      "sha256": "308bef5cc74114326f723bed3df8f69c55ec388cd938dbfbc01e2685b701d355"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/06.ass",
+      "bytes": 1125,
+      "sha256": "ca58af6e1566d81b8156e1cf0270979eac5a327cf4093d1d9b108694ef8efa8d"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/07.ass",
+      "bytes": 1263,
+      "sha256": "7a72387439885e05af3e9edd25739090a3b7e864d72daf5786cef2d1595bb520"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/08.ass",
+      "bytes": 1131,
+      "sha256": "0d2e3e5062b742e6cb20164ff9e9131970579c7cd1ce8dddc6838e2435d4791a"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/09.ass",
+      "bytes": 1116,
+      "sha256": "c85bbc934b4fb951ea2c55327a67b7eca09ba63f9d1eb6224c78e23e17517d31"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/10.ass",
+      "bytes": 948,
+      "sha256": "b014102a14c26ebbcafd6acf7e434ee05de7d379b6ac1b6b4266c1f0b3e7bf68"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/11.ass",
+      "bytes": 969,
+      "sha256": "f22b5c0732a332245535566f3e7eeb9fce5050a42d95c95fc3098a4d85da8ea8"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/12.ass",
+      "bytes": 1131,
+      "sha256": "895b5262bc96f56d160f1850dd237d33f1c5bc8b6ff04946e11e7b5b28a2b386"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/13.ass",
+      "bytes": 1125,
+      "sha256": "87f8b5f582d3ae7a8e3bc38597e4e40ee687e9194a1bf51366fd39e15014b6b7"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/14.ass",
+      "bytes": 1134,
+      "sha256": "f3f6abb5c1903c8208512fbb4eb3f183f36874364904d39e25f9901a98e417e6"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/15.ass",
+      "bytes": 1146,
+      "sha256": "6f7bad53cac687af1befaa08f60ad7844ac5ee50423121011bb3c20b100c7aeb"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/16.ass",
+      "bytes": 970,
+      "sha256": "3eb0ef9cfc2881c63cfb991f0c774cdafd5b7405e9269342827f7d01081bc079"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/17.ass",
+      "bytes": 992,
+      "sha256": "4edae93592f7f5f505a0e16881e52db492ddd8d1ceed0b16826f59c7345970a6"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/18.ass",
+      "bytes": 975,
+      "sha256": "8688d843dfb03493983cd215989fd5467537785e5cab9ff570a61613919339e7"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/19.ass",
+      "bytes": 1050,
+      "sha256": "1daf18c6656a53b6e88e51a20fa39f6751c50468422859f172baccd1cf0d7257"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/render_full.py",
+      "bytes": 12416,
+      "sha256": "df4a52255041c8cef2fbbedcbcb917b3824c419470650ecbb958e91c4eaf7a62"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/完整字幕.ass",
+      "bytes": 5696,
+      "sha256": "8bde31471cb5f2244c1a8edae274cd4750a3fbda42f5aa2a3dab1e26e7aa2b99"
+    },
+    {
+      "path": "materials/video/剪辑/全片_v2/完整字幕.srt",
+      "bytes": 3375,
+      "sha256": "91130905923c32964673d14e574e00e6d6b289d62ce146d59f18d9c05912fe90"
+    },
+    {
+      "path": "materials/video/剪辑/技术动画样片_v1/preview.html",
+      "bytes": 1682,
+      "sha256": "0d3c50077f9b47d553f8e4e8623b67e2424eec77e250ea328285077db00359e4"
+    },
+    {
+      "path": "materials/video/剪辑/技术动画样片_v1/render.cjs",
+      "bytes": 2034,
+      "sha256": "41542e87d324ba9cee9fd421c09f62c4dfff36416d30ab32347dc9fe424bff25"
+    },
+    {
+      "path": "materials/video/剪辑/技术动画样片_v1/scene.js",
+      "bytes": 7834,
+      "sha256": "a48874d2dd830b0f7dd9803360015f6197187bf30f2e442782365480c57766af"
+    },
+    {
+      "path": "materials/video/剪辑/提交版_v29_H264_300M内/encode_command.json",
+      "bytes": 834,
+      "sha256": "d7d4f43afb921546b6b35b4c39191bbc1524a1320e38cdcdc6fe812bfd629ab4"
+    },
+    {
+      "path": "materials/video/剪辑/提交版_v29_H264_300M内/export_submission.py",
+      "bytes": 3453,
+      "sha256": "c4b361003ae839948a2e1e4b5c33964fe9270226510235f4445022d518819e4c"
+    },
+    {
+      "path": "materials/video/剪辑/提交版_v29_H264_300M内/提交版画质抽查.jpg",
+      "bytes": 467294,
+      "sha256": "0facda3b96b0e4df5cbd4d83aad7d2dc1a2580405fdbe813ca7b47917f656930"
+    },
+    {
+      "path": "materials/video/剪辑/提交版_v29_H264_300M内/提交规格核对.json",
+      "bytes": 856,
+      "sha256": "a21994e3f6cdd6c1acb8f5b13f444a88227c7cf2255af92bb648bfb9cb23cbb1"
+    },
+    {
+      "path": "materials/video/剪辑/提交版_v29_H264_300M内/提交说明.md",
+      "bytes": 1060,
+      "sha256": "72bf3d50041b6082449e5fa2fa1ea3cd7a9502b04f25dca4fe02c1246fe45c8f"
+    },
+    {
+      "path": "materials/video/剪辑/本次成片入口.md",
+      "bytes": 421,
+      "sha256": "dc1c181e08f568f98025339efee3d9a659f35d59629bb738467a3b5f85220192"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/make_sound.py",
+      "bytes": 4380,
+      "sha256": "2eb5faf7c232679df046a7f7d9001ba4ae2d922c5d8ce5ffdd3cea3fb31ed413"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/render_samples.cjs",
+      "bytes": 2399,
+      "sha256": "f3325e7a03e5a48e74e8d65265092152748d6504988d426fbe94d1a816de822d"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/style_a.cjs",
+      "bytes": 6323,
+      "sha256": "f8d81c5329f671c808bccdc2f860ce2539b517651600da096b4627580a94c8c9"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/style_a_manifest.json",
+      "bytes": 1747,
+      "sha256": "c835ea1c76148545a736105def2b60e4f5310789a2c3c7de41b742f1a80b1113"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/style_a_notes.md",
+      "bytes": 1823,
+      "sha256": "530ec508b3d9bb9c9b29db49d694ba3177cef803586a0a1107cfcf64101770cd"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/style_b.cjs",
+      "bytes": 10253,
+      "sha256": "7c4b7a27f398749a8d1384784746f82f67f930f8f2b1574a53358c0b2419b91e"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/style_b_manifest.json",
+      "bytes": 2124,
+      "sha256": "2c1f0bf24e475d304692f592d43cc1a5cf3b0bd0199acdbce5f9cee46be6ccf5"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/style_b_notes.md",
+      "bytes": 1544,
+      "sha256": "a9110599a1535e7d1385488d33477faa3958c8494368b17735a41dd4410dbe0d"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/style_c.cjs",
+      "bytes": 7022,
+      "sha256": "fe9b94a5c8a8ac9b868111a936f7115db3a87ce5720016a6de0cd6a13aa3703b"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/style_c_manifest.json",
+      "bytes": 1795,
+      "sha256": "1f74febb506e2925e405b8b99141b3f0b1ea899ce905320a1ddb114fb805a364"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/style_c_notes.md",
+      "bytes": 1708,
+      "sha256": "e5c8aa1f983f356ece44057225c8a8e7543e97facb3bda39387a7e04216d52a4"
+    },
+    {
+      "path": "materials/video/剪辑/视觉风格小样_v20/参考与实现说明.md",
+      "bytes": 2638,
+      "sha256": "321e3d96c901ff971e723e8ae9ded12a12c7dd1fecfe59ce2a36f84a5a51d8f0"
+    },
+    {
+      "path": "materials/video/剪辑/试剪_v1/render_preview.py",
+      "bytes": 6529,
+      "sha256": "5c119a6979fe92d00548c7c6789e92970fb31f57902beed4acbee75950ad20ae"
+    },
+    {
+      "path": "materials/video/剪辑/试剪_v1/字幕.ass",
+      "bytes": 1946,
+      "sha256": "3e3eddf68f3c1f06a944e04bf5a07abe2a424b454b5f31f5c9978c5f1226c210"
+    },
+    {
+      "path": "materials/video/剪辑/试剪_v1/字幕.srt",
+      "bytes": 679,
+      "sha256": "3ea6189260d105be05304d1aec2c718abf32f92a09840986715730d93a72e588"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/add_transitions.py",
+      "bytes": 7965,
+      "sha256": "31d5d795eead481f271fac9f07493725acf0edf4453f0e5a4780d1cf3a15bfcc"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/animations_v10.cjs",
+      "bytes": 11007,
+      "sha256": "83755ad25c39ad7428ed72917ac9865096cc1cd43156535c69572bd4de0a77ab"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/app_collect.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/build_v10.py",
+      "bytes": 8365,
+      "sha256": "658b7676a4b0ab9462ef475f48a2ef033a74779f66e6a9083563b7eb7f62d885"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/captions.json",
+      "bytes": 4862,
+      "sha256": "314381f57e14e3de9902635d6aea73946f861cb0ecad8bf7d6573880f75063cf"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/final.ass",
+      "bytes": 4444,
+      "sha256": "c54ca5dede50b94722d7571e7173ada71a2a47eea697c358c8d3da4908ff5d75"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/flow_short.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/mix_voice_v10.py",
+      "bytes": 3004,
+      "sha256": "def76586857d0a07ddd6eb99f7d0f153547758a4f2d4e22ec0d0bdf3315247f3"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/parameter_short.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/render_animations.cjs",
+      "bytes": 1789,
+      "sha256": "4d981671570de307bb23b9d91cac1dcd888e4bb689b863034228fcf992eafcfb"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/timeline.json",
+      "bytes": 6841,
+      "sha256": "5d768de123a2bc18f000b9f701b955e519e7c98dad176938ea97d23897ecda75"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/tracking_short.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/trigger_short.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/verify_v10.py",
+      "bytes": 3959,
+      "sha256": "670b3d8366c7dfa5ef1ac8e6641d7e08ddc3163807ee17dac549109b8561e687"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/全片字幕.srt",
+      "bytes": 2190,
+      "sha256": "d85759dc8ea8211ec66d5175790cc85fd1c057b1fa33c39b5f25661cf77f744b"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/混音记录.json",
+      "bytes": 967,
+      "sha256": "14e273bb43e0fe4f43b6c83bcd4c299ad84f36e0c6937a57efebea1b6018a1b3"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v10/配音生成记录.json",
+      "bytes": 7405,
+      "sha256": "4c86cff3282e346a1132a3bb12b3ae04a83220362aa3c102f26c0e36e1cc2fa4"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v11/build_v11.py",
+      "bytes": 4179,
+      "sha256": "04305f70497c5d3642db1122b82d91ed10ed88d1b22717af6b75a20214d64222"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v11/captions.json",
+      "bytes": 4862,
+      "sha256": "314381f57e14e3de9902635d6aea73946f861cb0ecad8bf7d6573880f75063cf"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v11/final.ass",
+      "bytes": 4444,
+      "sha256": "c54ca5dede50b94722d7571e7173ada71a2a47eea697c358c8d3da4908ff5d75"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v11/timeline.json",
+      "bytes": 6960,
+      "sha256": "6ae26d45935e44de5ec16a2061deb7bef057b8b03ea88669b6c7159a6bee891b"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v11/全片字幕.srt",
+      "bytes": 2190,
+      "sha256": "d85759dc8ea8211ec66d5175790cc85fd1c057b1fa33c39b5f25661cf77f744b"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/add_transitions.py",
+      "bytes": 7965,
+      "sha256": "31d5d795eead481f271fac9f07493725acf0edf4453f0e5a4780d1cf3a15bfcc"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/application.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/build_v12.py",
+      "bytes": 10354,
+      "sha256": "f406d1a618bd85e1f336355a6a1231715d45bdd2ea76951e9e5d808627e8b549"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/captions.json",
+      "bytes": 5272,
+      "sha256": "63e41290d5cdb6d2c06185195132e3073a93c25dbeebd66dd7905e6149771aba"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/chapter_board.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/chapter_cards_v12.cjs",
+      "bytes": 3020,
+      "sha256": "417fcdd0f368c44cb6bd32b5be2b56e1a1e88b5a4909e3cce5c22b042435c15d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/chapter_console.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/chapter_logic.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/chapters.ffmeta",
+      "bytes": 384,
+      "sha256": "8db9ec89710272ab9b9dfad41d3495a5bf56438b1c9442c32e5548be8104c462"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/control_board.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/final.ass",
+      "bytes": 5016,
+      "sha256": "ab001390e98092c4f7faa6fb9de0c946a330ed477a016c3d2a23e529924ca6db"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/fpga_board.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/intro.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/mix_voice_v12.py",
+      "bytes": 3067,
+      "sha256": "1a0cf344f69eb15118adfdcdb54062275dbccdbad73530792bda866a9f97ead1"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/render_chapters.cjs",
+      "bytes": 1751,
+      "sha256": "e57e9b9a4adf3f832bafbc739e0de6f83494dcd2f20689a5fb2db2cdddb59ed4"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/rk_board.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/timeline.json",
+      "bytes": 8726,
+      "sha256": "6f57207c3fbabc345f2edcd8a8e96a5e624d05ef276be130462d044ea95b4dc5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/verify_v12.py",
+      "bytes": 4954,
+      "sha256": "8483a7509e3654e0de7ff9be5c6828f963e7a3f18fbe1a3f2ad00feaf37d1bb5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/全片字幕.srt",
+      "bytes": 2336,
+      "sha256": "072185669c9035eec76b0dd88ee1d90b0e37371f1bb7fdea54c2b1258b72b1aa"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/混音记录.json",
+      "bytes": 967,
+      "sha256": "4a403efecb224f84db88512eb44c7dfe96d6153121d6a625fa03f7d8654bf635"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v12/配音生成记录.json",
+      "bytes": 8061,
+      "sha256": "ef22e8c5ca4dd2c4e711520564458a06b504963d099a8bc97730f8542c353f37"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v13/build_v13.py",
+      "bytes": 12290,
+      "sha256": "e455149f84edd1cd7fba4a4597f9c9f920f7f04d681af15470482087c124f6b2"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v13/captions.json",
+      "bytes": 5528,
+      "sha256": "65970c8b1b5c6f3fbc183d7833a817177a5abd1c40e4ea6bc216b7c39d5d3b7d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v13/chapters.ffmeta",
+      "bytes": 386,
+      "sha256": "7da960e0e5197c5c70a43cb8220055ba1c01f0dca48dbece7d9c2928c87fc52a"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v13/fewshot_v13.cjs",
+      "bytes": 5129,
+      "sha256": "a3838715c6ad29bc5edf194c4cb7c28ca78272454f8bd3c7e782a698b82a63cb"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v13/fewshot_value.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v13/final.ass",
+      "bytes": 5167,
+      "sha256": "529c385af901db52b8a4d595cbf70078c80662334cb95d7bc3b88bdb5d4e31a7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v13/render_addition.cjs",
+      "bytes": 1429,
+      "sha256": "7f9b04da10bc67399aa01ed85c938ef043f7f5e4556ed996a04aebdfd34823c4"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v13/timeline.json",
+      "bytes": 9271,
+      "sha256": "b0115b7709993d10e6cfde7bd5011d4b5de0c673805649e87a4a5b0cacd90e3c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v13/verify_v13.py",
+      "bytes": 4947,
+      "sha256": "df12cb6178b6529be9b7f2498e016d370a7729ca9a8900eaa3e147a1216ab1d8"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v13/全片字幕.srt",
+      "bytes": 2459,
+      "sha256": "2dd1e20ba339fe7d482bb8b77e37bc73913aae25f71ecb5401b73399d80fb426"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v13/配音生成记录.json",
+      "bytes": 8435,
+      "sha256": "4aaf92cc256b292d5826d247270e87292afa98b270fa3c2204607b779105942b"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v14/build_v14.py",
+      "bytes": 3252,
+      "sha256": "afbdbfbe59f451722b7a30eefc99ad65b61b74f518e911b70be087b7214ee931"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v14/chapters.ffmeta",
+      "bytes": 401,
+      "sha256": "b48b1606eeda84ecc6ff7c3c95bec78ea9b9970ff1ae8d1d61bc8c0a02e63613"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v14/final.ass",
+      "bytes": 5078,
+      "sha256": "f95233d56992a3c8898830a9e1e19d644657961b5d0d5c4f3dab2dd6fa2e19a2"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/build_v15.py",
+      "bytes": 13649,
+      "sha256": "a1aa96a4dd8a9dbe33f6bcce0245004987d266e485dcaf85b318fb3d55900573"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/captions.json",
+      "bytes": 4562,
+      "sha256": "f4a21d2bebbdc0b303ced1b7470fa2a0518b6345b65c69a9340ca02ecf63c9c5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/chapters.ffmeta",
+      "bytes": 401,
+      "sha256": "b48b1606eeda84ecc6ff7c3c95bec78ea9b9970ff1ae8d1d61bc8c0a02e63613"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/end_v15.cjs",
+      "bytes": 3519,
+      "sha256": "4be9f5ef446be2f25d3121e5af1a700fa69470c72f25a2db0614d981da31e6ab"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/fewshot_v15.cjs",
+      "bytes": 4434,
+      "sha256": "2effa2f7c8a2e309d008869eb1d9968e3d3105b0f7788870718820905169e59c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/fewshot_v15_visible_text.json",
+      "bytes": 181,
+      "sha256": "582d4d35025fdb8fcd06318167fadb41e4a2953940e3abf839078b7ded5bcf0d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/final.ass",
+      "bytes": 5271,
+      "sha256": "f348208fdeaf5a008ae78984c4505e00cc78eb0c9fbf1d6fae630b5eacec5edc"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/render_fewshot_v15.cjs",
+      "bytes": 1445,
+      "sha256": "92c73665c6dbba8f8ce9499b3ffb08303a7836bdae7762880c30f8c029270061"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/timeline.json",
+      "bytes": 10149,
+      "sha256": "6c23d9d441291dd9caec407c08d17637bd8a45324170c841f4a21fba20d4371e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/verify_v15.py",
+      "bytes": 3739,
+      "sha256": "948a01be0de8f643e1cca5b3b1232b077f365100ae72da18535de3f4e8c9189d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/全片字幕.srt",
+      "bytes": 2640,
+      "sha256": "83931708e6f6809c0e39a689fcefc4b1ee5f087163f555917e2695306dbaac5f"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/混音记录.json",
+      "bytes": 468,
+      "sha256": "d9ae22baaf6ec4ba2a9f8de5abb07210a7619d0bb76dd7daf42f652ce60f7c0b"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v15/配音生成记录.json",
+      "bytes": 8872,
+      "sha256": "7240a9ad054daed177fc54115849dbad2f44203f8af52142416adfa5d943ca30"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/annotations_application.ass",
+      "bytes": 2797,
+      "sha256": "80b7b5ebe84bf49d53af8a87fe4b36dcffd3d668dd7a2a23228ad23665420018"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/annotations_console.ass",
+      "bytes": 2680,
+      "sha256": "0a75b75164afc5ba1e6161e4c79f0f11773bc35e2c922a231a193661b0c44792"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/annotations_hardware.ass",
+      "bytes": 4785,
+      "sha256": "088e36ff2a9778e4ab83b19f5da51e80d393c4de059b168720b59b455cfdfdf7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/annotations_hardware_preview.ass",
+      "bytes": 10055,
+      "sha256": "a40e1eb3ebd92c3eb796663d0e575b912313e5bb61ee7547bd52ded12f55ea8d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/application_annotation_preview.ass",
+      "bytes": 8065,
+      "sha256": "679244ad000791cb6a03bb3437d450af848deec4dc7c5ed865408434929b8bab"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/build_v16.py",
+      "bytes": 4755,
+      "sha256": "e98ed1cc21d4f002d14fd17492dea57cdd8036b574416af4421713a9ca06e445"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/captions.json",
+      "bytes": 4597,
+      "sha256": "42216c1d57927d1f4acf037385150f896db99e413168ec8a01ec48ca51af01d7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/chapters.ffmeta",
+      "bytes": 401,
+      "sha256": "b48b1606eeda84ecc6ff7c3c95bec78ea9b9970ff1ae8d1d61bc8c0a02e63613"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/end_v16.cjs",
+      "bytes": 4717,
+      "sha256": "a4475aab9ef3e47a0298e86f90bdc83c6d1ad18535818e1f79f2cc36481aaace"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/final.ass",
+      "bytes": 15458,
+      "sha256": "ee775404dd4e082a648c6b98ea2053ce109c1f9a9c326952f84be2716e0e0d2d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/hardware_contact.py",
+      "bytes": 849,
+      "sha256": "b1da4c888ad88914c28d43fff4edd2f8458ee3a874ba85e0f82281c2f51f5f83"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/intro_contact.py",
+      "bytes": 913,
+      "sha256": "e3a0f09747d53900cee1327134de9357817b2a57ef800c5b1345f0d833747774"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/make_hardware_annotations.py",
+      "bytes": 4566,
+      "sha256": "848935455ee0c26eee240183d0ff21be6ebcb0dea5e21b4a4d5eba5b86a30686"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/render_control.py",
+      "bytes": 6249,
+      "sha256": "c35af6dca9cfe1389759b20798612a6f9fc0ee0bfbf4bbadb3afbd3e76358bd2"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/render_intro.py",
+      "bytes": 2284,
+      "sha256": "17f45c688f6a1888da8af856a4a84d6df439b2eae12ab2e8b1d9d99540640380"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/timeline.json",
+      "bytes": 11639,
+      "sha256": "03ffaea11ae31d38ed01f302fa723d999bb3d1caa8cb4ebf26965c417ebb49ba"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/verify_v16.py",
+      "bytes": 4566,
+      "sha256": "2c7ec0a363becc099ec94471a70e7c69fc0ed8ab9eacafc2936e8cfe0b54b80c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/全片字幕.srt",
+      "bytes": 2675,
+      "sha256": "ef27cc6739c69e385d4d21d1598ce36c99c3c5dc8e00dd36320a66246e4951e8"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/混音记录.json",
+      "bytes": 468,
+      "sha256": "b9edfcb4a25566284e921de6c6b250c8a0ba59ff4934888aed1911df7f3b1aaa"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v16/配音生成记录.json",
+      "bytes": 8910,
+      "sha256": "159de22420864d21d578f240def0a6ab42fae52f206d5dfc791b22c667512f40"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/build_v17.py",
+      "bytes": 14187,
+      "sha256": "001bd588831991284e86dd8b73185488ec8fb07e195406c141a5699f269af3f9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/captions.json",
+      "bytes": 4805,
+      "sha256": "6f8d275181dabe76f4fae8aaef0208280df383dab6e636b128501f2ee9b14afa"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/chapters.ffmeta",
+      "bytes": 398,
+      "sha256": "dd9981b66093a4523feff99da52c2815772b42dd8f42257c58dfd5b6eac53f1f"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/end_v17.cjs",
+      "bytes": 4961,
+      "sha256": "9d2e7d3cda00303397792cf26ce27ae45665b76080f2486c1bb188a14c86e8a7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/final.ass",
+      "bytes": 15940,
+      "sha256": "30f1502a5ffcd9d9583acc1d78e96bc89d3849ea244606b180817e524684447e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/industrial_animations_v17.cjs",
+      "bytes": 8089,
+      "sha256": "d843440b3bcdcc7a46904b360811205b75ee608a67ab6a32fe4175a4f7f2fa1c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/isp_compression_v17.cjs",
+      "bytes": 7737,
+      "sha256": "db9955d860cb9b5c3a1bba01508c11b8f267a95663d9325139e5996ef7883e04"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/render_material.py",
+      "bytes": 1699,
+      "sha256": "907ef29d5bd493726e4530400db80c448b06ff64b88212594c2c9c479613040a"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/render_short_assets.cjs",
+      "bytes": 5032,
+      "sha256": "cfe3ab7dcf405fca689e75710ff2ea008144e45e47481779b56ce8faccb6e9b0"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/timeline.json",
+      "bytes": 12103,
+      "sha256": "6389d9888331b05ff6aa5f46d44418beb3cdb622961a1b3ad5d8e781149046bc"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/verify_v17.py",
+      "bytes": 5423,
+      "sha256": "f9d0f8e6215e482f07fd360ed4eca8777ffed20f29023c56899c783472721472"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/全片字幕.srt",
+      "bytes": 2816,
+      "sha256": "352016ae59ec38582dbb525b2ddb989629f12160a13a389accb0777bbbf838fe"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/混音记录.json",
+      "bytes": 468,
+      "sha256": "08cf192615547e27458e88e3c68a3dca7791a718bbef9754db19bb20583653cd"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v17/配音生成记录.json",
+      "bytes": 9288,
+      "sha256": "e3757f58eca847aa63e0bd7d62ec3410f1ce66573c5b5afef32a5f8d357049cb"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/adapter_preview.ass",
+      "bytes": 1748,
+      "sha256": "eaf663bc18fc401895438158a452e1b7a474115a77df632207c0fd9500aa2aa2"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/additional_adapter.ass",
+      "bytes": 819,
+      "sha256": "1e69b2d0a435ec5e9a463d562b172f2c0c0ff5f8457899edf10fedfd68d38e5e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/annotations_adapter.ass",
+      "bytes": 819,
+      "sha256": "1e69b2d0a435ec5e9a463d562b172f2c0c0ff5f8457899edf10fedfd68d38e5e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/build_v18.py",
+      "bytes": 9827,
+      "sha256": "89978acb9eb7a6c8c83b0de0fc97aa0a660d6e934a5e888fbfed16bab21d107c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/captions.json",
+      "bytes": 5069,
+      "sha256": "f06337505b7c1a95915a61ac03ba5220b28e3eec4ccca7358c257b58a4a2fc33"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/chapters.ffmeta",
+      "bytes": 671,
+      "sha256": "f3a4244287d773d4340efb9e7820b98dceef013d21980ac9cecee1ca11cf8e95"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/edit_plan.json",
+      "bytes": 6519,
+      "sha256": "d76466174fd27eac6288dc2c374a790814729b366975021f291da55d7ca71215"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/final.ass",
+      "bytes": 14867,
+      "sha256": "d88d783772ea0ac6927c741bcb0f82b456f0c9314cab54cd3c0f1e935d27fccf"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/make_adapter_annotation.py",
+      "bytes": 2707,
+      "sha256": "0b518a228daf6a3b4fdb2fe452616e3ef98cd3d0bc8411dbaccb4ad23834703c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/render_scenes.py",
+      "bytes": 2164,
+      "sha256": "c83291d1924c3e93ddb02d65e320cea8e0e37691ab22c2f594e936ac25980d6e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/timeline.json",
+      "bytes": 13950,
+      "sha256": "922998c3387dbf48625d54b69bbdc4b16920287db2d6aac9a5bc28913639fbba"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/verify_v18.py",
+      "bytes": 5671,
+      "sha256": "6a35d2013a7a3d468410512424531a9a23233885036d23b32659be3c815d33bd"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/全片字幕.srt",
+      "bytes": 2901,
+      "sha256": "ba82f0e8a6cd8dc006d40910ca4d5cd1fa10a469dcff0e44794904259a50b2fa"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/混音记录.json",
+      "bytes": 468,
+      "sha256": "9a54797954846dadc807a5cb8e729ca86473e9e73cf19aa79e8c77fdd9d6de35"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v18/配音生成记录.json",
+      "bytes": 9900,
+      "sha256": "ed6f80d5c9142759072b7aef0749a344c8ed1f3186086ae381005067ce80e2b0"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/build_v19.py",
+      "bytes": 10006,
+      "sha256": "381075a4d2e0f028b4daa25cb41f3ab79fd2ff3e5d6cd5f9b87435e5e19405ea"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/captions.json",
+      "bytes": 5300,
+      "sha256": "dfc0c9a6b4d456f2c152d7e59f58dc0e0b807f77b98e23a932996cc01521c0bc"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/chapters.ffmeta",
+      "bytes": 565,
+      "sha256": "7347bf95d44157119a417e915236366fbd9aaeb314d6f1306fcf75a30dc33b76"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/edit_plan.json",
+      "bytes": 22207,
+      "sha256": "4a6617594202f11337f0c5a0c19144082db7940c4f79d6c8a36467f65909a832"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/final.ass",
+      "bytes": 16043,
+      "sha256": "624de61079f4308b5cee2cb4e5ec7d5f0578b7191b2b620d543ca51c164801e9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/make_prefix_plan.py",
+      "bytes": 3689,
+      "sha256": "25dc0d2268cb8efe5e067012af1f3933eb13dfb60ed4de8fd990e44f63fe9149"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/prefix_plan.json",
+      "bytes": 14776,
+      "sha256": "47765428c758ccc6cf91e8273011a41cbfedc198c8fc06d0e2cad39238ee4b77"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/prefix_render_plan.json",
+      "bytes": 7293,
+      "sha256": "85461b1ae68570d7c926957c8090385aa56703ab760a57f13dae86b5ac90367c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/timeline.json",
+      "bytes": 12366,
+      "sha256": "385955be548ac4416b1f31d2a5ce99ac8c880879cb9f64a60ab8376c693e42bf"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/verify_v19.py",
+      "bytes": 3699,
+      "sha256": "cf0dcccd4d3c0850bc490ae6a115f28a9e1537ddbaf0efec7fddeaf10659d4f6"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/全片字幕.srt",
+      "bytes": 2971,
+      "sha256": "0302743d81af7ccced7e137387f2f1d4d1af0776594c20fd10faff737eed5749"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/混音记录.json",
+      "bytes": 468,
+      "sha256": "49c405b34fdb5fdd83ff233afab931c1e07ab8b0ae3da0ae6a3d770f3e50c677"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v19/配音生成记录.json",
+      "bytes": 10498,
+      "sha256": "a9f7007aa9284226844819b00c399b04cb44dc4014eb1d7d5ee5efafd95900b7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/build_v21.py",
+      "bytes": 8347,
+      "sha256": "aa59bb324b07edadeca255fb66661fe411a19c4b358cd79ff52fe0e65acf7056"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/captions.json",
+      "bytes": 5300,
+      "sha256": "dfc0c9a6b4d456f2c152d7e59f58dc0e0b807f77b98e23a932996cc01521c0bc"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/chapters.ffmeta",
+      "bytes": 565,
+      "sha256": "7347bf95d44157119a417e915236366fbd9aaeb314d6f1306fcf75a30dc33b76"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/content_manifest.json",
+      "bytes": 14322,
+      "sha256": "4b0dab842e4da0e38eab9f875e81cd7ee7672e8d4d16d7b6ad52092b09e98656"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/final.ass",
+      "bytes": 17266,
+      "sha256": "b2204a27b5d5e97a9b11a057b0a9e8a28f7671e942ef8de70a61c09decdf2b36"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/geometry_b.cjs",
+      "bytes": 31175,
+      "sha256": "1ea7e5e75c6a4066529c76267e73a4f248100f7dc823acac2c865f82f121561c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/geometry_b_style_notes.md",
+      "bytes": 7023,
+      "sha256": "2739c231a4dc345a0d481451d184cf7d3298ac3d271dc6af154ff3e4ffa38421"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/render_b.cjs",
+      "bytes": 3645,
+      "sha256": "1ecdc4cd475d93d506553ed53203ac7404d2fefc95904a6be52be43a5e99b325"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/render_plan.json",
+      "bytes": 7178,
+      "sha256": "20ea39c0e455df0522835a51c5917d902a0c6116ee16fb1b7c05119ca54d4073"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/scenes_b.cjs",
+      "bytes": 23957,
+      "sha256": "65e4851fd516eee83acb274339fb828e308ac08cdb2a59f36bfc1dda665d8ca2"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/timeline.json",
+      "bytes": 15174,
+      "sha256": "a0cafd3929a4b11500ef40233da62ae6e1cc1da43d2807396d095ae32c54ab97"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/verify_v21.py",
+      "bytes": 3901,
+      "sha256": "c2d13202dcc6955322525c3270a5d9bca76252958fac0b42e7f8e6ae904fe0ca"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/全片字幕.srt",
+      "bytes": 2971,
+      "sha256": "0302743d81af7ccced7e137387f2f1d4d1af0776594c20fd10faff737eed5749"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/制作与重建说明.md",
+      "bytes": 2970,
+      "sha256": "b34a54b1518ba9ba7f5d0723517325f3e08b0810296567b4a683ad8deb2d5b23"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v21/配音生成记录.json",
+      "bytes": 10498,
+      "sha256": "a9f7007aa9284226844819b00c399b04cb44dc4014eb1d7d5ee5efafd95900b7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/C风格规范.md",
+      "bytes": 8905,
+      "sha256": "877645d704b87eecd6ab4895f3b22e2950b80385ed1a9f7ecf6515de4c2cfac7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/build_v22.py",
+      "bytes": 3869,
+      "sha256": "15c88833d20b412c23cd841d1f930a1cc050e90e6f365177d7654a52fb524fd9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/captions.json",
+      "bytes": 5300,
+      "sha256": "dfc0c9a6b4d456f2c152d7e59f58dc0e0b807f77b98e23a932996cc01521c0bc"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/chapters.ffmeta",
+      "bytes": 565,
+      "sha256": "7347bf95d44157119a417e915236366fbd9aaeb314d6f1306fcf75a30dc33b76"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/content_manifest.json",
+      "bytes": 9534,
+      "sha256": "a322aa85be18bd79ce6bb077c310556cdf0098a05d6f528578ab92316a264c0c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/final.ass",
+      "bytes": 16043,
+      "sha256": "624de61079f4308b5cee2cb4e5ec7d5f0578b7191b2b620d543ca51c164801e9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/render_c.cjs",
+      "bytes": 3767,
+      "sha256": "179aa76218c6d48e0a99eb340bbb5abe0b20ee67ce5aaffffc32492a51497201"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/render_plan.json",
+      "bytes": 7542,
+      "sha256": "4fdff42f4ace129ab2037e504d591b36254be3087d50d1578e37c72c08dfb93c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "bytes": 22486,
+      "sha256": "d16f04f478ce813ee79b6b3b1dbaa3d53fe9515fddb300c9b3bf39f8c30004ab"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/timeline.json",
+      "bytes": 15538,
+      "sha256": "a463a40f9ba29c82faeec9a1a82842251f796cc9b77d0b9d055f0a9d8d896c75"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/verify_v22.py",
+      "bytes": 3946,
+      "sha256": "16b738cfe6bded41c096bb14f04221dec7d2f9e649d9fcd0272e9f63dfa9df50"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/全片字幕.srt",
+      "bytes": 2971,
+      "sha256": "0302743d81af7ccced7e137387f2f1d4d1af0776594c20fd10faff737eed5749"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/制作与重建说明.md",
+      "bytes": 2250,
+      "sha256": "e28500deb2712517c23590ee293416877a7409994673ebdbd70329b439bb4688"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v22_C光学科研/配音生成记录.json",
+      "bytes": 10498,
+      "sha256": "a9f7007aa9284226844819b00c399b04cb44dc4014eb1d7d5ee5efafd95900b7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/build_v23.py",
+      "bytes": 16271,
+      "sha256": "a3181f7b6f2e6903861ae6a4d22a9eaa7d864b962b5a52aa46ce63c4d9950734"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/captions.json",
+      "bytes": 5259,
+      "sha256": "8bc5d81f9e362477d4dceda890914e8bb504b62760368737ccf167a7d09d7343"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/chapters.ffmeta",
+      "bytes": 565,
+      "sha256": "6df700968c98f1452f06f51826a82dc8c4d85f5fdeeb4ddc9dd44f9762cf9107"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/evidence_isp_compression/isp/00_archived_native_rgb.png",
+      "bytes": 203834,
+      "sha256": "fa20c8219fc650063307399590755ae7a5613e810a354a3439bfcf927adc6c83"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/evidence_isp_compression/jpeg_q90_decoded_native_0.png",
+      "bytes": 187158,
+      "sha256": "68972743bb1ada5bda9b111677602e5ac2992040e4cea73ac400b75325de96af"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/evidence_network_sd/original_native_crop_99x65.png",
+      "bytes": 9288,
+      "sha256": "f30126f1881d259eb33b5b98601261bda934d1da787074070468dcf1ff930916"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/evidence_network_sd/source_records/0b15d69f8bb787d416ba2447e1b08d714f0f5fb36fb3d7a3e75e921ca1b2e6db/receipt.json",
+      "bytes": 262,
+      "sha256": "3f7800ce6e934504a849c140adebbb6c30ef09c185cd43c7b5447d504cf987bf"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/evidence_render_plan.json",
+      "bytes": 2383,
+      "sha256": "38242076b955b524ec8dddd03a67fe0ef93dc6bf3ff5d796b6901f204fb72cdd"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/evidence_scenes.cjs",
+      "bytes": 23166,
+      "sha256": "2dfb3cf0c7063384844ae33c576015bd9755b652ae7effe9120227997295bb6a"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/evidence_tracking_dimensions/dimensions_exact_records.json",
+      "bytes": 12854,
+      "sha256": "d1f325ea6735a0c2b54a790b7d733d1b5a4437d456f2a3bc8f0d0c9126b07137"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/evidence_tracking_dimensions/dimensions_source448296_native.png",
+      "bytes": 212807,
+      "sha256": "5791bff45f1d69b5517219c1adde87e49406951f926f8aa7894df2435d6c1422"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/final.ass",
+      "bytes": 17530,
+      "sha256": "f74cb5dfeda4f7b1616c1b091ca29d0c2b36f52dc142258de05193482ff7658a"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/render_evidence.cjs",
+      "bytes": 3654,
+      "sha256": "2ff7738d2f301a9bd305880a4e1f421c95d3af614407df20dd5aadb4eeb7e15a"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/timeline.json",
+      "bytes": 15512,
+      "sha256": "7bf35257bebf046aac5f150f67ece0d0ff034581088d3f8d2bed78ef586b75b6"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/verify_v23.py",
+      "bytes": 5307,
+      "sha256": "9e44e20a128e56c6e2fa66bb2949206eaafd15ff7b654f808f234da6c26fafc6"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/visible_manifest.json",
+      "bytes": 12193,
+      "sha256": "83c00881fe3711249c0c364b6661c0e76fc9d5c67d38e1931f8566b065ce9a0d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/voice_plan.json",
+      "bytes": 7301,
+      "sha256": "bd7361109344781aacb25534441a46927c1b1ebe4b903be7ed21d4be7735f29f"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/全片字幕.srt",
+      "bytes": 2929,
+      "sha256": "2ca3378c9aa89de99195abca93d0111268343d9151794d0314579b136bb9f030"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/制作与证据说明.md",
+      "bytes": 3844,
+      "sha256": "3f479861509368bc2bbf4ac11b234f78e252faa6dddc7955bbd8224d7ae3e4d7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/混音记录.json",
+      "bytes": 468,
+      "sha256": "9bd7027c5b9ced054c1acf9c134bd21327b5c5559b2f1b1827773953c03e0eea"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/配音生成记录.json",
+      "bytes": 10578,
+      "sha256": "eab19ff4d7f7718d43b61fcf8c20afa3c3100b600b619ba6283b65f560843702"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v23_证据补强/音效对轴.json",
+      "bytes": 1383,
+      "sha256": "b5a5991a1308769dac87cda953a39a71b91d0dab478d472e0857757b0aca093c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/build_v24.py",
+      "bytes": 17652,
+      "sha256": "9508c7293659a01c94776aa17ac6da6f92c4a9d39ed643538eb2c07958d69f12"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/captions.json",
+      "bytes": 5311,
+      "sha256": "95c99fa6424f5c82c74aa1bd1ea9b204117885a88c4a521067fcefe6f19215be"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/chapters.ffmeta",
+      "bytes": 567,
+      "sha256": "34dfee749f5c464c667fdc69df2d06f5ed25515581da22427609d536ed040041"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/evidence_render_plan.json",
+      "bytes": 2466,
+      "sha256": "b74bfbe7d38f42c38a2981f1cf4418e0bc1d8699e758b9c5d22db04505ed64b1"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/evidence_scenes_v24.cjs",
+      "bytes": 26423,
+      "sha256": "46159a765f48eb8b776dd708bf3aabad5816f29668279826324743d5d0c64b22"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/final.ass",
+      "bytes": 17148,
+      "sha256": "e5cd8035d13a93af8c9e1f85fe94763c7d61283d60e596369d36cd3facf48273"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/crop_2x/00_archived_native_rgb.png",
+      "bytes": 63158,
+      "sha256": "25532732b3976964372bf2c472cbaf9acccd512b009705751a16f96bb5c80652"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/crop_2x/01_gaussian_3x3.png",
+      "bytes": 49528,
+      "sha256": "96c0d4ff7166e0bf31a46120aec5918163b62533ac5db547d1eeeb8192c4a2be"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/crop_2x/02_luminance_mapping.png",
+      "bytes": 51381,
+      "sha256": "e99af532f06a0d5295940793dedf916e809ed1a55892af3680d8d28aa484939c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/crop_2x/03_luma_77_150_29.png",
+      "bytes": 19864,
+      "sha256": "391bbfa7325484ec1a1977815d4fa00e35cfa1e320c72b59b66299288b26d1a1"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/crop_2x/04_foreground_y_lt_72.png",
+      "bytes": 1334,
+      "sha256": "dff02fee50de270a3083f931f758c790c9a2d280159ba98c27f3807d6b48acc9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/crop_2x/05_binary_open_cross3x3.png",
+      "bytes": 1260,
+      "sha256": "c3b5eefe8e0b8beddeb6353fec7b0c460e66a010b337bc46503895c989c43941"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/crop_2x/06_sobel_l1_gt_96.png",
+      "bytes": 2844,
+      "sha256": "e72a8d22fd3ba404856e7795a04c82419352c8eff550c605ff1ae4b8f8a40b35"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/crop_2x/07_edge_overlay.png",
+      "bytes": 55081,
+      "sha256": "4c8e1cea76eafd63bce5d2db5214ef4702a5a51c12476c3a6749f45803c708fa"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/native/00_archived_native_rgb.png",
+      "bytes": 203834,
+      "sha256": "fa20c8219fc650063307399590755ae7a5613e810a354a3439bfcf927adc6c83"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/native/01_gaussian_3x3.png",
+      "bytes": 152513,
+      "sha256": "46835a994740f8467511a0fe821ec4d3f7102e32b7fe037cb4c9ee8b0daadd97"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/native/02_luminance_mapping.png",
+      "bytes": 169492,
+      "sha256": "4a690420cde74eed78ddae7591cf6e6f5d58e34e46c152dd37b151b8311ebbc0"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/native/03_luma_77_150_29.png",
+      "bytes": 66286,
+      "sha256": "a470a10da83b90fd51134604494cca7532c5b37e65621a8127ae0bb875107612"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/native/04_foreground_y_lt_72.png",
+      "bytes": 1868,
+      "sha256": "8317a88ef86d39d983c2de37911fe2e29b5991ead3a72ae1ccbfb3d45c510c2c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/native/05_binary_open_cross3x3.png",
+      "bytes": 1768,
+      "sha256": "ec467877b1b0697a7a77415e46a9aa73d991089580d25383262628769ed5a97e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/native/06_sobel_l1_gt_96.png",
+      "bytes": 4533,
+      "sha256": "a3140ca8c37c06b7f2b45b97a14942ff7bf613d0822cf445761b312fdc7cb553"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/isp_assets/native/07_edge_overlay.png",
+      "bytes": 178702,
+      "sha256": "ba1b438e1e0d43504666989a404e0ca07fda1ae6a876e462ddd0ba3a3c05a143"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/render_evidence.cjs",
+      "bytes": 3662,
+      "sha256": "80529d229e0569ae5252cef29915209ca8df285a092a590abcd1f170bf01ff91"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/timeline.json",
+      "bytes": 14990,
+      "sha256": "92d3d78b22af1475b0ed66c87b92a9635546ca2ca85d95f5aec8d164c0c7adfb"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/traceable.json",
+      "bytes": 85549,
+      "sha256": "1f39ab04ba847fa8ee1c27db3f40ef8f1c4259d398b2fa6d86edb2d00efa270d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89270_detail_native.png",
+      "bytes": 30778,
+      "sha256": "bcb8579d6074b5935f759a987862373945664091d2f72f44a9bc6f5084c947e2"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89270_native.png",
+      "bytes": 371608,
+      "sha256": "69e1ae04ad7d082436a801a7b5c0046ef3258d0605f32e31430c1f4fc9e9dd04"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89278_detail_native.png",
+      "bytes": 30422,
+      "sha256": "eb803e0ab8644c6cd60ae2466b0e15bbe214e7866a264a3ebc82a5747d46b710"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89278_native.png",
+      "bytes": 369614,
+      "sha256": "45273d3276dc506564eb61fd13071e76f854d41fcffc46b84c6fd274b6115018"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89284_detail_native.png",
+      "bytes": 32976,
+      "sha256": "bb1565769f8a52872da8a7437d3e450179a8c4b344627407ba6bbc6d1eb4ff1f"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89284_native.png",
+      "bytes": 373245,
+      "sha256": "cb8a8a7e8a08e9116fdaba33f9496e40a4c9a1334fd2755999d294cfe2beb22c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/verify_v24.py",
+      "bytes": 16185,
+      "sha256": "5800fcdbde77c50cc352f94f63dc9cfc3b47f18805398d1961edb84acddbf966"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/visible_manifest.json",
+      "bytes": 17627,
+      "sha256": "86e66004c510b7d4e8776a2d888eafc05d90ea088b7d0601805d1d8be72b6b4e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/voice_plan.json",
+      "bytes": 7337,
+      "sha256": "ba9843e1e057dabd86aa4fed38b6aa3500d5d8a78580e64094c83c0a380b8427"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/全片字幕.srt",
+      "bytes": 2970,
+      "sha256": "180310a86b692edebc7cd2b3c8219923118746a89938b88ebcec2ac09fbe4362"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/制作与证据说明.md",
+      "bytes": 4417,
+      "sha256": "e847fbc2877cbb068b9b2ee62e2cacbe2cd15fc0ead150825c3be0459e19864b"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/混音记录.json",
+      "bytes": 468,
+      "sha256": "5fe93267e15246f8589aac105e5d9be16a2bc362fc200e06d50f01710145f085"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/配音生成记录.json",
+      "bytes": 10694,
+      "sha256": "b09a5f2d0925db2fe8b0f62e1586414404c926889b2431096da27a620db8c4ef"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v24_清晰关联与慢放/音效对轴.json",
+      "bytes": 1396,
+      "sha256": "d35992aed191cc0a83e89d95eaade22c7ecd87e37a1514090e3a43e6385db9da"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/build_v25.py",
+      "bytes": 5708,
+      "sha256": "a71e44aa8cdbb7e008a04bd742936c4b42f631f40fa734db5163eb1cb2af0715"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/captions.json",
+      "bytes": 5305,
+      "sha256": "538e2bede77b89f59163a20d92fa1cc81d753e4aac2e3af3b3369e21ef80ff52"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/chapters.ffmeta",
+      "bytes": 567,
+      "sha256": "34dfee749f5c464c667fdc69df2d06f5ed25515581da22427609d536ed040041"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/final.ass",
+      "bytes": 17141,
+      "sha256": "1ecb33cb7408d3b44d093779d3f1af1c6c2a9f81c8c05d09429faf6968ff48c3"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/timeline.json",
+      "bytes": 15130,
+      "sha256": "d8ab95a91ae105f8038bb04ed787c96b27f252ae1aabd89231515031d5260e45"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/verify_v25.py",
+      "bytes": 3831,
+      "sha256": "86b36e1231967d404e4a72320cb1bcebc51531d28da61dd58a5b0ecadb3fa8fd"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/voice_plan.json",
+      "bytes": 7331,
+      "sha256": "c288cdeea1b7a442313a417fd9e654145e681fe22e9f0cae943665d2c4f9762a"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/修改说明.md",
+      "bytes": 1449,
+      "sha256": "05b8944529b504cd0b499049511acc523cfab3d4bc86af3ae625d924339bebc8"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/全片字幕.srt",
+      "bytes": 2964,
+      "sha256": "96dbe75632f57d690b00c2f0ed03090d42500618479a7d579e6abfd69daf683e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/混音记录.json",
+      "bytes": 468,
+      "sha256": "d1488b551465fd63d70780bacda4329385c39398feddeb9c5e3efb5ba14232dc"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/配音生成记录.json",
+      "bytes": 10688,
+      "sha256": "746f45f12774a3b64c18db247ba30edfb6500e0b87671856634c8e3927ebf3be"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v25_增稳与口播修订/音效对轴.json",
+      "bytes": 1396,
+      "sha256": "d35992aed191cc0a83e89d95eaade22c7ecd87e37a1514090e3a43e6385db9da"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/build_v26.py",
+      "bytes": 4186,
+      "sha256": "d0875a9ff475162b82f2d023ff83f185a558b19b3ade6286a1834c419550b5e7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/captions.json",
+      "bytes": 5305,
+      "sha256": "26e3c870bc06b462cadcb150f7133c42b55de052e0a3f292993e5e95827dd018"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/chapters.ffmeta",
+      "bytes": 567,
+      "sha256": "34dfee749f5c464c667fdc69df2d06f5ed25515581da22427609d536ed040041"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/final.ass",
+      "bytes": 17141,
+      "sha256": "34b5c3355d0cdf3b179b4f95de1880074b65dc4219e0bfbabe2becaf83a226ea"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/render_b.cjs",
+      "bytes": 3775,
+      "sha256": "b916790ffbf8f1d0abb50a108a42367bd03695cb7e6d5a65008d9df4fc181972"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/render_plan.json",
+      "bytes": 561,
+      "sha256": "37015864135e8248c38a4cbf532ed53b0187e41f12e3af6c3a72167d4be3ba94"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/scenes_b_v26.cjs",
+      "bytes": 970,
+      "sha256": "2426bc0c4163f42ebaec7e479cdff9dc46cb0563c81d1e11c1aed05d95c5fcd7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/timeline.json",
+      "bytes": 15169,
+      "sha256": "ed057235cd171e24b6f32ffbd4810ef0efac7cb76dc0642eb3c8cf8e94690af8"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/visible_manifest.json",
+      "bytes": 1133,
+      "sha256": "4ea3b2a65ee5125a07709767cd0b21138b6385f86b88fdafc0cd5c3b6ee38d03"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/voice_plan.json",
+      "bytes": 7310,
+      "sha256": "84b81553fb1452f491c40151abb14fe159bec5ce6c2c804c6ef774fd51b9234c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/修改说明.md",
+      "bytes": 1138,
+      "sha256": "949142d12c1648445c2a75ae492fe0aa9d224c569206e69f0d5abeb88b3d15f9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/全片字幕.srt",
+      "bytes": 2964,
+      "sha256": "5390cb88e625e27612c4c82c4c6fcdcd69b38218798f33555a334a1ac3ed0412"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/混音记录.json",
+      "bytes": 468,
+      "sha256": "2f191008d8a46344d94f393afc47ec2636aff176ff7beb11555c89ad21617973"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/配音生成记录.json",
+      "bytes": 10706,
+      "sha256": "80c8c15dbd6bf07a2b4027b5fb312eaee2841c779ef3b2238c65082d579a5a90"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v26_3600件每分钟/音效对轴.json",
+      "bytes": 1396,
+      "sha256": "d35992aed191cc0a83e89d95eaade22c7ecd87e37a1514090e3a43e6385db9da"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/build_v27.py",
+      "bytes": 4003,
+      "sha256": "14ad32ce59fd91a24415d4e60ce2d1238adf22899b17f15de818a6a25f6f9031"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/captions.json",
+      "bytes": 5305,
+      "sha256": "26e3c870bc06b462cadcb150f7133c42b55de052e0a3f292993e5e95827dd018"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/chapters.ffmeta",
+      "bytes": 567,
+      "sha256": "34dfee749f5c464c667fdc69df2d06f5ed25515581da22427609d536ed040041"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/final.ass",
+      "bytes": 17141,
+      "sha256": "34b5c3355d0cdf3b179b4f95de1880074b65dc4219e0bfbabe2becaf83a226ea"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/render_b.cjs",
+      "bytes": 3775,
+      "sha256": "95c27570a03e6529ebf84ce91fb186597a0763474075b93dfdd5849b1cc8414f"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/render_plan.json",
+      "bytes": 752,
+      "sha256": "79ef02e50ec680ca270eb677a82cea56921332dde117a98e47dbe411c5fbac66"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/scenes_b_v27.cjs",
+      "bytes": 1676,
+      "sha256": "ff01371991153108208355dd13627afe1eb616954d1a19ccddf192ee89895831"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/timeline.json",
+      "bytes": 15365,
+      "sha256": "ca6da00a1911016a1db072d25ed0e1a3087a860b39cb7af26b22e55002fce4b3"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/transition_parts/verification.json",
+      "bytes": 7919,
+      "sha256": "21209eccdbad9f5dcff00377534254df70b4e39b5772a6a14da80202a98ebcee"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/visible_manifest.json",
+      "bytes": 1029,
+      "sha256": "3764c680eb9a706aff2eb0c764f673d322994f85973599d5c67d31b2190d009c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/voice_plan.json",
+      "bytes": 7310,
+      "sha256": "84b81553fb1452f491c40151abb14fe159bec5ce6c2c804c6ef774fd51b9234c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/修改说明.md",
+      "bytes": 944,
+      "sha256": "29d6b8f89f9620db4817d02ef920568ef9dd0df569c5db6a7da553da0ac80884"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/全片字幕.srt",
+      "bytes": 2964,
+      "sha256": "5390cb88e625e27612c4c82c4c6fcdcd69b38218798f33555a334a1ac3ed0412"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/混音记录.json",
+      "bytes": 468,
+      "sha256": "2f191008d8a46344d94f393afc47ec2636aff176ff7beb11555c89ad21617973"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/配音生成记录.json",
+      "bytes": 10706,
+      "sha256": "80c8c15dbd6bf07a2b4027b5fb312eaee2841c779ef3b2238c65082d579a5a90"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v27_片头参赛信息/音效对轴.json",
+      "bytes": 1396,
+      "sha256": "d35992aed191cc0a83e89d95eaade22c7ecd87e37a1514090e3a43e6385db9da"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/build_v28.py",
+      "bytes": 5387,
+      "sha256": "4e93a7327cb43e0136d8b18fcd2f24302bfa850844a167df44ca762b1707bc92"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/captions.json",
+      "bytes": 5266,
+      "sha256": "0d9caf605c9914b0aa0185683d229939223f70fc85765edb8fc6a58ee28427d6"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/chapters.ffmeta",
+      "bytes": 567,
+      "sha256": "34dfee749f5c464c667fdc69df2d06f5ed25515581da22427609d536ed040041"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/evidence_render_plan.json",
+      "bytes": 552,
+      "sha256": "7b2bf0a69db14a825ce035ed7826897ef4e2cec952c6194a1fb335524133e242"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/evidence_scenes_v28.cjs",
+      "bytes": 26435,
+      "sha256": "1e4df4edb7c7027b9be22cf1acbafc57dd68b6cb0d2d4ef69e99ba84d7fe4e45"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/final.ass",
+      "bytes": 15574,
+      "sha256": "7ebe94598785ca43168ab559f7e8ec84259a82855b91322110b40042c0f7fbb7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/render_evidence.cjs",
+      "bytes": 3662,
+      "sha256": "36c9f4cd7a413f45e931c075d451bc5bf3d5c63b10225f03d4b471263702fec0"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/timeline.json",
+      "bytes": 15253,
+      "sha256": "4a1322028b700226ebc7653e17d101cf0953c80675231b026240c733e39c753d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/transition_parts/verification.json",
+      "bytes": 7932,
+      "sha256": "eb5405f2adaa47525aedfcb9e4b253fa61a074281ac9709a028e78af0cdaf56e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/visible_manifest.json",
+      "bytes": 17593,
+      "sha256": "b8473cc4ea0f384ab54ffdeef291e8369212243282d7580e69f9c8ab39119d25"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/voice_plan.json",
+      "bytes": 7271,
+      "sha256": "9fc66dfc4077b3990acd63fb10fec81aea08f5ffe08158ec629a6377b70bf1fa"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/修改说明.md",
+      "bytes": 1538,
+      "sha256": "bbe2d542b07f107d9893205d77dbf35daee2b2f375ecb518da67e1600ad9b27a"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/全片字幕.srt",
+      "bytes": 2925,
+      "sha256": "fccf8ed9320231260cc5221b2f8c3df1735c4f71cae71cab989663d380131ec1"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/已删标注.json",
+      "bytes": 958,
+      "sha256": "0c7e3cee0ea61528fa0b897b4a05acc9bc824bed73167ac8684962a5ee65f101"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/测量页说明清理.png",
+      "bytes": 923622,
+      "sha256": "07fedc51e3f50a52da68de89ff3691ec776122cc8d1ddadfe94ed3f75efc3dc3"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/混音记录.json",
+      "bytes": 468,
+      "sha256": "290780ae5182d1c14dc467de98211ab6048a77cea0c55efffb3c44bd159fd328"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/配音生成记录.json",
+      "bytes": 10659,
+      "sha256": "63cc01abe7b3904402b32c7cf2ca80c98c4bef7012f1dc279492c753f7afc23d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v28_清理剪辑标注/音效对轴.json",
+      "bytes": 1396,
+      "sha256": "d35992aed191cc0a83e89d95eaade22c7ecd87e37a1514090e3a43e6385db9da"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/area.ass",
+      "bytes": 810,
+      "sha256": "5962f56815694d46564c7642dd440b4e05921dec7ace8869b13f88a7a78f8306"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/board.ass",
+      "bytes": 951,
+      "sha256": "8545ea1ed26cf312898acb19565e1db8089c53e0f316f6d4363ccd432917fcb8"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/build.py",
+      "bytes": 4185,
+      "sha256": "b95577379ade3909a627c3e071777e9c9fdee03e163e9cff9f0aeee9c40eafc9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/collage.js",
+      "bytes": 3251,
+      "sha256": "f94fd09a5c88660d4b6861f72b367f081ff16abd1fed4bd6cf9709fd85b50d85"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/end.ass",
+      "bytes": 810,
+      "sha256": "5962f56815694d46564c7642dd440b4e05921dec7ace8869b13f88a7a78f8306"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/hardware.ass",
+      "bytes": 942,
+      "sha256": "1962476ab54a962c61e562c6d37ab46dfaa3920c707004d009f6abfcd0dfb052"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/highlights.js",
+      "bytes": 7148,
+      "sha256": "27aff3f9ba4805bdb19d7fadf3551c7620e4de93e61ee7220f08ab2eecc9a5ba"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/objects.ass",
+      "bytes": 930,
+      "sha256": "a5b15c387a2b63ae3df53470dc0534b370762ee1be98484888ab790097935836"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/render.cjs",
+      "bytes": 1868,
+      "sha256": "4de43606e76cb07a916f8be992edf1c84dde6afa608ea58a8c0ceb412a77d1c9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/timing.ass",
+      "bytes": 810,
+      "sha256": "5962f56815694d46564c7642dd440b4e05921dec7ace8869b13f88a7a78f8306"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/title.ass",
+      "bytes": 810,
+      "sha256": "5962f56815694d46564c7642dd440b4e05921dec7ace8869b13f88a7a78f8306"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v4/training.ass",
+      "bytes": 942,
+      "sha256": "0f97c545895da1d2138cd05b7d523a034952eeb036c00a644a358af82138b389"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/build_v5.py",
+      "bytes": 9784,
+      "sha256": "ae024f1a3fe1012d0c97952a4266397fd6ddb543f518897ebbefd3abec2887c5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/candidates.ass",
+      "bytes": 972,
+      "sha256": "c7ee6be20baf3bd1f10121ef4394c65449922993e170d7fcecaef7fdf78674a3"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/capture.ass",
+      "bytes": 954,
+      "sha256": "91bc33be1f37848008b7b4eb2657301f816e38cd1e367e7eeaf5634f8144d9b1"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/confirm.ass",
+      "bytes": 948,
+      "sha256": "aa5ae61327f701cc66b1c8133b98a854f9b4c8321116fbb4e7696dd25e204972"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/deploy.ass",
+      "bytes": 984,
+      "sha256": "6ef2b48a02025dfdeb20fc5eba881f994bd2d35199c933304719c06a6915ce31"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/inspect_media.py",
+      "bytes": 1268,
+      "sha256": "1688d60895407de898d840b94c8ec06c0e56d8ba9c06a258e29da2097d276eda"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/isp_overview.ass",
+      "bytes": 1119,
+      "sha256": "14b611b54273710390a3a75c9d4e766ab5b0760214152303282f04ed8b26b5fc"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/isp_processing.ass",
+      "bytes": 1233,
+      "sha256": "b336f0aa5d95edf0394ac5e379b89886329a2271f950e7519d156f19af192970"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/new_pan.ass",
+      "bytes": 948,
+      "sha256": "2ebee28cdce5869eb4853fa4bc6443de1ef7da4e512e247e168bef4e8e5460f3"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/new_run.ass",
+      "bytes": 948,
+      "sha256": "b38412bf6ff04ddf27e9def73010107b01642fd03c73ebc291bdb3bf67e0daa4"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/test.ass",
+      "bytes": 954,
+      "sha256": "c77787749c943d1197c2a2499488418d072ce78810fe281304f1486911b511b5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/train.ass",
+      "bytes": 951,
+      "sha256": "42f0168013991c291e76d6e5359813774f6eeb8b3b5267172bc983ddcd4c4a6e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v5/全片字幕.srt",
+      "bytes": 3194,
+      "sha256": "25fc064ac69cb6a51f19660ec1952e94432b5295429f8e9264a612f87af96161"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/animations.cjs",
+      "bytes": 12379,
+      "sha256": "be1f48b7ca037227eff6269d3d32be0273b89e7345a0060d4a2e8a8640473420"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/area.ass",
+      "bytes": 1094,
+      "sha256": "5a6cd3fccc68df734d254cc45e6f796fc84ed013f84699d2cf122f26a89061ea"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/async.ass",
+      "bytes": 1268,
+      "sha256": "949af5200ffe87d7d0142f251c3f106ff8036ceebe05acbb7ca40faa8167ec04"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/board.ass",
+      "bytes": 983,
+      "sha256": "4838c13dba63661f4008697b607a41fdfa2fbb74422966c8038b7e13969049a9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/build_v6.py",
+      "bytes": 12021,
+      "sha256": "29837f2062b7107b1f36bf4a71ae34bc76b184fbcea1b6b93f42f51d0df99e31"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/candidates.ass",
+      "bytes": 1268,
+      "sha256": "918659c8c7d933c1c4b27ffc36a4bcb6548d686cbe9ce69ac54b38634c7db7cb"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/captions.json",
+      "bytes": 10339,
+      "sha256": "e4a83fc0f38b25d1507bd67dd9ef6d1ab4aedf8f0a03835e90334f74e7c602c0"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/capture.ass",
+      "bytes": 1142,
+      "sha256": "6062d92e525ac40c3314e49cd9840e6ecaf6d726211c56825269e6e1d28bea02"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/coarsefine.ass",
+      "bytes": 1252,
+      "sha256": "8f34f80f5bdf9bd3af61dba997e5be96a382828332e19d841a15ba0b675d99e1"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/collage.ass",
+      "bytes": 1469,
+      "sha256": "713ba286a94cc03b44b9f6308ba303ad63be0ac0fd87de1a5ac2d384bad8aa68"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/confirm.ass",
+      "bytes": 974,
+      "sha256": "dee2ce0048e28d6ba35d8bf92766de83a2d3801f1a979761fa07be70687390d9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/deploy.ass",
+      "bytes": 1139,
+      "sha256": "332733e7849d3c59059091e5ccd6599d7e4d7025affe050bf3cd404cfe45a973"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/end.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/hardware.ass",
+      "bytes": 980,
+      "sha256": "a03d6a196603ee0c538c390b42e78217353ff020e935d22bed59218fdbd4de29"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/inspect_v6.py",
+      "bytes": 1112,
+      "sha256": "2b22ece52bd4a1a4c95e6e985b1f6a62ff03a861dc5e669805abc2979f54c910"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/isp_overview.ass",
+      "bytes": 1324,
+      "sha256": "35adddf04659d5ed4cfe94834b30d6b9903f907c92ff79502a77f4eda99b9ce1"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/isp_processing.ass",
+      "bytes": 1580,
+      "sha256": "6e39d73402cfd7ddaaf9af0e1b5e4338fdef934158c3057149b8e63134064bab"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/mix_voice.py",
+      "bytes": 2817,
+      "sha256": "52f341a73c166339e1b214f4841bbd9138fff9c57a7f4d30d96b67a0b1dd4cda"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/new_pan.ass",
+      "bytes": 1114,
+      "sha256": "f6ba4dbdab0ced98002d7786622da42cdcb8762be4b0c814b1b117c499ec8c6d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/new_run.ass",
+      "bytes": 992,
+      "sha256": "9160c096bb40d27df07c81e3afe0a2ada6d1536133217ca8401afe98cf7f1028"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/parameter.ass",
+      "bytes": 1317,
+      "sha256": "fa88e3de1ceb7058875f8d87b84692fa3cc1a8cf938639dbd57758f662375031"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/pose.ass",
+      "bytes": 1007,
+      "sha256": "5f7a8c01df680ed401d5b10f636b835fa76a6db20afdd5e20e1d364dedec1b6c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/render_animations.cjs",
+      "bytes": 1722,
+      "sha256": "83bfd4ed1d8a12ab33b3a79f566b9039f4415c5171bb777c042dce2b57679c55"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/synthesize_voice.py",
+      "bytes": 5322,
+      "sha256": "833c4bfe02f70a1747979a6fb46b1468aebf565b6e317ec665b8f55c47415fe6"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/test.ass",
+      "bytes": 1136,
+      "sha256": "b7fd38a26011b8c17d51fd880dcd721547201b633df63264050ea4bcd8ab358e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/timing.ass",
+      "bytes": 1121,
+      "sha256": "efbf7b8a97b6cc93ee75936222d29ce09213c931bb02df8c398aebfd232cee23"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/title.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/tracking.ass",
+      "bytes": 1553,
+      "sha256": "4ade9a8c26cd22e0164f43b737328b2c68ea522ca713e0b27d4635820760f903"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/train.ass",
+      "bytes": 1156,
+      "sha256": "bae904881a2f3260ca2db7963e06ac543abd4dc122651454b96ce37584395904"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/voice_plan.json",
+      "bytes": 20770,
+      "sha256": "9051275903ce9d7364f908981f8a2758cadca4905d9a21378845d4e6ac3e14e8"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/全片字幕.srt",
+      "bytes": 6277,
+      "sha256": "3b6336784302ecdbe86fe92dc65787b2e160ad425b8dc989f2001cb06983da4d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/混音记录.json",
+      "bytes": 980,
+      "sha256": "979ee7376e3335a549d545dc11ef02b6c941f1a8ae0e5a4ad2cadd8442afca57"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v6/配音生成记录.json",
+      "bytes": 17709,
+      "sha256": "d97ff89bd11e0cbd6e9f3b19eac82be156713459515469ada55a39cffb87fa0b"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/add_transitions.py",
+      "bytes": 7753,
+      "sha256": "c250b806722b5eea483288bff0d02493ad63a8be60b835bbaec9f500e48e7dda"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/animations_v7.cjs",
+      "bytes": 924,
+      "sha256": "69e2aed7262cb82e1f39382eb04206a81608e18b4869a8f4dbf4dace1e2a810f"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/area.ass",
+      "bytes": 1486,
+      "sha256": "621a5f686d384e7613143a7750f73522f6ca8b5201842b11b56fdad7e407f5b2"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/async.ass",
+      "bytes": 1268,
+      "sha256": "949af5200ffe87d7d0142f251c3f106ff8036ceebe05acbb7ca40faa8167ec04"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/board.ass",
+      "bytes": 983,
+      "sha256": "4838c13dba63661f4008697b607a41fdfa2fbb74422966c8038b7e13969049a9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/build_v7.py",
+      "bytes": 8560,
+      "sha256": "1aeacc5593e735216f7282e515d03d3b88c9224854ab2ecc7c830deff8f42f53"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/candidates.ass",
+      "bytes": 1268,
+      "sha256": "918659c8c7d933c1c4b27ffc36a4bcb6548d686cbe9ce69ac54b38634c7db7cb"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/captions.json",
+      "bytes": 10808,
+      "sha256": "9e97ef2b1d94ff074ad868f6df384cd329eb314dfa994c917f33c6a0752c5914"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/capture.ass",
+      "bytes": 1142,
+      "sha256": "6062d92e525ac40c3314e49cd9840e6ecaf6d726211c56825269e6e1d28bea02"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/coarsefine.ass",
+      "bytes": 1252,
+      "sha256": "8f34f80f5bdf9bd3af61dba997e5be96a382828332e19d841a15ba0b675d99e1"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/collage.ass",
+      "bytes": 1475,
+      "sha256": "6c5b140f26dfb4659e3c52bf931c4041c83e8027af8be33cc8e366eb4e65a895"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/confirm.ass",
+      "bytes": 974,
+      "sha256": "dee2ce0048e28d6ba35d8bf92766de83a2d3801f1a979761fa07be70687390d9"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/deploy.ass",
+      "bytes": 1139,
+      "sha256": "332733e7849d3c59059091e5ccd6599d7e4d7025affe050bf3cd404cfe45a973"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/end.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/hardware.ass",
+      "bytes": 977,
+      "sha256": "610e5b2eaefbdf59c8fe4211fee73505482f1f275546d420aec8f4aef2fba73c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/isp_overview.ass",
+      "bytes": 1324,
+      "sha256": "35adddf04659d5ed4cfe94834b30d6b9903f907c92ff79502a77f4eda99b9ce1"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/isp_processing.ass",
+      "bytes": 1580,
+      "sha256": "6e39d73402cfd7ddaaf9af0e1b5e4338fdef934158c3057149b8e63134064bab"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/mix_voice_v7.py",
+      "bytes": 2772,
+      "sha256": "3011f339a669a515afbd0f92afb81d3a0063a1b248e319a6dcd27ff83cf87693"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/new_pan.ass",
+      "bytes": 1114,
+      "sha256": "f6ba4dbdab0ced98002d7786622da42cdcb8762be4b0c814b1b117c499ec8c6d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/new_run.ass",
+      "bytes": 992,
+      "sha256": "9160c096bb40d27df07c81e3afe0a2ada6d1536133217ca8401afe98cf7f1028"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/parameter.ass",
+      "bytes": 1317,
+      "sha256": "fa88e3de1ceb7058875f8d87b84692fa3cc1a8cf938639dbd57758f662375031"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/pose.ass",
+      "bytes": 992,
+      "sha256": "dc9b300951079756d010f55b7f111f5135220590d3aa306b6bc5069f07c66ec3"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/render_animations.cjs",
+      "bytes": 1727,
+      "sha256": "bd0c461a5ecfe800b230fe4ce89bd146dd997faa321ea993f89ad23685be6bcc"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/test.ass",
+      "bytes": 1136,
+      "sha256": "b7fd38a26011b8c17d51fd880dcd721547201b633df63264050ea4bcd8ab358e"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/timeline.json",
+      "bytes": 5675,
+      "sha256": "9945d47d094ff3d0fd3f9326de45cd52a4aff5a26609849bf40bebede3db4a7b"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/timing.ass",
+      "bytes": 1121,
+      "sha256": "efbf7b8a97b6cc93ee75936222d29ce09213c931bb02df8c398aebfd232cee23"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/title.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/tracking.ass",
+      "bytes": 1553,
+      "sha256": "4ade9a8c26cd22e0164f43b737328b2c68ea522ca713e0b27d4635820760f903"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/train.ass",
+      "bytes": 1156,
+      "sha256": "bae904881a2f3260ca2db7963e06ac543abd4dc122651454b96ce37584395904"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/value.ass",
+      "bytes": 1166,
+      "sha256": "9aef345a40f39d61df025e58988ddf30c4f4d76f3836a44feb90f0294be1ac01"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/value_animation.cjs",
+      "bytes": 4757,
+      "sha256": "625066d8afb7986abb24243dc56a786071a6073c720a261a333974de46a45df1"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/全片字幕.srt",
+      "bytes": 6575,
+      "sha256": "bae7c7c177b7f956ed178995e2aff54ba383ffbdd08ba845554ba9334b44d8d1"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/混音记录.json",
+      "bytes": 959,
+      "sha256": "51b420a441df79cc7cbc5f949e761c8338c460345292ca6ecc610a5b5bc98c6b"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v7/配音生成记录.json",
+      "bytes": 18513,
+      "sha256": "f8530b339b0e4a55d7510f4c1e4fe2a73759ca97ac4c6075ca6b38c0b8bb4e40"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/add_transitions.py",
+      "bytes": 7755,
+      "sha256": "a393ba552b26bcc5b3a2c50b468897bdfa13f8bd0d757b6ffc582d6c1c038dc5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/animations_v8.cjs",
+      "bytes": 13796,
+      "sha256": "1cc0534252dc41bcf6054839a9f4d011bd64cd36d8b3c491b86b450b3cd0c6f8"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/area.ass",
+      "bytes": 1472,
+      "sha256": "7b7311b96a887d67db5881af8f8f0b627aaa643d02032559dfc473ab4b36ac58"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/async.ass",
+      "bytes": 1241,
+      "sha256": "71462765f24cce9512c22c4c36c56ede817ad06eedfda1e9f65f08a4393ddc16"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/board.ass",
+      "bytes": 954,
+      "sha256": "1681449668cd95df2b22e0b7e8c3fd1acd240ae9b9279ccca6d6538c3ef69b6f"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/build_animation_v8.py",
+      "bytes": 8481,
+      "sha256": "398d51815d946283598f1d267c8da577d6cec17b01ac526d5afb928a30f1596d"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/build_v8.py",
+      "bytes": 10128,
+      "sha256": "79bbd85d8600d4b0d677c6424c051ea29a97ab0d28920c2f3656b1fb27d756c4"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/candidates.ass",
+      "bytes": 1096,
+      "sha256": "31b8985e8c53db52a80b303c55dce1ace6d059cc63558a8af2ede588f6730d45"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/captions.json",
+      "bytes": 11610,
+      "sha256": "350e53632b6d5852ed01c212f91e6670b1ca8a70ce0e61089e2b0e5a34ed7898"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/capture.ass",
+      "bytes": 983,
+      "sha256": "43121ef3198db979eb5d0d937a1f05e95b2b7ddd1362e37233c46790c951e683"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/collage.ass",
+      "bytes": 1401,
+      "sha256": "baa89673820a7c406a4cb4fbd7a3123ae3b6ca0aab3bcfef9b473ec8cb88383c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/confirm.ass",
+      "bytes": 954,
+      "sha256": "b89b949b1ccbc9baed367187b3b6e0c1f79044c7494a410dc78dd8a7ccc277be"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/deploy.ass",
+      "bytes": 1122,
+      "sha256": "5678c387b6795afa8cf3dd0834b67ce5f0380de3414d98a19d61f9b6928d8d43"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/end.ass",
+      "bytes": 934,
+      "sha256": "467e97490eb02d99f0ec9cbf15bd189daac93641fa648c1a864b68ce40566571"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/hardware.ass",
+      "bytes": 963,
+      "sha256": "fa9b13a01cfb8400a83a9bd30b05bbe8fd18dee6bd158c8a8df83db4006d0d85"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/inference.ass",
+      "bytes": 1106,
+      "sha256": "c38fd8ff1ce5045077addf410a748bd776f9e0acb0e24f7ea638c96d34d4b0ae"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/isp_overview.ass",
+      "bytes": 1262,
+      "sha256": "5b0b1e3e6de4f225f232167df6e4324609ea792bf30f5eae35925c33a0aa5c15"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/isp_processing.ass",
+      "bytes": 1520,
+      "sha256": "3e993548dbb490a33f68d3a6a86dbaff1e640eb2f0a257603b7f671b4b813af5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/mix_voice_v8.py",
+      "bytes": 2777,
+      "sha256": "3975cc850a301245afa56b1ff9fe0fdc7bf99330ac293f427cf32841eb59794c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/new_pan.ass",
+      "bytes": 1065,
+      "sha256": "1bf87f1e0ba0f4069301017a7c8960b90b5ddc14f8a3a58046dd9e6a040f7c98"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/new_run.ass",
+      "bytes": 971,
+      "sha256": "d22737fd19e384a2e0914be69193e5c1c9994ac94922ff87434f76e97a04ecdd"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/parameter.ass",
+      "bytes": 1250,
+      "sha256": "7e16e6875377802e7f9ba26c8730d9dd71dd685d1de6d2bf2c2a75a6cc0df253"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/pose.ass",
+      "bytes": 980,
+      "sha256": "478225748df275e2c7f0ee13e94dac507f11c476cee7c76e969889cfeb012679"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/render_animations.cjs",
+      "bytes": 1725,
+      "sha256": "3adfe2c4bec2572ad4164fe03dbf84dc3eadffa0fd78faeab01b9b0c305e60e6"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/test.ass",
+      "bytes": 1096,
+      "sha256": "028d30ff332dad3d239025218179ecf3b4bc73022a2283a5f5dd949e47b8192b"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/timeline.json",
+      "bytes": 6546,
+      "sha256": "9e6423c679f5251801c9c1d0dada76d3d35eb43b9e635fa5052ff321acc8e167"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/timing.ass",
+      "bytes": 1087,
+      "sha256": "95f11f344f845ba6d98c600197295741e4b2f82995155f54cd6df656c7002006"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/title.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/tracking.ass",
+      "bytes": 1483,
+      "sha256": "1afb10ebf5041c591d8c68b1da8a58030f4473b0b96ff85db53394ead9ad7808"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/train.ass",
+      "bytes": 1134,
+      "sha256": "631604d9fae15785d13fc574b32432dae3ab96e5f712891dc46e87c60733f497"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/value.ass",
+      "bytes": 1142,
+      "sha256": "26e2b7a7772abb2c47c9921e6e58d377373adee85ba63d374285cd3330743046"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/value_v8.cjs",
+      "bytes": 4596,
+      "sha256": "aa10c170cd2dd04c0612fca6ab2d488c35757ca3b4aed18969a7dc976f8a94ac"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/verify_v8.py",
+      "bytes": 3699,
+      "sha256": "c552023007200ae880e97764e965e116f1986b2c8af7ade20da6dbe7d46846dd"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/全片字幕.srt",
+      "bytes": 5604,
+      "sha256": "c3a17a70d718846a26c567c8a2ce15abc9f1202584209cba22e96cc84de0c313"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/混音记录.json",
+      "bytes": 963,
+      "sha256": "a39319b134b7d6bce34d935956f820505b37cfccc4ed1dad01f05059576df785"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v8/配音生成记录.json",
+      "bytes": 17786,
+      "sha256": "639e1060241094ef14967b18e37e199fe029a237aabde2033bd34658a5953e5f"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/add_transitions.py",
+      "bytes": 7965,
+      "sha256": "31d5d795eead481f271fac9f07493725acf0edf4453f0e5a4780d1cf3a15bfcc"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/animations_v9.cjs",
+      "bytes": 1357,
+      "sha256": "e827dcb24a5bde6559cca4daf3847f51f4c28589a0a79ed9baf2fbf7ed73b7b7"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/app_collect.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/app_compare.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/app_execute.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/app_hdmi.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/app_pose.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/app_track.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/application.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/board.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/build_v9.py",
+      "bytes": 12539,
+      "sha256": "d8f7f685a565815ec62ba22252613a79eff9b292ed74a62cf6ef9d698d6605ab"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/captions.json",
+      "bytes": 4516,
+      "sha256": "c923de34be3fd7e44ff55d334518f05a1bbc69bd1aedfc0802ff4dba6b1a184c"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/console_annotate.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/console_image.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/console_run.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/console_train.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/end.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/final.ass",
+      "bytes": 3477,
+      "sha256": "e0de6b46ead075f450b7c13f525c6337b1f160fc18db6a84a4d06030f7cd3380"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/lighttech.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/mix_voice_v9.py",
+      "bytes": 2958,
+      "sha256": "ce4eb600bac08ea285448c36b2feab98488b02018569c64d6e3e8654fd95cd75"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/pose_intro.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/render_animations.cjs",
+      "bytes": 1747,
+      "sha256": "0bf5888265a5cede4dcbc6f6b309d5312e9aa0436a514577575d0bced00ec36b"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/station.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/timeline.json",
+      "bytes": 6301,
+      "sha256": "ab2cb5ee299c0213586578cdb1f1ad7fd7e21d48bbabd077e2eec8a3961238ad"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/title.ass",
+      "bytes": 812,
+      "sha256": "05d402200613f2260b5dda52f97c7552fe24b13f1da9eb8042399107060a68e5"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/verify_v9.py",
+      "bytes": 3604,
+      "sha256": "5a5debf38a05d7fedf0aaa898e9178986d2ecfb16c60ffb9318e20b694357d84"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/全片字幕.srt",
+      "bytes": 2109,
+      "sha256": "4e15668f94246d2d06aaaeafa98708da1d19d84c0628e9e9b089070a3be68374"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/混音记录.json",
+      "bytes": 958,
+      "sha256": "01aebdec28e86d8b7e35c8225f6ff5267715f3b7ccd660dcf625e7ad4ae20715"
+    },
+    {
+      "path": "materials/video/剪辑/重剪_v9/配音生成记录.json",
+      "bytes": 6733,
+      "sha256": "9c26d1ab8dc0a9f673551571baeb8c701a5bc2eab72183d56414e54b666f6df1"
+    },
+    {
+      "path": "materials/video/剪辑/风格规范与备选/来源URLs.md",
+      "bytes": 2172,
+      "sha256": "1d0bed375dd3369e88c207963701aaff1b6df2cc47d2066407a69180d245344c"
+    },
+    {
+      "path": "materials/video/汇报截图/01-项目标题.png",
+      "bytes": 351958,
+      "sha256": "3eebcb864ac48f36e9cfc40c082d940204a0b5d510b2ecfb588ffb9483f2d766"
+    },
+    {
+      "path": "materials/video/汇报截图/02-设备全貌.png",
+      "bytes": 1659352,
+      "sha256": "7308775937c7a9ac95c38da8c798c44c1f6855171fe29c90f2f7363c95dfd618"
+    },
+    {
+      "path": "materials/video/汇报截图/03-ISP处理.png",
+      "bytes": 820291,
+      "sha256": "67d896ee207ef5e597d696bce8c7b2339a29979fb42d6b002fba24b2ab4b5b69"
+    },
+    {
+      "path": "materials/video/汇报截图/04-小样本训练.png",
+      "bytes": 458938,
+      "sha256": "a6b55365183eaa45dce9e40076a9653d2a88e6e58a51c0ba173e3b37520faf8e"
+    },
+    {
+      "path": "materials/video/汇报截图/05-PCIe压缩对照.png",
+      "bytes": 597994,
+      "sha256": "d2dfe6fc1e365451aa88a902ec06505774d736207f951fab40ad19537aeb8adc"
+    },
+    {
+      "path": "materials/video/汇报截图/06-跨帧关联.png",
+      "bytes": 801648,
+      "sha256": "18c728cd4840eaf6ccb944f9d9ddfebd53beca631ef1215632956cfee4d5094f"
+    },
+    {
+      "path": "materials/video/汇报截图/07-像素尺寸测量.png",
+      "bytes": 699834,
+      "sha256": "69f549640b71f97267c4b3f48b003f2e25070b5a03df856109501867b3ab435b"
+    },
+    {
+      "path": "materials/video/汇报截图/08-异常留证.png",
+      "bytes": 400317,
+      "sha256": "49d8d66401aed3feaa2d00c34204e497d9f039b8e11a19192bbf8b3bf5e5b27a"
+    },
+    {
+      "path": "materials/video/汇报截图/09-系统亮点.png",
+      "bytes": 385100,
+      "sha256": "a65f05d9cc0f4c73bcc76bee6c25d978047972bcf0edbbbf8856462a37ec6c48"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 30,
+      "sha256": "f5444123402df779d3ba683b575b2b7b25f2b148ec950231f393b4e902964169"
+    },
+    {
       "path": "启动姿态控制台.cmd",
       "bytes": 106,
       "sha256": "eb4354ea6d1ba99d55c74383e4472d3cd42c52e02c545b7aa9a792e9f37614a0"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/README.md",
+      "bytes": 905,
+      "sha256": "df84880ddfd8c78aa3b8a0e3e4d922a249389521be03fd84c5243bf6b32e7ee9"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/RK/rootfs/etc/systemd/system/vision-pose-action.service",
+      "bytes": 656,
+      "sha256": "9bb8cfee879e97ce0bf99ec47e729a5d4b042044360a037fed214b4f55c5de0e"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/RK/rootfs/root/free_rect_20261025/runtime/action_daemon.py",
+      "bytes": 6982,
+      "sha256": "4270327a5a29853e28a0d8a122b3d6ae84e01fb1f06865428e38dcb035bacf64"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/RK/rootfs/root/free_rect_20261025/runtime/action_gpio.py",
+      "bytes": 8547,
+      "sha256": "b6f8fce46c0b30bc7b3b149ae41f10a4c92afb46f4e147bf32e63ca46cf9b075"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/console_action.py",
+      "bytes": 6559,
+      "sha256": "c43faf1c2785efad4c726e391ffc8c0148a4a410cf7d0778344a9055d8da51b9"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/console_board.py",
+      "bytes": 42105,
+      "sha256": "0a70ec393928082e4577fed8c8a10c93857512690cbe5bbef6952a15cb595204"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/console_model_deploy.py",
+      "bytes": 40368,
+      "sha256": "e1b8ea546b0a6b5e23f8ed7d62f47af6016ef85dad93249b0f15f71ee9ff8957"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/console_preview.py",
+      "bytes": 5756,
+      "sha256": "b7e3b3d0243031815baaee67f23ed416f4402ff244f2834abd57a5a4c5dab849"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/console_runtime_options.py",
+      "bytes": 11519,
+      "sha256": "6069e936197a5e525539d940ba4d1f9383e592d6b5184e8c57301b090898402b"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/console_web/app.js",
+      "bytes": 80026,
+      "sha256": "99cc31737b39399e990bdbe10c937af1b16f992a2f3e7ab5174d7869782e9ab5"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/console_web/index.html",
+      "bytes": 14902,
+      "sha256": "429e6aed5441b43c3d2089e7eb720f9ac438c33c1c2c9fefca549dbbe1bb1dab"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/console_web/style.css",
+      "bytes": 28195,
+      "sha256": "79f1d887e52ab36c92950a0dfa8ce1575e40170e2fc2090a15251e3c0d207e14"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/console_workflow.py",
+      "bytes": 55424,
+      "sha256": "c060e246a757a6ae5d720e946715b96a7b9772856aa1ca13a06d993a3d67ab0c"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/tests/test_console_fixed_model_deploy.py",
+      "bytes": 14375,
+      "sha256": "43e85813a3bbdb74d217515d354bf85f8b89bd676dd67df69868b7f3496493da"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/tests/test_console_preview_flow.js",
+      "bytes": 2990,
+      "sha256": "5921a28f7ddf16f7a78b4b4bf52716c81742334f8064d3b9469555ecf34e2a5a"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/tests/test_console_preview_flow.py",
+      "bytes": 16232,
+      "sha256": "34dca2244c469f40e4107795068deb7562ccb54ba0ee357418b0a62e7d9175fa"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/tests/test_console_runtime_options.js",
+      "bytes": 7172,
+      "sha256": "9bf69e8a8b47c01192f727ee0bff5e9e59a98abc1b7a2c18a2709f8177a7e6a1"
+    },
+    {
+      "path": "增量源码/2026-11-17-控制台与GPIO/VisionTrainer/tests/test_console_runtime_options.py",
+      "bytes": 4980,
+      "sha256": "383b05d8be22cad601442560ddf74133276a0c24c1a3a03d1f0cb35755fa1295"
     },
     {
       "path": "版本与校验/verify_release.py",

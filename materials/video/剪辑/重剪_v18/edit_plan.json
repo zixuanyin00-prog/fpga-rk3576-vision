@@ -1,0 +1,231 @@
+{
+  "duration": 179.8,
+  "category_start": 147,
+  "scenes": [
+    {
+      "name": "pose_proof",
+      "duration": 3.5,
+      "label": "姿态分拣　剔除白色反面电阻",
+      "source": {
+        "file": "剪辑/重剪_v9/app_pose.mp4",
+        "start": 0.5,
+        "length": 3.5,
+        "playback_speed": 1,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "pose_fast",
+      "duration": 17.5,
+      "label": "姿态检测　连续送料 · 自动筛选",
+      "speed_label": "1.3×",
+      "source": {
+        "file": "剪辑/高速整体演示（振动盘） (0-59s可用).MOV",
+        "start": 15,
+        "length": 22.75,
+        "playback_speed": 1.3,
+        "crop": "crop=2160:1216:0:1100",
+        "task": "pose sorting continuous run, specific A/B/C ejection selection not independently mapped"
+      }
+    },
+    {
+      "name": "pose_slow",
+      "duration": 5.5,
+      "label": "姿态检测　跨帧关联 · 连续确认",
+      "speed_label": "0.5× 慢放",
+      "source": {
+        "file": "剪辑/高速整体演示（HDMI）.MOV",
+        "start": 14,
+        "length": 2.75,
+        "playback_speed": 0.5,
+        "crop": "crop=1600:900:900:850",
+        "source_fps": "120",
+        "task": "actual pose detection boxes and crossing line, camera view crop only"
+      }
+    },
+    {
+      "name": "pose_inference",
+      "duration": 4,
+      "label": "姿态检测　高速识别与统计",
+      "speed_label": "1.3×",
+      "source": {
+        "file": "剪辑/最高速推理展示（无电磁阀） (2).MOV",
+        "start": 1,
+        "length": 5.2,
+        "playback_speed": 1.3,
+        "task": "pose recognition only, A/B/C, independent inference without actuator"
+      }
+    },
+    {
+      "name": "category_material",
+      "duration": 6,
+      "label": "类别实验材料　473 · 1004",
+      "source": {
+        "file": "剪辑/重剪_v17/material_prepare.mp4",
+        "start": 0,
+        "length": 6,
+        "playback_speed": 1,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "category_monitor",
+      "duration": 5.5,
+      "label": "类别检测　剔除473 · 保留1004",
+      "speed_label": "1.3×",
+      "source": {
+        "file": "剪辑/视频.mp4",
+        "start": 0.1,
+        "length": 7.15,
+        "playback_speed": 1.3,
+        "task": "category experiment confirmed by user, reject473 keep1004",
+        "duplicate_sha256_of": "类别分拣 (2).mp4"
+      }
+    },
+    {
+      "name": "category_action",
+      "duration": 10,
+      "label": "类别检测　剔除473 · 保留1004",
+      "speed_label": "1.3×",
+      "source": {
+        "file": "剪辑/重剪_v15/cadence/app_execute.mp4",
+        "start": 0.5,
+        "length": 13,
+        "playback_speed": 1.3,
+        "filters": [
+          "null"
+        ],
+        "original_source": "30-56s可用.MP4",
+        "original_start": 32.5,
+        "task": "physical category sorting confirmed by user: reject473 retain1004"
+      }
+    },
+    {
+      "name": "category_collect",
+      "duration": 6.3,
+      "label": "类别分拣结果　保留1004",
+      "source": {
+        "file": "剪辑/重剪_v10/app_collect.mp4",
+        "start": 2.2,
+        "length": 6.3,
+        "playback_speed": 1,
+        "filters": [
+          "null"
+        ],
+        "existing_source_cut_at": 5.1,
+        "task": "collected1004 result, no new frame hold or split screen"
+      }
+    }
+  ],
+  "voices": [
+    {
+      "id": 3,
+      "scene": "fpga_board",
+      "start": 13.0,
+      "end": 17.85,
+      "spoken_text": "P H 一 A 九零，负责采集和预处理。"
+    },
+    {
+      "id": 4,
+      "scene": "control_board",
+      "start": 18.3,
+      "end": 22.85,
+      "spoken_text": "自制电磁阀转接板，接收脉冲执行筛选。"
+    },
+    {
+      "id": 5,
+      "scene": "station",
+      "start": 23.5,
+      "end": 29.3,
+      "spoken_text": "通过 P C I E 转接卡，实现双端高速互联。"
+    },
+    {
+      "id": 14,
+      "scene": "pose_proof",
+      "start": 116.7,
+      "end": 119.9,
+      "spoken_text": "姿态分拣，自动剔除白色反面电阻。"
+    },
+    {
+      "id": 30,
+      "scene": "pose_fast",
+      "start": 120.5,
+      "end": 125.5,
+      "spoken_text": "在连续送料中，系统按设定姿态自动筛选。"
+    },
+    {
+      "id": 17,
+      "scene": "pose_fast",
+      "start": 126.0,
+      "end": 132.5,
+      "spoken_text": "多目标并行识别，各组测试召回率为百分之九十九点九九七。"
+    },
+    {
+      "id": 28,
+      "scene": "pose_slow",
+      "start": 137.8,
+      "end": 142.8,
+      "spoken_text": "放慢看，检测框跟随工件，跨帧关联后确认类别。"
+    },
+    {
+      "id": 29,
+      "scene": "pose_inference",
+      "start": 143.25,
+      "end": 146.8,
+      "spoken_text": "独立识别，类别与计数持续更新。"
+    },
+    {
+      "id": 15,
+      "scene": "category_material",
+      "start": 147.3,
+      "end": 152.75,
+      "spoken_text": "再看类别检测，剔除四七三，保留一零零四。"
+    },
+    {
+      "id": 18,
+      "scene": "category_monitor",
+      "start": 153.3,
+      "end": 158.3,
+      "spoken_text": "不同型号对应不同类别，按设定规则执行分拣。"
+    },
+    {
+      "id": 19,
+      "scene": "category_action",
+      "start": 158.85,
+      "end": 163.55,
+      "spoken_text": "类别确认并实际过线后，电磁阀自动剔除四七三。"
+    },
+    {
+      "id": 21,
+      "scene": "category_action",
+      "start": 164.0,
+      "end": 168.3,
+      "spoken_text": "实测分拣速度达到每分钟一千二百件。"
+    },
+    {
+      "id": 22,
+      "scene": "category_collect",
+      "start": 168.95,
+      "end": 174.4,
+      "spoken_text": "一零零四继续通过，进入收集杯。"
+    }
+  ],
+  "overlays": [
+    {
+      "layer": 3,
+      "start": 137.85,
+      "end": 142.75,
+      "ass": "{\\an7\\pos(502,62)\\p1\\bord0\\shad0\\fad(150,150)\\1c&H291D0D&\\1a&H20&}m 0 0 l 916 0 916 62 0 62"
+    },
+    {
+      "layer": 4,
+      "start": 137.85,
+      "end": 142.75,
+      "ass": "{\\an8\\pos(960,75)\\fs30\\bord0\\shad0\\fad(150,150)\\1c&HF3F5ED&}A 数字正向    B 数字倒向    C 白色反面"
+    }
+  ]
+}

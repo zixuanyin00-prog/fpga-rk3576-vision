@@ -1,0 +1,16 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,44,&H00FFFFFF,&H00FFFFFF,&H00202020,&H70000000,0,0,0,0,100,100,0.5,0,1,1.7,0.7,2,100,100,44,1
+Style: Title,Microsoft YaHei,66,&H00F3F3ED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,0,0,5,90,90,0,1
+Style: Small,Microsoft YaHei,30,&H00BFDAC0,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,90,90,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.58,0:00:05.69,Default,,0,0,0,,{\fad(120,120)}先调整成像增益，让偏暗的工件显现出更多表面细节。
+Dialogue: 0,0:00:07.38,0:00:13.65,Default,,0,0,0,,{\fad(120,120)}增益变化，HDMI 画面随之变亮，\N再检查工件文字是否容易区分。
+Dialogue: 0,0:00:14.58,0:00:20.64,Default,,0,0,0,,{\fad(120,120)}调参围绕识别需要展开，让模型从清晰、\N可辨认的图像中学习特征。

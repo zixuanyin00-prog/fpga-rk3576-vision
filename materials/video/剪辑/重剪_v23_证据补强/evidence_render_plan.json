@@ -1,0 +1,97 @@
+[
+  {
+    "name": "isp_methods",
+    "duration": 7,
+    "start": 39.5,
+    "file": "剪辑/重剪_v23_证据补强/scenes/isp_methods.mp4",
+    "source": {
+      "renderer": "evidence_scenes.cjs",
+      "basis": "local source images and records"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/isp_methods.mp4",
+      "start": 0.0,
+      "length": 6.0,
+      "playback_speed": 1.0,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "compression_pcie",
+    "duration": 6.4,
+    "start": 69.9,
+    "file": "剪辑/重剪_v23_证据补强/scenes/compression_pcie.mp4",
+    "source": {
+      "renderer": "evidence_scenes.cjs",
+      "basis": "local source images and records"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/compression_pcie.mp4",
+      "start": 0.0,
+      "length": 6.5,
+      "playback_speed": 1.2037037037,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "tracking_short",
+    "duration": 4.2,
+    "start": 76.3,
+    "file": "剪辑/重剪_v23_证据补强/scenes/tracking_short.mp4",
+    "source": {
+      "renderer": "evidence_scenes.cjs",
+      "basis": "local source images and records"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/tracking_short.mp4",
+      "start": 0.0,
+      "length": 4.0,
+      "playback_speed": 1.25,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "dimensions",
+    "duration": 5.6,
+    "start": 83.7,
+    "file": "剪辑/重剪_v23_证据补强/scenes/dimensions.mp4",
+    "source": {
+      "renderer": "evidence_scenes.cjs",
+      "basis": "local source images and records"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/dimensions.mp4",
+      "start": 0.0,
+      "length": 6.0,
+      "playback_speed": 1.2,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "alerts",
+    "duration": 6.5,
+    "start": 89.3,
+    "file": "剪辑/重剪_v23_证据补强/scenes/alerts.mp4",
+    "source": {
+      "renderer": "evidence_scenes.cjs",
+      "basis": "local source images and records"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/alerts.mp4",
+      "start": 0.0,
+      "length": 8.0,
+      "playback_speed": 1.3114754098,
+      "filters": [
+        "null"
+      ]
+    }
+  }
+]

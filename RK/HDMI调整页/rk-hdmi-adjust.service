@@ -1,0 +1,19 @@
+[Unit]
+Description=RK HDMI display and imaging adjustments
+After=fpga-vision-v3.service display-manager.service
+
+[Service]
+Type=simple
+RuntimeDirectory=rk-hdmi-adjust
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/var/run/lightdm/root/:0
+Environment=GDK_BACKEND=x11
+Environment=PYTHONPATH=/root/integrated_vision_v3_20261021/.venv/lib/python3.11/site-packages
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/usr/bin/python3 /opt/rk-hdmi-adjust/hdmi_adjust.py --runtime /root/free_rect_20261025/runtime
+ExecStopPost=/usr/bin/rm -f /run/rk-hdmi-adjust/adjustment-active /run/rk-hdmi-adjust/preview-controls.json
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

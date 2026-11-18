@@ -1,0 +1,833 @@
+{
+  "duration": 179.8,
+  "application_start": 94.5,
+  "category_start": 130.5,
+  "scenes": [
+    {
+      "name": "opening_title",
+      "duration": 2,
+      "start": 0,
+      "file": "剪辑/重剪_v19/scenes/opening_title.mp4",
+      "source": {
+        "file": "剪辑/重剪_v13/opening_title.mp4",
+        "start": 0.0,
+        "length": 2.0,
+        "playback_speed": 1.0,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "intro",
+      "duration": 4,
+      "start": 2,
+      "file": "剪辑/重剪_v19/scenes/intro.mp4",
+      "source": {
+        "file": "剪辑/重剪_v16/intro.mp4",
+        "start": 0.0,
+        "length": 4.0,
+        "playback_speed": 1.0,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "chapter_board",
+      "duration": 1.5,
+      "start": 6,
+      "file": "剪辑/重剪_v19/scenes/chapter_board.mp4",
+      "source": {
+        "file": "剪辑/重剪_v12/chapter_board.mp4",
+        "start": 0.0,
+        "length": 1.5,
+        "playback_speed": 1.0,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "rk_board",
+      "duration": 5.5,
+      "start": 7.5,
+      "file": "剪辑/重剪_v19/scenes/rk_board.mp4",
+      "source": {
+        "file": "剪辑/重剪_v12/rk_board.mp4",
+        "start": 0.0,
+        "length": 5.5,
+        "playback_speed": 1.0,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "fpga_board",
+      "duration": 5,
+      "start": 13.0,
+      "file": "剪辑/重剪_v19/scenes/fpga_board.mp4",
+      "source": {
+        "file": "剪辑/重剪_v12/fpga_board.mp4",
+        "start": 0.0,
+        "length": 5.0,
+        "playback_speed": 1.0,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "control_board",
+      "duration": 5,
+      "start": 18.0,
+      "file": "剪辑/重剪_v19/scenes/control_board.mp4",
+      "source": {
+        "file": "剪辑/重剪_v12/control_board.mp4",
+        "start": 0.0,
+        "length": 5.0,
+        "playback_speed": 1.0,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "station",
+      "duration": 7.5,
+      "start": 23.0,
+      "file": "剪辑/重剪_v19/scenes/station.mp4",
+      "source": {
+        "file": "剪辑/重剪_v15/cadence/station_normal.mp4",
+        "start": 1.0,
+        "length": 9.0,
+        "playback_speed": 1.2,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "chapter_console",
+      "duration": 1.2,
+      "start": 30.5,
+      "file": "剪辑/重剪_v19/scenes/chapter_console.mp4",
+      "source": {
+        "file": "剪辑/重剪_v12/chapter_console.mp4",
+        "start": 0.0,
+        "length": 1.5,
+        "playback_speed": 1.25,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "console_image",
+      "duration": 7.8,
+      "start": 31.7,
+      "file": "剪辑/重剪_v19/scenes/console_image.mp4",
+      "source": {
+        "file": "剪辑/重剪_v16/console_image.mp4",
+        "start": 0.0,
+        "length": 10.0,
+        "playback_speed": 1.2820512821,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "isp_methods",
+      "duration": 6,
+      "start": 39.5,
+      "file": "剪辑/重剪_v19/scenes/isp_methods.mp4",
+      "source": {
+        "file": "剪辑/重剪_v17/isp_methods.mp4",
+        "start": 0.0,
+        "length": 6.0,
+        "playback_speed": 1.0,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "console_annotate",
+      "duration": 7,
+      "start": 45.5,
+      "file": "剪辑/重剪_v19/scenes/console_annotate.mp4",
+      "source": {
+        "file": "剪辑/重剪_v19/prefix_assets/console_annotate_trimmed.mp4",
+        "start": 0.0,
+        "length": 8.8,
+        "playback_speed": 1.2571428571,
+        "filters": [
+          "null"
+        ],
+        "original_asset_segments": [
+          {
+            "start": 0.6,
+            "length": 1.8
+          },
+          {
+            "start": 4.8,
+            "length": 7
+          }
+        ]
+      }
+    },
+    {
+      "name": "console_train",
+      "duration": 5.2,
+      "start": 52.5,
+      "file": "剪辑/重剪_v19/scenes/console_train.mp4",
+      "source": {
+        "file": "剪辑/重剪_v9/console_train.mp4",
+        "start": 0.0,
+        "length": 7.0,
+        "playback_speed": 1.3461538462,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "console_run",
+      "duration": 4.5,
+      "start": 57.7,
+      "file": "剪辑/重剪_v19/scenes/console_run.mp4",
+      "source": {
+        "file": "剪辑/重剪_v15/cadence/console_run.mp4",
+        "start": 0.4,
+        "length": 6.3,
+        "playback_speed": 1.4,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "fewshot_value",
+      "duration": 5.5,
+      "start": 62.2,
+      "file": "剪辑/重剪_v19/scenes/fewshot_value.mp4",
+      "source": {
+        "file": "剪辑/重剪_v15/fewshot_value.mp4",
+        "start": 0.0,
+        "length": 7.0,
+        "playback_speed": 1.2727272727,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "chapter_logic",
+      "duration": 1.2,
+      "start": 67.7,
+      "file": "剪辑/重剪_v19/scenes/chapter_logic.mp4",
+      "source": {
+        "file": "剪辑/重剪_v17/chapter_logic.mp4",
+        "start": 0.0,
+        "length": 1.5,
+        "playback_speed": 1.25,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "compression_pcie",
+      "duration": 5.4,
+      "start": 68.9,
+      "file": "剪辑/重剪_v19/scenes/compression_pcie.mp4",
+      "source": {
+        "file": "剪辑/重剪_v17/compression_pcie.mp4",
+        "start": 0.0,
+        "length": 6.5,
+        "playback_speed": 1.2037037037,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "tracking_short",
+      "duration": 3.2,
+      "start": 74.3,
+      "file": "剪辑/重剪_v19/scenes/tracking_short.mp4",
+      "source": {
+        "file": "剪辑/重剪_v17/tracking_short.mp4",
+        "start": 0.0,
+        "length": 4.0,
+        "playback_speed": 1.25,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "trigger_short",
+      "duration": 3.2,
+      "start": 77.5,
+      "file": "剪辑/重剪_v19/scenes/trigger_short.mp4",
+      "source": {
+        "file": "剪辑/重剪_v17/trigger_short.mp4",
+        "start": 0.0,
+        "length": 4.0,
+        "playback_speed": 1.25,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "dimensions",
+      "duration": 5,
+      "start": 80.7,
+      "file": "剪辑/重剪_v19/scenes/dimensions.mp4",
+      "source": {
+        "file": "剪辑/重剪_v17/dimensions.mp4",
+        "start": 0.0,
+        "length": 6.0,
+        "playback_speed": 1.2,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "alerts",
+      "duration": 6.1,
+      "start": 85.7,
+      "file": "剪辑/重剪_v19/scenes/alerts.mp4",
+      "source": {
+        "file": "剪辑/重剪_v17/alerts.mp4",
+        "start": 0.0,
+        "length": 8.0,
+        "playback_speed": 1.3114754098,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "application",
+      "duration": 2.7,
+      "start": 91.8,
+      "file": "剪辑/重剪_v19/scenes/application.mp4",
+      "source": {
+        "file": "剪辑/重剪_v12/application.mp4",
+        "start": 0.0,
+        "length": 3.0,
+        "playback_speed": 1.1111111111,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "pose_proof",
+      "duration": 10,
+      "label": "姿态分拣　剔除白色反面电阻",
+      "speed_label": "1.05×",
+      "source": {
+        "file": "剪辑/重剪_v9/app_pose.mp4",
+        "start": 0,
+        "length": 10.5,
+        "playback_speed": 1.05,
+        "crop": "crop=1540:866:170:30",
+        "endpoint_margin": true
+      }
+    },
+    {
+      "name": "pose_burst_a",
+      "duration": 3.5,
+      "label": "姿态检测　连续送料 · 自动筛选",
+      "speed_label": "1.4×",
+      "source": {
+        "file": "剪辑/高速整体演示（振动盘） (0-59s可用).MOV",
+        "start": 30,
+        "length": 4.9,
+        "playback_speed": 1.4,
+        "crop": "crop=1500:844:450:1250"
+      }
+    },
+    {
+      "name": "pose_burst_b",
+      "duration": 2,
+      "label": "姿态检测　连续送料 · 自动筛选",
+      "speed_label": "1.5×",
+      "source": {
+        "file": "剪辑/高速整体演示（振动盘） (0-59s可用).MOV",
+        "start": 40,
+        "length": 3,
+        "playback_speed": 1.5,
+        "crop": "crop=1440:810:700:1170"
+      }
+    },
+    {
+      "name": "pose_display",
+      "duration": 8.5,
+      "label": "姿态检测　HDMI实时画面",
+      "speed_label": "1.3×",
+      "source": {
+        "file": "剪辑/高速整体演示（HDMI）.MOV",
+        "start": 0.5,
+        "length": 11.05,
+        "playback_speed": 1.3,
+        "crop": "crop=2200:1238:500:650"
+      }
+    },
+    {
+      "name": "pose_slow",
+      "duration": 5.5,
+      "label": "姿态检测　跨帧关联 · 连续确认",
+      "speed_label": "0.5× 慢放",
+      "source": {
+        "file": "剪辑/高速整体演示（HDMI）.MOV",
+        "start": 14,
+        "length": 2.75,
+        "playback_speed": 0.5,
+        "crop": "crop=1600:900:900:850"
+      }
+    },
+    {
+      "name": "pose_inference",
+      "duration": 6.5,
+      "label": "姿态检测　高速并行识别",
+      "speed_label": "1.4×",
+      "source": {
+        "file": "剪辑/最高速推理展示（无电磁阀） (2).MOV",
+        "start": 1,
+        "length": 9.1,
+        "playback_speed": 1.4,
+        "crop": "crop=1200:675:120:310"
+      }
+    },
+    {
+      "name": "category_material",
+      "duration": 4.5,
+      "label": "类别实验材料　473 · 1004",
+      "source": {
+        "file": "剪辑/重剪_v17/material_prepare.mp4",
+        "start": 0,
+        "length": 6,
+        "playback_speed": 1.3333333333333333,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "category_monitor",
+      "duration": 5.5,
+      "label": "类别检测　剔除473 · 保留1004",
+      "speed_label": "1.3×",
+      "source": {
+        "file": "剪辑/视频.mp4",
+        "start": 0.1,
+        "length": 7.15,
+        "playback_speed": 1.3,
+        "crop": "crop=2600:1462:240:430"
+      }
+    },
+    {
+      "name": "category_track",
+      "duration": 5.666666666666667,
+      "label": "类别分拣　剔除473 · 保留1004",
+      "speed_label": "1.2×",
+      "source": {
+        "file": "剪辑/重剪_v15/cadence/app_track.mp4",
+        "start": 0,
+        "length": 6.8,
+        "playback_speed": 1.2,
+        "crop": "crop=1600:900:160:0",
+        "round_up": true,
+        "endpoint_margin": true
+      }
+    },
+    {
+      "name": "category_action",
+      "duration": 22.333333333333332,
+      "label": "类别分拣　剔除473 · 保留1004",
+      "speed_label": "1.07×",
+      "source": {
+        "file": "剪辑/重剪_v15/cadence/app_execute.mp4",
+        "start": 0.02,
+        "length": 23.89666666666667,
+        "playback_speed": 1.07,
+        "crop": "crop=1600:900:160:0"
+      }
+    },
+    {
+      "name": "category_collect",
+      "duration": 6.3,
+      "label": "类别分拣结果　保留1004",
+      "source": {
+        "file": "剪辑/重剪_v10/app_collect.mp4",
+        "start": 2.2,
+        "length": 6.3,
+        "playback_speed": 1,
+        "filters": [
+          "null"
+        ]
+      }
+    },
+    {
+      "name": "end",
+      "duration": 5,
+      "source": {
+        "file": "剪辑/重剪_v17/end.mp4",
+        "start": 0,
+        "length": 5,
+        "playback_speed": 1,
+        "filters": [
+          "null"
+        ]
+      }
+    }
+  ],
+  "voices": [
+    {
+      "id": 1,
+      "scene": "intro",
+      "start": 0.55,
+      "end": 7.25,
+      "spoken_text": "我们将小样本学习与高速识别结合，构建可快速部署的工件分拣系统。",
+      "rate": 0,
+      "reuse_id": 1,
+      "reuse_file": "剪辑/重剪_v15/voice/01_b283536551ac.wav",
+      "reuse_duration": 5.71
+    },
+    {
+      "id": 2,
+      "scene": "rk_board",
+      "start": 7.9,
+      "end": 12.6,
+      "spoken_text": "R K 三五七六，负责模型识别和显示。",
+      "rate": 0,
+      "reuse_id": 2,
+      "reuse_file": "剪辑/重剪_v12/voice/02_793768d36889.wav",
+      "reuse_duration": 3.19
+    },
+    {
+      "id": 3,
+      "scene": "fpga_board",
+      "start": 13.0,
+      "end": 17.85,
+      "spoken_text": "P H 一 A 九零，负责采集和预处理。",
+      "rate": 0,
+      "reuse_id": 3,
+      "reuse_file": "剪辑/重剪_v18/voice/03_38a3fbda99a7.wav",
+      "reuse_duration": 2.94
+    },
+    {
+      "id": 4,
+      "scene": "control_board",
+      "start": 18.3,
+      "end": 22.85,
+      "spoken_text": "自制电磁阀转接板，接收脉冲执行筛选。",
+      "rate": 0,
+      "reuse_id": 4,
+      "reuse_file": "剪辑/重剪_v18/voice/04_622315055666.wav",
+      "reuse_duration": 3.33
+    },
+    {
+      "id": 5,
+      "scene": "station",
+      "start": 23.35,
+      "end": 27.4,
+      "spoken_text": "通过 P C I E 转接卡，实现双端高速互联。",
+      "rate": 0,
+      "reuse_id": 5,
+      "reuse_file": "剪辑/重剪_v18/voice/05_06a98c2b808a.wav",
+      "reuse_duration": 3.78
+    },
+    {
+      "id": 25,
+      "scene": "console_intro",
+      "start": 27.45,
+      "end": 31.45,
+      "spoken_text": "配套控制台，集成采集、训练与部署。",
+      "rate": 0
+    },
+    {
+      "id": 6,
+      "scene": "console_image",
+      "start": 31.9,
+      "end": 38.9,
+      "spoken_text": "控制台经 R K 下发参数，F P G A 回传状态；右侧屏幕呈现对应的成像效果。",
+      "rate": 0,
+      "reuse_id": 6,
+      "reuse_file": "剪辑/重剪_v16/voice/06_4296538a85aa.wav",
+      "reuse_duration": 6.79
+    },
+    {
+      "id": 7,
+      "scene": "isp_methods",
+      "start": 38.95,
+      "end": 45.43,
+      "spoken_text": "还实现白平衡、高斯平滑、直方图映射、前景分割、形态学和边缘提取。",
+      "rate": 0,
+      "reuse_id": 7,
+      "reuse_file": "剪辑/重剪_v17/voice/07_8c013bf32984.wav",
+      "reuse_duration": 6.46
+    },
+    {
+      "id": 8,
+      "scene": "console_annotate",
+      "start": 45.7,
+      "end": 52.3,
+      "spoken_text": "标注页一键生成候选框，再检查位置、指定类别。",
+      "rate": 0
+    },
+    {
+      "id": 9,
+      "scene": "console_train",
+      "start": 52.7,
+      "end": 57.5,
+      "spoken_text": "训练页完成模型训练、转换和现场检查。",
+      "rate": 0
+    },
+    {
+      "id": 10,
+      "scene": "console_run",
+      "start": 57.9,
+      "end": 62.0,
+      "spoken_text": "运行页监控识别结果和设备状态。",
+      "rate": 0
+    },
+    {
+      "id": 24,
+      "scene": "fewshot_value",
+      "start": 62.35,
+      "end": 67.6,
+      "spoken_text": "本次用十五张原图建立三类姿态模型，可通过控制台快速部署。",
+      "rate": 0,
+      "reuse_id": 24,
+      "reuse_file": "剪辑/重剪_v15/voice/24_4beebbb343f6.wav",
+      "reuse_duration": 5.18
+    },
+    {
+      "id": 11,
+      "scene": "compression_pcie",
+      "start": 68.55,
+      "end": 74.2,
+      "spoken_text": "另提供无损、有损双模式压缩，经 P C I E 与 R K 高速互通。",
+      "rate": 0,
+      "reuse_id": 11,
+      "reuse_file": "剪辑/重剪_v17/voice/11_2801b6405765.wav",
+      "reuse_duration": 5.51
+    },
+    {
+      "id": 12,
+      "scene": "tracking_short",
+      "start": 74.45,
+      "end": 77.35,
+      "spoken_text": "跨帧关联，连续观测确认类别。",
+      "rate": 0,
+      "reuse_id": 12,
+      "reuse_file": "剪辑/重剪_v17/voice/12_0d8bf5245d2e.wav",
+      "reuse_duration": 2.8
+    },
+    {
+      "id": 13,
+      "scene": "trigger_short",
+      "start": 77.65,
+      "end": 80.6,
+      "spoken_text": "真实过线后，按类别触发控制脉冲。",
+      "rate": 0,
+      "reuse_id": 13,
+      "reuse_file": "剪辑/重剪_v17/voice/13_db89fd07ad2b.wav",
+      "reuse_duration": 2.91
+    },
+    {
+      "id": 26,
+      "scene": "dimensions",
+      "start": 80.9,
+      "end": 85.5,
+      "spoken_text": "逐目标输出原生坐标检测框，以像素量化包围框宽高。",
+      "rate": 0,
+      "reuse_id": 26,
+      "reuse_file": "剪辑/重剪_v17/voice/26_51c4c4936927.wav",
+      "reuse_duration": 4.42
+    },
+    {
+      "id": 27,
+      "scene": "alerts",
+      "start": 85.9,
+      "end": 91.65,
+      "spoken_text": "异常状态在边缘端提示留证，支持网口回传和可选 S D 卡保存。",
+      "rate": 0,
+      "reuse_id": 27,
+      "reuse_file": "剪辑/重剪_v17/voice/27_5d46eb219f6e.wav",
+      "reuse_duration": 5.63
+    },
+    {
+      "id": 14,
+      "scene": "pose_proof",
+      "start": 94.8,
+      "end": 99.0,
+      "spoken_text": "姿态分拣，自动剔除白色反面电阻。",
+      "reuse_id": 14
+    },
+    {
+      "id": 30,
+      "scene": "pose_burst_a",
+      "start": 100.3,
+      "end": 104.7,
+      "spoken_text": "在连续送料中，系统按设定姿态自动筛选。",
+      "reuse_id": 30
+    },
+    {
+      "id": 17,
+      "scene": "pose_burst_b",
+      "start": 106.7,
+      "end": 112.3,
+      "spoken_text": "多目标并行识别，各组测试召回率为百分之九十九点九九七。",
+      "reuse_id": 17
+    },
+    {
+      "id": 31,
+      "scene": "pose_display",
+      "start": 112.3,
+      "end": 119.6,
+      "spoken_text": "H D M I 输出一零八零 P、每秒六十帧，采集到显示延迟小于五十毫秒。"
+    },
+    {
+      "id": 28,
+      "scene": "pose_slow",
+      "start": 118.7,
+      "end": 123.8,
+      "spoken_text": "放慢看，检测框跟随工件，跨帧关联后确认类别。",
+      "reuse_id": 28
+    },
+    {
+      "id": 29,
+      "scene": "pose_inference",
+      "start": 124.3,
+      "end": 130.2,
+      "spoken_text": "多目标并行识别，连续输出类别结果。"
+    },
+    {
+      "id": 15,
+      "scene": "category_material",
+      "start": 130.8,
+      "end": 134.8,
+      "spoken_text": "再看类别检测，剔除四七三，保留一零零四。",
+      "reuse_id": 15
+    },
+    {
+      "id": 18,
+      "scene": "category_monitor",
+      "start": 135.3,
+      "end": 140.3,
+      "spoken_text": "不同型号对应不同类别，按设定规则执行分拣。",
+      "reuse_id": 18
+    },
+    {
+      "id": 19,
+      "scene": "category_track",
+      "start": 140.85,
+      "end": 145.75,
+      "spoken_text": "类别确认并实际过线后，电磁阀自动剔除四七三。",
+      "reuse_id": 19
+    },
+    {
+      "id": 32,
+      "scene": "category_action",
+      "start": 149.2,
+      "end": 154.0,
+      "spoken_text": "一零零四电阻继续沿轨道通过，进入后续收集。"
+    },
+    {
+      "id": 21,
+      "scene": "category_action",
+      "start": 157,
+      "end": 161.5,
+      "spoken_text": "实测分拣速度达到每分钟一千二百件。",
+      "reuse_id": 21
+    },
+    {
+      "id": 22,
+      "scene": "category_collect",
+      "start": 168.95,
+      "end": 174.4,
+      "spoken_text": "一零零四继续通过，进入收集杯。",
+      "reuse_id": 22
+    },
+    {
+      "id": 23,
+      "scene": "end",
+      "start": 175.05,
+      "end": 179.75,
+      "spoken_text": "双向调参、小样本学习、快速部署，支撑高速分拣。",
+      "reuse_id": 23
+    }
+  ],
+  "overlays": [
+    {
+      "layer": 3,
+      "start": 110.5,
+      "end": 118.3,
+      "ass": "{\\an7\\pos(536,54)\\p1\\bord0\\shad0\\fad(150,150)\\1c&H291D0D&\\1a&H20&}m 0 0 l 848 0 848 128 0 128"
+    },
+    {
+      "layer": 4,
+      "start": 110.5,
+      "end": 118.3,
+      "ass": "{\\an8\\pos(960,68)\\fs36\\bord0\\shad0\\fad(150,150)\\1c&HF3F5ED&}1080p · 60 FPS\\N{\\fs30}采集 → HDMI 显示 < 50 ms"
+    },
+    {
+      "layer": 3,
+      "start": 118.85,
+      "end": 123.75,
+      "ass": "{\\an7\\pos(502,62)\\p1\\bord0\\shad0\\fad(150,150)\\1c&H291D0D&\\1a&H20&}m 0 0 l 916 0 916 62 0 62"
+    },
+    {
+      "layer": 4,
+      "start": 118.85,
+      "end": 123.75,
+      "ass": "{\\an8\\pos(960,75)\\fs30\\bord0\\shad0\\fad(150,150)\\1c&HF3F5ED&}A 数字正向    B 数字倒向    C 白色反面"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "项目介绍",
+      "start": 0
+    },
+    {
+      "title": "01 板卡介绍",
+      "start": 6
+    },
+    {
+      "title": "02 控制台与ISP",
+      "start": 30.5
+    },
+    {
+      "title": "03 识别与工业检测",
+      "start": 67.7
+    },
+    {
+      "title": "04 实战：姿态检测",
+      "start": 91.8
+    },
+    {
+      "title": "类别检测与连续分拣",
+      "start": 130.5
+    },
+    {
+      "title": "系统亮点",
+      "start": 174.8
+    }
+  ],
+  "metric_basis": {
+    "display": "User confirmed1080p60fps and capture-to-HDMI latency<50ms this turn",
+    "recall": "User confirmed all test groups99.997%",
+    "sorting": "User provided measured1200 workpieces/min"
+  },
+  "selection_scope": "Editorial best candidates; no new per-frame acceptance or global zero-miss assertion"
+}

@@ -1,0 +1,264 @@
+{
+  "frames": 10788,
+  "duration": 179.8,
+  "reused_parts": 60,
+  "changed_parts": [
+    "body_18.mp4",
+    "bridge_17.mp4",
+    "bridge_18.mp4"
+  ],
+  "parts": [
+    {
+      "file": "剪辑/重剪_v27_片头参赛信息/transition_parts/body_00.mp4",
+      "frames": 108
+    },
+    {
+      "file": "剪辑/重剪_v27_片头参赛信息/transition_parts/bridge_00.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_01.mp4",
+      "frames": 216
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_01.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_02.mp4",
+      "frames": 66
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_02.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_03.mp4",
+      "frames": 306
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_03.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_04.mp4",
+      "frames": 276
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_04.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_05.mp4",
+      "frames": 276
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_05.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_06.mp4",
+      "frames": 426
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_06.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_07.mp4",
+      "frames": 48
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_07.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_08.mp4",
+      "frames": 444
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_08.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_09.mp4",
+      "frames": 606
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_09.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_10.mp4",
+      "frames": 396
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_10.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_11.mp4",
+      "frames": 288
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_11.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_12.mp4",
+      "frames": 246
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_12.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_13.mp4",
+      "frames": 306
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_13.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_14.mp4",
+      "frames": 48
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_14.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_15.mp4",
+      "frames": 360
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_15.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_16.mp4",
+      "frames": 288
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_16.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_17.mp4",
+      "frames": 168
+    },
+    {
+      "file": "剪辑/重剪_v28_清理剪辑标注/transition_parts/bridge_17.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v28_清理剪辑标注/transition_parts/body_18.mp4",
+      "frames": 312
+    },
+    {
+      "file": "剪辑/重剪_v28_清理剪辑标注/transition_parts/bridge_18.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_19.mp4",
+      "frames": 366
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_19.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_20.mp4",
+      "frames": 138
+    },
+    {
+      "file": "剪辑/重剪_v25_增稳与口播修订/transition_parts/bridge_20.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v25_增稳与口播修订/transition_parts/body_21.mp4",
+      "frames": 336
+    },
+    {
+      "file": "剪辑/重剪_v25_增稳与口播修订/transition_parts/bridge_21.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_22.mp4",
+      "frames": 546
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_22.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_23.mp4",
+      "frames": 126
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_23.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_24.mp4",
+      "frames": 726
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_24.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_25.mp4",
+      "frames": 306
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_25.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_26.mp4",
+      "frames": 246
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_26.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_27.mp4",
+      "frames": 306
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_27.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_28.mp4",
+      "frames": 316
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_28.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_29.mp4",
+      "frames": 806
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/bridge_29.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v24_清晰关联与慢放/transition_parts/body_30.mp4",
+      "frames": 354
+    },
+    {
+      "file": "剪辑/重剪_v26_3600件每分钟/transition_parts/bridge_30.mp4",
+      "frames": 24
+    },
+    {
+      "file": "剪辑/重剪_v26_3600件每分钟/transition_parts/body_31.mp4",
+      "frames": 288
+    }
+  ]
+}

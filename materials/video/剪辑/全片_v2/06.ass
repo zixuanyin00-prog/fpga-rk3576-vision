@@ -1,0 +1,15 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,44,&H00FFFFFF,&H00FFFFFF,&H00202020,&H70000000,0,0,0,0,100,100,0.5,0,1,1.7,0.7,2,90,90,38,1
+Style: Title,Microsoft YaHei,66,&H00F3F3ED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,0,0,5,90,90,0,1
+Style: Small,Microsoft YaHei,30,&H00BFDAC0,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,90,90,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:15.00,Default,,0,0,0,,{\fad(250,250)}先通过控制台调整成像参数，\N同时观察现场 HDMI 画面的变化。
+Dialogue: 0,0:00:17.00,0:00:30.50,Default,,0,0,0,,{\fad(250,250)}控制台与实拍画面按同一时间轴展示，\N让调节过程和显示效果对应起来。

@@ -1,0 +1,520 @@
+[
+  {
+    "name": "opening_title",
+    "start": 0,
+    "duration": 2,
+    "file": "剪辑/重剪_v13/opening_title.mp4",
+    "source": {
+      "kind": "existing_title",
+      "file": "剪辑/重剪_v9/title.mp4",
+      "start": 1,
+      "length": 2
+    }
+  },
+  {
+    "name": "intro",
+    "duration": 4,
+    "file": "剪辑/重剪_v16/intro.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "剪辑/广角总览.MOV",
+      "start": 1,
+      "length": 4,
+      "playback_speed": 1,
+      "framing": "Complete 3840x2160 source frame scaled to 1920x1080, no crop",
+      "source_video_avg_frame_rate": "255600/2131",
+      "export_fps": 60,
+      "description": "Continuous workcell overview including HDMI, console laptop, camera, boards and vibrating bowl",
+      "filter": "setpts=PTS-STARTPTS,scale=1920:1080,setsar=1,fps=60,drawbox=x=0:y=930:w=iw:h=150:color=black@0.30:t=fill",
+      "output": "剪辑/重剪_v16/intro.mp4"
+    },
+    "start": 2
+  },
+  {
+    "name": "chapter_board",
+    "duration": 1.5,
+    "file": "剪辑/重剪_v12/chapter_board.mp4",
+    "source": {
+      "kind": "animation"
+    },
+    "start": 6
+  },
+  {
+    "name": "rk_board",
+    "duration": 5.5,
+    "file": "剪辑/重剪_v12/rk_board.mp4",
+    "source": {
+      "kind": "composite",
+      "parts": [
+        {
+          "file": "剪辑/板卡移到振动盘.MOV",
+          "start": 0,
+          "length": 5.5,
+          "crop": "crop=1660:680:970:850",
+          "scale": "scale=1740:714",
+          "x": 90,
+          "y": 45
+        }
+      ]
+    },
+    "start": 7.5
+  },
+  {
+    "name": "fpga_board",
+    "duration": 5,
+    "file": "剪辑/重剪_v12/fpga_board.mp4",
+    "source": {
+      "kind": "composite",
+      "parts": [
+        {
+          "file": "剪辑/板卡移到振动盘.MOV",
+          "start": 2.5,
+          "length": 5,
+          "crop": "crop=2100:1180:740:120",
+          "scale": "scale=1494:840",
+          "x": 213,
+          "y": 28
+        }
+      ]
+    },
+    "start": 13.0
+  },
+  {
+    "name": "control_board",
+    "duration": 5,
+    "file": "剪辑/重剪_v12/control_board.mp4",
+    "source": {
+      "kind": "composite",
+      "parts": [
+        {
+          "file": "剪辑/电磁阀和转接板展示.MOV",
+          "start": 0,
+          "length": 2.8,
+          "crop": "crop=3840:2160:0:0",
+          "scale": "scale=1600:900",
+          "x": 160,
+          "y": 0
+        },
+        {
+          "file": "剪辑/电磁阀和转接板展示.MOV",
+          "start": 5.1,
+          "length": 2.2,
+          "crop": "crop=3840:2160:0:0",
+          "scale": "scale=1600:900",
+          "x": 160,
+          "y": 0
+        }
+      ]
+    },
+    "start": 18.0
+  },
+  {
+    "name": "station",
+    "start": 23.0,
+    "duration": 11,
+    "file": "剪辑/重剪_v15/cadence/station_normal.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "新视频.mp4",
+      "start": 10.8,
+      "length": 11,
+      "playback_speed": 1,
+      "render_interpolation": "None; restored original 1x camera motion to avoid interpolation artifacts during fast pan",
+      "normal_speed": true,
+      "interpolation": false
+    }
+  },
+  {
+    "name": "chapter_console",
+    "duration": 1.5,
+    "file": "剪辑/重剪_v12/chapter_console.mp4",
+    "source": {
+      "kind": "animation"
+    },
+    "start": 34.0
+  },
+  {
+    "name": "console_image",
+    "start": 35.5,
+    "duration": 10,
+    "file": "剪辑/重剪_v16/console_image.mp4",
+    "source": {
+      "kind": "synchronized_layout",
+      "duration": 10,
+      "console": "剪辑/控制台全流程，前段ISP配合实拍ISP使用，时间轴对齐（3.25-4.14删除）.mp4",
+      "physical_hdmi": "剪辑/实拍ISP使用.MOV",
+      "phases": [
+        {
+          "name": "gain",
+          "start": 38,
+          "length": 4,
+          "detail": [
+            370,
+            1130,
+            1270,
+            330
+          ],
+          "title": "自动增益调节",
+          "highlight": [
+            835,
+            1318,
+            375,
+            76
+          ]
+        },
+        {
+          "name": "processing",
+          "start": 102,
+          "length": 6,
+          "detail": [
+            790,
+            1080,
+            760,
+            244
+          ],
+          "title": "彩色边缘叠加",
+          "highlight": [
+            832,
+            1176,
+            370,
+            51
+          ]
+        }
+      ],
+      "synchronization": "Both source files use the same original start timestamp at normal speed",
+      "crops_remove": "Top runtime guard is scrolled out in both chosen intervals; rightmost AI buttons are outside x2440",
+      "visible_labels": [
+        "PC 控制台",
+        "RK HDMI · 实时成像",
+        "自动增益调节",
+        "彩色边缘叠加",
+        "成像细节",
+        "配置下发：控制台 → RK → FPGA",
+        "状态回读：控制台 ← RK ← FPGA"
+      ]
+    }
+  },
+  {
+    "name": "isp_methods",
+    "duration": 6,
+    "file": "剪辑/重剪_v17/isp_methods.mp4",
+    "source": {
+      "kind": "animation",
+      "script": "isp_compression_v17.cjs"
+    },
+    "start": 45.5
+  },
+  {
+    "name": "console_annotate",
+    "start": 51.5,
+    "duration": 12,
+    "file": "剪辑/重剪_v9/console_annotate.mp4",
+    "source": {
+      "kind": "composite",
+      "parts": [
+        {
+          "file": "剪辑/控制台全流程，前段ISP配合实拍ISP使用，时间轴对齐（3.25-4.14删除）.mp4",
+          "start": 329,
+          "length": 2.4,
+          "crop": "crop=2080:410:360:310",
+          "scale": "scale=1740:343",
+          "x": 90,
+          "y": 280
+        },
+        {
+          "file": "剪辑/控制台全流程，前段ISP配合实拍ISP使用，时间轴对齐（3.25-4.14删除）.mp4",
+          "start": 331.6,
+          "length": 5.4,
+          "crop": "crop=2440:1410:0:150",
+          "scale": "scale=1490:861",
+          "x": 215,
+          "y": 35
+        },
+        {
+          "file": "剪辑/控制台全流程，前段ISP配合实拍ISP使用，时间轴对齐（3.25-4.14删除）.mp4",
+          "start": 341,
+          "length": 4.2,
+          "crop": "crop=2440:1510:0:0",
+          "scale": "scale=1450:897",
+          "x": 235,
+          "y": 23
+        }
+      ]
+    }
+  },
+  {
+    "name": "console_train",
+    "start": 63.5,
+    "duration": 7,
+    "file": "剪辑/重剪_v9/console_train.mp4",
+    "source": {
+      "kind": "composite",
+      "parts": [
+        {
+          "file": "剪辑/控制台全流程，前段ISP配合实拍ISP使用，时间轴对齐（3.25-4.14删除）.mp4",
+          "start": 496,
+          "length": 4,
+          "crop": "crop=2440:820:0:0",
+          "scale": "scale=1740:584",
+          "x": 90,
+          "y": 183
+        },
+        {
+          "file": "剪辑/控制台全流程，前段ISP配合实拍ISP使用，时间轴对齐（3.25-4.14删除）.mp4",
+          "start": 520,
+          "length": 3,
+          "crop": "crop=2440:1180:0:0",
+          "scale": "scale=1710:826",
+          "x": 105,
+          "y": 53
+        }
+      ]
+    }
+  },
+  {
+    "name": "console_run",
+    "start": 70.5,
+    "duration": 7,
+    "file": "剪辑/重剪_v15/cadence/console_run.mp4",
+    "source": {
+      "kind": "console",
+      "file": "部署后的运行结果.mp4",
+      "start": 7,
+      "length": 7,
+      "crop": "crop=2440:1050:0:300",
+      "scale": "scale=1740:749",
+      "x": 90,
+      "y": 97,
+      "playback_speed": 1,
+      "render_interpolation": "None; original 1x UI interaction and discrete monitor captures preserved",
+      "normal_speed": true,
+      "interpolation": false
+    }
+  },
+  {
+    "name": "fewshot_value",
+    "start": 77.0,
+    "duration": 7,
+    "file": "剪辑/重剪_v15/fewshot_value.mp4",
+    "source": {
+      "kind": "animation",
+      "script": "fewshot_v13.cjs",
+      "overlap_in": 0.5,
+      "overlap_out": 0.5
+    }
+  },
+  {
+    "name": "chapter_logic",
+    "duration": 1.5,
+    "file": "剪辑/重剪_v17/chapter_logic.mp4",
+    "source": {
+      "kind": "animation",
+      "script": "render_short_assets.cjs"
+    },
+    "start": 83.5
+  },
+  {
+    "name": "compression_pcie",
+    "source": {
+      "kind": "animation",
+      "script": "isp_compression_v17.cjs",
+      "compression_scope": "Optional preview/archive implementation, independent of native RGB inference"
+    },
+    "start": 85.0,
+    "duration": 6.5,
+    "file": "剪辑/重剪_v17/compression_pcie.mp4"
+  },
+  {
+    "name": "tracking_short",
+    "duration": 4,
+    "file": "剪辑/重剪_v17/tracking_short.mp4",
+    "source": {
+      "kind": "animation",
+      "script": "render_short_assets.cjs"
+    },
+    "start": 91.5
+  },
+  {
+    "name": "trigger_short",
+    "duration": 4,
+    "file": "剪辑/重剪_v17/trigger_short.mp4",
+    "source": {
+      "kind": "animation",
+      "script": "render_short_assets.cjs"
+    },
+    "start": 95.5
+  },
+  {
+    "name": "dimensions",
+    "source": {
+      "kind": "animation",
+      "script": "industrial_animations_v17.cjs"
+    },
+    "start": 99.5,
+    "duration": 6,
+    "file": "剪辑/重剪_v17/dimensions.mp4"
+  },
+  {
+    "name": "alerts",
+    "source": {
+      "kind": "animation",
+      "script": "industrial_animations_v17.cjs"
+    },
+    "start": 105.5,
+    "duration": 8,
+    "file": "剪辑/重剪_v17/alerts.mp4"
+  },
+  {
+    "name": "application",
+    "duration": 3,
+    "file": "剪辑/重剪_v12/application.mp4",
+    "source": {
+      "kind": "animation"
+    },
+    "start": 113.5
+  },
+  {
+    "name": "pose_proof",
+    "duration": 3.5,
+    "label": "姿态分拣　剔除白色反面电阻",
+    "source": {
+      "file": "剪辑/重剪_v9/app_pose.mp4",
+      "start": 0.5,
+      "length": 3.5,
+      "playback_speed": 1,
+      "filters": [
+        "null"
+      ]
+    },
+    "start": 116.5,
+    "file": "剪辑/重剪_v18/pose_proof.mp4"
+  },
+  {
+    "name": "pose_fast",
+    "duration": 17.5,
+    "label": "姿态检测　连续送料 · 自动筛选",
+    "speed_label": "1.3×",
+    "source": {
+      "file": "剪辑/高速整体演示（振动盘） (0-59s可用).MOV",
+      "start": 15,
+      "length": 22.75,
+      "playback_speed": 1.3,
+      "crop": "crop=2160:1216:0:1100",
+      "task": "pose sorting continuous run, specific A/B/C ejection selection not independently mapped"
+    },
+    "start": 120.0,
+    "file": "剪辑/重剪_v18/pose_fast.mp4"
+  },
+  {
+    "name": "pose_slow",
+    "duration": 5.5,
+    "label": "姿态检测　跨帧关联 · 连续确认",
+    "speed_label": "0.5× 慢放",
+    "source": {
+      "file": "剪辑/高速整体演示（HDMI）.MOV",
+      "start": 14,
+      "length": 2.75,
+      "playback_speed": 0.5,
+      "crop": "crop=1600:900:900:850",
+      "source_fps": "120",
+      "task": "actual pose detection boxes and crossing line, camera view crop only"
+    },
+    "start": 137.5,
+    "file": "剪辑/重剪_v18/pose_slow.mp4"
+  },
+  {
+    "name": "pose_inference",
+    "duration": 4,
+    "label": "姿态检测　高速识别与统计",
+    "speed_label": "1.3×",
+    "source": {
+      "file": "剪辑/最高速推理展示（无电磁阀） (2).MOV",
+      "start": 1,
+      "length": 5.2,
+      "playback_speed": 1.3,
+      "task": "pose recognition only, A/B/C, independent inference without actuator"
+    },
+    "start": 143.0,
+    "file": "剪辑/重剪_v18/pose_inference.mp4"
+  },
+  {
+    "name": "category_material",
+    "duration": 6,
+    "label": "类别实验材料　473 · 1004",
+    "source": {
+      "file": "剪辑/重剪_v17/material_prepare.mp4",
+      "start": 0,
+      "length": 6,
+      "playback_speed": 1,
+      "filters": [
+        "null"
+      ]
+    },
+    "start": 147.0,
+    "file": "剪辑/重剪_v18/category_material.mp4"
+  },
+  {
+    "name": "category_monitor",
+    "duration": 5.5,
+    "label": "类别检测　剔除473 · 保留1004",
+    "speed_label": "1.3×",
+    "source": {
+      "file": "剪辑/视频.mp4",
+      "start": 0.1,
+      "length": 7.15,
+      "playback_speed": 1.3,
+      "task": "category experiment confirmed by user, reject473 keep1004",
+      "duplicate_sha256_of": "类别分拣 (2).mp4"
+    },
+    "start": 153.0,
+    "file": "剪辑/重剪_v18/category_monitor.mp4"
+  },
+  {
+    "name": "category_action",
+    "duration": 10,
+    "label": "类别检测　剔除473 · 保留1004",
+    "speed_label": "1.3×",
+    "source": {
+      "file": "剪辑/重剪_v15/cadence/app_execute.mp4",
+      "start": 0.5,
+      "length": 13,
+      "playback_speed": 1.3,
+      "filters": [
+        "null"
+      ],
+      "original_source": "30-56s可用.MP4",
+      "original_start": 32.5,
+      "task": "physical category sorting confirmed by user: reject473 retain1004"
+    },
+    "start": 158.5,
+    "file": "剪辑/重剪_v18/category_action.mp4"
+  },
+  {
+    "name": "category_collect",
+    "duration": 6.3,
+    "label": "类别分拣结果　保留1004",
+    "source": {
+      "file": "剪辑/重剪_v10/app_collect.mp4",
+      "start": 2.2,
+      "length": 6.3,
+      "playback_speed": 1,
+      "filters": [
+        "null"
+      ],
+      "existing_source_cut_at": 5.1,
+      "task": "collected1004 result, no new frame hold or split screen"
+    },
+    "start": 168.5,
+    "file": "剪辑/重剪_v18/category_collect.mp4"
+  },
+  {
+    "name": "end",
+    "start": 174.8,
+    "duration": 5,
+    "file": "剪辑/重剪_v17/end.mp4",
+    "source": {
+      "kind": "animation",
+      "script": "end_v17.cjs"
+    }
+  }
+]

@@ -1,0 +1,21 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,40,&H00FFFFFF,&H00FFFFFF,&H00202020,&H70000000,0,0,0,0,100,100,1,0,1,1.6,0.8,2,120,120,55,1
+Style: Title,Microsoft YaHei,65,&H00F3F3ED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,90,90,0,1
+Style: Small,Microsoft YaHei,28,&H00B0B967,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,4,0,1,0,0,5,90,90,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:06.70,Title,,0,0,0,,{\fad(700,500)\pos(960,485)}基于 FPGA 的实时视觉处理\N与工件姿态识别系统
+Dialogue: 0,0:00:01.20,0:00:06.70,Small,,0,0,0,,{\fad(600,500)\pos(960,650)}小样本快速学习  ·  实时姿态识别  ·  外接控制
+Dialogue: 0,0:00:07.60,0:00:14.60,Default,,0,0,0,,{\fad(180,180)}这是一套面向工业工件的\N实时视觉处理与姿态识别系统。
+Dialogue: 0,0:00:15.60,0:00:22.60,Default,,0,0,0,,{\fad(180,180)}这里以电阻为例，\N展示工件运行过程中的识别效果。
+Dialogue: 0,0:00:23.60,0:00:32.60,Default,,0,0,0,,{\fad(180,180)}识别结果通过 HDMI 实时显示，\N呈现工件姿态与运行状态。
+Dialogue: 0,0:00:33.60,0:00:44.40,Default,,0,0,0,,{\fad(180,180)}系统根据识别结果自动触发电磁阀，\N完成工件筛选。
+Dialogue: 0,0:00:45.60,0:00:54.40,Default,,0,0,0,,{\fad(180,180)}部署完成后，\N可在控制台查看识别结果与运行状态。
+Dialogue: 0,0:00:55.60,0:01:03.30,Default,,0,0,0,,{\fad(180,180)}从图像采集、姿态识别到外接控制，\N形成完整的现场应用流程。

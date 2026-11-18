@@ -1,0 +1,30 @@
+﻿Dialogue: 3,0:00:08.00,0:00:12.55,Default,,0,0,0,,{\an7\pos(1260,794)\fad(150,150)\p1\bord0\shad0\1c&H291D0D&\1a&H40&}m 0 0 l 330 0 330 60 0 60
+Dialogue: 4,0:00:08.00,0:00:12.55,Default,,0,0,0,,{\an7\pos(1279,730)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 2.0 64.0 l 2.0 0.0 l 0.0 0.0 l 0.0 64.0
+Dialogue: 4,0:00:08.00,0:00:12.55,Default,,0,0,0,,{\an7\pos(1129,504)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 151.8 225.4 l 1.8 0.4 l 0.2 1.6 l 150.2 226.6
+Dialogue: 4,0:00:08.00,0:00:12.55,Default,,0,0,0,,{\an7\pos(1126,501)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 4 0 b 6.2 0 8 1.8 8 4 b 8 6.2 6.2 8 4 8 b 1.8 8 0 6.2 0 4 b 0 1.8 1.8 0 4 0
+Dialogue: 5,0:00:08.00,0:00:12.55,Default,,0,0,0,,{\an7\pos(1276,806)\fad(150,150)\fnMicrosoft YaHei\fs28\bord0\shad0\1c&HF3F5ED&}模型识别 · 画面显示
+Dialogue: 3,0:00:13.35,0:00:17.55,Default,,0,0,0,,{\an7\pos(1720,290)\fad(150,150)\p1\bord0\shad0\1c&H291D0D&\1a&H40&}m 0 0 l 184 0 184 98 0 98
+Dialogue: 4,0:00:13.35,0:00:17.55,Default,,0,0,0,,{\an7\pos(1605,337)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 115.0 0.0 l 0.0 0.0 l 0.0 2.0 l 115.0 2.0
+Dialogue: 4,0:00:13.35,0:00:17.55,Default,,0,0,0,,{\an7\pos(1069,337)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 535.8 0.0 l 0.8 92.0 l 1.2 94.0 l 536.2 2.0
+Dialogue: 4,0:00:13.35,0:00:17.55,Default,,0,0,0,,{\an7\pos(1066,426)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 4 0 b 6.2 0 8 1.8 8 4 b 8 6.2 6.2 8 4 8 b 1.8 8 0 6.2 0 4 b 0 1.8 1.8 0 4 0
+Dialogue: 5,0:00:13.35,0:00:17.55,Default,,0,0,0,,{\an7\pos(1736,302)\fad(150,150)\fnMicrosoft YaHei\fs28\bord0\shad0\1c&HF3F5ED&}图像采集\N与预处理
+Dialogue: 3,0:00:18.35,0:00:20.55,Default,,0,0,0,,{\an7\pos(1420,238)\fad(150,150)\p1\bord0\shad0\1c&H291D0D&\1a&H40&}m 0 0 l 282 0 282 60 0 60
+Dialogue: 4,0:00:18.35,0:00:20.55,Default,,0,0,0,,{\an7\pos(1350,267)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 70.0 0.0 l 0.0 0.0 l 0.0 2.0 l 70.0 2.0
+Dialogue: 4,0:00:18.35,0:00:20.55,Default,,0,0,0,,{\an7\pos(1089,267)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 260.4 0.2 l 0.4 197.2 l 1.6 198.8 l 261.6 1.8
+Dialogue: 4,0:00:18.35,0:00:20.55,Default,,0,0,0,,{\an7\pos(1086,461)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 4 0 b 6.2 0 8 1.8 8 4 b 8 6.2 6.2 8 4 8 b 1.8 8 0 6.2 0 4 b 0 1.8 1.8 0 4 0
+Dialogue: 5,0:00:18.35,0:00:20.55,Default,,0,0,0,,{\an7\pos(1436,250)\fad(150,150)\fnMicrosoft YaHei\fs28\bord0\shad0\1c&HF3F5ED&}脉冲联动电磁阀
+Dialogue: 3,0:00:23.55,0:00:26.65,Default,,0,0,0,,{\an7\pos(1250,198)\fad(150,150)\p1\bord0\shad0\1c&H291D0D&\1a&H40&}m 0 0 l 190 0 190 60 0 60
+Dialogue: 4,0:00:23.55,0:00:26.65,Default,,0,0,0,,{\an7\pos(1150,227)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 100.0 0.0 l 0.0 0.0 l 0.0 2.0 l 100.0 2.0
+Dialogue: 4,0:00:23.55,0:00:26.65,Default,,0,0,0,,{\an7\pos(969,227)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 180.5 0.1 l 0.5 102.1 l 1.5 103.9 l 181.5 1.9
+Dialogue: 4,0:00:23.55,0:00:26.65,Default,,0,0,0,,{\an7\pos(966,326)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 4 0 b 6.2 0 8 1.8 8 4 b 8 6.2 6.2 8 4 8 b 1.8 8 0 6.2 0 4 b 0 1.8 1.8 0 4 0
+Dialogue: 5,0:00:23.55,0:00:26.65,Default,,0,0,0,,{\an7\pos(1266,210)\fad(150,150)\fnMicrosoft YaHei\fs28\bord0\shad0\1c&HF3F5ED&}相机采集
+Dialogue: 3,0:00:23.75,0:00:26.65,Default,,0,0,0,,{\an7\pos(200,735)\fad(150,150)\p1\bord0\shad0\1c&H291D0D&\1a&H40&}m 0 0 l 280 0 280 60 0 60
+Dialogue: 4,0:00:23.75,0:00:26.65,Default,,0,0,0,,{\an7\pos(480,764)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 0.0 2.0 l 110.0 2.0 l 110.0 0.0 l 0.0 0.0
+Dialogue: 4,0:00:23.75,0:00:26.65,Default,,0,0,0,,{\an7\pos(589,699)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 1.4 66.9 l 161.4 1.9 l 160.6 0.1 l 0.6 65.1
+Dialogue: 4,0:00:23.75,0:00:26.65,Default,,0,0,0,,{\an7\pos(746,696)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 4 0 b 6.2 0 8 1.8 8 4 b 8 6.2 6.2 8 4 8 b 1.8 8 0 6.2 0 4 b 0 1.8 1.8 0 4 0
+Dialogue: 5,0:00:23.75,0:00:26.65,Default,,0,0,0,,{\an7\pos(216,747)\fad(150,150)\fnMicrosoft YaHei\fs28\bord0\shad0\1c&HF3F5ED&}振动盘连续送料
+Dialogue: 3,0:00:29.65,0:00:33.50,Default,,0,0,0,,{\an7\pos(930,325)\fad(150,150)\p1\bord0\shad0\1c&H291D0D&\1a&H40&}m 0 0 l 250 0 250 60 0 60
+Dialogue: 4,0:00:29.65,0:00:33.50,Default,,0,0,0,,{\an7\pos(840,354)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 90.0 0.0 l 0.0 0.0 l 0.0 2.0 l 90.0 2.0
+Dialogue: 4,0:00:29.65,0:00:33.50,Default,,0,0,0,,{\an7\pos(739,354)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 100.1 0.6 l 0.1 230.6 l 1.9 231.4 l 101.9 1.4
+Dialogue: 4,0:00:29.65,0:00:33.50,Default,,0,0,0,,{\an7\pos(736,581)\fad(150,150)\p1\bord0\shad0\1c&HCBDF78&}m 4 0 b 6.2 0 8 1.8 8 4 b 8 6.2 6.2 8 4 8 b 1.8 8 0 6.2 0 4 b 0 1.8 1.8 0 4 0
+Dialogue: 5,0:00:29.65,0:00:33.50,Default,,0,0,0,,{\an7\pos(946,337)\fad(150,150)\fnMicrosoft YaHei\fs28\bord0\shad0\1c&HF3F5ED&}HDMI现场显示

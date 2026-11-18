@@ -1,0 +1,116 @@
+--- rga_x11.cpp
++++ rga_x11.cpp
+@@ -16,6 +16,7 @@
+ #include <unordered_map>
+ #include <algorithm>
+ #include <cstdint>
++#include <cmath>
+ 
+ struct Slot {XImage* image=nullptr;XShmSegmentInfo shm{};bool attached=false,busy=false;unsigned long long ui=0;unsigned source=0;rga_buffer_handle_t rga=0;};
+ struct Viewer {Cursor arrow=0,hand=0;int cursor=-1;Display* d=nullptr;Window window=0;GC gc=0;int x=0,y=0,w=0,h=0,aw=0,ah=0,event=0;Slot slots[8];
+@@ -98,29 +99,79 @@
+  auto*dst=(unsigned*)s->image->data;for(int x=x0;x<=x1;x++){dst[y0*v->aw+x]=color;dst[y1*v->aw+x]=color;}
+  for(int y=y0;y<=y1;y++){dst[y*v->aw+x0]=color;dst[y*v->aw+x1]=color;}
+ }
+-static int show_frame(void*handle,const unsigned char*rgb,const unsigned char*ui,unsigned long long version,unsigned source,int source_w,int source_h,int x,int y,int w,int h,int count,const float*boxes,const int*confirmed,const int*roi,const uint64_t* /*ids*/){
++static void clipped_outline(Viewer* viewer, Slot* slot, const im_rect& viewport,
++                            int left, int top, int right, int bottom, unsigned color) {
++ const int x_max = viewport.x + viewport.width - 1;
++ const int y_max = viewport.y + viewport.height - 1;
++ for (int inset = 0; inset < 2; ++inset) {
++  const int l = left + inset, t = top + inset, r = right - inset, b = bottom - inset;
++  if (l > r || t > b) break;
++  const int x0 = std::max(l, viewport.x), x1 = std::min(r, x_max);
++  const int y0 = std::max(t, viewport.y), y1 = std::min(b, y_max);
++  // Clip each visible original edge. A cropped edge does not become a new border.
++  if (x0 <= x1 && y0 <= y1) {
++   if (t >= viewport.y) line(viewer, slot, x0, t, x1, t, color);
++   if (b <= y_max) line(viewer, slot, x0, b, x1, b, color);
++   if (l >= viewport.x) line(viewer, slot, l, y0, l, y1, color);
++   if (r <= x_max) line(viewer, slot, r, y0, r, y1, color);
++  }
++ }
++}
++static int show_frame(void*handle,const unsigned char*rgb,const unsigned char*ui,unsigned long long version,unsigned source,int source_w,int source_h,int x,int y,int w,int h,int count,const float*boxes,const int*confirmed,const int*roi,const uint64_t* /*ids*/,const int*crop){
++ im_rect sr{0,0,source_w,source_h},dr{x,y,w,h};
++ if (crop) {
++  sr = {crop[0], crop[1], crop[2], crop[3]};
++  if (sr.x < 0 || sr.y < 0 || sr.width <= 0 || sr.height <= 0 ||
++      sr.width > source_w || sr.height > source_h ||
++      sr.x > source_w - sr.width || sr.y > source_h - sr.height) {
++   snprintf(((Viewer*)handle)->error, 256, "RGA crop is outside the RGB source");
++   return -1;
++  }
++ }
+  auto*v=(Viewer*)handle;pump(v);Slot*s=nullptr;for(auto&a:v->slots)if(!a.busy){s=&a;break;}if(!s)return 0;
+  bool update_ui=v->visible_ui!=version;
+  if(update_ui){for(int row=0;row<v->h;row++)memcpy(s->image->data+row*v->aw*4,ui+row*v->w*4,v->w*4);s->ui=version;}
+  auto found=v->sources.find(rgb);rga_buffer_handle_t sh;
+  if(found==v->sources.end()){sh=importbuffer_virtualaddr((void*)rgb,source_w*source_h*3);if(!sh){snprintf(v->error,256,"RGA RGB source import failed");return -1;}v->sources[rgb]=sh;}else sh=found->second;
+  auto src=wrapbuffer_handle(sh,source_w,source_h,RK_FORMAT_RGB_888);auto dst=wrapbuffer_handle(s->rga,v->aw,v->ah,RK_FORMAT_BGRA_8888);
+- im_rect sr{0,0,source_w,source_h},dr{x,y,w,h};rga_buffer_t pat{};im_rect pr{};
++ rga_buffer_t pat{};im_rect pr{};
+  auto before=std::chrono::steady_clock::now();IM_STATUS status=improcess(src,dst,pat,sr,dr,pr,IM_SYNC);
+  if(status!=IM_STATUS_SUCCESS){snprintf(v->error,256,"RGA: %s",imStrError(status));return -2;}
+  v->rga_ms+=std::chrono::duration<double,std::milli>(std::chrono::steady_clock::now()-before).count();
+- for(int dy=0;dy<h;dy+=28)for(int z=-1;z<=1;z++)line(v,s,x+w/2+z,y+dy,x+w/2+z,y+std::min(h-1,dy+17),0xff00ddc2);
+- if(roi&&roi[2]>0&&roi[3]>0){
+-  int l=x+roi[0]*w/source_w,t=y+roi[1]*h/source_h,r=x+(roi[0]+roi[2])*w/source_w-1,b=y+(roi[1]+roi[3])*h/source_h-1;
+-  for(int z=0;z<2;z++)line(v,s,l+z,t+z,r-z,b-z,0xff00ddc2);
+- }
+- for(int i=0;i<count;i++){const float*b=boxes+i*4;int l=x+(int)(b[0]*w/1920),t=y+(int)(b[1]*h/1080),r=x+(int)(b[2]*w/1920),bottom=y+(int)(b[3]*h/1080);
+-  // Two screen pixels remain visible without a thick black backing band.
+-  for(int z=0;z<2;z++)line(v,s,l+z,t+z,r-z,bottom-z,(confirmed[i]&2)?0xffff55ee:((confirmed[i]&1)?0xff41f399:0xffffd13e));
++ if (crop) {
++  const auto project_x = [&](double position) { return x + int(std::floor((position - sr.x) * w / sr.width)); };
++  const auto project_y = [&](double position) { return y + int(std::floor((position - sr.y) * h / sr.height)); };
++  const int center = project_x(source_w / 2.0);
++  for (int dy = 0; dy < h; dy += 28) {
++   for (int z = -1; z <= 1; ++z) {
++    if (center + z >= x && center + z < x + w)
++     line(v, s, center + z, y + dy, center + z, y + std::min(h - 1, dy + 17), 0xff00ddc2);
++   }
++  }
++  if (roi && roi[2] > 0 && roi[3] > 0) {
++   clipped_outline(v, s, dr, project_x(roi[0]), project_y(roi[1]),
++                   project_x(roi[0] + roi[2]) - 1, project_y(roi[1] + roi[3]) - 1, 0xff00ddc2);
++  }
++  for (int i = 0; i < count; ++i) {
++   const float* box = boxes + i * 4;
++   const unsigned color = (confirmed[i] & 2) ? 0xffff55ee : ((confirmed[i] & 1) ? 0xff41f399 : 0xffffd13e);
++   clipped_outline(v, s, dr, project_x(box[0] * source_w / 1920.0), project_y(box[1] * source_h / 1080.0),
++                   project_x(box[2] * source_w / 1920.0), project_y(box[3] * source_h / 1080.0), color);
++  }
++ } else {
++  for(int dy=0;dy<h;dy+=28)for(int z=-1;z<=1;z++)line(v,s,x+w/2+z,y+dy,x+w/2+z,y+std::min(h-1,dy+17),0xff00ddc2);
++  if(roi&&roi[2]>0&&roi[3]>0){
++   int l=x+roi[0]*w/source_w,t=y+roi[1]*h/source_h,r=x+(roi[0]+roi[2])*w/source_w-1,b=y+(roi[1]+roi[3])*h/source_h-1;
++   for(int z=0;z<2;z++)line(v,s,l+z,t+z,r-z,b-z,0xff00ddc2);
++  }
++  for(int i=0;i<count;i++){const float*b=boxes+i*4;int l=x+(int)(b[0]*w/1920),t=y+(int)(b[1]*h/1080),r=x+(int)(b[2]*w/1920),bottom=y+(int)(b[3]*h/1080);
++   // Two screen pixels remain visible without a thick black backing band.
++   for(int z=0;z<2;z++)line(v,s,l+z,t+z,r-z,bottom-z,(confirmed[i]&2)?0xffff55ee:((confirmed[i]&1)?0xff41f399:0xffffd13e));
++  }
+  }
+  // Restore only the small corner masks after RGA and box drawing.
+  auto*pixels=(unsigned*)s->image->data;auto*background=(const unsigned*)ui;
+- int radius=std::min(22,std::min(w,h)/2);
++ int radius=w==v->w ? 0 : std::min(22,std::min(w,h)/2);
+  for(int iy=0;iy<radius;iy++)for(int ix=0;ix<radius;ix++){
+   int dx=radius-1-ix,dy=radius-1-iy;if(dx*dx+dy*dy<radius*radius)continue;
+   for(int xx:{x+ix,x+w-1-ix})for(int yy:{y+iy,y+h-1-iy})
+@@ -136,9 +187,12 @@
+ }
+ // Keep the original ABI available for callers that do not request overlays.
+ extern "C" int rv_show(void*handle,const unsigned char*rgb,const unsigned char*ui,unsigned long long version,unsigned source,int source_w,int source_h,int x,int y,int w,int h,int count,const float*boxes,const int*confirmed){
+- return show_frame(handle,rgb,ui,version,source,source_w,source_h,x,y,w,h,count,boxes,confirmed,nullptr,nullptr);
++ return show_frame(handle,rgb,ui,version,source,source_w,source_h,x,y,w,h,count,boxes,confirmed,nullptr,nullptr,nullptr);
+ }
+ extern "C" unsigned rv_overlay_api_version(){return 1;}
+ extern "C" int rv_show_overlay_v1(void*handle,const unsigned char*rgb,const unsigned char*ui,unsigned long long version,unsigned source,int source_w,int source_h,int x,int y,int w,int h,int count,const float*boxes,const int*confirmed,const int*roi,const uint64_t*ids){
+- return show_frame(handle,rgb,ui,version,source,source_w,source_h,x,y,w,h,count,boxes,confirmed,roi,ids);
++ return show_frame(handle,rgb,ui,version,source,source_w,source_h,x,y,w,h,count,boxes,confirmed,roi,ids,nullptr);
+ }
++extern "C" int rv_show_crop_v1(void*handle,const unsigned char*rgb,const unsigned char*ui,unsigned long long version,unsigned source,int source_w,int source_h,int x,int y,int w,int h,int count,const float*boxes,const int*confirmed,const int*roi,const uint64_t*ids,const int*crop){
++ return show_frame(handle,rgb,ui,version,source,source_w,source_h,x,y,w,h,count,boxes,confirmed,roi,ids,crop);
++}

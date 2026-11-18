@@ -1,0 +1,26 @@
+[
+  {
+    "name": "opening_title",
+    "duration": 2,
+    "start": 0.0,
+    "file": "剪辑/重剪_v27_片头参赛信息/scenes/opening_title.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v27_片头参赛信息/scenes_b_v27.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "work_name": "FPGA 实时视觉识别与工件自动分拣",
+      "competition_track": "企业赛道：安路赛道",
+      "topic": "自由选题",
+      "board_platform": "平台三"
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v13/opening_title.mp4",
+      "start": 0.0,
+      "length": 2.0,
+      "playback_speed": 1.0,
+      "filters": [
+        "null"
+      ]
+    }
+  }
+]

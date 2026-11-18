@@ -10,6 +10,10 @@
 | VisionTrainer | PC 控制台、训练、转换、前端及已有测试 |
 | 版本与校验 | 文件 SHA256 与只读校验脚本 |
 
+## 汇报素材
+
+组员可以从 [汇报素材索引](materials/) 查阅技术文档、实拍照片、建模源文件、动画和剪辑工程。[GitHub Release](https://github.com/zixuanyin00-prog/fpga-rk3576-vision/releases/tag/presentation-2026-11-18) 提供比赛成片、原片、高清动画和建模打包下载。
+
 ## 准备环境
 
 PC 端使用 Windows、Python、CUDA/PyTorch 和 WSL RKNN 转换环境，依赖见 VisionTrainer 中的 requirements 文件与 setup_gpu.ps1。先按本机环境编辑 `settings.example.json` 与 `console_settings.example.json`，分别复制为 `settings.json`、`console_settings.json`，再使用根目录启动脚本。默认板卡地址已替换为文档示例地址，SSH 私钥和凭据未包含。

@@ -1,0 +1,35 @@
+{
+  "output": "剪辑/重剪_v12/FPGA视觉系统_章节与材料顺序修订_v12.mp4",
+  "duration": 171.8,
+  "voice": "zh-CN-YunyangNeural",
+  "voice_target_lufs": -18,
+  "music_target_lufs": -36,
+  "music_level": "constant",
+  "speech_clips": 23,
+  "speech_seconds": 98.32,
+  "voice_measurement": {
+    "input_i": "-25.44",
+    "input_tp": "-1.62",
+    "input_lra": "9.10",
+    "input_thresh": "-35.87",
+    "output_i": "-19.68",
+    "output_tp": "-2.00",
+    "output_lra": "7.20",
+    "output_thresh": "-30.06",
+    "normalization_type": "dynamic",
+    "target_offset": "1.68"
+  },
+  "music_measurement": {
+    "input_i": "-32.74",
+    "input_tp": "-19.11",
+    "input_lra": "0.60",
+    "input_thresh": "-42.80",
+    "output_i": "-35.95",
+    "output_tp": "-22.20",
+    "output_lra": "0.60",
+    "output_thresh": "-45.98",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.05"
+  },
+  "mix_sample_peak_dbfs": -1.53
+}

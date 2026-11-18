@@ -1,0 +1,17 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,44,&H00FFFFFF,&H00FFFFFF,&H00202020,&H70000000,0,0,0,0,100,100,0.5,0,1,1.7,0.7,2,100,100,44,1
+Style: Title,Microsoft YaHei,66,&H00F3F3ED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,0,0,5,90,90,0,1
+Style: Small,Microsoft YaHei,30,&H00BFDAC0,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,90,90,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:05.90,Default,,0,0,0,,{\fad(160,160)}相机采集的像素经过 FPGA 预处理，\N再送到 RK，进入定位、姿态识别和连续确认。
+Dialogue: 0,0:00:06.10,0:00:11.70,Default,,0,0,0,,{\fad(160,160)}视觉结果连接现场执行设备，\N控制台贯穿调参、训练与运行监控。
+Dialogue: 0,0:00:11.90,0:00:17.50,Default,,0,0,0,,{\fad(160,160)}双向调参解决现场成像适配，\N两阶段推理和连续确认把图像变成可用的判断。
+Dialogue: 0,0:00:17.70,0:00:23.50,Default,,0,0,0,,{\fad(160,160)}从采集图像到持续识别工件，\N各环节共同完成现场视觉处理任务。

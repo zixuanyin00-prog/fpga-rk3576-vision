@@ -1,0 +1,82 @@
+{
+  "events": [
+    {
+      "time": 0.12,
+      "hz": 660,
+      "peak_dbfs": -32
+    },
+    {
+      "time": 6.12,
+      "hz": 520,
+      "peak_dbfs": -32
+    },
+    {
+      "time": 30.62,
+      "hz": 520,
+      "peak_dbfs": -32
+    },
+    {
+      "time": 39.62,
+      "hz": 660,
+      "peak_dbfs": -32
+    },
+    {
+      "time": 66.82000000000001,
+      "hz": 660,
+      "peak_dbfs": -32
+    },
+    {
+      "time": 72.32000000000001,
+      "hz": 520,
+      "peak_dbfs": -32
+    },
+    {
+      "time": 73.52000000000001,
+      "hz": 660,
+      "peak_dbfs": -32
+    },
+    {
+      "time": 79.92,
+      "hz": 660,
+      "peak_dbfs": -34
+    },
+    {
+      "time": 80.04,
+      "hz": 740,
+      "peak_dbfs": -34
+    },
+    {
+      "time": 80.16,
+      "hz": 820,
+      "peak_dbfs": -34
+    },
+    {
+      "time": 85.12,
+      "hz": 660,
+      "peak_dbfs": -32
+    },
+    {
+      "time": 88.32000000000001,
+      "hz": 660,
+      "peak_dbfs": -32
+    },
+    {
+      "time": 93.92,
+      "hz": 660,
+      "peak_dbfs": -32
+    },
+    {
+      "time": 100.42,
+      "hz": 520,
+      "peak_dbfs": -32
+    },
+    {
+      "time": 174.92000000000002,
+      "hz": 660,
+      "peak_dbfs": -32
+    }
+  ],
+  "music_level": "constant low bed",
+  "voice_and_music_source": "retimed narration and same background music",
+  "gain": 1
+}

@@ -1,0 +1,542 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 60,
+  "durations": {
+    "isp_methods": 10.5,
+    "compression_pcie": 6.4,
+    "tracking_short": 5.2,
+    "dimensions": 5.6,
+    "alerts": 6.5
+  },
+  "palette": {
+    "bg": "#cbdde9",
+    "ink": "#183747",
+    "muted": "#536f7e",
+    "blue": "#346e9f",
+    "green": "#39b83f",
+    "darkGreen": "#287b38",
+    "silver": "#f2f7f8",
+    "line": "#8caab9",
+    "faint": "#a8c0cc"
+  },
+  "renderer": {
+    "file": "evidence_scenes_v24.cjs",
+    "sha256": "1e4df4edb7c7027b9be22cf1acbafc57dd68b6cb0d2d4ef69e99ba84d7fe4e45"
+  },
+  "subtitle_safe_area": {
+    "x": 0,
+    "y": 920,
+    "w": 1920,
+    "h": 160
+  },
+  "max_body_text_baseline": 896,
+  "style": "B photographic evidence with 2D editorial animation",
+  "scene_text": {
+    "isp_methods": [
+      "ISP 图像预处理",
+      "六项处理效果对照",
+      "高斯平滑",
+      "亮度映射",
+      "阈值分割",
+      "开运算",
+      "Sobel 边缘",
+      "彩色轮廓",
+      "RGB 输入",
+      "高斯输出",
+      "灰度输入",
+      "阈值掩码",
+      "亮度映射图",
+      "输入",
+      "结果",
+      "全图位置",
+      "3×3 高斯平滑",
+      "单调亮度映射",
+      "阈值 Y < 72",
+      "十字形开运算",
+      "Sobel 阈值 96",
+      "彩色轮廓叠加",
+      "FPGA 流水线：去马赛克 · 白平衡 · 高斯平滑 · 直方图映射 · 前景分割 · 灰度 / 二值形态学",
+      "Sobel 边缘 · 彩色轮廓 · 数字增益 · 亮度 · 对比度"
+    ],
+    "compression_pcie": [
+      "同尺寸压缩：真实样本对照",
+      "原生 RGB 输入",
+      "JPEG 解码图",
+      "512 × 288",
+      "92.87%",
+      "压缩率",
+      "6,635,520 → 473,287 B",
+      "15 张 · 512 × 288",
+      "JPEG Q90 / 4:4:4",
+      "RGB888 → JPEG",
+      "原生 RGB 推理支路",
+      "FPGA 采集 / 处理",
+      "PCIe · RGB DMA",
+      "RK 识别 / 显示",
+      "可选预览与归档压缩",
+      "JPEG 有损",
+      "LZ77-16",
+      "15 / 15",
+      "YUYV 输入逐字节往返一致"
+    ],
+    "tracking_short": [
+      "跨帧关联：真实记录对照",
+      "2026-10-26",
+      "同一 session · ID 880",
+      "+0.000 s",
+      "+0.133 s",
+      "+0.233 s",
+      "源帧 89270",
+      "源帧 89278",
+      "源帧 89284",
+      "ID 880",
+      "原图位置",
+      "局部细节"
+    ],
+    "dimensions": [
+      "多工件像素宽高测量",
+      "同时给出多个工件在原图中的宽/高",
+      "2026-10-29 · 源帧 448296 · 原生 ROI 512 × 288",
+      "框序号",
+      "宽 w / px",
+      "高 h / px",
+      "1",
+      "2",
+      "3",
+      "4",
+      "88.43",
+      "62.76",
+      "90.43",
+      "64.23",
+      "88.35",
+      "56.55",
+      "101.76",
+      "68.14",
+      "w = x₂ − x₁     h = y₂ − y₁",
+      "单位：px"
+    ],
+    "alerts": [
+      "网口回传与异常留证",
+      "历史回传记录",
+      "电脑接收回执 · receipt.json",
+      "\"received_at\"",
+      "2026-11-02T19:09:40+08:00",
+      "\"manifest_sha256\"",
+      "4808b93f1024d136bf422c16ac858f3e",
+      "5ed406af7977c362f59e1fa188990375",
+      "\"event_id\"",
+      "0b15d69f8bb787d416ba2447e1b08d71",
+      "4f0f5fb36fb3d7a3e75e921ca1b2e6db",
+      "回执与清单对应 · SHA256 一致",
+      "对应原图",
+      "原生 99 × 65",
+      "frame.rgb",
+      "19,305 B",
+      "源帧 566648",
+      "100 / 100",
+      "归档文件长度与 SHA256 全匹配",
+      "支持可选 SD 留存"
+    ]
+  },
+  "sources": [
+    {
+      "file": "../重剪_v23_证据补强/evidence_isp_compression/isp/00_archived_native_rgb.png",
+      "sha256": "fa20c8219fc650063307399590755ae7a5613e810a354a3439bfcf927adc6c83"
+    },
+    {
+      "file": "../重剪_v23_证据补强/evidence_isp_compression/jpeg_q90_decoded_native_0.png",
+      "sha256": "68972743bb1ada5bda9b111677602e5ac2992040e4cea73ac400b75325de96af"
+    },
+    {
+      "file": "../重剪_v23_证据补强/evidence_tracking_dimensions/dimensions_source448296_native.png",
+      "sha256": "5791bff45f1d69b5517219c1adde87e49406951f926f8aa7894df2435d6c1422"
+    },
+    {
+      "file": "../重剪_v23_证据补强/evidence_network_sd/original_native_crop_99x65.png",
+      "sha256": "f30126f1881d259eb33b5b98601261bda934d1da787074070468dcf1ff930916"
+    },
+    {
+      "file": "isp_assets/native/00_archived_native_rgb.png",
+      "sha256": "fa20c8219fc650063307399590755ae7a5613e810a354a3439bfcf927adc6c83"
+    },
+    {
+      "file": "isp_assets/crop_2x/00_archived_native_rgb.png",
+      "sha256": "25532732b3976964372bf2c472cbaf9acccd512b009705751a16f96bb5c80652"
+    },
+    {
+      "file": "isp_assets/native/01_gaussian_3x3.png",
+      "sha256": "46835a994740f8467511a0fe821ec4d3f7102e32b7fe037cb4c9ee8b0daadd97"
+    },
+    {
+      "file": "isp_assets/crop_2x/01_gaussian_3x3.png",
+      "sha256": "96c0d4ff7166e0bf31a46120aec5918163b62533ac5db547d1eeeb8192c4a2be"
+    },
+    {
+      "file": "isp_assets/native/02_luminance_mapping.png",
+      "sha256": "4a690420cde74eed78ddae7591cf6e6f5d58e34e46c152dd37b151b8311ebbc0"
+    },
+    {
+      "file": "isp_assets/crop_2x/02_luminance_mapping.png",
+      "sha256": "e99af532f06a0d5295940793dedf916e809ed1a55892af3680d8d28aa484939c"
+    },
+    {
+      "file": "isp_assets/native/03_luma_77_150_29.png",
+      "sha256": "a470a10da83b90fd51134604494cca7532c5b37e65621a8127ae0bb875107612"
+    },
+    {
+      "file": "isp_assets/crop_2x/03_luma_77_150_29.png",
+      "sha256": "391bbfa7325484ec1a1977815d4fa00e35cfa1e320c72b59b66299288b26d1a1"
+    },
+    {
+      "file": "isp_assets/native/04_foreground_y_lt_72.png",
+      "sha256": "8317a88ef86d39d983c2de37911fe2e29b5991ead3a72ae1ccbfb3d45c510c2c"
+    },
+    {
+      "file": "isp_assets/crop_2x/04_foreground_y_lt_72.png",
+      "sha256": "dff02fee50de270a3083f931f758c790c9a2d280159ba98c27f3807d6b48acc9"
+    },
+    {
+      "file": "isp_assets/native/05_binary_open_cross3x3.png",
+      "sha256": "ec467877b1b0697a7a77415e46a9aa73d991089580d25383262628769ed5a97e"
+    },
+    {
+      "file": "isp_assets/crop_2x/05_binary_open_cross3x3.png",
+      "sha256": "c3b5eefe8e0b8beddeb6353fec7b0c460e66a010b337bc46503895c989c43941"
+    },
+    {
+      "file": "isp_assets/native/06_sobel_l1_gt_96.png",
+      "sha256": "a3140ca8c37c06b7f2b45b97a14942ff7bf613d0822cf445761b312fdc7cb553"
+    },
+    {
+      "file": "isp_assets/crop_2x/06_sobel_l1_gt_96.png",
+      "sha256": "e72a8d22fd3ba404856e7795a04c82419352c8eff550c605ff1ae4b8f8a40b35"
+    },
+    {
+      "file": "isp_assets/native/07_edge_overlay.png",
+      "sha256": "ba1b438e1e0d43504666989a404e0ca07fda1ae6a876e462ddd0ba3a3c05a143"
+    },
+    {
+      "file": "isp_assets/crop_2x/07_edge_overlay.png",
+      "sha256": "4c8e1cea76eafd63bce5d2db5214ef4702a5a51c12476c3a6749f45803c708fa"
+    },
+    {
+      "file": "tracking_evidence/sequence_native/track880_source89270_native.png",
+      "sha256": "69e1ae04ad7d082436a801a7b5c0046ef3258d0605f32e31430c1f4fc9e9dd04"
+    },
+    {
+      "file": "tracking_evidence/sequence_native/track880_source89270_detail_native.png",
+      "sha256": "bcb8579d6074b5935f759a987862373945664091d2f72f44a9bc6f5084c947e2"
+    },
+    {
+      "file": "tracking_evidence/sequence_native/track880_source89278_native.png",
+      "sha256": "45273d3276dc506564eb61fd13071e76f854d41fcffc46b84c6fd274b6115018"
+    },
+    {
+      "file": "tracking_evidence/sequence_native/track880_source89278_detail_native.png",
+      "sha256": "eb803e0ab8644c6cd60ae2466b0e15bbe214e7866a264a3ebc82a5747d46b710"
+    },
+    {
+      "file": "tracking_evidence/sequence_native/track880_source89284_native.png",
+      "sha256": "cb8a8a7e8a08e9116fdaba33f9496e40a4c9a1334fd2755999d294cfe2beb22c"
+    },
+    {
+      "file": "tracking_evidence/sequence_native/track880_source89284_detail_native.png",
+      "sha256": "bb1565769f8a52872da8a7437d3e450179a8c4b344627407ba6bbc6d1eb4ff1f"
+    },
+    {
+      "file": "../重剪_v23_证据补强/evidence_isp_compression/evidence_audit.json",
+      "sha256": "b1c1e8ba05725881e8b49230a9f265f179985fa9c63a8578248b2a7cebfa988f"
+    },
+    {
+      "file": "../重剪_v23_证据补强/evidence_isp_compression/software_compression_summary.json",
+      "sha256": "5244096acc19e23abf97e114b4e462362aa1764bf7c45405e22479d2ff750b17"
+    },
+    {
+      "file": "../重剪_v23_证据补强/evidence_isp_compression/project_lz77_reference_software.json",
+      "sha256": "d20b3ec7b66c21ee228fd0fffbdf05d168da6dc0056fdd899669b6cc3e40f82e"
+    },
+    {
+      "file": "../重剪_v23_证据补强/evidence_tracking_dimensions/dimensions_exact_records.json",
+      "sha256": "843f5b759495163928f13b7eb328b2b4744151013bc068f1f0224527b491b87a"
+    },
+    {
+      "file": "../重剪_v23_证据补强/evidence_network_sd/manifest.json",
+      "sha256": "d03d8973d8c436d7ebe4f3f1be85503624ead6ba960361f6d4dfb6d1b6464a1f"
+    },
+    {
+      "file": "../重剪_v23_证据补强/evidence_network_sd/archive_verification.json",
+      "sha256": "89647576f02e570e0878631decf0ce882cbec789048d4507245372fe43c70c10"
+    },
+    {
+      "file": "../重剪_v23_证据补强/evidence_network_sd/source_records/0b15d69f8bb787d416ba2447e1b08d714f0f5fb36fb3d7a3e75e921ca1b2e6db/receipt.json",
+      "sha256": "3f7800ce6e934504a849c140adebbb6c30ef09c185cd43c7b5447d504cf987bf"
+    },
+    {
+      "file": "isp_assets/manifest.json",
+      "sha256": "be7fec806fa9a9390d29cd308672661eaaba4a71367f0cbbe903763a82b4a88f"
+    },
+    {
+      "file": "tracking_evidence/sequence_native/traceable.json",
+      "sha256": "d0536317eedbed3ca9a3e728a47c5dce60a449195af2cab21ab6b83ff6119001"
+    }
+  ],
+  "facts": {
+    "isp_methods": {
+      "source": "isp_assets/manifest.json",
+      "provenance_label_displayed": false,
+      "input": "Archived processed RGB, not sensor RAW",
+      "method_order": [
+        "01_gaussian_3x3",
+        "02_luminance_mapping",
+        "04_foreground_y_lt_72",
+        "05_binary_open_cross3x3",
+        "06_sobel_l1_gt_96",
+        "07_edge_overlay"
+      ],
+      "focus_seconds": [
+        0.4,
+        1.9,
+        3.4,
+        4.9,
+        6.4,
+        7.9
+      ],
+      "all_six_visible": true,
+      "layout": "Large direct input/result crop pair on left; six native results in two columns and three rows on right. All six have distinct result images. Each true direct input follows pair_inputs; the six methods are not drawn as one physical serial chain.",
+      "crop": {
+        "native_xywh": [
+          160,
+          58,
+          224,
+          126
+        ],
+        "integer_asset_scale": 2
+      },
+      "final_all_methods_hold_seconds": [
+        9.2,
+        10.5
+      ],
+      "method_provenance": "Offline deterministic processing, not measured FPGA before/after output; no bit-exact FPGA claim. Complete implemented FPGA method list retained at y=865/896, font 25px."
+    },
+    "compression_pcie": {
+      "source": "evidence_isp_compression/software_compression_summary.json",
+      "samples": 15,
+      "dimensions": [
+        512,
+        288
+      ],
+      "input_rgb888_total_bytes": 6635520,
+      "jpeg_q90_444_total_bytes": 473287,
+      "ratio": 14.020076613133257,
+      "lossy": true,
+      "lz77_reference": {
+        "source": "evidence_isp_compression/project_lz77_reference_software.json",
+        "input": "YUYV",
+        "roundtrip_equal": 15,
+        "total": 15
+      },
+      "pipeline": "Native RGB inference is separate from optional preview/archive compression"
+    },
+    "tracking_short": {
+      "source": "tracking_evidence/sequence_native/traceable.json",
+      "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+      "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+      "track_id": 880,
+      "lifecycle": "confirmed",
+      "source_ids": [
+        89270,
+        89278,
+        89284
+      ],
+      "source_date": "2026-10-26",
+      "native_size": [
+        793,
+        317
+      ],
+      "relative_capture_seconds": [
+        0,
+        0.13331359100266127,
+        0.23279107300186297
+      ],
+      "drawn_boxes": true,
+      "boxes": [
+        {
+          "source_frame_id": 89270,
+          "bbox_local_xyxy": [
+            96.1552050113678,
+            130.44195973873138,
+            205.92719292640686,
+            199.47564256191254
+          ],
+          "detail_crop_local_xyxy": [
+            72,
+            106,
+            230,
+            224
+          ]
+        },
+        {
+          "source_frame_id": 89278,
+          "bbox_local_xyxy": [
+            360.25641226768494,
+            134.34075224399567,
+            470.028400182724,
+            203.37443506717682
+          ],
+          "detail_crop_local_xyxy": [
+            336,
+            110,
+            495,
+            228
+          ]
+        },
+        {
+          "source_frame_id": 89284,
+          "bbox_local_xyxy": [
+            556.0461122989655,
+            142.62372314929962,
+            665.8181002140045,
+            219.51206409931183
+          ],
+          "detail_crop_local_xyxy": [
+            532,
+            118,
+            690,
+            244
+          ]
+        }
+      ],
+      "scope": "Historical original pixels and recorded identity association. Three samples share session/object ID, accepted classification and pixel identity checks; 16 recorded observations have one class and monotonic x. Sequence valid=false; this scene makes no accuracy, current-board, display-FPS or physical acceptance claim. Native PNGs are byte-for-byte equal to RGB pixels; no sharpening or reconstruction."
+    },
+    "dimensions": {
+      "source": "evidence_tracking_dimensions/dimensions_exact_records.json",
+      "source_frame_id": 448296,
+      "source_date": "2026-10-29",
+      "boxes": [
+        {
+          "editorial_index": 1,
+          "bbox": [
+            41.385122179985046,
+            105.78911685943604,
+            129.81237590312958,
+            168.54898834228516
+          ],
+          "width_px": 88.42725372314453,
+          "height_px": 62.75987148284912
+        },
+        {
+          "editorial_index": 2,
+          "bbox": [
+            167.79603826999664,
+            105.4818549156189,
+            258.2287927865982,
+            169.71331930160522
+          ],
+          "width_px": 90.43275451660156,
+          "height_px": 64.23146438598633
+        },
+        {
+          "editorial_index": 3,
+          "bbox": [
+            272.80576062202454,
+            109.56821763515472,
+            361.1587498188019,
+            166.12113559246063
+          ],
+          "width_px": 88.35298919677734,
+          "height_px": 56.55291795730591
+        },
+        {
+          "editorial_index": 4,
+          "bbox": [
+            378.1779328584671,
+            100.38163757324219,
+            479.93350994586945,
+            168.5224323272705
+          ],
+          "width_px": 101.75557708740234,
+          "height_px": 68.14079475402832
+        }
+      ],
+      "classification_displayed": false,
+      "confidence_displayed": false,
+      "units": "native ROI pixels"
+    },
+    "alerts": {
+      "source": "evidence_network_sd/manifest.json",
+      "receipt_time_beijing": "2026-11-02T19:09:40+08:00",
+      "receipt_excerpt_fields": [
+        "received_at",
+        "manifest_sha256",
+        "event_id"
+      ],
+      "frame_bytes": 19305,
+      "frame_native_dimensions": [
+        99,
+        65
+      ],
+      "source_frame_id": 566648,
+      "offline_archive_checks": 100,
+      "all_match": true,
+      "sd": "Optional enabled-and-mounted capability only; successful actual-card write is not evidenced"
+    }
+  },
+  "animation": {
+    "cards": {
+      "scale": [
+        0.9,
+        1
+      ],
+      "entry_seconds": 0.28,
+      "trajectory": "soft curved translation to contact shadow"
+    },
+    "isp": {
+      "comparison": "The actual direct input is revealed into its corresponding output by a .62s crop wipe; six separate native results remain visible.",
+      "starts": [
+        0.4,
+        1.9,
+        3.4,
+        4.9,
+        6.4,
+        7.9
+      ],
+      "all_methods_hold_from_seconds": 9.2
+    },
+    "compression": {
+      "bar_start_seconds": 0.5,
+      "bar_duration_seconds": 1.2,
+      "final_fraction": 0.07132628641010802,
+      "values": "All numbers remain the actual final recorded values; no simulated online test progress"
+    },
+    "tracking": {
+      "connections": "Editorial arcs between three same-ID record cards outside photographs; fixed ROI preserves left/middle/right positions; inset enlarges each genuine native detail crop. Boxes and ID880 are redrawn from exact log coordinates at readable final-canvas size.",
+      "card_starts": [
+        0.02,
+        1.42,
+        2.82
+      ],
+      "connection_starts": [
+        1.2,
+        2.6
+      ],
+      "position_interpolation": false
+    },
+    "dimensions": {
+      "box_draw_starts": [
+        0.5,
+        1.17,
+        1.84,
+        2.51
+      ],
+      "draw_duration_seconds": 0.45,
+      "coordinates": "Exact fixed historical bbox; only perimeter reveal and table row emphasis are animated"
+    },
+    "alerts": {
+      "associations": "Original file to receipt/manifest hash to existing archive result; static recorded 100/100, no fabricated live transfer counter"
+    },
+    "playback_progress_bar": false
+  },
+  "rendering": "2D archived photographs, charts and real record typography; no 3D synthetic evidence; evaluate every output frame at frame/60. Asset pixels are never procedurally redrawn or altered.",
+  "verification_scope": "Local video asset rendering only; no model application, device connection or hardware changes"
+}

@@ -1,0 +1,410 @@
+{
+  "source_flow_path": "VisionTrainer/console_data/24187358ba9c421a81a53ace1745cff3/flow.json",
+  "flow_sha256": "d511bbfbc765e35c7b879e5bf08c58b40bbcfda36bcb3288f4f93dc02a11d268",
+  "frame": {
+    "id": "8119aafa9a374609945f15b7ee9af18e",
+    "batch": "abd1ab0d0d894874bc98d892ebaedcca",
+    "role": "train",
+    "base_batch": "aa961a82fd3a4590a93b46c156b66a5c",
+    "file": "captures\\abd1ab0d0d894874bc98d892ebaedcca\\e319a9f0cb7642ee975b121c44806279\\native_2.rgb",
+    "size": [
+      512,
+      288
+    ],
+    "origin": [
+      704,
+      396
+    ],
+    "sha256": "e57a1ff19030821d185ddca72d1bb94de1a0bb32f075ee85275fda51333dc98b",
+    "source_frame_id": 448296,
+    "boot_id": "3de0aab8-5b23-422a-beb6-5fc4e195ba91",
+    "profile_digest": "935112cd40124af8456250c3ca7e3f8d18f09913bd591a0859fb28e69779bf59",
+    "captured_at": "2026-10-29T13:09:04+08:00",
+    "objects": [
+      {
+        "id": "cc3d7a31540c42b9ac663da9c2284f36",
+        "bbox": [
+          378.1779328584671,
+          100.38163757324219,
+          479.93350994586945,
+          168.5224323272705
+        ],
+        "class_id": "c8fb6d8c1cf04eaf8b61fac72fc1293e",
+        "proposed": false
+      },
+      {
+        "id": "b9551dedf209470aa430eeeeae9d6c18",
+        "bbox": [
+          167.79603826999664,
+          105.4818549156189,
+          258.2287927865982,
+          169.71331930160522
+        ],
+        "class_id": "d28dab0b76f54d96be3970ed60ff7833",
+        "proposed": false
+      },
+      {
+        "id": "473fcabe63e34122a3da7407956f8ff7",
+        "bbox": [
+          272.80576062202454,
+          109.56821763515472,
+          361.1587498188019,
+          166.12113559246063
+        ],
+        "class_id": "c7c33e6ede0b4ccc9ecdd979230c71dd",
+        "proposed": false
+      },
+      {
+        "id": "897e867cb9154ed1995a7c6a3626c0bb",
+        "bbox": [
+          41.385122179985046,
+          105.78911685943604,
+          129.81237590312958,
+          168.54898834228516
+        ],
+        "class_id": "c8fb6d8c1cf04eaf8b61fac72fc1293e",
+        "proposed": false
+      }
+    ],
+    "reviewed": true,
+    "test_id": "727d19dbf090427fb360db3a09c02be3",
+    "revision": 3,
+    "excluded": false,
+    "channel": 0,
+    "source_channel": 0,
+    "source_request_id": 311326,
+    "capture_transaction_id": "8c2afb6199734a2fa3bddeee533458aa",
+    "capture_source": "rk_raw_preview_native_crop",
+    "capture_protocol": "native-rectangle-v3",
+    "source_size": [
+      1920,
+      1080
+    ],
+    "identity": {
+      "boot_id": "3de0aab8-5b23-422a-beb6-5fc4e195ba91",
+      "runtime_session_id": "5df277d8af25426889fcdaec74072e1c",
+      "firmware_sha256": "6799fc21f2c69436bd13f64421fd2e692865ff1d51d689c274092bffcf57584c",
+      "driver_sha256": "00df67962945f419743516c1c6f3e36459595fc8fe42ccf2b5af81d04a3962bd",
+      "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "isp_generation": 32,
+      "region_version": "2bfc6989ee5a4114a0f35f4b2666b0fa",
+      "origin": [
+        704,
+        396
+      ]
+    },
+    "fpga_epoch": 3732837271,
+    "processing_revision": 33,
+    "enhance_revision": 1043713696,
+    "processing_config": {
+      "words": [
+        0,
+        383,
+        130888,
+        19,
+        69728,
+        452984576,
+        1573123,
+        61568,
+        32,
+        64
+      ],
+      "view": 0,
+      "image_mode": "processed_rgb",
+      "enabled": {
+        "gaussian": true,
+        "histogram": true,
+        "foreground": true,
+        "binary_morphology": true,
+        "sobel": true,
+        "edge_cleanup": true,
+        "edge_overlay": true,
+        "background_shade": false,
+        "feature_statistics": true,
+        "grayscale_morphology": false,
+        "edge_closing": false,
+        "mask_boundary": false
+      },
+      "effective_enabled": {
+        "gaussian": true,
+        "histogram": true,
+        "foreground": true,
+        "binary_morphology": true,
+        "sobel": true,
+        "edge_cleanup": true,
+        "edge_overlay": true,
+        "background_shade": false,
+        "feature_statistics": true,
+        "grayscale_morphology": false,
+        "edge_closing": false,
+        "mask_boundary": false
+      },
+      "parameters": {
+        "foreground_low": 72,
+        "foreground_high": 255,
+        "foreground_mode": 1,
+        "foreground_invert": 0,
+        "binary_operation": 3,
+        "binary_shape": 1,
+        "sobel_threshold": 96,
+        "edge_neighbors": 1,
+        "edge_foreground_only": 1,
+        "overlay_rgb": 16776960,
+        "overlay_alpha": 2,
+        "background_level": 3,
+        "gray_operation": 3,
+        "gray_kernel5": 0,
+        "gray_fusion": 1,
+        "gray_delta_clip": 24,
+        "feature_luma": 128,
+        "feature_highlight": 240,
+        "gaussian_strength": 32,
+        "histogram_strength": 64
+      }
+    },
+    "image_mode": "processed_rgb",
+    "capture_received_monotonic": 18575.633700432,
+    "transport_dequeued_monotonic": 18575.651586973,
+    "python_copy_returned_monotonic": 18575.651669016,
+    "feedback": true,
+    "history": [
+      {
+        "at": "2026-10-29T13:10:07+08:00",
+        "page": "106e3f41-431c-4ad0-8494-ef22fe32bf4d",
+        "objects": [
+          {
+            "id": "cc3d7a31540c42b9ac663da9c2284f36",
+            "bbox": [
+              378.1779328584671,
+              100.38163757324219,
+              479.93350994586945,
+              168.5224323272705
+            ],
+            "class_id": "c8fb6d8c1cf04eaf8b61fac72fc1293e",
+            "proposed": true
+          },
+          {
+            "id": "b9551dedf209470aa430eeeeae9d6c18",
+            "bbox": [
+              167.79603826999664,
+              105.4818549156189,
+              258.2287927865982,
+              169.71331930160522
+            ],
+            "class_id": "c7c33e6ede0b4ccc9ecdd979230c71dd",
+            "proposed": true
+          },
+          {
+            "id": "473fcabe63e34122a3da7407956f8ff7",
+            "bbox": [
+              272.80576062202454,
+              109.56821763515472,
+              361.1587498188019,
+              166.12113559246063
+            ],
+            "class_id": "c7c33e6ede0b4ccc9ecdd979230c71dd",
+            "proposed": true
+          },
+          {
+            "id": "897e867cb9154ed1995a7c6a3626c0bb",
+            "bbox": [
+              41.385122179985046,
+              105.78911685943604,
+              129.81237590312958,
+              168.54898834228516
+            ],
+            "class_id": "c8fb6d8c1cf04eaf8b61fac72fc1293e",
+            "proposed": true
+          }
+        ],
+        "reviewed": false
+      },
+      {
+        "at": "2026-10-29T16:35:40+08:00",
+        "page": "B4_user_confirmed_20261029_native_review",
+        "objects": [
+          {
+            "id": "cc3d7a31540c42b9ac663da9c2284f36",
+            "bbox": [
+              378.1779328584671,
+              100.38163757324219,
+              479.93350994586945,
+              168.5224323272705
+            ],
+            "class_id": "c8fb6d8c1cf04eaf8b61fac72fc1293e",
+            "proposed": false
+          },
+          {
+            "id": "b9551dedf209470aa430eeeeae9d6c18",
+            "bbox": [
+              167.79603826999664,
+              105.4818549156189,
+              258.2287927865982,
+              169.71331930160522
+            ],
+            "class_id": "c7c33e6ede0b4ccc9ecdd979230c71dd",
+            "proposed": false
+          },
+          {
+            "id": "473fcabe63e34122a3da7407956f8ff7",
+            "bbox": [
+              272.80576062202454,
+              109.56821763515472,
+              361.1587498188019,
+              166.12113559246063
+            ],
+            "class_id": "c7c33e6ede0b4ccc9ecdd979230c71dd",
+            "proposed": false
+          },
+          {
+            "id": "897e867cb9154ed1995a7c6a3626c0bb",
+            "bbox": [
+              41.385122179985046,
+              105.78911685943604,
+              129.81237590312958,
+              168.54898834228516
+            ],
+            "class_id": "c8fb6d8c1cf04eaf8b61fac72fc1293e",
+            "proposed": false
+          }
+        ],
+        "reviewed": true
+      }
+    ]
+  },
+  "test_id": "727d19dbf090427fb360db3a09c02be3",
+  "test_created_at": "2026-10-29T13:09:08+08:00",
+  "model_selection_from_test": {
+    "run": "6a9cca79bc724290b501de8e9f8a455f",
+    "trained_at": "2026-10-29T13:08:13+08:00",
+    "sha256": "ed8c19670b510aad63dfdad778352519cda206f7b9bbc5e43a72ced88084ff92"
+  },
+  "original_rgb_sha256": "e57a1ff19030821d185ddca72d1bb94de1a0bb32f075ee85275fda51333dc98b",
+  "measurement_type": "actual historical model output bbox dimensions in native ROI pixels, not physical millimetres and not ground-truth accuracy",
+  "dimensions": [
+    {
+      "editorial_box_index": 1,
+      "bbox_xyxy_native_px": [
+        41.385122179985046,
+        105.78911685943604,
+        129.81237590312958,
+        168.54898834228516
+      ],
+      "width_px": 88.42725372314453,
+      "height_px": 62.75987148284912,
+      "formula_width": "129.812376 - 41.385122 = 88.427254",
+      "formula_height": "168.548988 - 105.789117 = 62.759871",
+      "model_output_record": {
+        "bbox": [
+          41.385122179985046,
+          105.78911685943604,
+          129.81237590312958,
+          168.54898834228516
+        ],
+        "objectness": 0.288033127784729,
+        "state_scores": [
+          0.00038722867611795664,
+          9.206696995534003e-05,
+          0.9995206594467163
+        ],
+        "raw_label": "c8fb6d8c1cf04eaf8b61fac72fc1293e",
+        "label": "c8fb6d8c1cf04eaf8b61fac72fc1293e",
+        "confidence": 0.9995206594467163
+      },
+      "model_label": "C"
+    },
+    {
+      "editorial_box_index": 2,
+      "bbox_xyxy_native_px": [
+        167.79603826999664,
+        105.4818549156189,
+        258.2287927865982,
+        169.71331930160522
+      ],
+      "width_px": 90.43275451660156,
+      "height_px": 64.23146438598633,
+      "formula_width": "258.228793 - 167.796038 = 90.432755",
+      "formula_height": "169.713319 - 105.481855 = 64.231464",
+      "model_output_record": {
+        "bbox": [
+          167.79603826999664,
+          105.4818549156189,
+          258.2287927865982,
+          169.71331930160522
+        ],
+        "objectness": 0.5862890481948853,
+        "state_scores": [
+          0.0004960369551554322,
+          0.9994296431541443,
+          7.43685377528891e-05
+        ],
+        "raw_label": "c7c33e6ede0b4ccc9ecdd979230c71dd",
+        "label": "c7c33e6ede0b4ccc9ecdd979230c71dd",
+        "confidence": 0.9994296431541443
+      },
+      "model_label": "B"
+    },
+    {
+      "editorial_box_index": 3,
+      "bbox_xyxy_native_px": [
+        272.80576062202454,
+        109.56821763515472,
+        361.1587498188019,
+        166.12113559246063
+      ],
+      "width_px": 88.35298919677734,
+      "height_px": 56.55291795730591,
+      "formula_width": "361.158750 - 272.805761 = 88.352989",
+      "formula_height": "166.121136 - 109.568218 = 56.552918",
+      "model_output_record": {
+        "bbox": [
+          272.80576062202454,
+          109.56821763515472,
+          361.1587498188019,
+          166.12113559246063
+        ],
+        "objectness": 0.3012073040008545,
+        "state_scores": [
+          0.061808183789253235,
+          0.9354627728462219,
+          0.002728987718001008
+        ],
+        "raw_label": "c7c33e6ede0b4ccc9ecdd979230c71dd",
+        "label": "c7c33e6ede0b4ccc9ecdd979230c71dd",
+        "confidence": 0.9354627728462219
+      },
+      "model_label": "B"
+    },
+    {
+      "editorial_box_index": 4,
+      "bbox_xyxy_native_px": [
+        378.1779328584671,
+        100.38163757324219,
+        479.93350994586945,
+        168.5224323272705
+      ],
+      "width_px": 101.75557708740234,
+      "height_px": 68.14079475402832,
+      "formula_width": "479.933510 - 378.177933 = 101.755577",
+      "formula_height": "168.522432 - 100.381638 = 68.140795",
+      "model_output_record": {
+        "bbox": [
+          378.1779328584671,
+          100.38163757324219,
+          479.93350994586945,
+          168.5224323272705
+        ],
+        "objectness": 0.6679805517196655,
+        "state_scores": [
+          0.00015638908371329308,
+          1.623072603251785e-05,
+          0.9998273849487305
+        ],
+        "raw_label": "c8fb6d8c1cf04eaf8b61fac72fc1293e",
+        "label": "c8fb6d8c1cf04eaf8b61fac72fc1293e",
+        "confidence": 0.9998273849487305
+      },
+      "model_label": "C"
+    }
+  ]
+}

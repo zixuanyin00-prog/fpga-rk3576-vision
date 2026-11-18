@@ -1,0 +1,271 @@
+[
+  {
+    "id": 1,
+    "scene": "intro",
+    "start": 0.55,
+    "end": 7.25,
+    "spoken_text": "我们将小样本学习与高速识别结合，构建可快速部署的工件分拣系统。",
+    "rate": 0,
+    "reuse_id": 1,
+    "reuse_file": "剪辑/重剪_v15/voice/01_b283536551ac.wav",
+    "reuse_duration": 5.71
+  },
+  {
+    "id": 2,
+    "scene": "rk_board",
+    "start": 7.9,
+    "end": 12.6,
+    "spoken_text": "R K 三五七六，负责模型识别和显示。",
+    "rate": 0,
+    "reuse_id": 2,
+    "reuse_file": "剪辑/重剪_v12/voice/02_793768d36889.wav",
+    "reuse_duration": 3.19
+  },
+  {
+    "id": 3,
+    "scene": "fpga_board",
+    "start": 13.0,
+    "end": 17.85,
+    "spoken_text": "P H 一 A 九零，负责采集和预处理。",
+    "rate": 0,
+    "reuse_id": 3,
+    "reuse_file": "剪辑/重剪_v18/voice/03_38a3fbda99a7.wav",
+    "reuse_duration": 2.94
+  },
+  {
+    "id": 4,
+    "scene": "control_board",
+    "start": 18.3,
+    "end": 22.85,
+    "spoken_text": "自制电磁阀转接板，接收脉冲执行筛选。",
+    "rate": 0,
+    "reuse_id": 4,
+    "reuse_file": "剪辑/重剪_v18/voice/04_622315055666.wav",
+    "reuse_duration": 3.33
+  },
+  {
+    "id": 5,
+    "scene": "station",
+    "start": 23.35,
+    "end": 27.4,
+    "spoken_text": "通过 P C I E 转接卡，实现双端高速互联。",
+    "rate": 0,
+    "reuse_id": 5,
+    "reuse_file": "剪辑/重剪_v18/voice/05_06a98c2b808a.wav",
+    "reuse_duration": 3.78
+  },
+  {
+    "id": 25,
+    "scene": "console_intro",
+    "start": 27.45,
+    "end": 31.45,
+    "spoken_text": "配套控制台，集成采集、训练与部署。",
+    "rate": 0
+  },
+  {
+    "id": 6,
+    "scene": "console_image",
+    "start": 31.9,
+    "end": 38.9,
+    "spoken_text": "控制台经 R K 下发参数，F P G A 回传状态；右侧屏幕呈现对应的成像效果。",
+    "rate": 0,
+    "reuse_id": 6,
+    "reuse_file": "剪辑/重剪_v16/voice/06_4296538a85aa.wav",
+    "reuse_duration": 6.79
+  },
+  {
+    "id": 7,
+    "scene": "isp_methods",
+    "start": 39.65,
+    "end": 49.85,
+    "spoken_text": "这里分别展示高斯平滑、亮度映射、阈值分割、形态学处理、边缘提取和彩色轮廓。",
+    "rate": 0,
+    "reuse_file": "剪辑/重剪_v17/voice/07_8c013bf32984.wav",
+    "reuse_duration": 6.46
+  },
+  {
+    "id": 8,
+    "scene": "console_annotate",
+    "start": 50.2,
+    "end": 56.8,
+    "spoken_text": "标注页一键生成候选框，再检查位置、指定类别。",
+    "rate": 0
+  },
+  {
+    "id": 9,
+    "scene": "console_train",
+    "start": 57.2,
+    "end": 62.0,
+    "spoken_text": "训练页完成模型训练、转换和现场检查。",
+    "rate": 0
+  },
+  {
+    "id": 10,
+    "scene": "console_run",
+    "start": 62.4,
+    "end": 66.5,
+    "spoken_text": "运行页监控识别结果和设备状态。",
+    "rate": 0
+  },
+  {
+    "id": 24,
+    "scene": "fewshot_value",
+    "start": 66.85,
+    "end": 72.1,
+    "spoken_text": "本次用十五张原图建立三类姿态模型，可通过控制台快速部署。",
+    "rate": 0,
+    "reuse_id": 24,
+    "reuse_file": "剪辑/重剪_v15/voice/24_4beebbb343f6.wav",
+    "reuse_duration": 5.18
+  },
+  {
+    "id": 11,
+    "scene": "compression_pcie",
+    "start": 73.6,
+    "end": 79.6,
+    "spoken_text": "有损压缩，体积减少百分之九十二点八七；无损解码逐字节一致。",
+    "rate": 0,
+    "reuse_file": "剪辑/重剪_v17/voice/11_2801b6405765.wav",
+    "reuse_duration": 5.51
+  },
+  {
+    "id": 12,
+    "scene": "tracking_short",
+    "start": 79.95,
+    "end": 84.85,
+    "spoken_text": "电阻从左向右移动，轨迹编号八八零保持一致。",
+    "rate": 0,
+    "reuse_file": "剪辑/重剪_v17/voice/12_0d8bf5245d2e.wav",
+    "reuse_duration": 2.8
+  },
+  {
+    "id": 13,
+    "scene": "trigger_short",
+    "start": 85.15,
+    "end": 88.1,
+    "spoken_text": "真实过线后，按类别触发控制脉冲。",
+    "rate": 0,
+    "reuse_id": 13,
+    "reuse_file": "剪辑/重剪_v17/voice/13_db89fd07ad2b.wav",
+    "reuse_duration": 2.91
+  },
+  {
+    "id": 26,
+    "scene": "dimensions",
+    "start": 88.35,
+    "end": 93.65,
+    "spoken_text": "同时给出多个工件检测框的像素宽、高，便于比较。",
+    "rate": 0,
+    "reuse_file": "剪辑/重剪_v17/voice/26_51c4c4936927.wav",
+    "reuse_duration": 4.42
+  },
+  {
+    "id": 27,
+    "scene": "alerts",
+    "start": 94.0,
+    "end": 100.1,
+    "spoken_text": "异常原图回传电脑归档，并支持可选 S D 卡留存。",
+    "rate": 0,
+    "reuse_file": "剪辑/重剪_v17/voice/27_5d46eb219f6e.wav",
+    "reuse_duration": 5.63
+  },
+  {
+    "id": 14,
+    "scene": "pose_proof",
+    "start": 103.3,
+    "end": 107.5,
+    "spoken_text": "姿态分拣，自动剔除白色反面电阻。",
+    "reuse_id": 14
+  },
+  {
+    "id": 30,
+    "scene": "pose_sorting_slow",
+    "start": 109.2,
+    "end": 112.9,
+    "spoken_text": "慢放可见，白色电阻被准确吹出。"
+  },
+  {
+    "id": 17,
+    "scene": "pose_sorting_slow",
+    "start": 113.1,
+    "end": 118.4,
+    "spoken_text": "多目标并行识别，各组测试召回率为百分之九十九点九九七。",
+    "reuse_id": 17
+  },
+  {
+    "id": 31,
+    "scene": "pose_display",
+    "start": 118.6,
+    "end": 125.0,
+    "spoken_text": "H D M I 输出一零八零 P、每秒六十帧，采集到显示延迟小于五十毫秒。"
+  },
+  {
+    "id": 28,
+    "scene": "pose_slow",
+    "start": 126,
+    "end": 133.2,
+    "spoken_text": "进一步慢放，观察绿色确认框随工件位置更新。"
+  },
+  {
+    "id": 29,
+    "scene": "pose_inference",
+    "start": 133.65,
+    "end": 138.8,
+    "spoken_text": "多目标并行识别，当前演示关闭分拣输出。"
+  },
+  {
+    "id": 15,
+    "scene": "category_material",
+    "start": 139.3,
+    "end": 143.3,
+    "spoken_text": "再看类别检测，剔除四七三，保留一零零四。",
+    "reuse_id": 15
+  },
+  {
+    "id": 18,
+    "scene": "category_monitor",
+    "start": 143.8,
+    "end": 148.8,
+    "spoken_text": "不同型号对应不同类别，按设定规则执行分拣。",
+    "reuse_id": 18
+  },
+  {
+    "id": 19,
+    "scene": "category_track",
+    "start": 149.35,
+    "end": 154.25,
+    "spoken_text": "类别确认并实际过线后，电磁阀自动剔除四七三。",
+    "reuse_id": 19
+  },
+  {
+    "id": 32,
+    "scene": "category_action",
+    "start": 157.7,
+    "end": 162.5,
+    "spoken_text": "一零零四电阻继续沿轨道通过，进入后续收集。"
+  },
+  {
+    "id": 21,
+    "scene": "category_action",
+    "start": 163.4,
+    "end": 168.35,
+    "spoken_text": "实测分拣速度达到每分钟一千二百件。",
+    "reuse_id": 21
+  },
+  {
+    "id": 22,
+    "scene": "category_collect",
+    "start": 168.95,
+    "end": 174.4,
+    "spoken_text": "一零零四继续通过，进入收集杯。",
+    "reuse_id": 22
+  },
+  {
+    "id": 23,
+    "scene": "end",
+    "start": 175.05,
+    "end": 179.75,
+    "spoken_text": "双向调参、小样本学习、快速部署，支撑高速分拣。",
+    "reuse_id": 23
+  }
+]

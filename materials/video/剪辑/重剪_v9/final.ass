@@ -1,0 +1,32 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,44,&H00FFFFFF,&H00FFFFFF,&H00202020,&H70000000,0,0,0,0,100,100,0.5,0,1,1.7,0.7,2,100,100,44,1
+Style: Title,Microsoft YaHei,66,&H00F3F3ED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,0,0,5,90,90,0,1
+Style: Small,Microsoft YaHei,30,&H00BFDAC0,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,90,90,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:04.28,0:00:07.94,Default,,0,0,0,,{\fad(120,120)}FPGA 负责前端采集和图像预处理。
+Dialogue: 0,0:00:09.38,0:00:15.11,Default,,0,0,0,,{\fad(120,120)}以电阻为例，相机采集运动工件，识别结果进入后续分拣流程。
+Dialogue: 0,0:00:20.28,0:00:23.83,Default,,0,0,0,,{\fad(120,120)}姿态标签可区分正反面和数字方向。
+Dialogue: 0,0:00:25.88,0:00:31.89,Default,,0,0,0,,{\fad(120,120)}画面页调整成像与采集区域，\N参数下发后回读状态，便于现场调节。
+Dialogue: 0,0:00:35.78,0:00:43.55,Default,,0,0,0,,{\fad(120,120)}标注页用已确认样本训练并选定画框助手，\N一键生成候选框，再检查位置、指定类别。
+Dialogue: 0,0:00:47.78,0:00:53.19,Default,,0,0,0,,{\fad(120,120)}训练页完成训练和模型转换，并用现场图像检查识别结果。
+Dialogue: 0,0:00:54.78,0:01:00.32,Default,,0,0,0,,{\fad(120,120)}运行页监控实时画面、识别结果和设备状态，供现场检查。
+Dialogue: 0,0:01:01.88,0:01:09.42,Default,,0,0,0,,{\fad(120,120)}显示与推理异步运行，再通过跨帧关联、\N连续确认，把识别结果连接到外部控制。
+Dialogue: 0,0:01:14.78,0:01:19.38,Default,,0,0,0,,{\fad(120,120)}屏幕给出目标位置和类别，作为后续分拣的判断依据。
+Dialogue: 0,0:01:21.88,0:01:26.73,Default,,0,0,0,,{\fad(120,120)}先看姿态分拣，工件在送料轨道上连续通过识别区域。
+Dialogue: 0,0:01:32.28,0:01:36.98,Default,,0,0,0,,{\fad(120,120)}工件实际越过触发线后，按选定类别输出控制脉冲。
+Dialogue: 0,0:01:39.28,0:01:43.20,Default,,0,0,0,,{\fad(120,120)}控制器驱动电磁阀，在执行位置完成选择。
+Dialogue: 0,0:01:46.88,0:01:52.56,Default,,0,0,0,,{\fad(120,120)}连续识别、确认与执行衔接，让工件随送料过程自动分流。
+Dialogue: 0,0:01:55.68,0:02:00.66,Default,,0,0,0,,{\fad(120,120)}更换分类任务时，可以重新定义标签，并用现场样本训练。
+Dialogue: 0,0:02:03.18,0:02:06.74,Default,,0,0,0,,{\fad(120,120)}完成一轮分拣后，从收集杯中取出工件。
+Dialogue: 0,0:02:08.98,0:02:12.89,Default,,0,0,0,,{\fad(120,120)}查看实物表面的型号，对照识别与分拣结果。
+Dialogue: 0,0:02:14.18,0:02:18.21,Default,,0,0,0,,{\fad(120,120)}类别也可以对应不同型号，这里以两种电阻为例。
+Dialogue: 0,0:02:20.18,0:02:25.48,Default,,0,0,0,,{\fad(120,120)}从姿态筛选到型号分类，同一套视觉流程服务不同分拣任务。
+Dialogue: 0,0:02:26.30,0:02:30.30,Title,,0,0,0,,{\fad(120,120)\fs57\pos(960,455)}让视觉判断，服务自动分拣。

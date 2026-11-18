@@ -1,0 +1,77 @@
+{
+  "source": "../外壳与支架_圆角底板版.blend",
+  "source_sha256": "96aef659422d7c0f0de4343493cae60701b80c7cdb6c5070538a4ae9277c7c12",
+  "units": "STL numerical coordinates are millimeters; import as mm at 100% scale",
+  "changes": "Rigid transforms and unit conversion only; no mesh repair, geometry redesign or source overwrite",
+  "limitations": "Not sliced for a specific printer; no physical print or fit validation; no exhaustive self-intersection test",
+  "parts": [
+    {
+      "source_object": "通风底座 · 01_base",
+      "file": "01_base_mm.stl",
+      "quantity": 1,
+      "description": "底板，底面朝下",
+      "rotation_x_degrees": 0,
+      "dimensions_mm": [
+        215.0,
+        126.00000762939453,
+        5.000000476837158
+      ],
+      "min_z_mm": 0.0,
+      "triangles": 26004,
+      "stl_edge_incidence_2": true,
+      "signed_volume_mm3": 85500.85492390588,
+      "sha256": "e047ff4faa0f0ba6448e6048d6faa080283c4ea924d7deacedd643b5bf4928fa"
+    },
+    {
+      "source_object": "上盖 · 分解位置",
+      "file": "02_cover_top_down_mm.stl",
+      "quantity": 1,
+      "description": "上盖，外顶面朝下，开口朝上",
+      "rotation_x_degrees": 180,
+      "dimensions_mm": [
+        213.80001068115234,
+        124.80001831054688,
+        119.00001525878906
+      ],
+      "min_z_mm": 0.0,
+      "triangles": 190314,
+      "stl_edge_incidence_2": true,
+      "signed_volume_mm3": 246691.48959677317,
+      "sha256": "af273c29325cd49df878d7031a790fa3646975413c57a6f9be38e7d739fc7dc5"
+    },
+    {
+      "source_object": "SFP 端固定臂",
+      "file": "03_SFP_arm_flat_mm.stl",
+      "quantity": 1,
+      "description": "SFP端固定臂，大平面朝下",
+      "rotation_x_degrees": -90,
+      "dimensions_mm": [
+        32.5,
+        108.30002212524414,
+        24.00002098083496
+      ],
+      "min_z_mm": 0.0,
+      "triangles": 758,
+      "stl_edge_incidence_2": true,
+      "signed_volume_mm3": 16753.407777595865,
+      "sha256": "ce260913f45577cbf57e793dd79cb749264c03bd6f844e5f02f3885ae102735e"
+    },
+    {
+      "source_object": "供电端固定臂",
+      "file": "04_power_arm_flat_mm.stl",
+      "quantity": 1,
+      "description": "供电端固定臂，大平面朝下",
+      "rotation_x_degrees": -90,
+      "dimensions_mm": [
+        83.50000762939453,
+        108.30002212524414,
+        24.00002098083496
+      ],
+      "min_z_mm": 0.0,
+      "triangles": 758,
+      "stl_edge_incidence_2": true,
+      "signed_volume_mm3": 24881.71364027484,
+      "sha256": "52f8a7addcff1ebf4085797defe6ae185388967c016d2e7b62b55e4bba8b21cb"
+    }
+  ]
+}

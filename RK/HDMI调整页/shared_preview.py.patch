@@ -1,0 +1,15 @@
+--- shared_preview.py
++++ shared_preview.py
+@@ -41,9 +41,9 @@
+     result_reads=0;result_invalidations=0
+     result_history=deque(maxlen=16)
+     exact_source_frames=0;earlier_source_frames=0;no_result_frames=0
+-    # Eight source frames cover the observed publication tail; sixteen RGB
+-    # slots leave seven slots of scheduling headroom. Never wait for a result.
+-    presentation_delay=8
++    # Four frames leave 66.7 ms at 60 Hz for source-matched results.
++    # Keep presenting on schedule when a result arrives late.
++    presentation_delay=4
+     alignment=PixelDisplayAlignment(budget_ms=6.)
+     trace=DisplayTrace(monitor,source_size=(1920,1080))
+     view.write_report=trace.write_report

@@ -1,0 +1,275 @@
+[
+  {
+    "name": "opening_title",
+    "duration": 2,
+    "start": 0.0,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/opening_title.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v13/opening_title.mp4",
+      "start": 0.0,
+      "length": 2.0,
+      "playback_speed": 1.0,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "chapter_board",
+    "duration": 1.5,
+    "start": 6.0,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/chapter_board.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v12/chapter_board.mp4",
+      "start": 0.0,
+      "length": 1.5,
+      "playback_speed": 1.0,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "chapter_console",
+    "duration": 1.2,
+    "start": 30.5,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/chapter_console.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v12/chapter_console.mp4",
+      "start": 0.0,
+      "length": 1.5,
+      "playback_speed": 1.25,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "isp_methods",
+    "duration": 6,
+    "start": 39.5,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/isp_methods.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/isp_methods.mp4",
+      "start": 0.0,
+      "length": 6.0,
+      "playback_speed": 1.0,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "fewshot_value",
+    "duration": 5.5,
+    "start": 62.2,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/fewshot_value.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v15/fewshot_value.mp4",
+      "start": 0.0,
+      "length": 7.0,
+      "playback_speed": 1.2727272727,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "chapter_logic",
+    "duration": 1.2,
+    "start": 67.7,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/chapter_logic.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/chapter_logic.mp4",
+      "start": 0.0,
+      "length": 1.5,
+      "playback_speed": 1.25,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "compression_pcie",
+    "duration": 5.4,
+    "start": 68.9,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/compression_pcie.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/compression_pcie.mp4",
+      "start": 0.0,
+      "length": 6.5,
+      "playback_speed": 1.2037037037,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "tracking_short",
+    "duration": 3.2,
+    "start": 74.3,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/tracking_short.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/tracking_short.mp4",
+      "start": 0.0,
+      "length": 4.0,
+      "playback_speed": 1.25,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "trigger_short",
+    "duration": 3.2,
+    "start": 77.5,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/trigger_short.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/trigger_short.mp4",
+      "start": 0.0,
+      "length": 4.0,
+      "playback_speed": 1.25,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "dimensions",
+    "duration": 5,
+    "start": 80.7,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/dimensions.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/dimensions.mp4",
+      "start": 0.0,
+      "length": 6.0,
+      "playback_speed": 1.2,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "alerts",
+    "duration": 6.1,
+    "start": 85.7,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/alerts.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v17/alerts.mp4",
+      "start": 0.0,
+      "length": 8.0,
+      "playback_speed": 1.3114754098,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "application",
+    "duration": 2.7,
+    "start": 91.8,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/application.mp4",
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "previous_source": {
+      "file": "剪辑/重剪_v12/application.mp4",
+      "start": 0.0,
+      "length": 3.0,
+      "playback_speed": 1.1111111111,
+      "filters": [
+        "null"
+      ]
+    }
+  },
+  {
+    "name": "end",
+    "duration": 5,
+    "source": {
+      "renderer": "剪辑/重剪_v22_C光学科研/scenes_c.cjs",
+      "geometry": "剪辑/重剪_v21/geometry_b.cjs",
+      "native_render_fps": 60,
+      "frame_step": 0.016666666666666666
+    },
+    "start": 174.8,
+    "file": "剪辑/重剪_v22_C光学科研/scenes/end.mp4",
+    "previous_source": {
+      "file": "剪辑/重剪_v17/end.mp4",
+      "start": 0,
+      "length": 5,
+      "playback_speed": 1,
+      "filters": [
+        "null"
+      ]
+    }
+  }
+]

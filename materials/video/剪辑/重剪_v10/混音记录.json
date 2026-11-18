@@ -1,0 +1,35 @@
+{
+  "output": "剪辑/重剪_v10/FPGA视觉系统_分拣规则与动画优化_v10.mp4",
+  "duration": 162.3,
+  "voice": "zh-CN-YunyangNeural",
+  "voice_target_lufs": -18,
+  "music_target_lufs": -36,
+  "music_level": "constant",
+  "speech_clips": 21,
+  "speech_seconds": 94.35,
+  "voice_measurement": {
+    "input_i": "-25.41",
+    "input_tp": "-1.59",
+    "input_lra": "9.40",
+    "input_thresh": "-35.87",
+    "output_i": "-19.52",
+    "output_tp": "-2.00",
+    "output_lra": "8.70",
+    "output_thresh": "-29.91",
+    "normalization_type": "dynamic",
+    "target_offset": "1.52"
+  },
+  "music_measurement": {
+    "input_i": "-32.74",
+    "input_tp": "-19.11",
+    "input_lra": "0.60",
+    "input_thresh": "-42.81",
+    "output_i": "-35.94",
+    "output_tp": "-22.20",
+    "output_lra": "0.60",
+    "output_thresh": "-45.98",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.06"
+  },
+  "mix_sample_peak_dbfs": -1.53
+}

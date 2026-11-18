@@ -1,0 +1,298 @@
+[
+  {
+    "name": "title",
+    "start": 0,
+    "duration": 4,
+    "file": "剪辑/重剪_v9/title.mp4",
+    "source": {
+      "kind": "animation"
+    }
+  },
+  {
+    "name": "board",
+    "start": 4,
+    "duration": 5,
+    "file": "剪辑/重剪_v9/board.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "板卡移到振动盘.MOV",
+      "start": 0,
+      "length": 5
+    }
+  },
+  {
+    "name": "station",
+    "start": 9,
+    "duration": 11,
+    "file": "剪辑/重剪_v9/station.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "新视频.mp4",
+      "start": 12,
+      "length": 9.7
+    }
+  },
+  {
+    "name": "pose_intro",
+    "start": 20,
+    "duration": 5.5,
+    "file": "剪辑/重剪_v9/pose_intro.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "电阻姿态展示.MOV",
+      "start": 1,
+      "length": 5.5
+    }
+  },
+  {
+    "name": "console_image",
+    "start": 25.5,
+    "duration": 10,
+    "file": "剪辑/重剪_v9/console_image.mp4",
+    "source": {
+      "kind": "syncparts",
+      "parts": [
+        {
+          "kind": "sync",
+          "start": 26,
+          "detail": "crop=1320:270:365:1330",
+          "detail_h": 123,
+          "detail_y": 627,
+          "context": "crop=2440:1330:0:270,scale=600:327",
+          "length": 4
+        },
+        {
+          "kind": "sync",
+          "start": 102,
+          "detail": "crop=1320:450:330:970",
+          "detail_h": 204,
+          "detail_y": 590,
+          "context": "crop=2440:1430:0:0,scale=600:352",
+          "length": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "parameter_short",
+    "duration": 6,
+    "file": "剪辑/重剪_v10/parameter_short.mp4",
+    "source": {
+      "kind": "animation"
+    },
+    "start": 35.5
+  },
+  {
+    "name": "console_annotate",
+    "start": 41.5,
+    "duration": 12,
+    "file": "剪辑/重剪_v9/console_annotate.mp4",
+    "source": {
+      "kind": "composite",
+      "parts": [
+        {
+          "file": "剪辑/控制台全流程，前段ISP配合实拍ISP使用，时间轴对齐（3.25-4.14删除）.mp4",
+          "start": 329,
+          "length": 2.4,
+          "crop": "crop=2080:410:360:310",
+          "scale": "scale=1740:343",
+          "x": 90,
+          "y": 280
+        },
+        {
+          "file": "剪辑/控制台全流程，前段ISP配合实拍ISP使用，时间轴对齐（3.25-4.14删除）.mp4",
+          "start": 331.6,
+          "length": 5.4,
+          "crop": "crop=2440:1410:0:150",
+          "scale": "scale=1490:861",
+          "x": 215,
+          "y": 35
+        },
+        {
+          "file": "剪辑/控制台全流程，前段ISP配合实拍ISP使用，时间轴对齐（3.25-4.14删除）.mp4",
+          "start": 341,
+          "length": 4.2,
+          "crop": "crop=2440:1510:0:0",
+          "scale": "scale=1450:897",
+          "x": 235,
+          "y": 23
+        }
+      ]
+    }
+  },
+  {
+    "name": "console_train",
+    "start": 53.5,
+    "duration": 7,
+    "file": "剪辑/重剪_v9/console_train.mp4",
+    "source": {
+      "kind": "composite",
+      "parts": [
+        {
+          "file": "剪辑/控制台全流程，前段ISP配合实拍ISP使用，时间轴对齐（3.25-4.14删除）.mp4",
+          "start": 496,
+          "length": 4,
+          "crop": "crop=2440:820:0:0",
+          "scale": "scale=1740:584",
+          "x": 90,
+          "y": 183
+        },
+        {
+          "file": "剪辑/控制台全流程，前段ISP配合实拍ISP使用，时间轴对齐（3.25-4.14删除）.mp4",
+          "start": 520,
+          "length": 3,
+          "crop": "crop=2440:1180:0:0",
+          "scale": "scale=1710:826",
+          "x": 105,
+          "y": 53
+        }
+      ]
+    }
+  },
+  {
+    "name": "console_run",
+    "start": 60.5,
+    "duration": 7,
+    "file": "剪辑/重剪_v9/console_run.mp4",
+    "source": {
+      "kind": "console",
+      "file": "部署后的运行结果.mp4",
+      "start": 7,
+      "length": 6.8,
+      "crop": "crop=2440:1050:0:300",
+      "scale": "scale=1740:749",
+      "x": 90,
+      "y": 97
+    }
+  },
+  {
+    "name": "flow_short",
+    "duration": 4,
+    "file": "剪辑/重剪_v10/flow_short.mp4",
+    "source": {
+      "kind": "animation"
+    },
+    "start": 67.5
+  },
+  {
+    "name": "tracking_short",
+    "duration": 7,
+    "file": "剪辑/重剪_v10/tracking_short.mp4",
+    "source": {
+      "kind": "animation"
+    },
+    "start": 71.5
+  },
+  {
+    "name": "trigger_short",
+    "duration": 7,
+    "file": "剪辑/重剪_v10/trigger_short.mp4",
+    "source": {
+      "kind": "animation"
+    },
+    "start": 78.5
+  },
+  {
+    "name": "application",
+    "start": 85.5,
+    "duration": 3,
+    "file": "剪辑/重剪_v9/application.mp4",
+    "source": {
+      "kind": "animation"
+    }
+  },
+  {
+    "name": "app_hdmi",
+    "start": 88.5,
+    "duration": 7,
+    "file": "剪辑/重剪_v9/app_hdmi.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "类别分拣 (2).mp4",
+      "start": 0.2,
+      "length": 7
+    }
+  },
+  {
+    "name": "app_pose",
+    "start": 95.5,
+    "duration": 10.5,
+    "file": "剪辑/重剪_v9/app_pose.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "姿态分拣.mp4",
+      "start": 0.3,
+      "length": 10.5
+    }
+  },
+  {
+    "name": "app_track",
+    "start": 106.0,
+    "duration": 6.8,
+    "file": "剪辑/重剪_v9/app_track.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "0-7s可用.MP4",
+      "start": 0.1,
+      "length": 6.8
+    }
+  },
+  {
+    "name": "app_execute",
+    "start": 112.8,
+    "duration": 24,
+    "file": "剪辑/重剪_v9/app_execute.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "30-56s可用.MP4",
+      "start": 32,
+      "length": 24
+    }
+  },
+  {
+    "name": "app_collect",
+    "start": 136.8,
+    "duration": 8.5,
+    "file": "剪辑/重剪_v10/app_collect.mp4",
+    "source": {
+      "kind": "composite",
+      "parts": [
+        {
+          "file": "剪辑/类别分拣结果展示.mp4",
+          "start": 0.2,
+          "length": 5.1
+        },
+        {
+          "file": "剪辑/类别分拣结果展示.mp4",
+          "start": 6.6,
+          "length": 3.4
+        }
+      ]
+    }
+  },
+  {
+    "name": "app_compare",
+    "start": 145.3,
+    "duration": 12,
+    "file": "剪辑/重剪_v11/app_compare.mp4",
+    "source": {
+      "kind": "single_view",
+      "file": "剪辑/类别分拣.mp4",
+      "start": 0,
+      "length": 12,
+      "crop": "crop=2000:1320:80:520",
+      "scale": "scale=1300:858",
+      "x": 310,
+      "y": 20
+    }
+  },
+  {
+    "name": "end",
+    "start": 157.3,
+    "duration": 5,
+    "file": "剪辑/重剪_v9/end.mp4",
+    "source": {
+      "kind": "animation"
+    }
+  }
+]

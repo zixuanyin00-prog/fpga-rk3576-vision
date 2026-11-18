@@ -1,0 +1,18 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Microsoft YaHei,44,&H00FFFFFF,&H00FFFFFF,&H00202020,&H70000000,0,0,0,0,100,100,0.5,0,1,1.7,0.7,2,100,100,44,1
+Style: Title,Microsoft YaHei,66,&H00F3F3ED,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,1,0,1,0,0,5,90,90,0,1
+Style: Small,Microsoft YaHei,30,&H00BFDAC0,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,90,90,0,1
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.58,0:00:05.24,Default,,0,0,0,,{\fad(120,120)}同一工件连续出现在多帧中，每次识别都是一次观测。
+Dialogue: 0,0:00:05.58,0:00:10.26,Default,,0,0,0,,{\fad(120,120)}结合位置和重叠关系，跨帧关联同一工件，延续身份。
+Dialogue: 0,0:00:10.58,0:00:15.03,Default,,0,0,0,,{\fad(120,120)}连续积累姿态观测，用多帧一致性减少单帧波动。
+Dialogue: 0,0:00:15.58,0:00:20.07,Default,,0,0,0,,{\fad(120,120)}类别确认并越过触发线后，按设定输出控制脉冲。
+Dialogue: 0,0:00:20.58,0:00:24.54,Default,,0,0,0,,{\fad(120,120)}同一身份保留过线处理状态，减少重复触发。

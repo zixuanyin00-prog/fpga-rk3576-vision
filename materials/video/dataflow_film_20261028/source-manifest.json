@@ -1,0 +1,81 @@
+{
+  "architecture_basis": [
+    {
+      "path": "three_stream_20261028/README.md",
+      "sha256": "76d767ff9f1bce7dd33bdaa96fe5bfdf656fa09512b123e144b87bf4ca798f34"
+    },
+    {
+      "path": "three_stream_20261028/host/ABI.md",
+      "sha256": "b52726331ae81be6329c390444790ceb4577a00d86f2a81e7f0fa3c5f864f658"
+    },
+    {
+      "path": "three_stream_20261028/runtime/full_roi_runtime.py",
+      "sha256": "a772d08623a2150d24405cc2aed56db04e5cd6b7de44f036c1cf707a42fd17e0"
+    },
+    {
+      "path": "three_stream_20261028/runtime/rect_pipeline.py",
+      "sha256": "ce064110a36d54b0da17f6c7cab5fc51d182fab677e33edcd46fed5bc6afa052"
+    },
+    {
+      "path": "VisionTrainer/README.md",
+      "sha256": "94902595f9eb633c5d1e8132522465aa651842e1a8892d345a11131c20f63d45"
+    },
+    {
+      "path": "VisionTrainer/console_worker.py",
+      "sha256": "4bc492e72218dd8b9ebdab1d07a011d86c2d21a170da5407fde07cf99b28c714"
+    },
+    {
+      "path": "VisionTrainer/console_workflow.py",
+      "sha256": "e3c36d97ee5c839555536391dcf1e87915ff187158cfe40aac79a3a0d5f1ea2f"
+    },
+    {
+      "path": "VisionTrainer/console_model_deploy.py",
+      "sha256": "2f69efcdf70a471ca7daf15c1e0504c1f95984a45f1ab6218c0531449104b745"
+    }
+  ],
+  "film_sources": [
+    {
+      "path": "renderer.js",
+      "sha256": "64d4d30eece57057503180f816c6df3d3c6789964074afb541b1c1fd41f9eb0c"
+    },
+    {
+      "path": "render.cjs",
+      "sha256": "96a813f0d676f8b59f6b23594bde6faf6ead1f35182adf69117720ef681f3488"
+    },
+    {
+      "path": "preview.html",
+      "sha256": "764ca12ca86714e89df34e209744bc15c07a4c3ae2c70dcdab264e4f5c281a99"
+    },
+    {
+      "path": "audio.py",
+      "sha256": "8fa495d360797651435d43bbe49edc45cba19201ae603053daa338d82d7a52db"
+    },
+    {
+      "path": "verify-preview.cjs",
+      "sha256": "c153bc70baae55044dad469c40d5cb6916b917c57ca7db13b456355597ecf870"
+    },
+    {
+      "path": "finish.py",
+      "sha256": "7c81660a62b9a745b2e1b60e760c215dda9b776d44492cba3f1afef68e10c78d"
+    },
+    {
+      "path": "package.json",
+      "sha256": "3ef5202e24b1737fbf48a1489eb05a845edac545e8d653dfba647f7ccfd9c217"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "f3467d9ede1169594a6deea79652841e11a857607f5f7f6f1675723e182c18a1"
+    },
+    {
+      "path": "README.md",
+      "sha256": "1c164ee76182f19db46f010b9bf420a2174a86a8b6ceed6829b9096cba0a638a"
+    },
+    {
+      "path": "soundtrack.m4a",
+      "sha256": "e033a575ddb48b3ab9e91d57fae6adc1e5221a1506e154c3aa839faa93218893"
+    }
+  ],
+  "model_weights_used": false,
+  "board_connected": false,
+  "generated_images_are_schematic": true
+}

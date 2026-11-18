@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "scene": "intro",
+    "text": "我们将小样本学习与高速识别结合，\n构建可快速部署的工件分拣系统。",
+    "startMs": 430,
+    "endMs": 6440
+  },
+  {
+    "id": 2,
+    "scene": "rk_board",
+    "text": "RK3576，负责模型识别和显示。",
+    "startMs": 7780,
+    "endMs": 11270
+  },
+  {
+    "id": 3,
+    "scene": "fpga_board",
+    "text": "PH1A90，负责采集和预处理。",
+    "startMs": 12880,
+    "endMs": 16120
+  },
+  {
+    "id": 4,
+    "scene": "control_board",
+    "text": "自制电磁阀转接板，接收脉冲执行筛选。",
+    "startMs": 18180,
+    "endMs": 21810
+  },
+  {
+    "id": 5,
+    "scene": "station",
+    "text": "通过 PCIe 转接卡，实现双端高速互联。",
+    "startMs": 23380,
+    "endMs": 27460
+  },
+  {
+    "id": 25,
+    "scene": "console_intro",
+    "text": "我们还制作了配套控制台，把采集、训练和部署串成一套流程。",
+    "startMs": 29430,
+    "endMs": 35180
+  },
+  {
+    "id": 6,
+    "scene": "console_image",
+    "text": "控制台经 RK 下发参数，FPGA 回传状态；\n右侧屏幕呈现对应的成像效果。",
+    "startMs": 35880,
+    "endMs": 42970
+  },
+  {
+    "id": 7,
+    "scene": "isp_methods",
+    "text": "还实现白平衡、高斯平滑、直方图映射、\n前景分割、形态学和边缘提取。",
+    "startMs": 42980,
+    "endMs": 49740
+  },
+  {
+    "id": 8,
+    "scene": "console_annotate",
+    "text": "标注页用已确认样本训练并选定画框助手，\n一键生成候选框，再检查位置、指定类别。",
+    "startMs": 51780,
+    "endMs": 59550
+  },
+  {
+    "id": 9,
+    "scene": "console_train",
+    "text": "训练页完成训练和模型转换，并用现场图像检查识别结果。",
+    "startMs": 63780,
+    "endMs": 69190
+  },
+  {
+    "id": 10,
+    "scene": "console_run",
+    "text": "运行页监控实时画面、识别结果和设备状态，供现场检查。",
+    "startMs": 70780,
+    "endMs": 76320
+  },
+  {
+    "id": 24,
+    "scene": "fewshot_value",
+    "text": "本次用十五张原图建立三类姿态模型，可通过控制台快速部署。",
+    "startMs": 77330,
+    "endMs": 82810
+  },
+  {
+    "id": 11,
+    "scene": "compression_pcie",
+    "text": "另提供无损、有损双模式压缩，经 PCIe 与 RK 高速互通。",
+    "startMs": 85130,
+    "endMs": 90940
+  },
+  {
+    "id": 12,
+    "scene": "tracking_short",
+    "text": "跨帧关联，连续观测确认类别。",
+    "startMs": 91530,
+    "endMs": 94630
+  },
+  {
+    "id": 13,
+    "scene": "trigger_short",
+    "text": "真实过线后，按类别触发控制脉冲。",
+    "startMs": 95530,
+    "endMs": 98740
+  },
+  {
+    "id": 26,
+    "scene": "dimensions",
+    "text": "逐目标输出原生坐标检测框，以像素量化包围框宽高。",
+    "startMs": 99580,
+    "endMs": 104300
+  },
+  {
+    "id": 27,
+    "scene": "alerts",
+    "text": "异常状态在边缘端提示留证，支持网口回传和可选 SD 卡保存。",
+    "startMs": 105580,
+    "endMs": 111510
+  },
+  {
+    "id": 14,
+    "scene": "pose_proof",
+    "text": "姿态分拣，自动剔除白色反面电阻。",
+    "startMs": 116580,
+    "endMs": 119960
+  },
+  {
+    "id": 30,
+    "scene": "pose_fast",
+    "text": "在连续送料中，系统按设定姿态自动筛选。",
+    "startMs": 120380,
+    "endMs": 124260
+  },
+  {
+    "id": 17,
+    "scene": "pose_fast",
+    "text": "多目标并行识别，各组测试召回率为99.997%。",
+    "startMs": 125880,
+    "endMs": 131110
+  },
+  {
+    "id": 28,
+    "scene": "pose_slow",
+    "text": "放慢看，检测框跟随工件，跨帧关联后确认类别。",
+    "startMs": 137680,
+    "endMs": 142290
+  },
+  {
+    "id": 29,
+    "scene": "pose_inference",
+    "text": "独立识别，类别与计数持续更新。",
+    "startMs": 143130,
+    "endMs": 146280
+  },
+  {
+    "id": 15,
+    "scene": "category_material",
+    "text": "再看类别检测，剔除473，保留1004。",
+    "startMs": 147180,
+    "endMs": 151220
+  },
+  {
+    "id": 18,
+    "scene": "category_monitor",
+    "text": "不同型号对应不同类别，按设定规则执行分拣。",
+    "startMs": 153180,
+    "endMs": 157220
+  },
+  {
+    "id": 19,
+    "scene": "category_action",
+    "text": "类别确认并实际过线后，电磁阀自动剔除473。",
+    "startMs": 158730,
+    "endMs": 162980
+  },
+  {
+    "id": 21,
+    "scene": "category_action",
+    "text": "实测分拣速度达到每分钟1200件。",
+    "startMs": 163880,
+    "endMs": 167350
+  },
+  {
+    "id": 22,
+    "scene": "category_collect",
+    "text": "1004继续通过，进入收集杯。",
+    "startMs": 168830,
+    "endMs": 171670
+  },
+  {
+    "id": 23,
+    "scene": "end",
+    "text": "双向调参、小样本学习、快速部署，支撑高速分拣。",
+    "startMs": 174930,
+    "endMs": 179700
+  }
+]

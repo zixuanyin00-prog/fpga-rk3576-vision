@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "scene": "pose",
+    "text": "以电阻为例，先辨别正反面和数字方向，\n为后续取放、筛选提供类别信息。",
+    "startMs": 5580,
+    "endMs": 12390,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 50,
+    "scene": "value",
+    "text": "姿态标签可以按任务自定义，\n不同型号的电阻，也能设为不同识别类别。",
+    "startMs": 13580,
+    "endMs": 19410,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 51,
+    "scene": "value",
+    "text": "结合后续控制器，按类别触发分拣，\n面向高速、高精度的自动分类应用。",
+    "startMs": 20880,
+    "endMs": 27410,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 2,
+    "scene": "board",
+    "text": "这套 FPGA 系统，连接成像、识别、连续确认和外接控制。",
+    "startMs": 29480,
+    "endMs": 34550,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 3,
+    "scene": "new_run",
+    "text": "振动送料时，工件位置不断变化，\n还要分清连续画面中的同一目标。",
+    "startMs": 35580,
+    "endMs": 41330,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 4,
+    "scene": "new_pan",
+    "text": "相机图像进入 FPGA，先做采集和硬件预处理。",
+    "startMs": 43480,
+    "endMs": 48110,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 5,
+    "scene": "new_pan",
+    "text": "RK 再完成识别与显示，把图像送入姿态判断。",
+    "startMs": 48580,
+    "endMs": 52760,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 6,
+    "scene": "parameter",
+    "text": "小型工件特征细微，光照与成像设置会影响图像细节。",
+    "startMs": 54480,
+    "endMs": 59830,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 7,
+    "scene": "parameter",
+    "text": "控制台经 RK 写入 FPGA 配置，再回读状态，确认参数生效。",
+    "startMs": 60180,
+    "endMs": 65650,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 8,
+    "scene": "parameter",
+    "text": "配置下发、状态回读，形成双向控制，\n让处理参数可以现场调整。",
+    "startMs": 65980,
+    "endMs": 71410,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 9,
+    "scene": "isp_overview",
+    "text": "先调整成像增益，让偏暗的工件显现出更多表面细节。",
+    "startMs": 72580,
+    "endMs": 77690,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 10,
+    "scene": "isp_overview",
+    "text": "增益变化，HDMI 画面随之变亮，\n再检查工件文字是否容易区分。",
+    "startMs": 79380,
+    "endMs": 85650,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 11,
+    "scene": "isp_overview",
+    "text": "调参围绕识别需要展开，让模型从清晰、\n可辨认的图像中学习特征。",
+    "startMs": 86580,
+    "endMs": 92640,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 12,
+    "scene": "isp_processing",
+    "text": "亮度合适后，再选择适合工件特征的图像处理功能。",
+    "startMs": 94580,
+    "endMs": 98950,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 13,
+    "scene": "isp_processing",
+    "text": "各个处理环节可以独立开关，对比处理前后的边缘和纹理。",
+    "startMs": 101380,
+    "endMs": 106220,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 14,
+    "scene": "isp_processing",
+    "text": "边缘响应反映灰度变化，\n可以观察工件轮廓，与背景分离得怎样。",
+    "startMs": 108580,
+    "endMs": 113860,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 15,
+    "scene": "isp_processing",
+    "text": "彩色边缘叠加，突出工件轮廓。",
+    "startMs": 116080,
+    "endMs": 119010,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 16,
+    "scene": "isp_processing",
+    "text": "效果确认后，固定训练采图参数，\n让同一批样本保持一致的成像条件。",
+    "startMs": 119980,
+    "endMs": 125880,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 17,
+    "scene": "capture",
+    "text": "先用已确认的样本训练独立画框助手，\n训练完成后，再选定本次使用的版本。",
+    "startMs": 128580,
+    "endMs": 134610,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 19,
+    "scene": "candidates",
+    "text": "选定画框助手后，点击自动画框，批量生成目标候选框。",
+    "startMs": 136480,
+    "endMs": 141280,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 20,
+    "scene": "candidates",
+    "text": "这些候选框自动定位工件，接着再检查位置、指定类别。",
+    "startMs": 142180,
+    "endMs": 147010,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 22,
+    "scene": "confirm",
+    "text": "检查候选框，指定姿态类别，再确认图像并进入下一张。",
+    "startMs": 148580,
+    "endMs": 153540,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 23,
+    "scene": "train",
+    "text": "这次用十五张现场原图，\n建立三类姿态样本，学习工件外观差异。",
+    "startMs": 156580,
+    "endMs": 162270,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 24,
+    "scene": "train",
+    "text": "训练后，转换为 RK 使用的八位整数量化模型，\n整套流程都在控制台完成。",
+    "startMs": 162980,
+    "endMs": 169390,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 25,
+    "scene": "inference",
+    "text": "采集区域保留原生 RGB 像素，直接送入模型推理。",
+    "startMs": 170580,
+    "endMs": 175220,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 26,
+    "scene": "inference",
+    "text": "模型输出经过解码，得到工件位置和姿态类别，\n用于显示与后续控制。",
+    "startMs": 176980,
+    "endMs": 183080,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 28,
+    "scene": "test",
+    "text": "用现场图像检查结果，逐个对照目标的位置和姿态。",
+    "startMs": 184580,
+    "endMs": 188950,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 29,
+    "scene": "test",
+    "text": "判断是否匹配具体工件，再确认本次模型能否用于当前任务。",
+    "startMs": 190080,
+    "endMs": 195300,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 30,
+    "scene": "deploy",
+    "text": "训练模型用于设备端识别，\n运行入口同时集成 HDMI 监控和参数操作。",
+    "startMs": 196580,
+    "endMs": 202630,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 31,
+    "scene": "deploy",
+    "text": "现场人员在同一控制台，检查成像设置、识别结果和设备状态。",
+    "startMs": 202980,
+    "endMs": 208700,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 32,
+    "scene": "async",
+    "text": "预览需要持续接收新画面，模型推理则有自己的计算过程。",
+    "startMs": 210580,
+    "endMs": 215570,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 33,
+    "scene": "async",
+    "text": "显示与推理解耦，显示持续运行，识别链路异步取图。",
+    "startMs": 216880,
+    "endMs": 221590,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 34,
+    "scene": "async",
+    "text": "识别完成后更新结果缓存，再把结果交给显示和控制环节。",
+    "startMs": 223280,
+    "endMs": 228670,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 35,
+    "scene": "tracking",
+    "text": "同一工件连续出现在多帧中，每次识别都是一次观测。",
+    "startMs": 230580,
+    "endMs": 235240,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 36,
+    "scene": "tracking",
+    "text": "结合位置和重叠关系，跨帧关联同一工件，延续身份。",
+    "startMs": 235580,
+    "endMs": 240260,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 37,
+    "scene": "tracking",
+    "text": "连续积累姿态观测，用多帧一致性减少单帧波动。",
+    "startMs": 240580,
+    "endMs": 245030,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 38,
+    "scene": "tracking",
+    "text": "类别确认并越过触发线后，按设定输出控制脉冲。",
+    "startMs": 245580,
+    "endMs": 250070,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 39,
+    "scene": "tracking",
+    "text": "同一身份保留过线处理状态，减少重复触发。",
+    "startMs": 250580,
+    "endMs": 254540,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 40,
+    "scene": "hardware",
+    "text": "按类别触发控制脉冲，再联动控制器和电磁阀，用于自动分拣。",
+    "startMs": 256580,
+    "endMs": 262280,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 41,
+    "scene": "area",
+    "text": "图像处理落实到 FPGA，安路工具报告记录了硬件资源占用。",
+    "startMs": 264580,
+    "endMs": 269750,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 42,
+    "scene": "area",
+    "text": "报告显示，六输入查找表占用百分之七十三点五七。",
+    "startMs": 270080,
+    "endMs": 274520,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 43,
+    "scene": "timing",
+    "text": "快慢工艺角静态时序分析，验证信号能否按时传递。",
+    "startMs": 276580,
+    "endMs": 281110,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 44,
+    "scene": "timing",
+    "text": "建立与保持裕量都为正，覆盖率百分之九十九点六七。",
+    "startMs": 282080,
+    "endMs": 286490,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 45,
+    "scene": "collage",
+    "text": "图像经 FPGA 预处理，再由 RK 定位识别，连续确认。",
+    "startMs": 288480,
+    "endMs": 293750,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 46,
+    "scene": "collage",
+    "text": "视觉结果连接执行设备，控制台贯穿调参、训练和运行监控。",
+    "startMs": 294180,
+    "endMs": 299600,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 47,
+    "scene": "collage",
+    "text": "双向调参、原生图像推理和连续确认，共同形成视觉判断。",
+    "startMs": 299980,
+    "endMs": 305470,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 48,
+    "scene": "collage",
+    "text": "从识别姿态到区分型号，同一套视觉流程，\n服务不同工件的分类需求。",
+    "startMs": 305780,
+    "endMs": 311440,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "id": 49,
+    "scene": "end",
+    "text": "让视觉判断，服务自动分拣。",
+    "startMs": 312500,
+    "endMs": 317500,
+    "timestampMs": null,
+    "confidence": null
+  }
+]

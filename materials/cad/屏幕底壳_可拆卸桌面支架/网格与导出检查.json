@@ -1,0 +1,167 @@
+{
+  "parameters": {
+    "screen_envelope_xy": [
+      233.0,
+      160.0
+    ],
+    "screen_mount_pitch_xy_UNCONFIRMED": [
+      227.0,
+      151.0
+    ],
+    "mount_hole_in_photo": 3.0,
+    "screen_mount_slot_diameter": 3.2,
+    "screen_mount_slot_travel_x": 4.0,
+    "cavity_xy": [
+      236.2,
+      162.2
+    ],
+    "wall": 3.0,
+    "floor": 3.0,
+    "mounting_plane_z_UNCONFIRMED": 32.0,
+    "rear_vent_slot_width": 4.0,
+    "rear_vent_slot_length": 21.0,
+    "stand_tilt_from_vertical_degrees": 15.0,
+    "stand_attachment_pitch_xy": [
+      82.0,
+      40.0
+    ],
+    "stand_base_footprint_xy": [
+      184.0,
+      145.0
+    ],
+    "shell_back_center_above_desk": 111.0,
+    "side_service_opening_length": 80.0,
+    "top_bottom_service_opening_length": 150.0,
+    "service_opening_sill_z": 12.0,
+    "port_positions": "UNKNOWN: four broad open-top cable bays; revise from physical rear/side measurements",
+    "fit_status": "DIMENSIONAL DRAFT: not physically printed, fitted, load- or thermally-tested"
+  },
+  "rear_vent_slots": 72,
+  "parts": [
+    {
+      "object": "01_底壳_整件_242.2x168.2x32mm",
+      "file": "01_shell_whole_mm.stl",
+      "quantity": 1,
+      "print_dimensions_mm": [
+        242.1999969482422,
+        168.1999969482422,
+        32.000022888183594
+      ],
+      "triangles": 17198,
+      "connected_components": 1,
+      "closed_manifold": true,
+      "stl_edge_incidence_2": true,
+      "volume_mm3": 179428.27076583795,
+      "estimated_solid_PETG_mass_g": 227.87390387261422,
+      "sha256": "4d67a96775e289422bb52b4e4db771140b617d9383deca3d0cd5a3ac2a938222"
+    },
+    {
+      "object": "02_底壳_左半",
+      "file": "02_shell_left_mm.stl",
+      "quantity": 1,
+      "print_dimensions_mm": [
+        121.0999984741211,
+        168.1999969482422,
+        32.000022888183594
+      ],
+      "triangles": 8638,
+      "connected_components": 1,
+      "closed_manifold": true,
+      "stl_edge_incidence_2": true,
+      "volume_mm3": 89714.13525173909,
+      "estimated_solid_PETG_mass_g": 113.93695176970866,
+      "sha256": "127eee827c2e08872566e7b0a01e3ad7074706468e7a711c13aeb49dd53dc77f"
+    },
+    {
+      "object": "03_底壳_右半",
+      "file": "03_shell_right_mm.stl",
+      "quantity": 1,
+      "print_dimensions_mm": [
+        121.0999984741211,
+        168.1999969482422,
+        32.000022888183594
+      ],
+      "triangles": 8668,
+      "connected_components": 1,
+      "closed_manifold": true,
+      "stl_edge_incidence_2": true,
+      "volume_mm3": 89714.13541671442,
+      "estimated_solid_PETG_mass_g": 113.93695197922732,
+      "sha256": "fb5833a9c1fc32b1871c66d7a3e7b42b00937748c2ea6882f9063e5f010ae1d1"
+    },
+    {
+      "object": "04_底壳内连接片_打印2件",
+      "file": "04_shell_join_bridge_PRINT_2_mm.stl",
+      "quantity": 2,
+      "print_dimensions_mm": [
+        68.0,
+        16.0,
+        4.0
+      ],
+      "triangles": 564,
+      "connected_components": 1,
+      "closed_manifold": true,
+      "stl_edge_incidence_2": true,
+      "volume_mm3": 4248.20643304553,
+      "estimated_solid_PETG_mass_g": 5.395222169967823,
+      "sha256": "a38fe32f42e51a37d35ef076ac951e0df2e3bd2c9ac61092ddf633fe9bfabbbe"
+    },
+    {
+      "object": "05_桌面支架_右侧",
+      "file": "05_stand_right_SIDE_DOWN_mm.stl",
+      "quantity": 1,
+      "print_dimensions_mm": [
+        139.39340209960938,
+        135.0,
+        22.0000057220459
+      ],
+      "triangles": 1044,
+      "connected_components": 1,
+      "closed_manifold": true,
+      "stl_edge_incidence_2": true,
+      "volume_mm3": 76734.09137564905,
+      "estimated_solid_PETG_mass_g": 97.4522960470743,
+      "sha256": "700afa425fd52a6406f2bbca864205aa1a9b6cfeb3349f28851b66548bd27116"
+    },
+    {
+      "object": "06_桌面支架_左侧",
+      "file": "06_stand_left_SIDE_DOWN_mm.stl",
+      "quantity": 1,
+      "print_dimensions_mm": [
+        139.39340209960938,
+        135.0,
+        22.000011444091797
+      ],
+      "triangles": 1044,
+      "connected_components": 1,
+      "closed_manifold": true,
+      "stl_edge_incidence_2": true,
+      "volume_mm3": 76734.08109152026,
+      "estimated_solid_PETG_mass_g": 97.45228298623074,
+      "sha256": "a878a288144d6a6d5016ffb088fe8ad8ca2961e3ff31c83f4f9a8d41a1ea4a35"
+    },
+    {
+      "object": "07_桌面加宽底座_184x145mm",
+      "file": "07_stand_base_mm.stl",
+      "quantity": 1,
+      "print_dimensions_mm": [
+        184.0,
+        145.0,
+        6.0
+      ],
+      "triangles": 3810,
+      "connected_components": 1,
+      "closed_manifold": true,
+      "stl_edge_incidence_2": true,
+      "volume_mm3": 87896.56941310424,
+      "estimated_solid_PETG_mass_g": 111.62864315464239,
+      "sha256": "873d6561ab67aee80bb6b67efa0a32329245d2eb0a4c339ca899834844fb45ab"
+    }
+  ],
+  "limitations": [
+    "No physical print, fit, stability or thermal verification",
+    "Unknown screen rear depth and cable/connector positions",
+    "Mount pitch 227x151 inferred from front photo; must be measured",
+    "No exhaustive self-intersection test or printer-specific slicing"
+  ]
+}

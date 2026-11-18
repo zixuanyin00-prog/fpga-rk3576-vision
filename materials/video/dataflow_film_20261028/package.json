@@ -1,0 +1,22 @@
+{
+  "name": "dataflow_film_20261028",
+  "version": "1.0.0",
+  "description": "Deterministic 100-second industrial-vision dataflow film and interactive preview",
+  "main": "renderer.js",
+  "scripts": {
+    "stills": "node render.cjs --stills --width 1920",
+    "render": "node render.cjs --width 3840 --fps 60 --output dataflow-v1-4k60.mp4",
+    "verify:preview": "node verify-preview.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.13"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
+  },
+  "private": true
+}

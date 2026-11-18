@@ -1,0 +1,384 @@
+--- native_view.py
++++ native_view.py
+@@ -7,23 +7,60 @@
+ import apple_glass
+ from PIL import Image,ImageDraw,ImageFont
+ from resistor_view import ScreenView as Widgets,BG
+-from pose_chart import ChartState, draw_chart, short_number
++from pose_chart import ChartState, draw_chart, draw_display_chart, short_number
+ 
+ _ui_raw=None
+ _ui_capacity=0
+ _ui_painter=None
++_ADJUSTMENT_MARKER = Path('/run/rk-hdmi-adjust/adjustment-active')
++_PREVIEW_CONTROL = Path('/run/rk-hdmi-adjust/preview-controls.json')
++_COMPACT_SIZE = (1024, 600)
++_DISPLAY_PREVIEW = (16, 100, 704, 396)
++_ADJUSTMENT_PREVIEW = (24, 252, 544, 306)
++_DASHBOARD_BACKGROUND = (13, 20, 29, 255)
++_DASHBOARD_TEXT = (236, 244, 249, 255)
++_DASHBOARD_MUTED = (164, 181, 197, 255)
++_DASHBOARD_EDGE = (45, 62, 78, 255)
++_DASHBOARD_TEAL = (125, 235, 203, 255)
++_PREVIEW_CROPS = {1: None, 1.5: (320, 180, 1280, 720), 2: (480, 270, 960, 540)}
++
++
++def read_preview_control():
++    try:
++        settings = json.loads(_PREVIEW_CONTROL.read_text(encoding='utf-8'))
++    except (FileNotFoundError, ValueError):
++        return 1, False
++    if not isinstance(settings, dict):
++        return 1, False
++    zoom, fullscreen = settings.get('zoom'), settings.get('fullscreen')
++    if type(zoom) not in (int, float) or zoom not in _PREVIEW_CROPS or type(fullscreen) is not bool:
++        return 1, False
++    return zoom, fullscreen
+ 
+ def hdmi_mode(listing):
+-    """Read the selected HDMI mode and active DSI outputs from xrandr --current."""
+-    match=re.search(r'^HDMI-1 connected[^\n]*(?:\n[ \t].*)*',listing,re.M)
+-    if match is None:raise RuntimeError('HDMI-1 is not connected')
+-    lines=match.group(0).splitlines()
+-    rates=next((line.split()[1:] for line in lines[1:] if line.split() and line.split()[0]=='1920x1080'),[])
+-    supported=any(abs(float(rate.rstrip('*+'))-60)<.005 for rate in rates)
+-    current=next((float(rate.rstrip('*+')) for rate in rates if '*' in rate),None)
+-    correct=bool(re.match(r'^HDMI-1 connected primary 1920x1080\+0\+0(?:\s|$)',lines[0])) and current is not None and abs(current-60)<.005
+-    active_dsi=re.findall(r'^(DSI-\S+) connected(?: primary)? \d+x\d+[+-]\d+[+-]\d+',listing,re.M)
+-    return correct,supported,active_dsi
++    """Prefer the small panel's EDID mode; retain 1080p60 for other displays."""
++    match = re.search(r'^HDMI-1 connected[^\n]*(?:\n[ \t].*)*', listing, re.M)
++    if match is None:
++        raise RuntimeError('HDMI-1 is not connected')
++    header, *lines = match.group(0).splitlines()
++    rates = {}
++    for line in lines:
++        words = line.split(maxsplit=1)
++        if len(words) == 2:
++            mode, mode_rates = words
++            rates[mode] = re.findall(r'(\d+(?:\.\d+)?)[ \t]*([*+]*)', mode_rates)
++    mode, refresh = '1920x1080', '60.00'
++    compact_refresh = next((rate for rate, flags in rates.get('1024x600', ())
++                            if '+' in flags and abs(float(rate) - 60) < .10), None)
++    if compact_refresh:
++        mode, refresh = '1024x600', compact_refresh
++    mode_rates = rates.get(mode, ())
++    supported = any(float(rate) == float(refresh) for rate, _ in mode_rates)
++    current = any(float(rate) == float(refresh) and '*' in flags for rate, flags in mode_rates)
++    correct = current and bool(re.match(rf'^HDMI-1 connected primary {mode}\+0\+0(?:\s|$)', header))
++    active_dsi = re.findall(r'^(DSI-\S+) connected(?: primary)? \d+x\d+[+-]\d+[+-]\d+', listing, re.M)
++    return mode, refresh, correct, supported, active_dsi
++
+ 
+ def init_ui(raw,capacity):
+     global _ui_raw,_ui_capacity,_ui_painter
+@@ -47,15 +84,16 @@
+         self.panel_state={};self.current_state={};self.ui_error='';self.metrics={};self.fonts=apple_glass.fonts()
+         monitor=os.environ['VISION_MONITOR'];listing=subprocess.check_output(['xrandr','--current'],text=True)
+         if monitor=='HDMI-1':
+-            correct,supported,active_dsi=hdmi_mode(listing)
+-            if not supported:raise RuntimeError('HDMI-1 must support 1920x1080 at60Hz')
++            mode,refresh,correct,supported,active_dsi=hdmi_mode(listing)
++            if not supported:raise RuntimeError(f'HDMI-1 must support {mode} at {refresh} Hz')
+             if not correct or active_dsi:
+-                command=['xrandr','--output',monitor,'--mode','1920x1080','--rate','60','--pos','0x0','--primary']
++                command=['xrandr','--output',monitor,'--mode',mode,'--rate',refresh,'--pos','0x0','--primary']
+                 for output in active_dsi:command.extend(['--output',output,'--off'])
+                 subprocess.check_call(command)
+                 listing=subprocess.check_output(['xrandr','--current'],text=True)
+-                correct,_,active_dsi=hdmi_mode(listing)
+-                if not correct or active_dsi:raise RuntimeError('HDMI1080p60 mode readback failed')
++                verified_mode,verified_refresh,correct,_,active_dsi=hdmi_mode(listing)
++                if not correct or active_dsi or (verified_mode,verified_refresh)!=(mode,refresh):
++                    raise RuntimeError(f'HDMI {mode} at {refresh} Hz mode readback failed')
+         record=next(m for m in re.findall(r'^(\S+) connected(?: primary)? (\d+)x(\d+)\+(\d+)\+(\d+)',listing,re.M) if m[0]==monitor)
+         _,w,h,x,y=record;self.w,self.h,self.x,self.y=map(int,(w,h,x,y));self.origin=(self.x,self.y,self.w,self.h)
+         self.full=True;self.monitor=monitor;self.window_geometry={};self.cache={};self.rasterizations=0
+@@ -66,23 +104,39 @@
+              'rv_resize':([C.c_void_p]+[C.c_int]*4,C.c_int),'rv_event':([C.c_void_p,C.c_void_p],C.c_int),
+              'rv_cursor':([C.c_void_p,C.c_int],None),'rv_error':([C.c_void_p],C.c_char_p),'rv_stats':([C.c_void_p,C.c_void_p],None),
+              'rv_show':([C.c_void_p]*3+[C.c_ulonglong,C.c_uint]+[C.c_int]*7+[C.c_void_p]*2,C.c_int),
+-             'rv_show_overlay_v1':([C.c_void_p]*3+[C.c_ulonglong,C.c_uint]+[C.c_int]*7+[C.c_void_p]*4,C.c_int)}
++             'rv_show_crop_v1':([C.c_void_p]*3+[C.c_ulonglong,C.c_uint]+[C.c_int]*7+[C.c_void_p]*5,C.c_int)}
+         for name,(args,result) in sig.items():
+             fn=getattr(self.lib,name);fn.argtypes=args;fn.restype=result
+         self.handle=self.lib.rv_open(self.x,self.y,self.w,self.h)
+         if not self.handle:raise RuntimeError('RGA/X11 display initialization failed')
+         context=mp.get_context('spawn')
+-        self.ui_capacity=max(self.w*self.h,1280*800)*4
++        self.ui_capacity=self.w*self.h*4
+         self.ui_raw=context.RawArray(C.c_ubyte,self.ui_capacity*2)
+         self.pool=ProcessPoolExecutor(max_workers=1,mp_context=context,initializer=init_ui,initargs=(self.ui_raw,self.ui_capacity))
+         self.ui_slot=0;self.ui_pointer=C.addressof(self.ui_raw)
+         np.frombuffer(self.ui_raw,np.uint8,count=self.w*self.h*4).reshape(-1,4)[:]=[31,20,12,255]
+         self.future=None;self.built_key=None;self.ui_serial=1;self.ui_render_due=0.
+-        self.area=self.layout(self.w,self.h)[0]
++        self.adjustment_active = False
++        self.adjustment_check_due = 0.
++        self.page_revision = 0
++        self.preview_zoom = 1
++        self.preview_fullscreen = False
++        self.preview_crop = None
++        self.fullscreen_background = None
++        self.compact_hdmi = monitor == 'HDMI-1' and (self.w, self.h) == _COMPACT_SIZE
++        self.adjustment_background = None
++        if self.compact_hdmi:
++            self.dashboard_base(self.w, self.h)
++            self.text(None, '相机预览', 24, 219, 300, color=_DASHBOARD_MUTED, size=20)
++            self.adjustment_background = C.create_string_buffer(self.canvas.tobytes('raw', 'BGRA'))
++            del self.canvas
++        self.area = _DISPLAY_PREVIEW if self.compact_hdmi else self.layout(self.w, self.h)[0]
+         self.measured=dict(main=0.,redraw=0.,roi=0.)
+         self.perf=dict(start=time.monotonic(),frames=0,render=0.,first=None,last=None,previous=None)
+         self.native_stats={}
+         self.chart=ChartState()
++        self.chart_settings = False
++        self.chart_snapshot = self.chart.snapshot()
+         self.ui_builds=0
+         self.ui_metrics={}
+         self.ui_started=time.monotonic()
+@@ -99,6 +153,11 @@
+ 
+     @staticmethod
+     def layout(w,h):
++        if (w,h)==_COMPACT_SIZE:
++            pw=416;cw=w-pw-56;ch=h-252
++            vw=min(cw,ch*16//9)&~31;vh=vw*9//16
++            area=((20+(cw-vw)//2)&~1,(232+(ch-vh)//2)&~1,vw,vh)
++            return area,(w-pw-20,82,pw)
+         if w>=1100:
+             pw=416;cw=w-pw-60;ch=max(100,h-280)
+             vw=min(cw,ch*512//288)&~3;vh=(vw*288//512)&~1
+@@ -109,12 +168,53 @@
+             area=((w-vw)//2,250,vw,vh);panel=(20,270+vh,w-40)
+         return area,panel
+ 
++    @staticmethod
++    def fullscreen_area(w, h):
++        width = min(w, h * 16 // 9) & ~31
++        height = width * 9 // 16
++        return ((w - width) // 2 & ~1, (h - height) // 2 & ~1, width, height)
++
++    def dashboard_base(self, w, h):
++        self.canvas = Image.new('RGBA', (w, h), _DASHBOARD_BACKGROUND)
++        draw = ImageDraw.Draw(self.canvas)
++        draw.line((16, 73, w - 16, 73), fill=_DASHBOARD_EDGE)
++        draw.rounded_rectangle((16, 26, 20, 53), 2, fill=_DASHBOARD_TEAL)
++        self.text(None, '工业视觉', 34, 20, 280, color=_DASHBOARD_TEXT, size=28)
++        return draw
++
++    def build_dashboard(self, key, state, metrics, w, h):
++        self.hover_key = state.get('hover')
++        draw = self.dashboard_base(w, h)
++        x, y, width, height = _DISPLAY_PREVIEW
++        draw.rounded_rectangle((x - 1, y - 1, x + width, y + height), 22, fill=_DASHBOARD_BACKGROUND,
++                               outline=_DASHBOARD_EDGE, width=1)
++        chart = metrics['chart']
++        tiles = (('HDMI 新画面', f'{metrics["main"]:.1f} FPS'),
++                 ('结果发布', f'{metrics["roi"]:.1f} 帧/秒'),
++                 ('当前在场', short_number(chart['latest'].get('stat:current_present'))))
++        draw.line((16, 516, 720, 516), fill=_DASHBOARD_EDGE)
++        for index, (label, value) in enumerate(tiles):
++            x = 16 + index * 238
++            if index:
++                draw.line((x - 14, 532, x - 14, 579), fill=_DASHBOARD_EDGE)
++            self.text(None, label, x, 524, 205, color=_DASHBOARD_MUTED, size=18)
++            self.text(None, value, x, 548, 205, color=_DASHBOARD_TEAL if not index else _DASHBOARD_TEXT, size=28)
++        regions = []
++        draw_display_chart(self, regions, chart, show_settings=state.get('chart_settings', False))
++        return key, self.canvas.tobytes('raw', 'BGRA'), regions, _DISPLAY_PREVIEW
++
+     def build(self,key,state,metrics,w,h,full):
++        if state.get('hdmi') and (w, h) == _COMPACT_SIZE:
++            return self.build_dashboard(key, state, metrics, w, h)
+         apple_glass.begin(self,w,h,state);self.metrics=metrics
+         regions=[]
+-        self.text(None,'工业视觉 · '+str(metrics.get('model_id') or '相机预览'),20,28,w-210,size=22)
+-        self.button(None,regions,'fullscreen','退出全屏' if full else '进入全屏',w-166,24,146,full)
+-        cw=min(350,(w-76)//4)
++        compact=(w,h)==_COMPACT_SIZE
++        hdmi=state.get('hdmi',False)
++        title_width=w-476 if hdmi or compact else w-210
++        self.text(None,'工业视觉 · '+str(metrics.get('model_id') or '相机预览'),20,28,title_width,size=22)
++        if not hdmi and not compact:
++            self.button(None,regions,'fullscreen','退出全屏' if full else '进入全屏',w-166,24,146,full)
++        cw=(w-512)//4 if compact else min(350,(w-76)//4)
+         chart=metrics['chart']
+         cards=[('相机新画面',f'{metrics["main"]:.1f} FPS'),
+                ('模型推理',f'{metrics["roi"]:.1f} 次/秒'),
+@@ -123,10 +223,10 @@
+         for i,(label,value) in enumerate(cards):
+             x=20+i*(cw+12);self.fill(None,(x,76,cw,70),(22,34,49))
+             self.text(None,label,x+12,79,cw-24,color=(145,168,188,255),size=18)
+-            self.text(None,value,x+12,104,cw-24,color=(65,243,153,255),size=28)
++            self.text(None,value,x+12,108 if compact else 104,cw-24,color=(65,243,153,255),size=20 if compact else 28)
+         area,(px,py,pw)=self.layout(w,h)
+         draw_chart(self,regions,chart,px,py,pw,h-270 if w>=1100 and h>=1000 else h-20)
+-        cw=w-476 if w>=1100 else w-40
++        cw=w-476 if compact or w>=1100 else w-40
+         self.fill(None,(20,158,cw,78),(22,34,49))
+         # Show fields from the selected checkbox page. No model category names here.
+         fields=chart['fields'][chart['page']*chart.get('page_size',8):(chart['page']+1)*chart.get('page_size',8)]
+@@ -134,11 +234,13 @@
+         for i,field in enumerate(fields[:4]):
+             label=field['title']+' '+short_number(chart['latest'].get(field['key']))
+             self.text(None,label,30+i*cell,164,cell-8,size=18)
+-        self.text(None,'绿：同帧确认 · 黄：待确认 · 紫：图像跟踪',30,199,cw-160,size=18,color=(145,168,188,255))
++        legend='绿 同帧确认 · 黄 待确认 · 紫 图像跟踪' if compact else '绿：同帧确认 · 黄：待确认 · 紫：图像跟踪'
++        self.text(None,legend,30,199,cw-160,size=18,color=(145,168,188,255))
+         self.button(None,regions,'count_reset','计数清零',20+cw-126,193,116)
+         return key,self.canvas.tobytes('raw','BGRA'),regions,area
+ 
+     def fullscreen(self,wid=1):
++        if self.monitor=='HDMI-1' or self.origin[2:]==_COMPACT_SIZE:return
+         if self.full:
+             ox,oy,ow,oh=self.origin
+             x,y=ox+32,oy+48;w,h=(1280,800) if ow>=1100 else (720,1000)
+@@ -150,9 +252,12 @@
+         self.ui_serial+=1;self.built_key=None;self.regions={}
+ 
+     def input(self,event):
++        if self.preview_fullscreen:return
+         kind,x,y,key=event
+         if kind==4:
+-            if self.chart.keyboard(key,time.monotonic()):return
++            if not self.adjustment_active and self.chart.keyboard(key,time.monotonic()):
++                self.ui_render_due = 0.
++                return
+             if key==0xffc8:self.fullscreen()
+             elif key==0xff1b and self.full:self.fullscreen()
+             return
+@@ -170,32 +275,79 @@
+             if not bx<=x<bx+bw or not by<=y<by+bh:continue
+             name=region['key']
+             if name=='fullscreen':self.fullscreen()
+-            elif name.startswith('chart:'):
++            elif not self.adjustment_active and name == 'chart_settings':
++                self.chart_settings = not self.chart_settings
++                if not self.chart_settings:
++                    self.chart.keyboard(0xff1b, time.monotonic())
++                self.ui_render_due = 0.
++            elif not self.adjustment_active and name.startswith('chart:'):
+                 action=self.chart.action(name,time.monotonic())
++                self.ui_render_due = 0.
+                 if action and action.get('reset_counts'):self.send_control('count_reset',True)
+-            elif name=='count_reset':self.send_control(name,True)
++            elif not self.adjustment_active and name=='count_reset':self.send_control(name,True)
+             break
+ 
+     def prepare(self,control,row):
+         """Update UI state without owning a camera RGB slot."""
+-        began=time.monotonic();event=(C.c_int*4)()
++        began=time.monotonic()
++        if self.monitor == 'HDMI-1' and began >= self.adjustment_check_due:
++            self.adjustment_check_due = began + .25
++            try:
++                marker_time = _ADJUSTMENT_MARKER.stat().st_mtime
++            except FileNotFoundError:
++                active = False
++            else:
++                active = abs(time.time() - marker_time) < 4.
++            zoom, fullscreen = read_preview_control()
++            if zoom != self.preview_zoom:
++                self.preview_zoom = zoom
++                crop = _PREVIEW_CROPS[zoom]
++                self.preview_crop = (C.c_int * 4)(*crop) if crop else None
++            fullscreen_changed = fullscreen != self.preview_fullscreen
++            adjustment_changed = active != self.adjustment_active
++            if fullscreen_changed or self.compact_hdmi and adjustment_changed:
++                if fullscreen:
++                    self.area = self.fullscreen_area(self.w, self.h)
++                    if self.fullscreen_background is None:
++                        self.fullscreen_background = C.create_string_buffer(self.ui_capacity)
++                    self.lib.rv_cursor(self.handle, 0)
++                elif self.compact_hdmi:
++                    self.area = _ADJUSTMENT_PREVIEW if active else _DISPLAY_PREVIEW
++                else:
++                    self.area = self.layout(self.w, self.h)[0]
++                self.ui_serial += 1
++            if adjustment_changed or fullscreen_changed:
++                self.preview_fullscreen = fullscreen
++                self.adjustment_active = active
++                self.page_revision += 1
++                self.ui_render_due = 0.
++                self.console_ui_due = 0.
++                if self.future and self.future.cancel():
++                    self.future = None
++        event=(C.c_int*4)()
+         while self.lib.rv_event(self.handle,event):self.input(list(event))
+         self.flush_commands();self.current_state=row['image_controls']
++        if self.adjustment_active or self.preview_fullscreen:
++            if self.future and self.future.done():
++                self.future.result()
++                self.future = None
++            return
+         sampled=self.chart.update(row.get('counting',{}),began)
+         if sampled or not self.ui_metrics or began>=getattr(self,'console_ui_due',0):
+             self.console_ui_due=began+1.
+             self.console_ui_serial=getattr(self,'console_ui_serial',0)+1
+             self.ui_metrics=dict(self.measured,roi=row.get('fine_rate',0),model_id=row.get('model_id'),counting=row.get('counting',{}))
+-        key=(self.w,self.h,self.full,self.chart.serial,getattr(self,'console_ui_serial',0),getattr(self,'hover_serial',0))
++        key=(self.w,self.h,self.full,self.page_revision,self.chart.serial,self.chart_settings,getattr(self,'console_ui_serial',0),getattr(self,'hover_serial',0))
+         if self.future and self.future.done():
+             built,slot,regions,area=self.future.result();self.future=None
+-            if built[:3]==key[:3]:
++            if built[:4]==key[:4]:
+                 self.ui_slot=slot;self.ui_pointer=C.addressof(self.ui_raw)+slot*self.ui_capacity
+                 self.ui_serial+=1;self.regions[1]=regions;self.area=area;self.built_key=built
+         if self.future is None and key!=self.built_key and began>=self.ui_render_due:
+-            metrics=dict(self.ui_metrics,chart=self.chart.snapshot())
++            self.chart_snapshot = self.chart.snapshot()
++            metrics=dict(self.ui_metrics,chart=self.chart_snapshot)
+             state=dict(hover=getattr(self,'hover_key',None),backdrop=self.glass_backdrop,
+-                backdrop_size=self.glass_backdrop_size)
++                backdrop_size=self.glass_backdrop_size,hdmi=self.monitor=='HDMI-1',chart_settings=self.chart_settings)
+             self.ui_render_due=time.monotonic()+1.
+             self.future=self.pool.submit(build_ui,key,state,metrics,self.w,self.h,self.full,1-self.ui_slot)
+             self.ui_builds+=1
+@@ -206,15 +358,21 @@
+         frame=control.last_overview
+         # This small backdrop sample must stay under the shared RGB slot lock.
+         # UI preparation uses the preceding completed sample, never live RGB.
+-        if began>=getattr(self,'glass_backdrop_due',0):apple_glass.frame_state(self,control,began)
++        if not (self.compact_hdmi or self.adjustment_active or self.preview_fullscreen) and began>=getattr(self,'glass_backdrop_due',0):
++            apple_glass.frame_state(self,control,began)
+         displayed=row['results']
+         boxes=np.array([r['box'] for r in displayed],np.float32).reshape(-1,4)
+         confirmed=np.array([(int(bool(r.get('tracking',{}).get('status')=='confirmed' and not r.get('display_history') and r.get('cached_fine') and r['cached_fine'].get('label') not in ('uncertain','unreadable'))) | (2 if r.get('display_pixel_tracked') else 0)) for r in displayed],np.int32)
+         roi=row.get('inference_rectangle')
+         roi=np.array(roi,np.int32) if roi is not None and row.get('show_roi',True) else None
+-        rc=self.lib.rv_show_overlay_v1(self.handle,frame.rgb.ctypes.data,self.ui_pointer,self.ui_serial,
++        ui = self.ui_pointer
++        if self.preview_fullscreen:
++            ui = C.addressof(self.fullscreen_background)
++        elif self.adjustment_active and self.adjustment_background is not None:
++            ui = C.addressof(self.adjustment_background)
++        rc=self.lib.rv_show_crop_v1(self.handle,frame.rgb.ctypes.data,ui,self.ui_serial,
+                             frame.source_frame_id,frame.rgb.shape[1],frame.rgb.shape[0],*self.area,len(boxes),boxes.ctypes.data,confirmed.ctypes.data,
+-                            roi.ctypes.data if roi is not None else None,None)
++                            roi.ctypes.data if roi is not None else None,None,self.preview_crop)
+         if rc<0:raise RuntimeError(self.lib.rv_error(self.handle).decode())
+         if not rc:return False
+         stats=(C.c_double*4)();self.lib.rv_stats(self.handle,stats)
+@@ -225,7 +383,8 @@
+         elapsed=now-p['start']
+         if elapsed>=1:
+             self.measured=dict(main=p['frames']/elapsed,redraw=p['frames']/elapsed,roi=row.get('fine_rate',0))
+-            wnd=dict(window_id=1,x=self.x,y=self.y,w=self.w,h=self.h,fullscreen=self.full,regions=self.regions.get(1,[]),camera_area=list(self.area))
++            wnd=dict(window_id=1,x=self.x,y=self.y,w=self.w,h=self.h,fullscreen=self.full,
++                     regions=[] if self.preview_fullscreen or self.adjustment_active else self.regions.get(1,[]),camera_area=list(self.area))
+             report=dict(backend='RGA display scaling + XShm completion slots',text_cached=True,ui_async=True,main_only=True,
+                         preview_only=row.get('preview_only',False),screens=1,measured_seconds=elapsed,
+                         window_redraws_per_second=p['frames']/elapsed,fresh_overview_updates_per_second=p['frames']/elapsed,
+@@ -236,7 +395,10 @@
+                         recorded_monotonic=now,windows=[wnd],image_controls=self.current_state,native=self.native_stats,
+                         counting=row.get('counting',{}),camera_cpu_transforms=False,
+                         chart_interval_seconds=self.chart.interval,chart_sample_count=len(self.chart.history),
+-                        chart_session_id=self.chart.session,chart_latest=self.chart.latest,chart_snapshot=self.chart.snapshot(),
++                        display_page_active=not (self.adjustment_active or self.preview_fullscreen),chart_settings_open=self.chart_settings,
++                        preview_zoom=self.preview_zoom,preview_fullscreen=self.preview_fullscreen,
++                        preview_source_crop=list(_PREVIEW_CROPS[self.preview_zoom] or (0,0,frame.rgb.shape[1],frame.rgb.shape[0])),
++                        chart_session_id=self.chart.session,chart_latest=self.chart.latest,chart_snapshot=self.chart_snapshot,
+                         chart_enabled_fields=sorted(self.chart.enabled),ui_builds=self.ui_builds,
+                         ui_builds_per_second=self.ui_builds/max(.001,now-self.ui_started))
+             target=Path(os.environ['VISION_PERF_FILE'])

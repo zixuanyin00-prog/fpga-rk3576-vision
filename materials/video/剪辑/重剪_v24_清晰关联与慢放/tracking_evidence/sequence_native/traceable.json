@@ -1,0 +1,2314 @@
+{
+  "recommended": true,
+  "scope": "Historical original captured pixels and recorded identity association only. No model execution, hardware connection, sharpening, AI reconstruction, or synthetic detail.",
+  "source_directory": "int8_60fps_20261026/rollout_incremental/verification/sequence3s20261026225747",
+  "source_frames_jsonl": {
+    "path": "int8_60fps_20261026/rollout_incremental/verification/sequence3s20261026225747/frames.jsonl",
+    "sha256": "8908ce498be29ecabd6fdd820768da6029a47921d708f0ac8290155ea500fbb5"
+  },
+  "source_capture_summary": {
+    "path": "int8_60fps_20261026/rollout_incremental/verification/sequence3s20261026225747/capture_summary.json",
+    "sha256": "2a88e426ad3759bddcfb973726a6bec0b786d4262c8cc4de11b0595c5fa5dc3c"
+  },
+  "track_id": 880,
+  "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+  "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+  "label_mapping": {
+    "97e437d2048c4540a0e66ec595b69bf5": "A",
+    "9fb56bd54592410b9ab4f40d06914564": "B",
+    "7ceb4bbd7f094535b4de069871ccb00f": "C"
+  },
+  "selected_source_frames": [
+    89270,
+    89278,
+    89284
+  ],
+  "coordinate_mapping": "PNG is native RGB888 793x317 with no scale/rotation. local_xyxy = source_xyxy - [575,375,575,375]. ROI origin is fixed in all recorded frames.",
+  "annotation_policy": "Editing labels ID 880 and boxes are drawn from the real tracking row raw_box; ID 880 is a track identity, while resistor face marking 473 and class A are not identity IDs.",
+  "class_title": "A",
+  "model_record_only": {
+    "training_completed_beijing": "2026-10-26T13:38:25+08:00",
+    "fine_sha256": "2d9b06b8102aa9905e9e8a3be43e77953eff03d701f7b4f26abc562f6aa4b4b1",
+    "derivative": "native_pixel_statistics_v3",
+    "note": "Historical acquisition provenance; not a new model selection or deployment."
+  },
+  "lifetime_within_recorded_clip": {
+    "actual_observations": 16,
+    "first_source_frame": 89268,
+    "last_source_frame": 89286,
+    "unique_class_labels": [
+      "97e437d2048c4540a0e66ec595b69bf5"
+    ],
+    "unique_session_ids": [
+      "a39a903a3d6146c19da394cf830d6ba0"
+    ],
+    "unique_object_ids": [
+      "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6"
+    ],
+    "all_association_uncertain_false": true,
+    "confirmed_temporal_accepted_observations": 14,
+    "monotonic_x_centers": true,
+    "selected_three_all_pixel_identity_verified": true,
+    "visual_qa": "Viewed first/middle/last candidate frames and the selected three. The target remains the black 473-marked resistor face moving left to right. This is a limited video evidence review, not a dataset accuracy/physical acceptance claim."
+  },
+  "records": [
+    {
+      "source_frame_id": 89270,
+      "metadata_line": 76,
+      "raw_source_path": "int8_60fps_20261026/rollout_incremental/verification/sequence3s20261026225747/native_0000089270.rgb",
+      "raw_source_sha256": "0b57aa257f4a650538d566796dcd3d2f8f977f894cfe9f89ca0bacf49396d8ad",
+      "sha256_matches_original_record": true,
+      "native_image_size": [
+        793,
+        317
+      ],
+      "origin": [
+        575,
+        375
+      ],
+      "track_id": 880,
+      "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+      "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+      "runtime_session_id": "2450b01960dd47a89f3a508af98f0455",
+      "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+      "bbox_source_xyxy": [
+        671.1552050113678,
+        505.4419597387314,
+        780.9271929264069,
+        574.4756425619125
+      ],
+      "bbox_local_xyxy": [
+        96.1552050113678,
+        130.44195973873138,
+        205.92719292640686,
+        199.47564256191254
+      ],
+      "bbox_field": "raw_box (real detection; raw_box == box)",
+      "bbox_size_px": [
+        109.77198791503906,
+        69.03368282318115
+      ],
+      "detail_crop_local_xyxy": [
+        72,
+        106,
+        230,
+        224
+      ],
+      "classification": {
+        "label": "97e437d2048c4540a0e66ec595b69bf5",
+        "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+        "confidence": 0.9996398687362671,
+        "accepted": true
+      },
+      "classification_temporal": {
+        "accepted": true,
+        "label": "97e437d2048c4540a0e66ec595b69bf5",
+        "support": 3,
+        "reliable_observations": 3,
+        "window_observations": 3,
+        "agreement": 1.0,
+        "mean_support_confidence": 0.9855769673983256,
+        "required_support": 3,
+        "reason": "measured_multi_frame_consensus",
+        "single_frame_label_disagrees": false,
+        "evidence_preserved": true,
+        "history_reset_reason": null,
+        "evidence_scope": "measured_identity_lifetime",
+        "vote_margin": 1.0,
+        "last_support_source_age": 0,
+        "diagnostics": {},
+        "used_for_counting": true
+      },
+      "confirmed": true,
+      "association_uncertain": false,
+      "tracking": {
+        "status": "confirmed",
+        "association_uncertain": false,
+        "counting_eligible": true,
+        "association_version": "pixel_supported_passage_v5",
+        "stable_hits": 3,
+        "required_hits": 2,
+        "classification_consistent": true,
+        "association_cost": 0.12448878503618278,
+        "association_margin": 0.7555112149638172,
+        "appearance_penalty": 0.02883814009965635,
+        "candidate_predecessor_object_ids": [],
+        "pose_history_reset_reason": null,
+        "measured_motion_px_per_source_frame": [
+          34.05454635620117,
+          -0.23977136611938477
+        ],
+        "motion_uncertainty_px": 2.6992902630843476,
+        "failure_observations": 0,
+        "failure_source_span": 0,
+        "observed_registered": true,
+        "counted": true,
+        "image_support": {
+          "accepted": true,
+          "reason": "rectangular_face_edges",
+          "horizontal_boundary": 35.900001525878906,
+          "vertical_boundary": 61.94444274902344,
+          "side_left": 17.149999618530273,
+          "side_right": 19.22222137451172
+        },
+        "pixel_identity_verified": true,
+        "pixel_measurement": {
+          "box": [
+            678.2107247114182,
+            504.60048604011536,
+            776.0518883466721,
+            573.6341688632965
+          ],
+          "shift": [
+            34.692962646484375,
+            -1.4564361572265625
+          ],
+          "ncc": 0.9909555315971375,
+          "source_frame_id": 89270,
+          "support": 11
+        },
+        "cumulative_allocation": "confirmed"
+      },
+      "observed_source_frame_id": 89270,
+      "roi_frame_id": 89270,
+      "capture_received_monotonic": 44326.132401758,
+      "files": {
+        "raw_copy": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89270.rgb",
+          "sha256": "0b57aa257f4a650538d566796dcd3d2f8f977f894cfe9f89ca0bacf49396d8ad"
+        },
+        "native_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89270_native.png",
+          "sha256": "69e1ae04ad7d082436a801a7b5c0046ef3258d0605f32e31430c1f4fc9e9dd04"
+        },
+        "annotated_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89270_annotated.png",
+          "sha256": "3c1261fafd4df56fca5af4da68181a05dbacbfcbe6d274f7ac974f46d22b185a"
+        },
+        "detail_native_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89270_detail_native.png",
+          "sha256": "bcb8579d6074b5935f759a987862373945664091d2f72f44a9bc6f5084c947e2"
+        },
+        "detail_annotated_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89270_detail_annotated.png",
+          "sha256": "eec5314fca6771453e61fdaff41ac849a8c31a25a21de496e4b30ff47110e9c8"
+        }
+      }
+    },
+    {
+      "source_frame_id": 89278,
+      "metadata_line": 84,
+      "raw_source_path": "int8_60fps_20261026/rollout_incremental/verification/sequence3s20261026225747/native_0000089278.rgb",
+      "raw_source_sha256": "2dea7f4faa07a0101ac1aa1bc5f49a2d58557dc4c87d73c10fb889630866ac73",
+      "sha256_matches_original_record": true,
+      "native_image_size": [
+        793,
+        317
+      ],
+      "origin": [
+        575,
+        375
+      ],
+      "track_id": 880,
+      "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+      "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+      "runtime_session_id": "2450b01960dd47a89f3a508af98f0455",
+      "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+      "bbox_source_xyxy": [
+        935.2564122676849,
+        509.34075224399567,
+        1045.028400182724,
+        578.3744350671768
+      ],
+      "bbox_local_xyxy": [
+        360.25641226768494,
+        134.34075224399567,
+        470.028400182724,
+        203.37443506717682
+      ],
+      "bbox_field": "raw_box (real detection; raw_box == box)",
+      "bbox_size_px": [
+        109.77198791503906,
+        69.03368282318115
+      ],
+      "detail_crop_local_xyxy": [
+        336,
+        110,
+        495,
+        228
+      ],
+      "classification": {
+        "label": "97e437d2048c4540a0e66ec595b69bf5",
+        "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+        "confidence": 0.9990164041519165,
+        "accepted": true
+      },
+      "classification_temporal": {
+        "accepted": true,
+        "label": "97e437d2048c4540a0e66ec595b69bf5",
+        "support": 9,
+        "reliable_observations": 9,
+        "window_observations": 9,
+        "agreement": 1.0,
+        "mean_support_confidence": 0.9942446351051331,
+        "required_support": 3,
+        "reason": "measured_multi_frame_consensus",
+        "single_frame_label_disagrees": false,
+        "evidence_preserved": true,
+        "history_reset_reason": null,
+        "evidence_scope": "measured_identity_lifetime",
+        "vote_margin": 1.0,
+        "last_support_source_age": 0,
+        "diagnostics": {},
+        "used_for_counting": true
+      },
+      "confirmed": true,
+      "association_uncertain": false,
+      "tracking": {
+        "status": "confirmed",
+        "association_uncertain": false,
+        "counting_eligible": true,
+        "association_version": "pixel_supported_passage_v5",
+        "stable_hits": 9,
+        "required_hits": 2,
+        "classification_consistent": true,
+        "association_cost": 0.09275492829737746,
+        "association_margin": 0.7872450717026226,
+        "appearance_penalty": 0.0083361722908768,
+        "candidate_predecessor_object_ids": [],
+        "pose_history_reset_reason": null,
+        "measured_motion_px_per_source_frame": [
+          33.773515086621046,
+          1.6686850413680077
+        ],
+        "motion_uncertainty_px": 2.3627347244299672,
+        "failure_observations": 0,
+        "failure_source_span": 0,
+        "observed_registered": true,
+        "counted": true,
+        "image_support": {
+          "accepted": true,
+          "reason": "rectangular_face_edges",
+          "horizontal_boundary": 30.03333282470703,
+          "vertical_boundary": 61.27777862548828,
+          "side_left": 19.69444465637207,
+          "side_right": 14.833333969116211
+        },
+        "pixel_identity_verified": true,
+        "pixel_measurement": {
+          "box": [
+            935.9880931377411,
+            504.0715181827545,
+            1045.7600810527802,
+            580.9598591327667
+          ],
+          "shift": [
+            34.300323486328125,
+            1.941925048828125
+          ],
+          "ncc": 0.9879095554351807,
+          "source_frame_id": 89278,
+          "support": 7
+        },
+        "cumulative_allocation": "confirmed"
+      },
+      "observed_source_frame_id": 89278,
+      "roi_frame_id": 89278,
+      "capture_received_monotonic": 44326.265715349,
+      "files": {
+        "raw_copy": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89278.rgb",
+          "sha256": "2dea7f4faa07a0101ac1aa1bc5f49a2d58557dc4c87d73c10fb889630866ac73"
+        },
+        "native_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89278_native.png",
+          "sha256": "45273d3276dc506564eb61fd13071e76f854d41fcffc46b84c6fd274b6115018"
+        },
+        "annotated_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89278_annotated.png",
+          "sha256": "d95e1e67f0163a93d11b9ef78328fea4226f02358fa6930ce1756a46691b31e1"
+        },
+        "detail_native_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89278_detail_native.png",
+          "sha256": "eb803e0ab8644c6cd60ae2466b0e15bbe214e7866a264a3ebc82a5747d46b710"
+        },
+        "detail_annotated_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89278_detail_annotated.png",
+          "sha256": "33c84f1958efc759b093f44e85c4a82e6e4db562b70f23ae454629532f34cc02"
+        }
+      }
+    },
+    {
+      "source_frame_id": 89284,
+      "metadata_line": 90,
+      "raw_source_path": "int8_60fps_20261026/rollout_incremental/verification/sequence3s20261026225747/native_0000089284.rgb",
+      "raw_source_sha256": "b420e0193bda150e27d32be84441e15e24aad07e109d9cabfa45fba20af89f9d",
+      "sha256_matches_original_record": true,
+      "native_image_size": [
+        793,
+        317
+      ],
+      "origin": [
+        575,
+        375
+      ],
+      "track_id": 880,
+      "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+      "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+      "runtime_session_id": "2450b01960dd47a89f3a508af98f0455",
+      "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+      "bbox_source_xyxy": [
+        1131.0461122989655,
+        517.6237231492996,
+        1240.8181002140045,
+        594.5120640993118
+      ],
+      "bbox_local_xyxy": [
+        556.0461122989655,
+        142.62372314929962,
+        665.8181002140045,
+        219.51206409931183
+      ],
+      "bbox_field": "raw_box (real detection; raw_box == box)",
+      "bbox_size_px": [
+        109.77198791503906,
+        76.8883409500122
+      ],
+      "detail_crop_local_xyxy": [
+        532,
+        118,
+        690,
+        244
+      ],
+      "classification": {
+        "label": "97e437d2048c4540a0e66ec595b69bf5",
+        "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+        "confidence": 0.999146580696106,
+        "accepted": true
+      },
+      "classification_temporal": {
+        "accepted": true,
+        "label": "97e437d2048c4540a0e66ec595b69bf5",
+        "support": 15,
+        "reliable_observations": 15,
+        "window_observations": 15,
+        "agreement": 1.0,
+        "mean_support_confidence": 0.9962538679440817,
+        "required_support": 3,
+        "reason": "measured_multi_frame_consensus",
+        "single_frame_label_disagrees": false,
+        "evidence_preserved": true,
+        "history_reset_reason": null,
+        "evidence_scope": "measured_identity_lifetime",
+        "vote_margin": 1.0,
+        "last_support_source_age": 0,
+        "diagnostics": {},
+        "used_for_counting": true
+      },
+      "confirmed": true,
+      "association_uncertain": false,
+      "tracking": {
+        "status": "confirmed",
+        "association_uncertain": false,
+        "counting_eligible": true,
+        "association_version": "pixel_supported_passage_v5",
+        "stable_hits": 15,
+        "required_hits": 2,
+        "classification_consistent": true,
+        "association_cost": 0.18483505936677455,
+        "association_margin": 0.6951649406332254,
+        "appearance_penalty": 0.036369448678166265,
+        "candidate_predecessor_object_ids": [],
+        "pose_history_reset_reason": null,
+        "measured_motion_px_per_source_frame": [
+          32.608086501888465,
+          1.369224620400928
+        ],
+        "motion_uncertainty_px": 4.182952075544604,
+        "failure_observations": 0,
+        "failure_source_span": 0,
+        "observed_registered": true,
+        "counted": true,
+        "image_support": {
+          "accepted": true,
+          "reason": "rectangular_face_edges",
+          "horizontal_boundary": 26.5,
+          "vertical_boundary": 64.11111450195312,
+          "side_left": 21.811113357543945,
+          "side_right": 16.883333206176758
+        },
+        "pixel_identity_verified": true,
+        "pixel_measurement": {
+          "box": [
+            1136.814383327961,
+            523.8637850284576,
+            1234.6555469632149,
+            592.8974678516388
+          ],
+          "shift": [
+            29.9705810546875,
+            1.6672210693359375
+          ],
+          "ncc": 0.9765429496765137,
+          "source_frame_id": 89284,
+          "support": 7
+        },
+        "cumulative_allocation": "confirmed"
+      },
+      "observed_source_frame_id": 89284,
+      "roi_frame_id": 89284,
+      "capture_received_monotonic": 44326.365192831,
+      "files": {
+        "raw_copy": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89284.rgb",
+          "sha256": "b420e0193bda150e27d32be84441e15e24aad07e109d9cabfa45fba20af89f9d"
+        },
+        "native_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89284_native.png",
+          "sha256": "cb8a8a7e8a08e9116fdaba33f9496e40a4c9a1334fd2755999d294cfe2beb22c"
+        },
+        "annotated_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89284_annotated.png",
+          "sha256": "8189b63890c33b5e27443f0c1a2e345eaeb374cda479bd74aa819bd7f8b76d91"
+        },
+        "detail_native_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89284_detail_native.png",
+          "sha256": "bb1565769f8a52872da8a7437d3e450179a8c4b344627407ba6bbc6d1eb4ff1f"
+        },
+        "detail_annotated_png": {
+          "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_source89284_detail_annotated.png",
+          "sha256": "b303e7d2eaec639561ae6a97349b5fcd75f5bd24246b9efe58e70ce67ef009ea"
+        }
+      }
+    }
+  ],
+  "original_lifetime_rows": [
+    {
+      "line": 74,
+      "source_frame_id": 89268,
+      "row": {
+        "track_id": 880,
+        "box": [
+          603.0461122989655,
+          501.9941734075546,
+          712.8181002140045,
+          578.8825143575668
+        ],
+        "raw_box": [
+          603.0461122989655,
+          501.9941734075546,
+          712.8181002140045,
+          578.8825143575668
+        ],
+        "roi_frame_id": 89268,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 1,
+        "confirmed": false,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.959815263748169,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": false,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 1,
+          "reliable_observations": 1,
+          "window_observations": 1,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.959815263748169,
+          "required_support": 3,
+          "reason": "not_enough_reliable_frames",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "evidence": [
+            [
+              89268,
+              "97e437d2048c4540a0e66ec595b69bf5",
+              0.959815263748169,
+              true
+            ]
+          ],
+          "used_for_counting": false
+        },
+        "tracking": {
+          "status": "confirming",
+          "association_uncertain": false,
+          "counting_eligible": false,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 1,
+          "required_hits": 2,
+          "classification_consistent": false,
+          "association_cost": null,
+          "association_margin": null,
+          "appearance_penalty": null,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            0.0,
+            0.0
+          ],
+          "motion_uncertainty_px": null,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": false,
+          "counted": false,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 44.33333206176758,
+            "vertical_boundary": 53.0,
+            "side_left": 16.0,
+            "side_right": 20.288890838623047
+          },
+          "pixel_identity_verified": false,
+          "pixel_measurement": null,
+          "cumulative_allocation": "unresolved_geometry"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.959815263748169,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.098437528,
+        "observed_source_frame_id": 89268,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.147399116,
+        "received_to_state_commit_ms": 48.96158799965633,
+        "transport_dequeued_monotonic": 44326.100335085,
+        "python_copy_returned_monotonic": 44326.100344733
+      }
+    },
+    {
+      "line": 75,
+      "source_frame_id": 89269,
+      "row": {
+        "track_id": 880,
+        "box": [
+          643.5177620649338,
+          506.0569221973419,
+          741.3589257001877,
+          575.0906050205231
+        ],
+        "raw_box": [
+          643.5177620649338,
+          506.0569221973419,
+          741.3589257001877,
+          575.0906050205231
+        ],
+        "roi_frame_id": 89269,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 2,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9972757697105408,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": false,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 2,
+          "reliable_observations": 2,
+          "window_observations": 2,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9785455167293549,
+          "required_support": 3,
+          "reason": "not_enough_reliable_frames",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "evidence": [
+            [
+              89268,
+              "97e437d2048c4540a0e66ec595b69bf5",
+              0.959815263748169,
+              true
+            ],
+            [
+              89269,
+              "97e437d2048c4540a0e66ec595b69bf5",
+              0.9972757697105408,
+              true
+            ]
+          ],
+          "used_for_counting": false
+        },
+        "tracking": {
+          "status": "classification_pending",
+          "association_uncertain": false,
+          "counting_eligible": false,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 2,
+          "required_hits": 2,
+          "classification_consistent": false,
+          "association_cost": 0.1890484519350399,
+          "association_margin": 0.6909515480649601,
+          "appearance_penalty": 0.040531237896750956,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            34.506237626075745,
+            0.13541972637176514
+          ],
+          "motion_uncertainty_px": 3.3528223111068045,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": false,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 35.099998474121094,
+            "vertical_boundary": 59.38888931274414,
+            "side_left": 16.172222137451172,
+            "side_right": 17.011112213134766
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              639.1420595645905,
+              500.0385764837265,
+              748.9140474796295,
+              576.9269174337387
+            ],
+            "shift": [
+              36.095947265625,
+              -1.955596923828125
+            ],
+            "ncc": 0.9761171340942383,
+            "source_frame_id": 89269,
+            "support": 12
+          },
+          "cumulative_allocation": "pending"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9972757697105408,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.115161519,
+        "observed_source_frame_id": 89269,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.173297295,
+        "received_to_state_commit_ms": 58.13577599474229,
+        "transport_dequeued_monotonic": 44326.117733145,
+        "python_copy_returned_monotonic": 44326.119812865
+      }
+    },
+    {
+      "line": 76,
+      "source_frame_id": 89270,
+      "row": {
+        "track_id": 880,
+        "box": [
+          671.1552050113678,
+          505.4419597387314,
+          780.9271929264069,
+          574.4756425619125
+        ],
+        "raw_box": [
+          671.1552050113678,
+          505.4419597387314,
+          780.9271929264069,
+          574.4756425619125
+        ],
+        "roi_frame_id": 89270,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 3,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9996398687362671,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 3,
+          "reliable_observations": 3,
+          "window_observations": 3,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9855769673983256,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 3,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.12448878503618278,
+          "association_margin": 0.7555112149638172,
+          "appearance_penalty": 0.02883814009965635,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            34.05454635620117,
+            -0.23977136611938477
+          ],
+          "motion_uncertainty_px": 2.6992902630843476,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 35.900001525878906,
+            "vertical_boundary": 61.94444274902344,
+            "side_left": 17.149999618530273,
+            "side_right": 19.22222137451172
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              678.2107247114182,
+              504.60048604011536,
+              776.0518883466721,
+              573.6341688632965
+            ],
+            "shift": [
+              34.692962646484375,
+              -1.4564361572265625
+            ],
+            "ncc": 0.9909555315971375,
+            "source_frame_id": 89270,
+            "support": 11
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9996398687362671,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.132401758,
+        "observed_source_frame_id": 89270,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.186410887,
+        "received_to_state_commit_ms": 54.009129002224654,
+        "transport_dequeued_monotonic": 44326.135594009,
+        "python_copy_returned_monotonic": 44326.13639413
+      }
+    },
+    {
+      "line": 77,
+      "source_frame_id": 89271,
+      "row": {
+        "track_id": 880,
+        "box": [
+          708.3660128116608,
+          509.4349216222763,
+          806.2071764469147,
+          571.1816648244858
+        ],
+        "raw_box": [
+          708.3660128116608,
+          509.4349216222763,
+          806.2071764469147,
+          571.1816648244858
+        ],
+        "roi_frame_id": 89271,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 4,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9972702860832214,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 4,
+          "reliable_observations": 4,
+          "window_observations": 4,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9885002970695496,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 4,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.17957777952725432,
+          "association_margin": 0.7004222204727457,
+          "appearance_penalty": 0.03161243507675096,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            32.64997100830078,
+            0.05486035346984863
+          ],
+          "motion_uncertainty_px": 2.750589888807501,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 37.66666793823242,
+            "vertical_boundary": 57.16666793823242,
+            "side_left": 18.18889045715332,
+            "side_right": 16.81110954284668
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              701.9139330387115,
+              504.8446696996689,
+              811.6859209537506,
+              573.87835252285
+            ],
+            "shift": [
+              30.75872802734375,
+              -0.5972900390625
+            ],
+            "ncc": 0.9926891922950745,
+            "source_frame_id": 89271,
+            "support": 11
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9972702860832214,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.149561465,
+        "observed_source_frame_id": 89271,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.208059021,
+        "received_to_state_commit_ms": 58.49755600502249,
+        "transport_dequeued_monotonic": 44326.152778402,
+        "python_copy_returned_monotonic": 44326.156307052
+      }
+    },
+    {
+      "line": 79,
+      "source_frame_id": 89273,
+      "row": {
+        "track_id": 880,
+        "box": [
+          766.1140060424805,
+          505.79145181179047,
+          875.8859939575195,
+          574.8251346349716
+        ],
+        "raw_box": [
+          766.1140060424805,
+          505.79145181179047,
+          875.8859939575195,
+          574.8251346349716
+        ],
+        "roi_frame_id": 89273,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 5,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9986839890480042,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 5,
+          "reliable_observations": 5,
+          "window_observations": 5,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9905370354652405,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 5,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.19035744634143198,
+          "association_margin": 0.689642553658568,
+          "appearance_penalty": 0.03221432716238733,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            32.25333684682846,
+            0.027430176734924316
+          ],
+          "motion_uncertainty_px": 2.1639618398976976,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 38.733333587646484,
+            "vertical_boundary": 66.66666412353516,
+            "side_left": 18.083332061767578,
+            "side_right": 18.172222137451172
+          },
+          "pixel_identity_verified": false,
+          "pixel_measurement": null,
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9986839890480042,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.181664559,
+        "observed_source_frame_id": 89273,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.239103858,
+        "received_to_state_commit_ms": 57.439299001998734,
+        "transport_dequeued_monotonic": 44326.183936624,
+        "python_copy_returned_monotonic": 44326.183949344
+      }
+    },
+    {
+      "line": 80,
+      "source_frame_id": 89274,
+      "row": {
+        "track_id": 880,
+        "box": [
+          797.687769651413,
+          501.9941734075546,
+          907.459757566452,
+          578.8825143575668
+        ],
+        "raw_box": [
+          797.687769651413,
+          501.9941734075546,
+          907.459757566452,
+          578.8825143575668
+        ],
+        "roi_frame_id": 89274,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 6,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9991475343704224,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 6,
+          "reliable_observations": 6,
+          "window_observations": 6,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9919721186161041,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 6,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.0876414444484707,
+          "association_margin": 0.7923585555515293,
+          "appearance_penalty": 0.005320615347693948,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            31.913550227880478,
+            0.07874041795730591
+          ],
+          "motion_uncertainty_px": 1.720956622408516,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 39.29999923706055,
+            "vertical_boundary": 61.22222137451172,
+            "side_left": 17.811111450195312,
+            "side_right": 17.016666412353516
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              797.0237655639648,
+              506.26886117458344,
+              906.7957534790039,
+              575.3025439977646
+            ],
+            "shift": [
+              30.909759521484375,
+              0.47740936279296875
+            ],
+            "ncc": 0.995947539806366,
+            "source_frame_id": 89274,
+            "support": 12
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9991475343704224,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.200642834,
+        "observed_source_frame_id": 89274,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.254491191,
+        "received_to_state_commit_ms": 53.8483569980599,
+        "transport_dequeued_monotonic": 44326.201837361,
+        "python_copy_returned_monotonic": 44326.201849071
+      }
+    },
+    {
+      "line": 81,
+      "source_frame_id": 89275,
+      "row": {
+        "track_id": 880,
+        "box": [
+          831.4348900318146,
+          501.3202136158943,
+          941.2068779468536,
+          578.2085545659065
+        ],
+        "raw_box": [
+          831.4348900318146,
+          501.3202136158943,
+          941.2068779468536,
+          578.2085545659065
+        ],
+        "roi_frame_id": 89275,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 7,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9996882677078247,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 7,
+          "reliable_observations": 7,
+          "window_observations": 7,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9930744256292071,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 7,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.0462136961440126,
+          "association_margin": 0.8337863038559874,
+          "appearance_penalty": 0.006943515445671829,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            32.830335304141045,
+            -0.29760968685150146
+          ],
+          "motion_uncertainty_px": 1.799285763855833,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 38.29999923706055,
+            "vertical_boundary": 63.66666793823242,
+            "side_left": 17.922222137451172,
+            "side_right": 16.40555763244629
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              833.0147502422333,
+              502.199587225914,
+              942.7867381572723,
+              579.0879281759262
+            ],
+            "shift": [
+              35.32698059082031,
+              0.205413818359375
+            ],
+            "ncc": 0.9951719641685486,
+            "source_frame_id": 89275,
+            "support": 12
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9996882677078247,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.216486418,
+        "observed_source_frame_id": 89275,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.272442094,
+        "received_to_state_commit_ms": 55.95567599812057,
+        "transport_dequeued_monotonic": 44326.219787382,
+        "python_copy_returned_monotonic": 44326.220322491
+      }
+    },
+    {
+      "line": 83,
+      "source_frame_id": 89277,
+      "row": {
+        "track_id": 880,
+        "box": [
+          901.687769651413,
+          502.1295931339264,
+          1011.459757566452,
+          579.0179340839386
+        ],
+        "raw_box": [
+          901.687769651413,
+          502.1295931339264,
+          1011.459757566452,
+          579.0179340839386
+        ],
+        "roi_frame_id": 89277,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 8,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9976643323898315,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 8,
+          "reliable_observations": 8,
+          "window_observations": 8,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9936481639742851,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 8,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.05760732347639668,
+          "association_margin": 0.8223926765236034,
+          "appearance_penalty": 0.005016451606563494,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            33.97838755697012,
+            0.05354003608226776
+          ],
+          "motion_uncertainty_px": 1.979832483733038,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 32.233333587646484,
+            "vertical_boundary": 61.83333206176758,
+            "side_left": 18.438888549804688,
+            "side_right": 14.855554580688477
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              900.3294212818146,
+              503.88632994890213,
+              1010.1014091968536,
+              580.7746708989143
+            ],
+            "shift": [
+              68.89453125,
+              2.5661163330078125
+            ],
+            "ncc": 0.9952358603477478,
+            "source_frame_id": 89277,
+            "support": 7
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9976643323898315,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.248453499,
+        "observed_source_frame_id": 89277,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.292258589,
+        "received_to_state_commit_ms": 43.8050899974769,
+        "transport_dequeued_monotonic": 44326.249770722,
+        "python_copy_returned_monotonic": 44326.249780336
+      }
+    },
+    {
+      "line": 84,
+      "source_frame_id": 89278,
+      "row": {
+        "track_id": 880,
+        "box": [
+          935.2564122676849,
+          509.34075224399567,
+          1045.028400182724,
+          578.3744350671768
+        ],
+        "raw_box": [
+          935.2564122676849,
+          509.34075224399567,
+          1045.028400182724,
+          578.3744350671768
+        ],
+        "roi_frame_id": 89278,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 9,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9990164041519165,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 9,
+          "reliable_observations": 9,
+          "window_observations": 9,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9942446351051331,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 9,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.09275492829737746,
+          "association_margin": 0.7872450717026226,
+          "appearance_penalty": 0.0083361722908768,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            33.773515086621046,
+            1.6686850413680077
+          ],
+          "motion_uncertainty_px": 2.3627347244299672,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 30.03333282470703,
+            "vertical_boundary": 61.27777862548828,
+            "side_left": 19.69444465637207,
+            "side_right": 14.833333969116211
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              935.9880931377411,
+              504.0715181827545,
+              1045.7600810527802,
+              580.9598591327667
+            ],
+            "shift": [
+              34.300323486328125,
+              1.941925048828125
+            ],
+            "ncc": 0.9879095554351807,
+            "source_frame_id": 89278,
+            "support": 7
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9990164041519165,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.265715349,
+        "observed_source_frame_id": 89278,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.307876353,
+        "received_to_state_commit_ms": 42.16100399935385,
+        "transport_dequeued_monotonic": 44326.266891279,
+        "python_copy_returned_monotonic": 44326.266904136
+      }
+    },
+    {
+      "line": 85,
+      "source_frame_id": 89279,
+      "row": {
+        "track_id": 880,
+        "box": [
+          966.675662279129,
+          505.86412274837494,
+          1076.447650194168,
+          582.7524636983871
+        ],
+        "raw_box": [
+          966.675662279129,
+          505.86412274837494,
+          1076.447650194168,
+          582.7524636983871
+        ],
+        "roi_frame_id": 89279,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 10,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9994469285011292,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 10,
+          "reliable_observations": 10,
+          "window_observations": 10,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9947648644447327,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 10,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.0894798460965286,
+          "association_margin": 0.7905201539034714,
+          "appearance_penalty": 0.006303008350671506,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            32.59638254903257,
+            1.0596923045814037
+          ],
+          "motion_uncertainty_px": 2.449115375525182,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 30.96666717529297,
+            "vertical_boundary": 62.61111068725586,
+            "side_left": 20.22222328186035,
+            "side_right": 14.894444465637207
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              965.9665563106537,
+              510.41240751743317,
+              1075.7385442256927,
+              579.4460903406143
+            ],
+            "shift": [
+              30.71014404296875,
+              1.0716552734375
+            ],
+            "ncc": 0.9823347330093384,
+            "source_frame_id": 89279,
+            "support": 7
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9994469285011292,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.282049746,
+        "observed_source_frame_id": 89279,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.324769357,
+        "received_to_state_commit_ms": 42.71961100312183,
+        "transport_dequeued_monotonic": 44326.283847695,
+        "python_copy_returned_monotonic": 44326.283865964
+      }
+    },
+    {
+      "line": 86,
+      "source_frame_id": 89280,
+      "row": {
+        "track_id": 880,
+        "box": [
+          1004.2234587669373,
+          505.66399371623993,
+          1102.0646224021912,
+          590.9525927305222
+        ],
+        "raw_box": [
+          1004.2234587669373,
+          505.66399371623993,
+          1102.0646224021912,
+          590.9525927305222
+        ],
+        "roi_frame_id": 89280,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 11,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9994463324546814,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 11,
+          "reliable_observations": 11,
+          "window_observations": 11,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9951904524456371,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 11,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.1742816607563665,
+          "association_margin": 0.7057183392436335,
+          "appearance_penalty": 0.03563409802960415,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            32.08938344847411,
+            2.529846152290702
+          ],
+          "motion_uncertainty_px": 2.647453189105031,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 35.96666717529297,
+            "vertical_boundary": 57.72222137451172,
+            "side_left": 16.916667938232422,
+            "side_right": 14.866666793823242
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              998.4485504627228,
+              507.9492515325546,
+              1108.2205383777618,
+              584.8375924825668
+            ],
+            "shift": [
+              31.77288818359375,
+              2.0851287841796875
+            ],
+            "ncc": 0.9805399775505066,
+            "source_frame_id": 89280,
+            "support": 7
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9994463324546814,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.298810173,
+        "observed_source_frame_id": 89280,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.343422814,
+        "received_to_state_commit_ms": 44.612641002458986,
+        "transport_dequeued_monotonic": 44326.301839901,
+        "python_copy_returned_monotonic": 44326.301854605
+      }
+    },
+    {
+      "line": 87,
+      "source_frame_id": 89281,
+      "row": {
+        "track_id": 880,
+        "box": [
+          1030.2580466270447,
+          506.2116597890854,
+          1140.0300345420837,
+          591.5002588033676
+        ],
+        "raw_box": [
+          1030.2580466270447,
+          506.2116597890854,
+          1140.0300345420837,
+          591.5002588033676
+        ],
+        "roi_frame_id": 89281,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 12,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9994434714317322,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 12,
+          "reliable_observations": 12,
+          "window_observations": 12,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9955448706944784,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 12,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.1089274336150943,
+          "association_margin": 0.7710725663849057,
+          "appearance_penalty": 0.020552742785098506,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            32.044691724237055,
+            1.5387561125680804
+          ],
+          "motion_uncertainty_px": 2.4484755411260837,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 41.06666564941406,
+            "vertical_boundary": 59.94444274902344,
+            "side_left": 21.72222137451172,
+            "side_right": 15.288887023925781
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              1036.1678862571716,
+              506.84439837932587,
+              1134.0090498924255,
+              592.1329973936081
+            ],
+            "shift": [
+              31.944427490234375,
+              1.1804046630859375
+            ],
+            "ncc": 0.9769076108932495,
+            "source_frame_id": 89281,
+            "support": 7
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9994434714317322,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.315693762,
+        "observed_source_frame_id": 89281,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.36443219,
+        "received_to_state_commit_ms": 48.7384279986145,
+        "transport_dequeued_monotonic": 44326.317476066,
+        "python_copy_returned_monotonic": 44326.317492108
+      }
+    },
+    {
+      "line": 88,
+      "source_frame_id": 89282,
+      "row": {
+        "track_id": 880,
+        "box": [
+          1069.3150341510773,
+          514.1295931339264,
+          1167.1561977863312,
+          591.0179340839386
+        ],
+        "raw_box": [
+          1069.3150341510773,
+          514.1295931339264,
+          1167.1561977863312,
+          591.0179340839386
+        ],
+        "roi_frame_id": 89282,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 13,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9992583394050598,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 13,
+          "reliable_observations": 13,
+          "window_observations": 13,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9958305221337539,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 13,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.17330987550400306,
+          "association_margin": 0.7066901244959969,
+          "appearance_penalty": 0.030757380887573838,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            32.568133554188535,
+            2.628280212637037
+          ],
+          "motion_uncertainty_px": 2.4391773072609277,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 34.233333587646484,
+            "vertical_boundary": 57.72222137451172,
+            "side_left": 18.61111068725586,
+            "side_right": 15.249998092651367
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              1063.9283347129822,
+              509.6760152578354,
+              1173.7003226280212,
+              594.9646142721176
+            ],
+            "shift": [
+              33.6702880859375,
+              3.46435546875
+            ],
+            "ncc": 0.9714928865432739,
+            "source_frame_id": 89282,
+            "support": 7
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9992583394050598,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.332430601,
+        "observed_source_frame_id": 89282,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.38915222,
+        "received_to_state_commit_ms": 56.721618995652534,
+        "transport_dequeued_monotonic": 44326.333695272,
+        "python_copy_returned_monotonic": 44326.333866263
+      }
+    },
+    {
+      "line": 89,
+      "source_frame_id": 89283,
+      "row": {
+        "track_id": 880,
+        "box": [
+          1106.8438022732735,
+          522.1965639591217,
+          1204.6849659085274,
+          591.2302467823029
+        ],
+        "raw_box": [
+          1106.8438022732735,
+          522.1965639591217,
+          1204.6849659085274,
+          591.2302467823029
+        ],
+        "roi_frame_id": 89283,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 14,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9988646507263184,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 14,
+          "reliable_observations": 14,
+          "window_observations": 14,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9960472456046513,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 14,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.0976384889739048,
+          "association_margin": 0.7823615110260952,
+          "appearance_penalty": 0.01249579202895071,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            35.048450838192366,
+            3.383960987208411
+          ],
+          "motion_uncertainty_px": 3.2631521807993336,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 24.899999618530273,
+            "vertical_boundary": 56.38888931274414,
+            "side_left": 19.583332061767578,
+            "side_right": 14.755556106567383
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              1106.1607372760773,
+              516.8268282413483,
+              1204.0019009113312,
+              593.7151691913605
+            ],
+            "shift": [
+              36.845703125,
+              2.697235107421875
+            ],
+            "ncc": 0.9635842442512512,
+            "source_frame_id": 89283,
+            "support": 7
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9988646507263184,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.348617961,
+        "observed_source_frame_id": 89283,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.41289111,
+        "received_to_state_commit_ms": 64.2731490006554,
+        "transport_dequeued_monotonic": 44326.35081197,
+        "python_copy_returned_monotonic": 44326.350860506
+      }
+    },
+    {
+      "line": 90,
+      "source_frame_id": 89284,
+      "row": {
+        "track_id": 880,
+        "box": [
+          1131.0461122989655,
+          517.6237231492996,
+          1240.8181002140045,
+          594.5120640993118
+        ],
+        "raw_box": [
+          1131.0461122989655,
+          517.6237231492996,
+          1240.8181002140045,
+          594.5120640993118
+        ],
+        "roi_frame_id": 89284,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 15,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.999146580696106,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 15,
+          "reliable_observations": 15,
+          "window_observations": 15,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.9962538679440817,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 15,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.18483505936677455,
+          "association_margin": 0.6951649406332254,
+          "appearance_penalty": 0.036369448678166265,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            32.608086501888465,
+            1.369224620400928
+          ],
+          "motion_uncertainty_px": 4.182952075544604,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 26.5,
+            "vertical_boundary": 64.11111450195312,
+            "side_left": 21.811113357543945,
+            "side_right": 16.883333206176758
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              1136.814383327961,
+              523.8637850284576,
+              1234.6555469632149,
+              592.8974678516388
+            ],
+            "shift": [
+              29.9705810546875,
+              1.6672210693359375
+            ],
+            "ncc": 0.9765429496765137,
+            "source_frame_id": 89284,
+            "support": 7
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.999146580696106,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.365192831,
+        "observed_source_frame_id": 89284,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.439590689,
+        "received_to_state_commit_ms": 74.3978579994291,
+        "transport_dequeued_monotonic": 44326.369940313,
+        "python_copy_returned_monotonic": 44326.370188388
+      }
+    },
+    {
+      "line": 92,
+      "source_frame_id": 89286,
+      "row": {
+        "track_id": 880,
+        "box": [
+          1200.7711250782013,
+          529.5510522127151,
+          1298.6122887134552,
+          598.5847350358963
+        ],
+        "raw_box": [
+          1200.7711250782013,
+          529.5510522127151,
+          1298.6122887134552,
+          598.5847350358963
+        ],
+        "roi_frame_id": 89286,
+        "object_id": "44e57ac2a7ed4d31aa532b99e7ff6206:880:7f9f9d3eec2b44cb902dda9951ecfff6",
+        "tracking_hits": 16,
+        "confirmed": true,
+        "association_uncertain": false,
+        "classification": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "raw_label": "97e437d2048c4540a0e66ec595b69bf5",
+          "confidence": 0.9999262094497681,
+          "accepted": true
+        },
+        "classification_temporal": {
+          "accepted": true,
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "support": 16,
+          "reliable_observations": 16,
+          "window_observations": 16,
+          "agreement": 1.0,
+          "mean_support_confidence": 0.996483389288187,
+          "required_support": 3,
+          "reason": "measured_multi_frame_consensus",
+          "single_frame_label_disagrees": false,
+          "evidence_preserved": true,
+          "history_reset_reason": null,
+          "evidence_scope": "measured_identity_lifetime",
+          "vote_margin": 1.0,
+          "last_support_source_age": 0,
+          "diagnostics": {},
+          "used_for_counting": true
+        },
+        "tracking": {
+          "status": "confirmed",
+          "association_uncertain": false,
+          "counting_eligible": true,
+          "association_version": "pixel_supported_passage_v5",
+          "stable_hits": 16,
+          "required_hits": 2,
+          "classification_consistent": true,
+          "association_cost": 0.1884756740074541,
+          "association_margin": 0.25615632908862496,
+          "appearance_penalty": 0.040530576121573354,
+          "candidate_predecessor_object_ids": [],
+          "pose_history_reset_reason": null,
+          "measured_motion_px_per_source_frame": [
+            32.24394341078005,
+            2.684612310200464
+          ],
+          "motion_uncertainty_px": 3.746982924507075,
+          "failure_observations": 0,
+          "failure_source_span": 0,
+          "observed_registered": true,
+          "counted": true,
+          "image_support": {
+            "accepted": true,
+            "reason": "rectangular_face_edges",
+            "horizontal_boundary": 20.0,
+            "vertical_boundary": 57.22222137451172,
+            "side_left": 22.133333206176758,
+            "side_right": 15.344446182250977
+          },
+          "pixel_identity_verified": true,
+          "pixel_measurement": {
+            "box": [
+              1196.7033998966217,
+              524.3114672899246,
+              1306.4753878116608,
+              601.1998082399368
+            ],
+            "shift": [
+              65.65728759765625,
+              6.687744140625
+            ],
+            "ncc": 0.9906132221221924,
+            "source_frame_id": 89286,
+            "support": 7
+          },
+          "cumulative_allocation": "confirmed"
+        },
+        "cached_fine": {
+          "label": "97e437d2048c4540a0e66ec595b69bf5",
+          "score": 0.9999262094497681,
+          "age_ms": 0
+        },
+        "session_id": "a39a903a3d6146c19da394cf830d6ba0",
+        "generation": 2,
+        "region_version": "44e57ac2a7ed4d31aa532b99e7ff6206",
+        "capture_received_monotonic": 44326.398547755,
+        "observed_source_frame_id": 89286,
+        "sensor_transition": false,
+        "sensor_generation": 1,
+        "boot_id": "9fec7c33-9ac7-4ba0-a5fc-8d1c415a845e",
+        "result_state_committed_monotonic": 44326.473912814,
+        "received_to_state_commit_ms": 75.36505899770418,
+        "transport_dequeued_monotonic": 44326.39982301,
+        "python_copy_returned_monotonic": 44326.399831668
+      }
+    }
+  ],
+  "preview": {
+    "path": "剪辑/重剪_v24_清晰关联与慢放/tracking_evidence/sequence_native/track880_three_frames_native_preview.png",
+    "sha256": "9e61679d7d66001186ea937207b2b0ec8b1fe975ab28da7d1c4d24204c040b09"
+  },
+  "excluded_candidate": {
+    "track_id": 1379,
+    "source_directory": "int8_60fps_20261026/passage_stability/live_acceptance/sequence3s20261026232247",
+    "reason": "Earlier track observations change class/physical appearance, so it is excluded as a reliable example."
+  }
+}

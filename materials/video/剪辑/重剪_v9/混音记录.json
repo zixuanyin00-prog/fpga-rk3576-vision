@@ -1,0 +1,35 @@
+{
+  "output": "剪辑/重剪_v9/FPGA视觉系统_实战应用精简版_v9.mp4",
+  "duration": 150.8,
+  "voice": "zh-CN-YunyangNeural",
+  "voice_target_lufs": -18,
+  "music_target_lufs": -36,
+  "music_level": "constant",
+  "speech_clips": 19,
+  "speech_seconds": 87.9,
+  "voice_measurement": {
+    "input_i": "-25.62",
+    "input_tp": "-1.59",
+    "input_lra": "9.10",
+    "input_thresh": "-36.08",
+    "output_i": "-19.67",
+    "output_tp": "-2.00",
+    "output_lra": "8.70",
+    "output_thresh": "-30.06",
+    "normalization_type": "dynamic",
+    "target_offset": "1.67"
+  },
+  "music_measurement": {
+    "input_i": "-32.76",
+    "input_tp": "-19.11",
+    "input_lra": "0.60",
+    "input_thresh": "-42.82",
+    "output_i": "-35.95",
+    "output_tp": "-22.20",
+    "output_lra": "0.70",
+    "output_thresh": "-45.98",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.05"
+  },
+  "mix_sample_peak_dbfs": -1.53
+}

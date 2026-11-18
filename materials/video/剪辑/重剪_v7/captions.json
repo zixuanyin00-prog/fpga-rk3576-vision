@@ -1,0 +1,352 @@
+[
+  {
+    "text": "以电阻为例，系统辨别正反面与数字方向，\n为后续取放、筛选提供明确的类别信息。",
+    "startMs": 5500,
+    "endMs": 12500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "控制台中的“姿态”标签可按任务自定义，\n不同型号的电阻，也可设为不同识别类别。",
+    "startMs": 13500,
+    "endMs": 20500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "与控制器联动后，可按类别触发分拣，\n服务于高速、高精度的自动分类需求。",
+    "startMs": 20800,
+    "endMs": 28500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "这套系统把 FPGA 图像处理接入现场，\n连接成像、识别、连续确认与外接控制。",
+    "startMs": 29400,
+    "endMs": 34600,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "进入振动送料场景，工件的位置不断变化，\n识别还要分清连续画面中的同一个目标。",
+    "startMs": 35500,
+    "endMs": 42500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "相机把现场图像送入 FPGA，\n先完成图像采集与硬件预处理。",
+    "startMs": 43400,
+    "endMs": 48300,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "RK 接收图像后完成识别与显示，\n把现场画面接入后续的姿态判断。",
+    "startMs": 48500,
+    "endMs": 53500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "小型工件的表面特征细微，\n光照与成像设置会影响后续能够辨认的细节。",
+    "startMs": 54400,
+    "endMs": 59900,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "控制台经 RK 向 FPGA 写入处理配置，\n板端再返回状态，确认参数是否已经生效。",
+    "startMs": 60100,
+    "endMs": 65700,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "配置下发与状态回读形成双向控制，\n现场人员可直接调整 FPGA 的处理参数。",
+    "startMs": 65900,
+    "endMs": 71500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "先调整成像增益，\n让工件从偏暗的背景中显现出更多表面细节。",
+    "startMs": 72500,
+    "endMs": 79100,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "增益改变时，HDMI 画面的亮度随之变化；\n现场人员据此检查工件文字与背景是否容易区分。",
+    "startMs": 79300,
+    "endMs": 86300,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "参数调节围绕识别需要展开，\n让后续模型从清晰、可辨认的图像中学习特征。",
+    "startMs": 86500,
+    "endMs": 93500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "亮度合适之后，\n继续选择适合工件特征的图像处理功能。",
+    "startMs": 94500,
+    "endMs": 101100,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "各个处理环节可以独立开关，\n便于比较处理前后的边缘与纹理。",
+    "startMs": 101300,
+    "endMs": 108300,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "边缘响应反映图像中的灰度变化，\n可用于观察工件轮廓与背景的分离程度。",
+    "startMs": 108500,
+    "endMs": 115700,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "彩色边缘叠加突出轮廓，\n保留原画面的色彩信息。",
+    "startMs": 116000,
+    "endMs": 119700,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "效果确认后，固定本次训练采图参数，\n让同一批样本保持一致的成像条件。",
+    "startMs": 119900,
+    "endMs": 127500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "固定成像后采集现场工件，\n把不同位置与姿态整理成训练图像。",
+    "startMs": 128500,
+    "endMs": 133800,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "现场换位置、换视角后可以重新采样，\n用少量本地样本建立适合当前任务的模型。",
+    "startMs": 134000,
+    "endMs": 139500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "有了图像，还需要告诉模型，\n哪些位置是工件，分别属于哪种姿态。",
+    "startMs": 140500,
+    "endMs": 145500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "系统先自动生成目标候选框，\n把重复的定位操作集中完成。",
+    "startMs": 145700,
+    "endMs": 150500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "操作人员检查候选框，\n再为工件确认正反面与数字方向类别。",
+    "startMs": 150700,
+    "endMs": 155500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "候选框定位、姿态标签确认，\n共同把现场图像转成可用于训练的样本。",
+    "startMs": 156500,
+    "endMs": 163500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "本次演示用 15 张现场原图，\n建立三类姿态样本，学习工件的外观差异。",
+    "startMs": 164500,
+    "endMs": 170700,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "训练结果转换为 RK 侧使用的 INT8 模型，\n采图、标注、训练与转换都在控制台内完成。",
+    "startMs": 170900,
+    "endMs": 177500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "粗推理先在全图定位工件，\n确定需要进一步分析的目标区域。",
+    "startMs": 178500,
+    "endMs": 182900,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "随后裁取目标的原生 RGB 像素，\n保留局部纹理，交给细推理。",
+    "startMs": 183100,
+    "endMs": 187100,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "细推理区分正反面与数字方向，\n完成目标的姿态判断。",
+    "startMs": 187300,
+    "endMs": 191500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "训练后用现场图像检查结果，\n逐个对照目标位置与姿态类别。",
+    "startMs": 192500,
+    "endMs": 197800,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "检查聚焦具体工件的判断是否匹配，\n再决定这次训练的模型是否适合当前任务。",
+    "startMs": 198000,
+    "endMs": 203500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "训练得到的模型用于设备端识别，\n运行入口同时集成 HDMI 监控与参数操作。",
+    "startMs": 204500,
+    "endMs": 210700,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "现场人员在同一控制台，\n检查成像设置、识别结果与设备运行状态。",
+    "startMs": 210900,
+    "endMs": 217500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "连续预览要不断接收新画面，\n模型推理则有自己的计算过程。",
+    "startMs": 218500,
+    "endMs": 224600,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "系统将显示与推理解耦，\n显示持续运行，识别链路异步取图。",
+    "startMs": 224800,
+    "endMs": 231000,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "识别完成后更新结果缓存，\n结果再分别交给显示与后续控制环节。",
+    "startMs": 231200,
+    "endMs": 237500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "同一工件会连续出现在多帧中，\n每帧识别都是一次观测。",
+    "startMs": 238500,
+    "endMs": 243300,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "跨帧关联结合位置变化与重叠关系，\n为同一工件延续身份。",
+    "startMs": 243500,
+    "endMs": 248300,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "同一身份积累姿态观测，\n以多帧一致性减少单帧波动的影响。",
+    "startMs": 248500,
+    "endMs": 253300,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "满足确认条件后生成控制事件，\n并为该工件记录已处理状态。",
+    "startMs": 253500,
+    "endMs": 258300,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "后续帧继续跟踪同一身份，\n查询已处理状态，减少重复触发。",
+    "startMs": 258500,
+    "endMs": 263500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "识别事件可接入后续控制器，\n按类别驱动电磁阀，完成对应的分拣动作。",
+    "startMs": 264500,
+    "endMs": 271500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "图像处理落实到 FPGA，\n安路 TD 报告记录了设计的硬件资源占用。",
+    "startMs": 272500,
+    "endMs": 277800,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "报告中 LUT6 占用为 73.57%，\n对应 47,319 个六输入查找表。",
+    "startMs": 278000,
+    "endMs": 283500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "布局布线后检查快慢两种工艺角，\n验证信号能否在时钟要求内稳定传递。",
+    "startMs": 284500,
+    "endMs": 289800,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "建立与保持裕量均为正，\n这份报告的 STA 覆盖率为 99.67%。",
+    "startMs": 290000,
+    "endMs": 295500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "相机采集的像素经过 FPGA 预处理，\n再送到 RK，进入定位、姿态识别和连续确认。",
+    "startMs": 296400,
+    "endMs": 301900,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "视觉结果连接现场执行设备，\n控制台贯穿调参、训练与运行监控。",
+    "startMs": 302100,
+    "endMs": 307700,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "双向调参解决现场成像适配，\n两阶段推理和连续确认把图像变成可用的判断。",
+    "startMs": 307900,
+    "endMs": 313500,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "从识别姿态到区分型号，\n让同一套视觉流程适配不同工件的分类需求。",
+    "startMs": 313700,
+    "endMs": 319500,
+    "timestampMs": null,
+    "confidence": null
+  }
+]

@@ -1,0 +1,311 @@
+[
+  {
+    "name": "title",
+    "start": 0,
+    "duration": 5,
+    "file": "剪辑/重剪_v8/title.mp4",
+    "source": {
+      "kind": "animation"
+    }
+  },
+  {
+    "name": "pose",
+    "start": 5,
+    "duration": 8,
+    "file": "剪辑/重剪_v8/pose.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "电阻姿态展示.MOV",
+      "start": 1,
+      "length": 8
+    }
+  },
+  {
+    "name": "value",
+    "duration": 16,
+    "source": {
+      "kind": "animation"
+    },
+    "start": 13,
+    "file": "剪辑/重剪_v8/value.mp4"
+  },
+  {
+    "name": "board",
+    "start": 29,
+    "duration": 6,
+    "file": "剪辑/重剪_v8/board.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "板卡移到振动盘.MOV",
+      "start": 0,
+      "length": 6
+    }
+  },
+  {
+    "name": "new_run",
+    "start": 35,
+    "duration": 8,
+    "file": "剪辑/重剪_v8/new_run.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "新视频.mp4",
+      "start": 4,
+      "length": 8
+    }
+  },
+  {
+    "name": "new_pan",
+    "start": 43,
+    "duration": 11,
+    "file": "剪辑/重剪_v8/new_pan.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "新视频.mp4",
+      "start": 12,
+      "length": 9.7
+    }
+  },
+  {
+    "name": "parameter",
+    "start": 54,
+    "duration": 18,
+    "file": "剪辑/重剪_v8/parameter.mp4",
+    "source": {
+      "kind": "animation"
+    }
+  },
+  {
+    "name": "isp_overview",
+    "start": 72,
+    "duration": 22,
+    "file": "剪辑/重剪_v8/isp_overview.mp4",
+    "source": {
+      "kind": "sync",
+      "start": 26,
+      "detail": "crop=1320:270:365:'if(lt(t,3),1330,1130)'",
+      "detail_h": 123,
+      "detail_y": 627,
+      "context": "crop=2440:1330:0:270,scale=600:327"
+    }
+  },
+  {
+    "name": "isp_processing",
+    "start": 94,
+    "duration": 34,
+    "file": "剪辑/重剪_v8/isp_processing.mp4",
+    "source": {
+      "kind": "sync",
+      "start": 88,
+      "detail": "crop=1320:450:330:970",
+      "detail_h": 204,
+      "detail_y": 590,
+      "context": "crop=2440:1430:0:0,scale=600:352"
+    }
+  },
+  {
+    "name": "capture",
+    "start": 128,
+    "duration": 8,
+    "file": "剪辑/重剪_v8/capture.mp4",
+    "source": {
+      "kind": "composite",
+      "parts": [
+        {
+          "start": 294.3,
+          "length": 1.9,
+          "crop": "crop=2440:1120:0:440",
+          "scale": "scale=1490:684",
+          "x": 215,
+          "y": 100
+        },
+        {
+          "start": 296.2,
+          "length": 2.2,
+          "crop": "crop=2080:950:360:370",
+          "scale": "scale=1740:795",
+          "x": 90,
+          "y": 55
+        },
+        {
+          "start": 319.6,
+          "length": 1.7,
+          "hold": 2.2,
+          "crop": "crop=2080:950:360:360",
+          "scale": "scale=1740:795",
+          "x": 90,
+          "y": 55
+        }
+      ]
+    }
+  },
+  {
+    "name": "candidates",
+    "start": 136,
+    "duration": 12,
+    "file": "剪辑/重剪_v8/candidates.mp4",
+    "source": {
+      "kind": "composite",
+      "parts": [
+        {
+          "start": 329,
+          "length": 2.4,
+          "crop": "crop=2080:410:360:310",
+          "scale": "scale=1740:343",
+          "x": 90,
+          "y": 280
+        },
+        {
+          "start": 331.6,
+          "length": 5.4,
+          "hold": 4.2,
+          "crop": "crop=2440:1410:0:150",
+          "scale": "scale=1490:861",
+          "x": 215,
+          "y": 35
+        }
+      ]
+    }
+  },
+  {
+    "name": "confirm",
+    "start": 148,
+    "duration": 8,
+    "file": "剪辑/重剪_v8/confirm.mp4",
+    "source": {
+      "kind": "composite",
+      "parts": [
+        {
+          "start": 341,
+          "length": 8,
+          "crop": "crop=2440:1510:0:0",
+          "scale": "scale=1450:897",
+          "x": 235,
+          "y": 23
+        }
+      ]
+    }
+  },
+  {
+    "name": "train",
+    "start": 156,
+    "duration": 14,
+    "file": "剪辑/重剪_v8/train.mp4",
+    "source": {
+      "kind": "console",
+      "start": 496,
+      "length": 14,
+      "crop": "crop=2440:820:0:0",
+      "scale": "scale=1740:584",
+      "x": 90,
+      "y": 183
+    }
+  },
+  {
+    "name": "inference",
+    "start": 170,
+    "duration": 14,
+    "file": "剪辑/重剪_v8/inference.mp4",
+    "source": {
+      "kind": "animation"
+    }
+  },
+  {
+    "name": "test",
+    "start": 184,
+    "duration": 12,
+    "file": "剪辑/重剪_v8/test.mp4",
+    "source": {
+      "kind": "console",
+      "start": 520,
+      "length": 12,
+      "crop": "crop=2440:1180:0:0",
+      "scale": "scale=1710:826",
+      "x": 105,
+      "y": 53
+    }
+  },
+  {
+    "name": "deploy",
+    "start": 196,
+    "duration": 14,
+    "file": "剪辑/重剪_v8/deploy.mp4",
+    "source": {
+      "kind": "console",
+      "file": "部署后的运行结果.mp4",
+      "start": 7,
+      "length": 6.8,
+      "crop": "crop=2440:1050:0:300",
+      "scale": "scale=1740:749",
+      "x": 90,
+      "y": 97
+    }
+  },
+  {
+    "name": "async",
+    "start": 210,
+    "duration": 20,
+    "file": "剪辑/重剪_v8/async.mp4",
+    "source": {
+      "kind": "animation"
+    }
+  },
+  {
+    "name": "tracking",
+    "start": 230,
+    "duration": 26,
+    "file": "剪辑/重剪_v8/tracking.mp4",
+    "source": {
+      "kind": "animation"
+    }
+  },
+  {
+    "name": "hardware",
+    "start": 256,
+    "duration": 8,
+    "file": "剪辑/重剪_v8/hardware.mp4",
+    "source": {
+      "kind": "footage",
+      "file": "电磁阀和转接板展示.MOV",
+      "start": 0,
+      "length": 2.8
+    }
+  },
+  {
+    "name": "area",
+    "start": 264,
+    "duration": 12,
+    "file": "剪辑/重剪_v8/area.mp4",
+    "source": {
+      "kind": "report",
+      "file": "性能工具截图/01_TD_资源利用率.png"
+    }
+  },
+  {
+    "name": "timing",
+    "start": 276,
+    "duration": 12,
+    "file": "剪辑/重剪_v8/timing.mp4",
+    "source": {
+      "kind": "report",
+      "file": "性能工具截图/02_TD_时序与覆盖率.png"
+    }
+  },
+  {
+    "name": "collage",
+    "start": 288,
+    "duration": 24,
+    "file": "剪辑/重剪_v8/collage.mp4",
+    "source": {
+      "kind": "animation"
+    }
+  },
+  {
+    "name": "end",
+    "start": 312,
+    "duration": 6,
+    "file": "剪辑/重剪_v8/end.mp4",
+    "source": {
+      "kind": "animation"
+    }
+  }
+]
